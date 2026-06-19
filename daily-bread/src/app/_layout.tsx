@@ -9,15 +9,31 @@ import {
   NotoSerif_600SemiBold,
   NotoSerif_700Bold,
 } from '@expo-google-fonts/noto-serif';
-import { NTR_400Regular } from '@expo-google-fonts/ntr';
-import { Suranna_400Regular } from '@expo-google-fonts/suranna';
-import { Timmana_400Regular } from '@expo-google-fonts/timmana';
-import { Gurajada_400Regular } from '@expo-google-fonts/gurajada';
 import {
   SourceSerif4_400Regular,
   SourceSerif4_400Regular_Italic,
   SourceSerif4_600SemiBold,
 } from '@expo-google-fonts/source-serif-4';
+import { NTR_400Regular } from '@expo-google-fonts/ntr';
+import { Suranna_400Regular } from '@expo-google-fonts/suranna';
+import { Timmana_400Regular } from '@expo-google-fonts/timmana';
+import { Gurajada_400Regular } from '@expo-google-fonts/gurajada';
+import {
+  PlayfairDisplay_600SemiBold,
+  PlayfairDisplay_400Regular,
+} from '@expo-google-fonts/playfair-display';
+import {
+  CormorantGaramond_600SemiBold,
+  CormorantGaramond_400Regular,
+} from '@expo-google-fonts/cormorant-garamond';
+import {
+  Lora_600SemiBold,
+  Lora_400Regular,
+} from '@expo-google-fonts/lora';
+import {
+  Merriweather_700Bold,
+  Merriweather_400Regular,
+} from '@expo-google-fonts/merriweather';
 import { useFonts } from 'expo-font';
 import { Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
@@ -51,6 +67,14 @@ export default function RootLayout() {
     Inter_400Regular,
     Inter_500Medium,
     Inter_600SemiBold,
+    PlayfairDisplay_600SemiBold,
+    PlayfairDisplay_400Regular,
+    CormorantGaramond_600SemiBold,
+    CormorantGaramond_400Regular,
+    Lora_600SemiBold,
+    Lora_400Regular,
+    Merriweather_700Bold,
+    Merriweather_400Regular,
   });
   const [initialized, setInitialized] = useState(false);
   const onboarded = useSettings((s) => s.onboarded);

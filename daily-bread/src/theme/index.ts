@@ -4,6 +4,8 @@ export {
   typography,
   textStyle,
   teluguFontMap,
+  englishHeadingFontMap,
+  englishBodyFontMap,
   type TeluguFontKey,
   type Lang,
   type TypographyVariant,

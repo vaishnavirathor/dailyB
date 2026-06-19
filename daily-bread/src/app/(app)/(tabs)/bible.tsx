@@ -12,6 +12,7 @@ import { lastRead, type LastRead } from '@/data/kv';
 import { listBookmarks, type Bookmark } from '@/data/bible-marks';
 import { BookCover } from '@/features/bible/book-cover';
 import { t } from '@/i18n';
+import { useBibleNav } from '@/stores/bible-navigation';
 import { useLanguage } from '@/stores/settings';
 import { colors, radius, spacing, tints } from '@/theme';
 
@@ -28,6 +29,24 @@ export default function BibleShelfScreen() {
 
   useFocusEffect(
     useCallback(() => {
+      const store = useBibleNav.getState();
+      const shouldRedirect = store.pendingTabRedirect;
+      store.clearBibleSession();
+      if (shouldRedirect) {
+        void lastRead().then((read) => {
+          if (read?.bookId) {
+            router.push({
+              pathname: '/bible/[book]/[chapter]',
+              params: {
+                book: read.bookId,
+                chapter: String(read.chapter),
+                v: read.version ?? 'te-ov',
+              },
+            });
+          }
+        });
+        return () => {};
+      }
       let active = true;
       void Promise.all([lastRead(), listBookmarks()]).then(([read, marks]) => {
         if (active) {
@@ -38,7 +57,7 @@ export default function BibleShelfScreen() {
       return () => {
         active = false;
       };
-    }, []),
+    }, [router]),
   );
 
   const openBook = (version: BibleVersion) => {

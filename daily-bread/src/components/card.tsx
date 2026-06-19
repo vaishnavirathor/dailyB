@@ -1,19 +1,14 @@
 import { View, type StyleProp, type ViewProps, type ViewStyle } from 'react-native';
 
-import { colors, radius, spacing } from '@/theme';
+import { colors, radius, shadows, spacing } from '@/theme';
 
 export interface CardProps extends ViewProps {
-  /** Tonal layers, not shadows: white card on warm-white surface. */
   tone?: 'lowest' | 'cream';
   padding?: number;
   style?: StyleProp<ViewStyle>;
 }
 
-/**
- * The repeating container: surface-container-lowest fill, hairline
- * outline-variant border, 1rem radius. Depth comes from tone, not shadow.
- */
-export function Card({ tone = 'lowest', padding = spacing.stackMd + 4, style, children, ...rest }: CardProps) {
+export function Card({ tone = 'lowest', padding = spacing.stackMd + 8, style, children, ...rest }: CardProps) {
   return (
     <View
       {...rest}
@@ -21,10 +16,11 @@ export function Card({ tone = 'lowest', padding = spacing.stackMd + 4, style, ch
         {
           backgroundColor: tone === 'lowest' ? colors.surfaceContainerLowest : colors.creamDarker,
           borderWidth: 1,
-          borderColor: colors.outlineVariant,
-          borderRadius: radius.lg,
+          borderColor: tone === 'cream' ? 'rgba(168,128,31,0.18)' : colors.outlineVariant,
+          borderRadius: radius.xl,
           borderCurve: 'continuous',
           padding,
+          boxShadow: shadows.verse,
         },
         style,
       ]}

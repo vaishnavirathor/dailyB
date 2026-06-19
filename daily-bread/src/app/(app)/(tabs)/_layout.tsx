@@ -1,9 +1,11 @@
 import { BlurView } from 'expo-blur';
-import { Tabs } from 'expo-router';
+import { Tabs, useNavigation } from 'expo-router';
+import { useEffect, useRef } from 'react';
 import { StyleSheet } from 'react-native';
 
 import { BagIcon, BookIcon, CalendarIcon, ShareIcon, SunriseIcon } from '@/components/icons';
 import { t } from '@/i18n';
+import { useBibleNav } from '@/stores/bible-navigation';
 import { useLanguage } from '@/stores/settings';
 import { colors, fonts } from '@/theme';
 
@@ -13,6 +15,23 @@ import { colors, fonts } from '@/theme';
  */
 export default function TabsLayout() {
   const lang = useLanguage();
+  const navigation = useNavigation();
+  const prevTabIndex = useRef(-1);
+
+  useEffect(() => {
+    const unsub = navigation.addListener('state', () => {
+      const state = navigation.getState();
+      if (!state) return;
+      const bibleRouteIdx = state.routeNames.indexOf('bible');
+      if (bibleRouteIdx < 0) return;
+      const enteringBible = state.index === bibleRouteIdx && prevTabIndex.current !== bibleRouteIdx;
+      prevTabIndex.current = state.index;
+      if (enteringBible) {
+        useBibleNav.getState().setPendingTabRedirect(true);
+      }
+    });
+    return unsub;
+  }, [navigation]);
 
   return (
     <Tabs

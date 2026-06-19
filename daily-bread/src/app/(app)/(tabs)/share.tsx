@@ -60,6 +60,8 @@ const STYLE_DEFAULT_SCENE: Record<ShareStyle, SceneId | null> = {
 export default function ShareScreen() {
   const lang = useLanguage();
   const tradition = useSettings((s) => s.tradition);
+  const englishHeadingFont = useSettings((s) => s.englishHeadingFont);
+  const englishBodyFont = useSettings((s) => s.englishBodyFont);
   const todayKey = useProgress((s) => s.todayKey);
   const { width } = useWindowDimensions();
 
@@ -156,7 +158,11 @@ export default function ShareScreen() {
     { id: 'festival', label: 'templateFestival' },
   ];
 
-  const nameInputStyle = textStyle('bodyMd', lang);
+  const isEnglish = lang === 'en';
+  const fontOverrides = isEnglish
+    ? { heading: englishHeadingFont, body: englishBodyFont }
+    : undefined;
+  const nameInputStyle = textStyle('bodyMd', lang, fontOverrides);
 
   return (
     <Screen gap={spacing.stackMd}>

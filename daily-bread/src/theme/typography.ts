@@ -34,6 +34,20 @@ export const teluguFontMap = {
 
 export type TeluguFontKey = keyof typeof teluguFontMap;
 
+export const englishHeadingFontMap = {
+  playfair: { label: 'Playfair Display', family: 'PlayfairDisplay_600SemiBold' },
+  cormorant: { label: 'Cormorant Garamond', family: 'CormorantGaramond_600SemiBold' },
+  lora: { label: 'Lora', family: 'Lora_600SemiBold' },
+  merriweather: { label: 'Merriweather', family: 'Merriweather_700Bold' },
+} as const;
+
+export const englishBodyFontMap = {
+  sourceSerif: { label: 'Source Serif 4', family: 'SourceSerif4_400Regular' },
+  lora: { label: 'Lora', family: 'Lora_400Regular' },
+  merriweather: { label: 'Merriweather', family: 'Merriweather_400Regular' },
+  inter: { label: 'Inter', family: 'Inter_400Regular' },
+} as const;
+
 export type Lang = 'te' | 'en';
 
 export interface TextStyleSpec {
@@ -96,19 +110,16 @@ const headingVariants: Variant[] = ['displayLg', 'headlineMd', 'headlineSm'];
 export function textStyle(
   variant: Variant,
   lang: Lang,
-  teluguFonts?: { heading?: string; body?: string },
+  fontOverrides?: { heading?: string; body?: string },
 ): TextStyleSpec {
-  if (lang === 'te') {
-    const spec = telugu[variant];
-    if (teluguFonts) {
-      if (headingVariants.includes(variant) && teluguFonts.heading) {
-        return { ...spec, fontFamily: teluguFonts.heading };
-      }
-      if (!headingVariants.includes(variant) && teluguFonts.body) {
-        return { ...spec, fontFamily: teluguFonts.body };
-      }
+  const spec = lang === 'te' ? telugu[variant] : latin[variant];
+  if (fontOverrides) {
+    if (headingVariants.includes(variant) && fontOverrides.heading) {
+      return { ...spec, fontFamily: fontOverrides.heading };
     }
-    return spec;
+    if (!headingVariants.includes(variant) && fontOverrides.body) {
+      return { ...spec, fontFamily: fontOverrides.body };
+    }
   }
-  return latin[variant];
+  return spec;
 }

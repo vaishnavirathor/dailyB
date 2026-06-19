@@ -1,5 +1,5 @@
-import { Stack, useLocalSearchParams, useRouter } from 'expo-router';
-import { useMemo, useState } from 'react';
+import { Stack, useFocusEffect, useLocalSearchParams, usePathname, useRouter } from 'expo-router';
+import { useCallback, useMemo, useState } from 'react';
 import { Pressable, TextInput, View } from 'react-native';
 
 import { bibleBook, bookText, type BibleVersion } from '@/bible/books';
@@ -7,7 +7,8 @@ import { Screen } from '@/components/screen';
 import { ScreenHeader } from '@/components/screen-header';
 import { ThemedText } from '@/components/themed-text';
 import { t } from '@/i18n';
-import { useLanguage } from '@/stores/settings';
+import { useBibleNav } from '@/stores/bible-navigation';
+import { useLanguage, useSettings } from '@/stores/settings';
 import { colors, radius, spacing, textStyle } from '@/theme';
 
 interface SearchHit {
@@ -21,8 +22,20 @@ export default function BookScreen() {
   const { book: bookId, v } = useLocalSearchParams<{ book: string; v?: string }>();
   const router = useRouter();
   const lang = useLanguage();
+  const englishHeadingFont = useSettings((s) => s.englishHeadingFont);
+  const englishBodyFont = useSettings((s) => s.englishBodyFont);
   const [query, setQuery] = useState('');
+  const pathname = usePathname();
   const book = bibleBook(bookId);
+
+  useFocusEffect(
+    useCallback(() => {
+      useBibleNav.getState().setBibleSession(pathname);
+      return () => {
+        useBibleNav.getState().clearBibleSession();
+      };
+    }, [pathname]),
+  );
   // Edition travels as ?v= (defaults to the Telugu OV).
   const version: BibleVersion = v === 'en-kjv' ? 'en-kjv' : 'te-ov';
 
@@ -51,13 +64,18 @@ export default function BookScreen() {
     );
   }
 
-  const inputStyle = textStyle('bodyMd', lang);
+  const isEnglish = lang === 'en';
+  const fontOverrides = isEnglish
+    ? { heading: englishHeadingFont, body: englishBodyFont }
+    : undefined;
+  const inputStyle = textStyle('bodyMd', lang, fontOverrides);
 
   return (
     <>
-      <Stack.Screen options={{ headerShown: false }} />
+      <Stack.Screen options={{ headerShown: false, gestureEnabled: true }} />
       <Screen gap={spacing.stackMd}>
         <ScreenHeader
+          back
           eyebrow={t('tabBible', lang)}
           title={book.name[lang]}
           subtitle={`${book.name[lang === 'te' ? 'en' : 'te']} · ${book.chapters} ${t('chaptersWord', lang)}`}

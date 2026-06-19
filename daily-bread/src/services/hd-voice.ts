@@ -66,8 +66,8 @@ const AZURE_VOICES: Record<Lang, Record<'female' | 'male', string>> = {
 };
 
 const SARVAM_SPEAKERS: Record<'female' | 'male', string> = {
-  female: 'anushka',
-  male: 'abhilash',
+  female: 'tanya',
+  male: 'gokul',
 };
 
 function xmlEscape(text: string): string {
@@ -115,8 +115,11 @@ async function devSynthesize(
           inputs: [text],
           target_language_code: lang === 'te' ? 'te-IN' : 'en-IN',
           speaker: SARVAM_SPEAKERS[gender],
-          model: 'bulbul:v2',
+          model: 'bulbul:v3',
+          pace: 0.99,
           speech_sample_rate: 22050,
+          output_audio_codec: 'mp3',
+          enable_preprocessing: true,
         }),
       });
       if (!response.ok) {
@@ -153,7 +156,7 @@ export async function getHdAudioFile(text: string, lang: Lang): Promise<File | n
       Crypto.CryptoDigestAlgorithm.SHA256,
       `${provider}:${gender}:${lang}:${text}`,
     );
-    const ext = provider === 'sarvam' ? 'wav' : 'mp3';
+    const ext = 'mp3';
     const file = new File(cacheDir(), `${hash.slice(0, 40)}.${ext}`);
     if (file.exists && (file.size ?? 0) > 0) {
       return file;
@@ -195,6 +198,11 @@ export function stopHdPlayback(): void {
   if (currentPlayer) {
     try {
       currentPlayer.remove();
+    } catch {
+      // already removed
+    }
+    try {
+      currentPlayer.release();
     } catch {
       // already released
     }

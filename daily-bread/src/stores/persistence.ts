@@ -29,6 +29,8 @@ export async function initSettingsPersistence(): Promise<void> {
       hdProvider: state.hdProvider,
       teluguHeadingFont: state.teluguHeadingFont,
       teluguBodyFont: state.teluguBodyFont,
+      englishHeadingFont: state.englishHeadingFont,
+      englishBodyFont: state.englishBodyFont,
     });
 
     const next = notifSlice(state);

@@ -12,19 +12,43 @@ import type { Lang } from '@/theme';
  * reachable, device TTS otherwise — callers never know the difference.
  */
 
+let speakGeneration = 0;
+let stopCallbacks: (() => void)[] = [];
+
+export function onStopAllVoice(cb: () => void): () => void {
+  stopCallbacks.push(cb);
+  return () => {
+    stopCallbacks = stopCallbacks.filter((c) => c !== cb);
+  };
+}
+
+export function stopAllVoice(): void {
+  speakGeneration++;
+  stopCallbacks.forEach((cb) => cb());
+  stopHdPlayback();
+  void stopSpeaking();
+}
+
 export async function smartSpeak(
   text: string,
   lang: Lang,
   handlers: SpeakHandlers = {},
 ): Promise<void> {
+  const gen = ++speakGeneration;
   if (hdVoiceConfigured()) {
     const file = await getHdAudioFile(text, lang);
+    if (gen !== speakGeneration) return;
     if (file) {
       await stopSpeaking();
-      await playHdFile(file, () => handlers.onDone?.());
+      if (gen !== speakGeneration) return;
+      await playHdFile(file, () => {
+        if (gen !== speakGeneration) return;
+        handlers.onDone?.();
+      });
       return;
     }
   }
+  if (gen !== speakGeneration) return;
   await speak(text, lang, handlers);
 }
 
@@ -92,7 +116,4 @@ export function smartSequence(
   };
 }
 
-export function stopAllVoice(): void {
-  stopHdPlayback();
-  void stopSpeaking();
-}
+

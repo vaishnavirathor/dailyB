@@ -38,6 +38,8 @@ export interface PersistedSettings {
   hdProvider: 'azure' | 'sarvam' | 'elevenlabs';
   teluguHeadingFont: string;
   teluguBodyFont: string;
+  englishHeadingFont: string;
+  englishBodyFont: string;
 }
 
 export async function loadSettings(): Promise<Partial<PersistedSettings>> {

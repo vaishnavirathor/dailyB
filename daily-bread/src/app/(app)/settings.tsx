@@ -1,8 +1,9 @@
 import DateTimePicker from '@react-native-community/datetimepicker';
 import { useEffect, useState } from 'react';
-import { Pressable, Switch, View } from 'react-native';
+import { Pressable, ScrollView, Switch, View } from 'react-native';
 
 import { Card } from '@/components/card';
+import { GearIcon, PlayIcon, TypeIcon } from '@/components/icons';
 import { Screen } from '@/components/screen';
 import { ScreenHeader } from '@/components/screen-header';
 import { ThemedText } from '@/components/themed-text';
@@ -19,7 +20,7 @@ import {
   type Tradition,
   type VoiceGender,
 } from '@/stores/settings';
-import { colors, radius, spacing, teluguFontMap, type Lang } from '@/theme';
+import { colors, radius, spacing, teluguFontMap, englishHeadingFontMap, englishBodyFontMap, type Lang } from '@/theme';
 
 export default function SettingsScreen() {
   const lang = useLanguage();
@@ -32,8 +33,6 @@ export default function SettingsScreen() {
     void isTtsAvailable(lang).then(setTtsOk);
   }, [lang]);
 
-  // Setting store values is enough — the persistence bridge reconciles
-  // scheduled notifications whenever reminder-relevant fields change.
   const toggleReminder = async (enabled: boolean) => {
     if (enabled) {
       const granted = await requestNotificationPermission();
@@ -56,8 +55,8 @@ export default function SettingsScreen() {
     <Screen gap={spacing.stackMd}>
       <ScreenHeader menu eyebrow={t('sectionApp', lang)} title={t('settings', lang)} />
 
-      <Card padding={0}>
-        {/* Language */}
+      {/* General */}
+      <SectionCard icon={GearIcon} title="General">
         <Row label={t('language', lang)}>
           <Segmented
             options={[
@@ -69,7 +68,6 @@ export default function SettingsScreen() {
           />
         </Row>
 
-        {/* Reminder */}
         {!isWeb ? (
           <>
             <Row label={t('reminder', lang)} divider>
@@ -113,7 +111,6 @@ export default function SettingsScreen() {
           </>
         ) : null}
 
-        {/* Text size */}
         <Row label={t('textSize', lang)} divider>
           <Segmented
             options={fontScales.map((f) => ({ id: f.id, label: f.label }))}
@@ -122,7 +119,6 @@ export default function SettingsScreen() {
           />
         </Row>
 
-        {/* Once-a-day full-screen promise curtain (opt-in) */}
         <Row label={t('curtainSetting', lang)} divider>
           <Switch
             value={settings.curtainEnabled}
@@ -132,7 +128,6 @@ export default function SettingsScreen() {
           />
         </Row>
 
-        {/* Tradition — switches calendar layer, seasons, feasts, reminders */}
         <Row label={t('tradition', lang)} divider>
           <Segmented
             options={[
@@ -144,48 +139,42 @@ export default function SettingsScreen() {
             onChange={(v) => settings.setTradition(v as Tradition)}
           />
         </Row>
-      </Card>
+      </SectionCard>
 
-      {/* Telugu fonts — pick heading + body face */}
-      <ThemedText
-        variant="labelMd"
-        color="onSurfaceVariant"
-        style={{ textTransform: 'uppercase', letterSpacing: 2.1 }}
-      >
-        Telugu Fonts
-      </ThemedText>
-      <Card padding={0}>
-        <FontRow
-          label="Heading"
-          options={Object.entries(teluguFontMap).map(([key, f]) => ({
-            key,
-            label: f.label,
-            family: f.family,
-          }))}
-          selected={settings.teluguHeadingFont}
-          onSelect={(family) => settings.setTeluguHeadingFont(family)}
-        />
-        <FontRow
-          label="Body"
-          options={Object.entries(teluguFontMap).map(([key, f]) => ({
-            key,
-            label: f.label,
-            family: f.family,
-          }))}
-          selected={settings.teluguBodyFont}
-          onSelect={(family) => settings.setTeluguBodyFont(family)}
-        />
-      </Card>
+      {/* Appearance */}
+      <SectionCard icon={TypeIcon} title="Typography">
+        <Row label="Telugu heading">
+          <FontPicker
+            options={Object.entries(teluguFontMap).map(([key, f]) => ({ key, label: f.label, family: f.family }))}
+            selected={settings.teluguHeadingFont}
+            onSelect={(family) => settings.setTeluguHeadingFont(family)}
+          />
+        </Row>
+        <Row label="Telugu body" divider>
+          <FontPicker
+            options={Object.entries(teluguFontMap).map(([key, f]) => ({ key, label: f.label, family: f.family }))}
+            selected={settings.teluguBodyFont}
+            onSelect={(family) => settings.setTeluguBodyFont(family)}
+          />
+        </Row>
+        <Row label="English heading" divider>
+          <FontPicker
+            options={Object.entries(englishHeadingFontMap).map(([key, f]) => ({ key, label: f.label, family: f.family }))}
+            selected={settings.englishHeadingFont}
+            onSelect={(family) => settings.setEnglishHeadingFont(family)}
+          />
+        </Row>
+        <Row label="English body" divider>
+          <FontPicker
+            options={Object.entries(englishBodyFontMap).map(([key, f]) => ({ key, label: f.label, family: f.family }))}
+            selected={settings.englishBodyFont}
+            onSelect={(family) => settings.setEnglishBodyFont(family)}
+          />
+        </Row>
+      </SectionCard>
 
-      {/* Read-aloud voice — the pastor voice */}
-      <ThemedText
-        variant="labelMd"
-        color="onSurfaceVariant"
-        style={{ textTransform: 'uppercase', letterSpacing: 2.1 }}
-      >
-        {t('readAloudSection', lang)}
-      </ThemedText>
-      <Card padding={0}>
+      {/* Voice */}
+      <SectionCard icon={PlayIcon} title={t('readAloudSection', lang)}>
         <Row label={t('readAloudSection', lang)}>
           <Segmented
             options={[
@@ -197,7 +186,7 @@ export default function SettingsScreen() {
             onChange={(v) => settings.setTtsGender(v as VoiceGender)}
           />
         </Row>
-        {/* HD neural voice — needs the backend + provider key */}
+
         <Row label={t('hdVoice', lang)} divider>
           <Switch
             value={settings.hdVoiceEnabled}
@@ -252,9 +241,7 @@ export default function SettingsScreen() {
                   paddingHorizontal: 14,
                 }}
               >
-                <ThemedText variant="labelMd" color="secondary">
-                  ▶ HD
-                </ThemedText>
+                <ThemedText variant="labelMd" color="secondary">▶ HD</ThemedText>
               </Pressable>
             </View>
           </>
@@ -265,9 +252,8 @@ export default function SettingsScreen() {
         <ExpandRow label={t('englishVoice', lang)}>
           <VoicePicker forLang="en" />
         </ExpandRow>
-      </Card>
+      </SectionCard>
 
-      {/* TTS hint — only when Telugu voice is missing on this device */}
       {!ttsOk && lang === 'te' && !isWeb ? (
         <Card tone="cream" padding={spacing.gutter}>
           <ThemedText variant="bodySm" color="onSurfaceVariant">
@@ -279,30 +265,43 @@ export default function SettingsScreen() {
   );
 }
 
-/** Collapsible settings row — expands to reveal the voice list. */
-function ExpandRow({ label, children }: { label: string; children: React.ReactNode }) {
-  const [open, setOpen] = useState(false);
+/** Section card with an icon header. */
+function SectionCard({
+  icon: Icon,
+  title,
+  children,
+}: {
+  icon: React.ComponentType<{ size?: number; color?: string }>;
+  title: string;
+  children: React.ReactNode;
+}) {
+  const [open, setOpen] = useState(true);
   return (
-    <View style={{ borderTopWidth: 1, borderTopColor: colors.surfaceContainerHigh }}>
+    <Card padding={0} style={{ overflow: 'hidden' }}>
       <Pressable
         accessibilityRole="button"
         onPress={() => setOpen((v) => !v)}
         style={{
           flexDirection: 'row',
           alignItems: 'center',
-          justifyContent: 'space-between',
-          padding: spacing.gutter,
+          gap: spacing.stackSm,
+          paddingHorizontal: spacing.gutter,
+          paddingVertical: spacing.stackSm,
+          backgroundColor: colors.surfaceContainerLow,
         }}
       >
-        <ThemedText variant="bodyMd" color="primary">
-          {label}
-        </ThemedText>
+        <Icon size={16} color={colors.navyMuted} />
+        <View style={{ flex: 1 }}>
+          <ThemedText variant="labelMd" color="primary" style={{ fontWeight: '600' }}>
+            {title}
+          </ThemedText>
+        </View>
         <ThemedText variant="labelMd" color="onSurfaceVariant">
-          {open ? '▴' : '▾'}
+          {open ? '▾' : '▸'}
         </ThemedText>
       </Pressable>
-      {open ? children : null}
-    </View>
+      {open ? <View style={{ paddingBottom: spacing.stackSm }}>{children}</View> : null}
+    </Card>
   );
 }
 
@@ -327,10 +326,14 @@ function Row({
         borderTopColor: colors.surfaceContainerHigh,
       }}
     >
-      <ThemedText variant="bodyMd" color="primary">
-        {label}
-      </ThemedText>
-      {children}
+      {label ? (
+        <ThemedText variant="bodySm" color="onSurfaceVariant" style={{ flexShrink: 0, minWidth: 80 }}>
+          {label}
+        </ThemedText>
+      ) : null}
+      <View style={{ flex: 1, alignItems: 'flex-end' }}>
+        {children}
+      </View>
     </View>
   );
 }
@@ -368,12 +371,11 @@ function Segmented({
               borderRadius: radius.base - 2,
               borderCurve: 'continuous',
               backgroundColor: active ? colors.surfaceContainerLowest : 'transparent',
-              boxShadow: active ? '0 1px 2px rgba(3,22,50,0.08)' : undefined,
             }}
           >
             <ThemedText
-              variant="labelMd"
-              style={{ color: active ? colors.primary : colors.onSurfaceVariant }}
+              variant="labelSm"
+              style={{ color: active ? colors.primary : colors.onSurfaceVariant, fontWeight: active ? '600' : '400' }}
             >
               {option.label}
             </ThemedText>
@@ -389,60 +391,75 @@ function formatTime(hour: number, minute: number): string {
   return `${h12}:${String(minute).padStart(2, '0')} ${hour < 12 ? 'AM' : 'PM'}`;
 }
 
-function FontRow({
-  label,
+/** Horizontal-scrolling font pill picker — never wraps. */
+function FontPicker({
   options,
   selected,
   onSelect,
 }: {
-  label: string;
   options: { key: string; label: string; family: string }[];
   selected: string;
   onSelect: (family: string) => void;
 }) {
   return (
-    <View
-      style={{
-        flexDirection: 'row',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        gap: spacing.gutter,
-        padding: spacing.gutter,
-        borderTopWidth: 1,
-        borderTopColor: colors.surfaceContainerHigh,
-      }}
+    <ScrollView
+      horizontal
+      showsHorizontalScrollIndicator={false}
+      contentContainerStyle={{ gap: 6 }}
+      style={{ maxWidth: 220 }}
     >
-      <ThemedText variant="bodyMd" color="primary">
-        {label}
-      </ThemedText>
-      <View style={{ flexDirection: 'row', gap: 6, flexWrap: 'wrap' }}>
-        {options.map((opt) => {
-          const active = opt.family === selected;
-          return (
-            <Pressable
-              key={opt.key}
-              accessibilityRole="button"
-              onPress={() => onSelect(opt.family)}
+      {options.map((opt) => {
+        const active = opt.family === selected;
+        return (
+          <Pressable
+            key={opt.key}
+            accessibilityRole="button"
+            onPress={() => onSelect(opt.family)}
+            style={{
+              paddingVertical: 4,
+              paddingHorizontal: 10,
+              borderRadius: radius.full,
+              backgroundColor: active ? colors.sage : colors.surfaceContainer,
+            }}
+          >
+            <ThemedText
+              variant="labelSm"
               style={{
-                paddingVertical: 5,
-                paddingHorizontal: 10,
-                borderRadius: radius.full,
-                backgroundColor: active ? colors.sage : colors.surfaceContainer,
+                color: active ? '#ffffff' : colors.onSurfaceVariant,
+                fontWeight: active ? '600' : '400',
               }}
             >
-              <ThemedText
-                variant="labelSm"
-                style={{
-                  color: active ? '#ffffff' : colors.onSurfaceVariant,
-                  fontWeight: active ? '600' : '400',
-                }}
-              >
-                {opt.label}
-              </ThemedText>
-            </Pressable>
-          );
-        })}
-      </View>
+              {opt.label}
+            </ThemedText>
+          </Pressable>
+        );
+      })}
+    </ScrollView>
+  );
+}
+
+function ExpandRow({ label, children }: { label: string; children: React.ReactNode }) {
+  const [open, setOpen] = useState(false);
+  return (
+    <View style={{ borderTopWidth: 1, borderTopColor: colors.surfaceContainerHigh }}>
+      <Pressable
+        accessibilityRole="button"
+        onPress={() => setOpen((v) => !v)}
+        style={{
+          flexDirection: 'row',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          padding: spacing.gutter,
+        }}
+      >
+        <ThemedText variant="bodyMd" color="primary">
+          {label}
+        </ThemedText>
+        <ThemedText variant="labelMd" color="onSurfaceVariant">
+          {open ? '▴' : '▾'}
+        </ThemedText>
+      </Pressable>
+      {open ? <View style={{ paddingHorizontal: spacing.gutter, paddingBottom: spacing.stackSm }}>{children}</View> : null}
     </View>
   );
 }

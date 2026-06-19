@@ -31,6 +31,8 @@ export default function MassTimesScreen() {
   const router = useRouter();
   const lang = useLanguage();
   const tradition = useSettings((s) => s.tradition);
+  const englishHeadingFont = useSettings((s) => s.englishHeadingFont);
+  const englishBodyFont = useSettings((s) => s.englishBodyFont);
   const [query, setQuery] = useState('');
   const [parishes, setParishes] = useState<Parish[] | null>(null);
   const [failed, setFailed] = useState(false);
@@ -83,7 +85,11 @@ export default function MassTimesScreen() {
     }
   };
 
-  const inputStyle = textStyle('bodyMd', lang);
+  const isEnglish = lang === 'en';
+  const fontOverrides = isEnglish
+    ? { heading: englishHeadingFont, body: englishBodyFont }
+    : undefined;
+  const inputStyle = textStyle('bodyMd', lang, fontOverrides);
   const inputBase = {
     fontFamily: inputStyle.fontFamily,
     fontSize: inputStyle.fontSize,

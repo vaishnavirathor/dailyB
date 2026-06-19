@@ -32,8 +32,8 @@ const AZURE_VOICES: Record<Lang, Record<Gender, string>> = {
 };
 
 const SARVAM_SPEAKERS: Record<Lang, Record<Gender, string>> = {
-  te: { female: 'anushka', male: 'abhilash' },
-  en: { female: 'anushka', male: 'abhilash' },
+  te: { female: 'tanya', male: 'gokul' },
+  en: { female: 'tanya', male: 'gokul' },
 };
 
 async function sha256Hex(input: string): Promise<string> {
@@ -86,8 +86,11 @@ async function synthSarvam(text: string, lang: Lang, gender: Gender): Promise<Ui
       inputs: [text],
       target_language_code: lang === 'te' ? 'te-IN' : 'en-IN',
       speaker: SARVAM_SPEAKERS[lang][gender],
-      model: 'bulbul:v2',
+      model: 'bulbul:v3',
+      pace: 0.99,
       speech_sample_rate: 22050,
+      output_audio_codec: 'mp3',
+      enable_preprocessing: true,
     }),
   });
   if (!response.ok) {
@@ -145,7 +148,7 @@ Deno.serve(async (request) => {
     );
 
     // Global cache: each utterance is synthesized exactly once.
-    const ext = chosenProvider === 'sarvam' ? 'wav' : 'mp3';
+    const ext = 'mp3';
     const hash = await sha256Hex(`${chosenProvider}:${chosenGender}:${lang}:${text}`);
     const path = `${chosenProvider}/${lang}/${hash}.${ext}`;
     const publicUrl = supabase.storage.from(BUCKET).getPublicUrl(path).data.publicUrl;

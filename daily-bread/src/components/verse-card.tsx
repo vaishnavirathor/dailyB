@@ -1,4 +1,3 @@
-import { LinearGradient } from 'expo-linear-gradient';
 import type { ReactNode } from 'react';
 import { View } from 'react-native';
 
@@ -10,53 +9,45 @@ export interface VerseCardProps {
   text: string;
   reference: string;
   lang: Lang;
-  /** 'sage' = Verse of the Day · 'gold' = the Daily Promise variant. */
   accent?: 'sage' | 'gold';
-  /** Action row rendered under the reference (listen / share controls). */
+  favorite?: ReactNode;
   children?: ReactNode;
 }
 
-const gradients = {
-  sage: ['rgba(90,96,67,0.13)', '#ffffff'] as const,
-  gold: ['rgba(168,128,31,0.15)', '#fffdf6'] as const,
-};
-
-/**
- * The centerpiece component: scripture floating gently above the surface.
- * Sage→warm-white gradient (image-free variant), hairline border, 24px
- * radius, and the system's single diffused shadow.
- */
-export function VerseCard({ kicker, text, reference, lang, accent = 'sage', children }: VerseCardProps) {
+export function VerseCard({ kicker, text, reference, lang, accent = 'sage', favorite, children }: VerseCardProps) {
   const isTelugu = lang === 'te';
+  const accentColor = accent === 'gold' ? colors.gold : colors.sage;
+  const border = accent === 'gold' ? 'rgba(168,128,31,0.2)' : 'rgba(90,96,67,0.12)';
   return (
-    <LinearGradient
-      colors={gradients[accent]}
-      locations={[0, 0.7]}
-      start={{ x: 0.1, y: 0 }}
-      end={{ x: 0.7, y: 1 }}
+    <View
       style={{
+        backgroundColor: colors.surfaceContainerLowest,
         borderRadius: radius.xl,
         borderCurve: 'continuous',
         borderWidth: 1,
-        borderColor: accent === 'gold' ? 'rgba(168,128,31,0.25)' : colors.outlineVariant,
-        paddingVertical: spacing.stackMd + 12,
-        paddingHorizontal: spacing.stackMd + 4,
+        borderColor: border,
+        padding: spacing.stackMd + 8,
+        gap: spacing.stackSm,
         boxShadow: shadows.verse,
-        backgroundColor: colors.surfaceContainerLowest,
-        gap: spacing.stackSm + 8,
       }}
     >
+      <View style={{ flexDirection: 'row', alignItems: 'flex-start' }}>
+        <View
+          style={{
+            width: 32,
+            height: 2.5,
+            borderRadius: radius.full,
+            backgroundColor: accentColor,
+            marginTop: 6,
+          }}
+        />
+        <View style={{ flex: 1 }} />
+        {favorite}
+      </View>
       <ThemedText
-        selectable={false}
-        style={{
-          fontFamily: fonts.serifSemiBold,
-          fontSize: 11,
-          lineHeight: 16,
-          letterSpacing: 3.2,
-          textTransform: 'uppercase',
-          color: colors.secondary,
-          textAlign: 'center',
-        }}
+        variant="labelMd"
+        color="onSurfaceVariant"
+        style={{ letterSpacing: 2, textTransform: 'uppercase' }}
       >
         {kicker}
       </ThemedText>
@@ -70,13 +61,12 @@ export function VerseCard({ kicker, text, reference, lang, accent = 'sage', chil
           color: colors.primary,
         }}
       >
-        {isTelugu ? text : `“${text}”`}
+        {isTelugu ? text : `\u201c${text}\u201d`}
       </ThemedText>
       <ThemedText
-        variant="labelMd"
-        align="center"
+        variant="labelSm"
         color="onSurfaceVariant"
-        style={{ letterSpacing: 2.1, textTransform: 'uppercase' }}
+        style={{ letterSpacing: 1.8, textTransform: 'uppercase', textAlign: 'right' }}
       >
         {reference}
       </ThemedText>
@@ -84,15 +74,14 @@ export function VerseCard({ kicker, text, reference, lang, accent = 'sage', chil
         <View
           style={{
             flexDirection: 'row',
-            justifyContent: 'center',
+            justifyContent: 'space-between',
             alignItems: 'center',
-            gap: spacing.stackMd,
-            marginTop: 2,
+            marginTop: spacing.stackSm - 4,
           }}
         >
           {children}
         </View>
       ) : null}
-    </LinearGradient>
+    </View>
   );
 }

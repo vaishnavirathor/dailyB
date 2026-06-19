@@ -31,6 +31,8 @@ export interface SettingsState {
   /** User-chosen Telugu fonts — stored as font family strings. */
   teluguHeadingFont: string;
   teluguBodyFont: string;
+  englishHeadingFont: string;
+  englishBodyFont: string;
   /** True once persisted settings have been loaded at startup. */
   hydrated: boolean;
   /** Gate for the (onboarding) ↔ (tabs) protected routes. */
@@ -47,6 +49,8 @@ export interface SettingsState {
   setHdProvider: (provider: HdVoiceProvider) => void;
   setTeluguHeadingFont: (font: string) => void;
   setTeluguBodyFont: (font: string) => void;
+  setEnglishHeadingFont: (font: string) => void;
+  setEnglishBodyFont: (font: string) => void;
   completeOnboarding: () => void;
   hydrate: (partial: Partial<SettingsState>) => void;
 }
@@ -72,6 +76,8 @@ export const useSettings = create<SettingsState>((set) => ({
   hdProvider: 'azure',
   teluguHeadingFont: 'Suranna_400Regular',
   teluguBodyFont: 'NTR_400Regular',
+  englishHeadingFont: 'PlayfairDisplay_600SemiBold',
+  englishBodyFont: 'SourceSerif4_400Regular',
   hydrated: false,
   onboarded: false,
   setLanguage: (language) => set({ language }),
@@ -87,6 +93,8 @@ export const useSettings = create<SettingsState>((set) => ({
   setHdProvider: (hdProvider) => set({ hdProvider }),
   setTeluguHeadingFont: (teluguHeadingFont) => set({ teluguHeadingFont }),
   setTeluguBodyFont: (teluguBodyFont) => set({ teluguBodyFont }),
+  setEnglishHeadingFont: (englishHeadingFont) => set({ englishHeadingFont }),
+  setEnglishBodyFont: (englishBodyFont) => set({ englishBodyFont }),
   completeOnboarding: () => set({ onboarded: true }),
   hydrate: (partial) => set({ ...partial, hydrated: true }),
 }));

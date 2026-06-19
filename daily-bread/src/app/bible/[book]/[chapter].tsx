@@ -1,6 +1,6 @@
-import { Stack, useFocusEffect, useLocalSearchParams, useRouter } from 'expo-router';
+import { Stack, useFocusEffect, useLocalSearchParams, usePathname, useRouter } from 'expo-router';
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { Pressable, ScrollView, View, useWindowDimensions } from 'react-native';
+import { ActivityIndicator, Pressable, ScrollView, View, useWindowDimensions } from 'react-native';
 import { Gesture, GestureDetector } from 'react-native-gesture-handler';
 import { LinearGradient } from 'expo-linear-gradient';
 import Animated, {
@@ -13,6 +13,7 @@ import { scheduleOnRN } from 'react-native-worklets';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { bibleBook, bookText, type BibleBook, type BibleVersion } from '@/bible/books';
+import { BackButton } from '@/components/back-button';
 import { BookmarkIcon, ChevronLeftIcon, ChevronRightIcon, PlayIcon, StopIcon } from '@/components/icons';
 import { ThemedText } from '@/components/themed-text';
 import {
@@ -27,6 +28,7 @@ import { setLastRead } from '@/data/kv';
 import { isTtsAvailable } from '@/services/tts';
 import { smartSequence } from '@/services/voice';
 import { t } from '@/i18n';
+import { useBibleNav } from '@/stores/bible-navigation';
 import { fontScaleFactor, useLanguage, useSettings } from '@/stores/settings';
 import { colors, fonts, radius, spacing } from '@/theme';
 
@@ -66,6 +68,7 @@ export default function ChapterScreen() {
 
   const version: BibleVersion = v === 'en-kjv' ? 'en-kjv' : 'te-ov';
   const book = bibleBook(bookId);
+  const pathname = usePathname();
 
   // The committed chapter lives in state; page turns never navigate.
   const [chapter, setChapter] = useState(() => Number(chapterParam) || 0);
@@ -75,6 +78,8 @@ export default function ChapterScreen() {
 
   // Read-aloud: which verse the voice is on, and how to stop it.
   const [readingIndex, setReadingIndex] = useState<number | null>(null);
+  const [playFromIndex, setPlayFromIndex] = useState<number | null>(null);
+  const [audioLoading, setAudioLoading] = useState(false);
   const [ttsOk, setTtsOk] = useState(false);
   const stopReadingRef = useRef<(() => void) | null>(null);
 
@@ -82,6 +87,8 @@ export default function ChapterScreen() {
     stopReadingRef.current?.();
     stopReadingRef.current = null;
     setReadingIndex(null);
+    setPlayFromIndex(null);
+    setAudioLoading(false);
   }, []);
 
   // Gesture-driven turn progress (0 flat → 1 fully turned).
@@ -108,9 +115,18 @@ export default function ChapterScreen() {
       });
       return () => {
         active = false;
-        stopReading(); // leaving the screen silences the voice
+        stopReading();
       };
     }, [version, bookId, chapter, stopReading]),
+  );
+
+  useFocusEffect(
+    useCallback(() => {
+      useBibleNav.getState().setBibleSession(pathname);
+      return () => {
+        useBibleNav.getState().clearBibleSession();
+      };
+    }, [pathname]),
   );
 
   // A turn starting (gesture or button) silences the voice. The ref is
@@ -124,6 +140,7 @@ export default function ChapterScreen() {
 
   const beginTurn = useCallback((dir: 1 | -1, target: number) => {
     setReadingIndex(null);
+    setPlayFromIndex(null);
     setPending({ dir, chapter: target });
   }, []);
 
@@ -180,14 +197,14 @@ export default function ChapterScreen() {
       }
       const flick =
         dirSV.get() === 1 ? event.velocityX < -800 : event.velocityX > 800;
-      if (turn.get() > 0.42 || flick) {
+      if (turn.get() > 0.38 || flick) {
         turn.set(
           withSpring(
             1,
             {
-              damping: 16,
-              stiffness: 110,
-              mass: 0.7,
+              damping: 18,
+              stiffness: 95,
+              mass: 0.65,
               velocity: Math.abs(event.velocityX) / (screenWidth * 0.9),
               overshootClamping: true,
             },
@@ -200,7 +217,7 @@ export default function ChapterScreen() {
         );
       } else {
         turn.set(
-          withSpring(0, { damping: 15, stiffness: 160 }, (done) => {
+          withSpring(0, { damping: 20, stiffness: 200 }, (done) => {
             if (done) {
               scheduleOnRN(cancelTurn);
             }
@@ -266,14 +283,22 @@ export default function ChapterScreen() {
   const baseChapter = pending ? (pending.dir === 1 ? pending.chapter : chapter) : chapter;
 
   const playChapter = () => {
-    if (readingIndex !== null) {
+    if (readingIndex !== null || audioLoading) {
       stopReading();
       return;
     }
     const verses = bookText(version, book.id)[chapter] ?? [];
-    stopReadingRef.current = smartSequence(verses, version === 'en-kjv' ? 'en' : 'te', {
-      onIndex: setReadingIndex,
-      onDone: () => setReadingIndex(null),
+    const startFrom = playFromIndex ?? 0;
+    setAudioLoading(true);
+    stopReadingRef.current = smartSequence(verses.slice(startFrom), version === 'en-kjv' ? 'en' : 'te', {
+      onIndex: (relativeIndex) => {
+        setAudioLoading(false);
+        setReadingIndex(startFrom + relativeIndex);
+      },
+      onDone: () => {
+        setReadingIndex(null);
+        setAudioLoading(false);
+      },
     });
   };
 
@@ -281,12 +306,13 @@ export default function ChapterScreen() {
     if (!canTurn(dir) || pending) {
       return;
     }
-    setReadingIndex(null); // the pending-watcher effect stops the voice
+    setReadingIndex(null);
+    setPlayFromIndex(null);
     dirSV.set(dir);
     turning.set(1);
     setPending({ dir, chapter: chapter + dir });
     turn.set(
-      withSpring(1, { damping: 16, stiffness: 90, mass: 0.8, overshootClamping: true }, (done) => {
+      withSpring(1, { damping: 18, stiffness: 80, mass: 0.7, overshootClamping: true }, (done) => {
         if (done) {
           scheduleOnRN(commitTurn);
         }
@@ -295,6 +321,7 @@ export default function ChapterScreen() {
   };
 
   const tapVerse = async (index: number) => {
+    setPlayFromIndex(index);
     const color = await cycleHighlight(version, book.id, chapter, index);
     setMarks((previous) => {
       const next = new Map(previous);
@@ -309,7 +336,7 @@ export default function ChapterScreen() {
 
   return (
     <>
-      <Stack.Screen options={{ headerShown: false }} />
+      <Stack.Screen options={{ headerShown: false, gestureEnabled: true }} />
       <View style={{ flex: 1, backgroundColor: '#efeadd' }}>
         {/* Fixed chrome above the turning page — back · title · bookmark */}
         <View
@@ -322,9 +349,7 @@ export default function ChapterScreen() {
             gap: spacing.gutter,
           }}
         >
-          <Pressable accessibilityRole="button" hitSlop={12} onPress={() => router.back()}>
-            <ChevronLeftIcon color={colors.primary} />
-          </Pressable>
+          <BackButton />
           <View style={{ flex: 1, alignItems: 'center', gap: 1 }}>
             <ThemedText
               variant="labelMd"
@@ -390,6 +415,7 @@ export default function ChapterScreen() {
                 scale={scale}
                 marks={leafChapter === chapter ? marks : undefined}
                 readingIndex={leafChapter === chapter ? readingIndex : null}
+                playFromIndex={leafChapter === chapter ? playFromIndex : null}
                 hint={`${t('pageTurnHint', lang)} · ${t('tapVerseHint', lang)}`}
                 onTapVerse={pending ? undefined : tapVerse}
                 onLongPressVerse={
@@ -449,22 +475,32 @@ export default function ChapterScreen() {
             {ttsOk ? (
               <Pressable
                 accessibilityRole="button"
-                accessibilityLabel={t('readChapter', lang)}
+                accessibilityLabel={readingIndex !== null ? t('stop', lang) : t('readChapter', lang)}
                 onPress={playChapter}
                 style={{
-                  width: 38,
-                  height: 38,
-                  borderRadius: radius.full,
-                  backgroundColor: readingIndex !== null ? colors.sage : 'rgba(168,128,31,0.12)',
+                  flexDirection: 'row',
                   alignItems: 'center',
-                  justifyContent: 'center',
+                  gap: 6,
+                  paddingHorizontal: 12,
+                  height: 34,
+                  borderRadius: radius.full,
+                  backgroundColor: readingIndex !== null ? colors.sage : audioLoading ? 'rgba(168,128,31,0.20)' : 'rgba(168,128,31,0.12)',
                 }}
               >
-                {readingIndex !== null ? (
-                  <StopIcon size={16} color={colors.onPrimary} />
+                {audioLoading ? (
+                  <ActivityIndicator size={14} color={colors.secondary} />
+                ) : readingIndex !== null ? (
+                  <StopIcon size={14} color={colors.onPrimary} />
                 ) : (
-                  <PlayIcon size={16} color={colors.secondary} />
+                  <PlayIcon size={14} color={colors.secondary} />
                 )}
+                <ThemedText
+                  variant="labelSm"
+                  color={readingIndex !== null ? 'onPrimary' : 'secondary'}
+                  style={{ letterSpacing: 1 }}
+                >
+                  {audioLoading ? t('listen', lang) : readingIndex !== null ? t('stop', lang) : t('listen', lang)}
+                </ThemedText>
               </Pressable>
             ) : null}
             <ThemedText
@@ -498,6 +534,7 @@ function ChapterPage({
   scale,
   marks,
   readingIndex = null,
+  playFromIndex = null,
   hint,
   onTapVerse,
   onLongPressVerse,
@@ -509,6 +546,8 @@ function ChapterPage({
   marks?: Map<number, HighlightColor>;
   /** Verse currently being read aloud — softly lit, auto-scrolled to. */
   readingIndex?: number | null;
+  /** Verse tapped as the start point for read-aloud. */
+  playFromIndex?: number | null;
   /** Faint helper line under the chapter rule (scrolls with the page). */
   hint?: string;
   onTapVerse?: (index: number) => Promise<void>;
@@ -588,6 +627,7 @@ function ChapterPage({
         {verses.map((verse, index) => {
           const color = marks?.get(index);
           const isReading = readingIndex === index;
+          const isPlayFrom = playFromIndex === index;
           return (
             <Pressable
               key={index}
@@ -603,14 +643,29 @@ function ChapterPage({
                 gap: spacing.stackSm,
                 backgroundColor: isReading
                   ? 'rgba(233,195,73,0.16)'
-                  : color
-                    ? HIGHLIGHT_FILL[color]
-                    : 'transparent',
+                  : isPlayFrom
+                    ? 'rgba(168,128,31,0.07)'
+                    : color
+                      ? HIGHLIGHT_FILL[color]
+                      : 'transparent',
                 borderRadius: color || isReading ? radius.base : 0,
                 borderCurve: 'continuous',
-                padding: color || isReading ? 6 : 0,
+                padding: color || isReading || isPlayFrom ? 6 : 0,
               }}
             >
+              {isPlayFrom && (
+                <View
+                  style={{
+                    position: 'absolute',
+                    left: -4,
+                    top: 6,
+                    bottom: 6,
+                    width: 3,
+                    backgroundColor: colors.gold,
+                    borderRadius: 2,
+                  }}
+                />
+              )}
               <ThemedText
                 variant="labelSm"
                 color="onSurfaceVariant"

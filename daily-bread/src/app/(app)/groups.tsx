@@ -14,7 +14,7 @@ import type { Group } from '@/community/types';
 import { PreviewBanner } from '@/features/community/preview-banner';
 import { t } from '@/i18n';
 import { useCommunity } from '@/stores/community';
-import { useLanguage } from '@/stores/settings';
+import { useLanguage, useSettings } from '@/stores/settings';
 import { colors, radius, spacing, textStyle, tints } from '@/theme';
 
 /**
@@ -25,6 +25,8 @@ import { colors, radius, spacing, textStyle, tints } from '@/theme';
 export default function GroupsScreen() {
   const router = useRouter();
   const lang = useLanguage();
+  const englishHeadingFont = useSettings((s) => s.englishHeadingFont);
+  const englishBodyFont = useSettings((s) => s.englishBodyFont);
   const [groups, setGroups] = useState<Group[] | null>(null);
   const [name, setName] = useState('');
   const [code, setCode] = useState('');

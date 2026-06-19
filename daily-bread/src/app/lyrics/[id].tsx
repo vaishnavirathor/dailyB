@@ -135,7 +135,7 @@ export default function HymnDetailScreen() {
         onScroll={scrollHandler}
         scrollEventThrottle={16}
         showsVerticalScrollIndicator={false}
-        contentContainerStyle={{ paddingBottom: insets.bottom + spacing.stackXl }}
+        contentContainerStyle={{ paddingBottom: insets.bottom + spacing.stackLg }}
       >
         {/* Hero */}
         <Animated.View style={[{ overflow: 'hidden' }, headerHeight]}>

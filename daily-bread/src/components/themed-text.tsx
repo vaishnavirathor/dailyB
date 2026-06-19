@@ -33,16 +33,26 @@ export function ThemedText({
   const appLang = useLanguage();
   const headingFont = useSettings((s) => s.teluguHeadingFont);
   const bodyFont = useSettings((s) => s.teluguBodyFont);
+  const englishHeadingFont = useSettings((s) => s.englishHeadingFont);
+  const englishBodyFont = useSettings((s) => s.englishBodyFont);
   const effectiveLang = lang ?? appLang;
   const isLabel = variant === 'labelMd' || variant === 'labelSm';
-  const teluguFonts =
-    effectiveLang === 'te' && !isLabel
-      ? {
-          heading: headingVariants.includes(variant) ? headingFont : undefined,
-          body: !headingVariants.includes(variant) ? bodyFont : undefined,
-        }
-      : undefined;
-  const spec = textStyle(variant, effectiveLang, teluguFonts);
+  const isTelugu = effectiveLang === 'te';
+  const fontOverrides =
+    isTelugu
+      ? isLabel
+        ? undefined
+        : {
+            heading: headingVariants.includes(variant) ? headingFont : undefined,
+            body: !headingVariants.includes(variant) ? bodyFont : undefined,
+          }
+      : isLabel
+        ? undefined
+        : {
+            heading: headingVariants.includes(variant) ? englishHeadingFont : undefined,
+            body: !headingVariants.includes(variant) ? englishBodyFont : undefined,
+          };
+  const spec = textStyle(variant, effectiveLang, fontOverrides);
   return (
     <Text
       maxFontSizeMultiplier={maxFontSizeMultiplier}

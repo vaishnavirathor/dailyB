@@ -8,7 +8,7 @@ import { getContentRepository } from '@/content/bundled';
 import { addJournalEntry } from '@/data/journal';
 import { t } from '@/i18n';
 import { useProgress } from '@/stores/progress';
-import { useLanguage } from '@/stores/settings';
+import { useLanguage, useSettings } from '@/stores/settings';
 import { colors, spacing, textStyle } from '@/theme';
 
 /**
@@ -18,6 +18,8 @@ import { colors, spacing, textStyle } from '@/theme';
 export default function PrayerSheet() {
   const router = useRouter();
   const lang = useLanguage();
+  const englishHeadingFont = useSettings((s) => s.englishHeadingFont);
+  const englishBodyFont = useSettings((s) => s.englishBodyFont);
   const todayKey = useProgress((s) => s.todayKey);
   const reflection = getContentRepository().reflectionFor(todayKey);
   const [note, setNote] = useState('');
@@ -43,7 +45,11 @@ export default function PrayerSheet() {
     }
   };
 
-  const inputStyle = textStyle('bodyMd', lang);
+  const isEnglish = lang === 'en';
+  const fontOverrides = isEnglish
+    ? { heading: englishHeadingFont, body: englishBodyFont }
+    : undefined;
+  const inputStyle = textStyle('bodyMd', lang, fontOverrides);
 
   return (
     <ScrollView

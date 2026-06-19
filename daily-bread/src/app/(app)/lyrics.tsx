@@ -29,6 +29,8 @@ export default function LyricsListScreen() {
   const lang = useLanguage();
   const teluguHeadingFont = useSettings((s) => s.teluguHeadingFont);
   const teluguBodyFont = useSettings((s) => s.teluguBodyFont);
+  const englishHeadingFont = useSettings((s) => s.englishHeadingFont);
+  const englishBodyFont = useSettings((s) => s.englishBodyFont);
   const insets = useSafeAreaInsets();
   const scrollY = useSharedValue(0);
   const [query, setQuery] = useState('');
@@ -55,7 +57,7 @@ export default function LyricsListScreen() {
   }, [filtered]);
 
   const inputStyle = textStyle('bodyMd', lang, {
-    body: lang === 'te' ? teluguBodyFont : undefined,
+    body: lang === 'te' ? teluguBodyFont : englishBodyFont,
   });
 
   const scrollHandler = useAnimatedScrollHandler({
@@ -112,7 +114,7 @@ export default function LyricsListScreen() {
               style={[
                 {
                   fontFamily: textStyle('headlineMd', lang, {
-                    heading: lang === 'te' ? teluguHeadingFont : undefined,
+                    heading: lang === 'te' ? teluguHeadingFont : englishHeadingFont,
                   }).fontFamily,
                   color: colors.primary,
                 },

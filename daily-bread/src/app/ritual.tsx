@@ -1,6 +1,6 @@
 import { useRouter } from 'expo-router';
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { Pressable, View } from 'react-native';
+import { ActivityIndicator, Pressable, View } from 'react-native';
 import Animated, { FadeIn, FadeOut } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
@@ -52,6 +52,7 @@ export default function RitualScreen() {
 
   const [index, setIndex] = useState(0);
   const [paused, setPaused] = useState(false);
+  const [loading, setLoading] = useState(false);
   const [tts, setTts] = useState<boolean | null>(null);
   const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
@@ -85,14 +86,16 @@ export default function RitualScreen() {
       }
     };
     if (tts) {
+      setLoading(true);
       const narration = [slide.title, slide.text, slide.reference].filter(Boolean).join('. ');
-      void smartSpeak(narration, lang, { onDone, onError: onDone });
+      smartSpeak(narration, lang, { onDone, onError: onDone }).finally(() => setLoading(false));
     } else if (!last) {
       timer.current = setTimeout(onDone, readMillis(slide.text));
     }
     return () => {
       clearTimer();
       stopAllVoice();
+      setLoading(false);
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [index, paused, tts, lang]);
@@ -189,6 +192,10 @@ export default function RitualScreen() {
       <View style={{ gap: spacing.stackSm }}>
         {isLast ? (
           <Button label={`🙏 ${t('amen', lang)}`} onPress={amen} />
+        ) : loading ? (
+          <View style={{ alignItems: 'center', paddingVertical: 12 }}>
+            <ActivityIndicator size="small" color={colors.gold} />
+          </View>
         ) : (
           <View style={{ flexDirection: 'row', gap: spacing.stackSm }}>
             <Button

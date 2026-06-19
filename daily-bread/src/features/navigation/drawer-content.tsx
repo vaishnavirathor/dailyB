@@ -1,10 +1,10 @@
 import type { ComponentType, ReactNode } from 'react';
 import { Pressable, ScrollView, View } from 'react-native';
+import Animated, { useAnimatedStyle, useSharedValue, withSpring } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import type { IconProps } from '@/components/icons';
 import {
-  BookIcon,
   ChurchIcon,
   CrossIcon,
   GearIcon,
@@ -14,11 +14,12 @@ import {
   PeopleIcon,
   PrayIcon,
   SunriseIcon,
+  MusicNoteIcon,
 } from '@/components/icons';
 import { ThemedText } from '@/components/themed-text';
 import { t, type StringKey } from '@/i18n';
 import { useLanguage } from '@/stores/settings';
-import { colors, radius, spacing } from '@/theme';
+import { colors, radius, spacing, tints } from '@/theme';
 
 interface Item {
   label: StringKey;
@@ -48,7 +49,7 @@ const sections: Section[] = [
     title: 'sectionLibrary',
     items: [
       { label: 'favorites', icon: HeartIcon, route: 'favorites' },
-      { label: 'lyrics', icon: BookIcon, route: 'lyrics' },
+      { label: 'lyrics', icon: MusicNoteIcon, route: 'lyrics' },
       { label: 'journal', icon: PenIcon, route: 'journal' },
       { label: 'memorize', icon: SproutIcon, route: 'memorize' },
     ],
@@ -62,10 +63,6 @@ const sections: Section[] = [
   },
 ];
 
-/**
- * Structural prop type — expo-router v6 forked the drawer internals, so
- * we type only what we use instead of importing @react-navigation types.
- */
 interface DrawerContentProps {
   state: { index: number; routes: { name: string }[] };
   navigation: {
@@ -74,10 +71,6 @@ interface DrawerContentProps {
   };
 }
 
-/**
- * Warm Devotional drawer: cream surface, serif wordmark, quiet rows with
- * a soft gold active state — a sanctuary index, not an app menu.
- */
 export function DrawerContent(props: DrawerContentProps) {
   const lang = useLanguage();
   const insets = useSafeAreaInsets();
@@ -90,27 +83,50 @@ export function DrawerContent(props: DrawerContentProps) {
 
   return (
     <View style={{ flex: 1, backgroundColor: colors.surface }}>
+      {/* Brand header */}
+      <View
+        style={{
+          paddingTop: insets.top + spacing.stackMd,
+          paddingHorizontal: spacing.gutter,
+          paddingBottom: spacing.stackMd,
+          borderBottomWidth: 1,
+          borderBottomColor: 'rgba(0,0,0,0.04)',
+        }}
+      >
+        <View style={{ flexDirection: 'row', alignItems: 'center', gap: spacing.gutter }}>
+          <View
+            style={{
+              width: 44,
+              height: 44,
+              borderRadius: radius.md,
+              backgroundColor: tints.promise,
+              alignItems: 'center',
+              justifyContent: 'center',
+            }}
+          >
+            <CrossIcon size={22} color={colors.gold} />
+          </View>
+          <View style={{ gap: 2 }}>
+            <ThemedText variant="headlineSm" color="primary" style={{ fontWeight: '700' }}>
+              Daily Bread
+            </ThemedText>
+            <ThemedText variant="bodySm" lang="te" color="navyMuted">
+              దినసరి ఆహారం
+            </ThemedText>
+          </View>
+        </View>
+      </View>
+
       <ScrollView
         contentContainerStyle={{
-          paddingTop: insets.top + spacing.stackMd,
+          paddingTop: spacing.stackSm,
           paddingBottom: insets.bottom + spacing.stackMd,
           paddingHorizontal: spacing.gutter,
-          gap: spacing.stackSm,
         }}
         showsVerticalScrollIndicator={false}
       >
-        <View style={{ alignItems: 'center', gap: 6, paddingVertical: spacing.stackMd }}>
-          <CrossIcon size={30} color={colors.gold} />
-          <ThemedText variant="headlineSm" color="primary">
-            Daily Bread
-          </ThemedText>
-          <ThemedText variant="bodySm" lang="te" color="navyMuted">
-            దినసరి ఆహారం
-          </ThemedText>
-        </View>
-
         {sections.map((section, i) => (
-          <View key={i} style={{ gap: 2 }}>
+          <View key={i} style={{ marginTop: i === 0 ? 0 : spacing.stackSm }}>
             {section.title ? (
               <ThemedText
                 variant="labelSm"
@@ -119,22 +135,38 @@ export function DrawerContent(props: DrawerContentProps) {
                   textTransform: 'uppercase',
                   letterSpacing: 1.8,
                   paddingHorizontal: spacing.stackSm,
-                  paddingTop: spacing.stackSm + 4,
+                  paddingTop: spacing.stackSm,
                   paddingBottom: 6,
+                  opacity: 0.6,
                 }}
               >
                 {t(section.title, lang)}
               </ThemedText>
             ) : null}
-            {section.items.map((item) => (
-              <DrawerRow
-                key={item.route}
-                active={activeRoute === item.route}
-                icon={<item.icon size={20} color={activeRoute === item.route ? colors.secondary : colors.navyMuted} />}
-                label={t(item.label, lang)}
-                onPress={() => go(item.route)}
+
+            {section.items.map((item) => {
+              const isActive = activeRoute === item.route;
+              return (
+                <DrawerRow
+                  key={item.route}
+                  active={isActive}
+                  icon={<item.icon size={20} color={isActive ? colors.secondary : colors.navyMuted} />}
+                  label={t(item.label, lang)}
+                  onPress={() => go(item.route)}
+                />
+              );
+            })}
+
+            {i < sections.length - 1 ? (
+              <View
+                style={{
+                  height: 1,
+                  backgroundColor: colors.surfaceContainerHigh,
+                  marginHorizontal: spacing.stackSm,
+                  marginTop: spacing.stackSm,
+                }}
               />
-            ))}
+            ) : null}
           </View>
         ))}
 
@@ -142,7 +174,7 @@ export function DrawerContent(props: DrawerContentProps) {
           variant="labelSm"
           color="onSurfaceVariant"
           align="center"
-          style={{ paddingTop: spacing.stackMd, letterSpacing: 1.4 }}
+          style={{ paddingTop: spacing.stackMd, letterSpacing: 1.4, opacity: 0.5 }}
         >
           v1.0.0
         </ThemedText>
@@ -162,25 +194,51 @@ function DrawerRow({
   active: boolean;
   onPress: () => void;
 }) {
+  const scale = useSharedValue(1);
+
+  const animatedStyle = useAnimatedStyle(() => ({
+    transform: [{ scale: scale.value }],
+  }));
+
   return (
     <Pressable
       accessibilityRole="button"
       onPress={onPress}
-      style={({ pressed }) => ({
-        flexDirection: 'row',
-        alignItems: 'center',
-        gap: spacing.gutter,
-        paddingVertical: spacing.stackSm,
-        paddingHorizontal: spacing.stackSm,
-        borderRadius: radius.md,
-        borderCurve: 'continuous',
-        backgroundColor: active ? 'rgba(168,128,31,0.10)' : pressed ? colors.surfaceContainerLow : 'transparent',
-      })}
+      onPressIn={() => { scale.value = withSpring(0.96, { stiffness: 300, damping: 20 }); }}
+      onPressOut={() => { scale.value = withSpring(1, { stiffness: 300, damping: 20 }); }}
     >
-      {icon}
-      <ThemedText variant="bodyMd" color={active ? 'secondary' : 'primary'}>
-        {label}
-      </ThemedText>
+      <Animated.View style={animatedStyle}>
+        <View
+          style={{
+            flexDirection: 'row',
+            alignItems: 'center',
+            gap: spacing.gutter,
+            paddingVertical: spacing.stackSm - 2,
+            paddingHorizontal: spacing.stackSm,
+            borderRadius: radius.md,
+            borderCurve: 'continuous',
+            borderLeftWidth: 3,
+            borderLeftColor: active ? colors.gold : 'transparent',
+            backgroundColor: active ? tints.promise : 'transparent',
+          }}
+        >
+          <View
+            style={{
+              width: 36,
+              height: 36,
+              borderRadius: radius.base,
+              backgroundColor: active ? 'rgba(168,128,31,0.12)' : colors.surfaceContainerLow,
+              alignItems: 'center',
+              justifyContent: 'center',
+            }}
+          >
+            {icon}
+          </View>
+          <ThemedText variant="bodyMd" color={active ? 'secondary' : 'primary'} style={{ fontWeight: active ? '600' : '400' }}>
+            {label}
+          </ThemedText>
+        </View>
+      </Animated.View>
     </Pressable>
   );
 }

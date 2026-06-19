@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react';
-import { Pressable, View } from 'react-native';
+import { Pressable, View, useWindowDimensions } from 'react-native';
 
 import { Card } from '@/components/card';
 import { ChevronLeftIcon, ChevronRightIcon } from '@/components/icons';
@@ -8,7 +8,7 @@ import { StreakHeatmap } from '@/features/calendar/streak-heatmap';
 import { ScreenHeader } from '@/components/screen-header';
 import { ThemedText } from '@/components/themed-text';
 import { getContentRepository } from '@/content/bundled';
-import type { FeastOccurrence } from '@/content/types';
+import type { FeastOccurrence, Verse } from '@/content/types';
 import type { SeasonTint } from '@/domain/liturgical';
 import { diffDays, fromDateKey, toDateKey, type DateKey } from '@/domain/dates';
 import { months, t, weekdaysShort } from '@/i18n';
@@ -16,19 +16,16 @@ import { useProgress } from '@/stores/progress';
 import { useLanguage, useSettings } from '@/stores/settings';
 import { colors, radius, spacing, tints } from '@/theme';
 
-/**
- * The Christian Calendar — denomination-aware. Minimalist grid: today
- * wears a soft gold underdot, the selected date a deep navy circle;
- * feasts carry a small accent dot. Liturgical traditions get a season
- * banner tinted from the palette. Below, the living part: upcoming feasts.
- */
+const CELL_GAP = 4;
+
 export default function CalendarScreen() {
   const lang = useLanguage();
   const tradition = useSettings((s) => s.tradition);
   const todayKey = useProgress((s) => s.todayKey);
   const today = fromDateKey(todayKey);
+  const { width: screenWidth } = useWindowDimensions();
   const [year, setYear] = useState(today.getFullYear());
-  const [month, setMonth] = useState(today.getMonth()); // 0-based
+  const [month, setMonth] = useState(today.getMonth());
   const [selected, setSelected] = useState<DateKey>(todayKey);
 
   const repo = getContentRepository();
@@ -48,6 +45,17 @@ export default function CalendarScreen() {
     [repo, selected, tradition],
   );
 
+  const verseOfDay = useMemo<Verse | null>(
+    () => {
+      try {
+        return repo.verseFor(selected);
+      } catch {
+        return null;
+      }
+    },
+    [repo, selected],
+  );
+
   const upcoming = useMemo(
     () =>
       [...feastsByDate.values()]
@@ -63,7 +71,6 @@ export default function CalendarScreen() {
     setMonth(next.getMonth());
   };
 
-  // Build the 7-column grid for the visible month.
   const firstDay = new Date(year, month, 1);
   const daysInMonth = new Date(year, month + 1, 0).getDate();
   const leadingBlanks = firstDay.getDay();
@@ -76,6 +83,8 @@ export default function CalendarScreen() {
   }
 
   const selectedFeast = feastsByDate.get(selected);
+  const cardPadding = spacing.gutter;
+  const cellWidth = Math.floor((screenWidth - spacing.containerMargin * 2 - cardPadding * 2 - CELL_GAP * 6) / 7);
 
   return (
     <Screen gap={spacing.stackMd}>
@@ -95,7 +104,6 @@ export default function CalendarScreen() {
         }
       />
 
-      {/* Liturgical season banner — palette tints only, never loud. */}
       {season ? (
         <View
           style={{
@@ -103,30 +111,30 @@ export default function CalendarScreen() {
             alignItems: 'center',
             gap: spacing.stackSm,
             backgroundColor: seasonTintFill(season.tint),
-            borderRadius: radius.base,
-            borderCurve: 'continuous',
-            paddingVertical: spacing.stackSm,
+            borderRadius: radius.full,
+            paddingVertical: 6,
             paddingHorizontal: spacing.gutter,
+            alignSelf: 'flex-start',
           }}
         >
           <View
             style={{
-              width: 8,
-              height: 8,
+              width: 6,
+              height: 6,
               borderRadius: radius.full,
               backgroundColor: seasonTintDot(season.tint),
             }}
           />
-          <ThemedText variant="labelMd" style={{ color: seasonTintText(season.tint), letterSpacing: 1.4 }}>
+          <ThemedText variant="labelSm" style={{ color: seasonTintText(season.tint), letterSpacing: 0.8 }}>
             {season.name[lang]}
           </ThemedText>
         </View>
       ) : null}
 
-      <Card padding={spacing.gutter} style={{ gap: spacing.stackSm }}>
-        <View style={{ flexDirection: 'row' }}>
+      <Card padding={cardPadding}>
+        <View style={{ flexDirection: 'row', marginBottom: 8 }}>
           {weekdaysShort[lang].map((day, i) => (
-            <View key={i} style={{ flex: 1, alignItems: 'center' }}>
+            <View key={i} style={{ width: cellWidth, alignItems: 'center', marginHorizontal: CELL_GAP / 2 }}>
               <ThemedText variant="labelSm" color="onSurfaceVariant">
                 {day}
               </ThemedText>
@@ -134,59 +142,73 @@ export default function CalendarScreen() {
           ))}
         </View>
         {Array.from({ length: cells.length / 7 }, (_, row) => (
-          <View key={row} style={{ flexDirection: 'row' }}>
+          <View key={row} style={{ flexDirection: 'row', marginBottom: CELL_GAP }}>
             {cells.slice(row * 7, row * 7 + 7).map((day, col) => {
               if (day === null) {
-                return <View key={col} style={{ flex: 1, aspectRatio: 1 }} />;
+                return (
+                  <View
+                    key={col}
+                    style={{ width: cellWidth, height: cellWidth, marginHorizontal: CELL_GAP / 2 }}
+                  />
+                );
               }
               const key = toDateKey(new Date(year, month, day));
               const isToday = key === todayKey;
               const isSelected = key === selected;
               const feast = feastsByDate.get(key);
+              const dim = isToday ? cellWidth : cellWidth - 4;
               return (
                 <Pressable
                   key={col}
                   accessibilityRole="button"
                   onPress={() => setSelected(key)}
-                  style={{ flex: 1, aspectRatio: 1, alignItems: 'center', justifyContent: 'center' }}
+                  style={{
+                    width: cellWidth,
+                    height: cellWidth,
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    marginHorizontal: CELL_GAP / 2,
+                  }}
                 >
                   <View
                     style={{
-                      width: 34,
-                      height: 34,
+                      width: dim,
+                      height: dim,
                       borderRadius: radius.full,
-                      backgroundColor: isSelected ? colors.primary : 'transparent',
+                      backgroundColor: isToday
+                        ? colors.gold
+                        : isSelected
+                          ? colors.primary
+                          : 'transparent',
                       alignItems: 'center',
                       justifyContent: 'center',
-                      gap: 1,
                     }}
                   >
                     <ThemedText
                       variant="bodySm"
                       style={{
-                        color: isSelected ? colors.onPrimary : colors.onSurface,
+                        color: isToday || isSelected ? colors.onPrimary : colors.onSurface,
                         fontVariant: ['tabular-nums'],
-                        lineHeight: 18,
                       }}
                     >
                       {day}
                     </ThemedText>
-                    {/* gold underdot = today · accent dot = feast */}
+                  </View>
+                  {feast && !isToday && !isSelected ? (
                     <View
                       style={{
                         width: 4,
                         height: 4,
                         borderRadius: radius.full,
-                        backgroundColor: isToday
-                          ? colors.goldBright
-                          : feast
-                            ? feast.accent === 'gold'
-                              ? 'rgba(168,128,31,0.55)'
-                              : 'rgba(58,75,104,0.45)'
-                            : 'transparent',
+                        backgroundColor:
+                          feast.accent === 'gold'
+                            ? 'rgba(168,128,31,0.55)'
+                            : 'rgba(58,75,104,0.45)',
+                        position: 'absolute',
+                        bottom: 4,
                       }}
                     />
-                  </View>
+                  ) : null}
                 </Pressable>
               );
             })}
@@ -201,76 +223,96 @@ export default function CalendarScreen() {
             backgroundColor: selectedFeast.accent === 'gold' ? '#fffaf0' : colors.surfaceContainerLowest,
             borderColor:
               selectedFeast.accent === 'gold' ? 'rgba(168,128,31,0.35)' : colors.outlineVariant,
-            gap: 4,
+            gap: 2,
           }}
         >
-          <ThemedText variant="labelSm" color="secondary" style={{ letterSpacing: 1.6 }}>
+          <ThemedText variant="labelSm" color="secondary" style={{ letterSpacing: 1.2 }}>
             {formatFeastDate(selectedFeast.date, lang)}
           </ThemedText>
           <ThemedText variant="headlineSm" color="primary">
             {selectedFeast.name[lang]}
           </ThemedText>
           {selectedFeast.readings ? (
-            <ThemedText variant="bodySm" color="onSurfaceVariant" style={{ marginTop: 4 }}>
-              📖 {selectedFeast.readings[lang]}
+            <ThemedText variant="bodySm" color="onSurfaceVariant" style={{ marginTop: 2 }}>
+              {selectedFeast.readings[lang]}
             </ThemedText>
           ) : null}
         </Card>
       ) : null}
 
+      {verseOfDay ? (
+        <Card padding={spacing.gutter} style={{ gap: 6 }}>
+          <ThemedText
+            variant="labelSm"
+            color="secondary"
+            style={{ textTransform: 'uppercase', letterSpacing: 2.1 }}
+          >
+            {t('verseOfTheDay', lang)}
+          </ThemedText>
+          <ThemedText variant="bodySm" color="onSurfaceVariant">
+            {verseOfDay.reference[lang]}
+          </ThemedText>
+          <ThemedText variant="bodyMd" color="primary" lang={lang}>
+            {verseOfDay.text[lang]}
+          </ThemedText>
+        </Card>
+      ) : null}
+
       <StreakHeatmap year={year} month={month} />
 
-      <View style={{ gap: spacing.stackSm }}>
-        <ThemedText
-          variant="labelMd"
-          color="onSurfaceVariant"
-          style={{ textTransform: 'uppercase', letterSpacing: 2.1 }}
-        >
-          {t('upcomingFeasts', lang)}
-        </ThemedText>
-        {upcoming.map((feast) => {
-          const away = diffDays(todayKey, feast.date);
-          return (
-            <View
-              key={`${feast.id}-${feast.date}`}
-              style={{
-                flexDirection: 'row',
-                alignItems: 'center',
-                gap: spacing.gutter,
-                paddingVertical: spacing.stackSm,
-                borderBottomWidth: 1,
-                borderBottomColor: colors.surfaceContainerHigh,
-              }}
-            >
+      {upcoming.length > 0 ? (
+        <View style={{ gap: spacing.stackSm }}>
+          <ThemedText
+            variant="labelMd"
+            color="onSurfaceVariant"
+            style={{ textTransform: 'uppercase', letterSpacing: 2.1 }}
+          >
+            {t('upcomingFeasts', lang)}
+          </ThemedText>
+          {upcoming.map((feast) => {
+            const away = diffDays(todayKey, feast.date);
+            return (
               <View
+                key={`${feast.id}-${feast.date}`}
                 style={{
-                  width: 10,
-                  height: 10,
-                  borderRadius: radius.full,
-                  backgroundColor: feast.accent === 'gold' ? colors.goldBright : tints.calendar,
-                  borderWidth: feast.accent === 'gold' ? 0 : 1,
-                  borderColor: colors.navyMuted,
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                  gap: spacing.gutter,
+                  paddingVertical: spacing.stackSm - 2,
+                  borderBottomWidth: 1,
+                  borderBottomColor: colors.surfaceContainerHigh,
                 }}
-              />
-              <View style={{ flex: 1, gap: 2 }}>
-                <ThemedText variant="bodyMd" color="primary">
-                  {feast.name[lang]}
-                </ThemedText>
-                <ThemedText variant="labelMd" color="onSurfaceVariant">
-                  {formatFeastDate(feast.date, lang)}
+              >
+                <View
+                  style={{
+                    width: 8,
+                    height: 8,
+                    borderRadius: radius.full,
+                    backgroundColor: feast.accent === 'gold' ? colors.goldBright : tints.calendar,
+                    borderWidth: feast.accent === 'gold' ? 0 : 1,
+                    borderColor: colors.navyMuted,
+                  }}
+                />
+                <View style={{ flex: 1, gap: 1 }}>
+                  <ThemedText variant="bodyMd" color="primary">
+                    {feast.name[lang]}
+                  </ThemedText>
+                  <ThemedText variant="labelSm" color="onSurfaceVariant">
+                    {formatFeastDate(feast.date, lang)}
+                  </ThemedText>
+                </View>
+                <ThemedText variant="labelSm" color="onSurfaceVariant">
+                  {away === 0
+                    ? t('today', lang)
+                    : away === 1
+                      ? t('tomorrow', lang)
+                      : `${away}d`}
                 </ThemedText>
               </View>
-              <ThemedText variant="labelMd" color="onSurfaceVariant">
-                {away === 0
-                  ? t('today', lang)
-                  : away === 1
-                    ? t('tomorrow', lang)
-                    : `${away} ${t('daysAway', lang)}`}
-              </ThemedText>
-            </View>
-          );
-        })}
-      </View>
+            );
+          })}
+        </View>
+      ) : null}
     </Screen>
   );
 }
@@ -279,11 +321,10 @@ function formatFeastDate(date: DateKey, lang: 'te' | 'en'): string {
   const d = fromDateKey(date);
   const month = months[lang][d.getMonth()];
   return lang === 'te'
-    ? `${d.getDate()} ${month} ${d.getFullYear()}`
-    : `${month} ${d.getDate()}, ${d.getFullYear()}`;
+    ? `${d.getDate()} ${month}`
+    : `${month} ${d.getDate()}`;
 }
 
-/** Season banner tints — soft fills from the semantic palette. */
 function seasonTintFill(tint: SeasonTint): string {
   return tint === 'navy'
     ? 'rgba(58,75,104,0.10)'

@@ -12,13 +12,15 @@ import type { Parish, ServiceTime } from '@/community/types';
 import { PreviewBanner } from '@/features/community/preview-banner';
 import { t, weekdays } from '@/i18n';
 import { useCommunity } from '@/stores/community';
-import { useLanguage } from '@/stores/settings';
+import { useLanguage, useSettings } from '@/stores/settings';
 import { colors, radius, spacing, textStyle } from '@/theme';
 
 /** Parish detail: approved timings grouped by weekday + crowd submission. */
 export default function ParishDetailScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const lang = useLanguage();
+  const englishHeadingFont = useSettings((s) => s.englishHeadingFont);
+  const englishBodyFont = useSettings((s) => s.englishBodyFont);
   const [parish, setParish] = useState<Parish | null>(null);
   const [times, setTimes] = useState<ServiceTime[]>([]);
   const [adding, setAdding] = useState(false);
@@ -72,7 +74,11 @@ export default function ParishDetailScreen() {
   const [h, m] = time.split(':').map(Number);
   pickerValue.setHours(h, m, 0, 0);
 
-  const inputStyle = textStyle('bodyMd', lang);
+  const isEnglish = lang === 'en';
+  const fontOverrides = isEnglish
+    ? { heading: englishHeadingFont, body: englishBodyFont }
+    : undefined;
+  const inputStyle = textStyle('bodyMd', lang, fontOverrides);
 
   return (
     <>

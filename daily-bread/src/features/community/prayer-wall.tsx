@@ -8,7 +8,7 @@ import { getCommunityRepository } from '@/community';
 import type { PrayerRequest } from '@/community/types';
 import { t } from '@/i18n';
 import { useCommunity } from '@/stores/community';
-import { useLanguage } from '@/stores/settings';
+import { useLanguage, useSettings } from '@/stores/settings';
 import { colors, radius, spacing, textStyle, tints, type Lang } from '@/theme';
 
 /**
@@ -24,6 +24,8 @@ export function PrayerWall({
   onRefreshReady?: (refresh: () => Promise<void>) => void;
 }) {
   const lang = useLanguage();
+  const englishHeadingFont = useSettings((s) => s.englishHeadingFont);
+  const englishBodyFont = useSettings((s) => s.englishBodyFont);
   const profile = useCommunity((s) => s.profile);
   const ready = useCommunity((s) => s.ready);
   const setDisplayName = useCommunity((s) => s.setDisplayName);
@@ -78,7 +80,11 @@ export function PrayerWall({
     }
   };
 
-  const inputStyle = textStyle('bodyMd', lang);
+  const isEnglish = lang === 'en';
+  const fontOverrides = isEnglish
+    ? { heading: englishHeadingFont, body: englishBodyFont }
+    : undefined;
+  const inputStyle = textStyle('bodyMd', lang, fontOverrides);
 
   return (
     <View style={{ gap: spacing.stackMd }}>

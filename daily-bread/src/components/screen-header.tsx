@@ -1,27 +1,33 @@
 import type { ReactNode } from 'react';
 import { View } from 'react-native';
 
+import { BackButton } from '@/components/back-button';
 import { MenuButton } from '@/components/menu-button';
 import { ThemedText } from '@/components/themed-text';
 import { spacing } from '@/theme';
 
 export interface ScreenHeaderProps {
   title: string;
-  /** Small uppercase eyebrow above the title (label-md, gold). */
   eyebrow?: string;
   subtitle?: string;
-  /** Right-aligned accessory (e.g. streak pill). */
   accessory?: ReactNode;
-  /** Renders the hamburger above the title (screens inside the drawer). */
   menu?: boolean;
+  back?: boolean;
 }
 
-/** Serif screen header in the hero style — spacious, scripture-first. */
-export function ScreenHeader({ title, eyebrow, subtitle, accessory, menu }: ScreenHeaderProps) {
+export function ScreenHeader({
+  title,
+  eyebrow,
+  subtitle,
+  accessory,
+  menu,
+  back,
+}: ScreenHeaderProps) {
   return (
     <View style={{ gap: spacing.stackSm }}>
       {menu ? <MenuButton /> : null}
       <View style={{ flexDirection: 'row', alignItems: 'flex-end', gap: spacing.gutter }}>
+        {back ? <BackButton /> : null}
         <View style={{ flex: 1, gap: 6 }}>
           {eyebrow ? (
             <ThemedText
