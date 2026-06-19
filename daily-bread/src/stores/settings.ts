@@ -28,6 +28,9 @@ export interface SettingsState {
   /** HD neural voice via the backend (needs internet + server keys). */
   hdVoiceEnabled: boolean;
   hdProvider: HdVoiceProvider;
+  /** User-chosen Telugu fonts — stored as font family strings. */
+  teluguHeadingFont: string;
+  teluguBodyFont: string;
   /** True once persisted settings have been loaded at startup. */
   hydrated: boolean;
   /** Gate for the (onboarding) ↔ (tabs) protected routes. */
@@ -42,6 +45,8 @@ export interface SettingsState {
   setTtsVoice: (lang: Lang, voiceId: string | null) => void;
   setHdVoiceEnabled: (enabled: boolean) => void;
   setHdProvider: (provider: HdVoiceProvider) => void;
+  setTeluguHeadingFont: (font: string) => void;
+  setTeluguBodyFont: (font: string) => void;
   completeOnboarding: () => void;
   hydrate: (partial: Partial<SettingsState>) => void;
 }
@@ -65,6 +70,8 @@ export const useSettings = create<SettingsState>((set) => ({
   ttsVoiceEn: null,
   hdVoiceEnabled: false,
   hdProvider: 'azure',
+  teluguHeadingFont: 'Suranna_400Regular',
+  teluguBodyFont: 'NTR_400Regular',
   hydrated: false,
   onboarded: false,
   setLanguage: (language) => set({ language }),
@@ -78,6 +85,8 @@ export const useSettings = create<SettingsState>((set) => ({
     set(lang === 'te' ? { ttsVoiceTe: voiceId } : { ttsVoiceEn: voiceId }),
   setHdVoiceEnabled: (hdVoiceEnabled) => set({ hdVoiceEnabled }),
   setHdProvider: (hdProvider) => set({ hdProvider }),
+  setTeluguHeadingFont: (teluguHeadingFont) => set({ teluguHeadingFont }),
+  setTeluguBodyFont: (teluguBodyFont) => set({ teluguBodyFont }),
   completeOnboarding: () => set({ onboarded: true }),
   hydrate: (partial) => set({ ...partial, hydrated: true }),
 }));

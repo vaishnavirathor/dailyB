@@ -37,7 +37,7 @@ export function Screen({
   return (
     <ScrollView
       style={{ flex: 1, backgroundColor: colors.surface }}
-      contentInsetAdjustmentBehavior="automatic"
+      contentInsetAdjustmentBehavior="never"
       refreshControl={refreshControl}
       contentContainerStyle={[
         {

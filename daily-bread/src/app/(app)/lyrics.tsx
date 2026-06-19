@@ -18,7 +18,7 @@ import { ThemedText } from '@/components/themed-text';
 import { getContentRepository } from '@/content/bundled';
 import type { Hymn } from '@/content/types';
 import { t } from '@/i18n';
-import { useLanguage } from '@/stores/settings';
+import { useLanguage, useSettings } from '@/stores/settings';
 import { colors, radius, spacing, textStyle } from '@/theme';
 
 const HEADER_HEIGHT = 92;
@@ -27,6 +27,8 @@ const HEADER_HEIGHT = 92;
 export default function LyricsListScreen() {
   const router = useRouter();
   const lang = useLanguage();
+  const teluguHeadingFont = useSettings((s) => s.teluguHeadingFont);
+  const teluguBodyFont = useSettings((s) => s.teluguBodyFont);
   const insets = useSafeAreaInsets();
   const scrollY = useSharedValue(0);
   const [query, setQuery] = useState('');
@@ -52,7 +54,9 @@ export default function LyricsListScreen() {
     return groups;
   }, [filtered]);
 
-  const inputStyle = textStyle('bodyMd', lang);
+  const inputStyle = textStyle('bodyMd', lang, {
+    body: lang === 'te' ? teluguBodyFont : undefined,
+  });
 
   const scrollHandler = useAnimatedScrollHandler({
     onScroll: (event) => {
@@ -107,7 +111,9 @@ export default function LyricsListScreen() {
             <Animated.Text
               style={[
                 {
-                  fontFamily: textStyle('headlineMd', lang).fontFamily,
+                  fontFamily: textStyle('headlineMd', lang, {
+                    heading: lang === 'te' ? teluguHeadingFont : undefined,
+                  }).fontFamily,
                   color: colors.primary,
                 },
                 titleStyle,

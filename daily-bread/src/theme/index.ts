@@ -3,6 +3,8 @@ export {
   fonts,
   typography,
   textStyle,
+  teluguFontMap,
+  type TeluguFontKey,
   type Lang,
   type TypographyVariant,
   type TextStyleSpec,

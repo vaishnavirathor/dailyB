@@ -9,11 +9,10 @@ import {
   NotoSerif_600SemiBold,
   NotoSerif_700Bold,
 } from '@expo-google-fonts/noto-serif';
-import {
-  NotoSerifTelugu_400Regular,
-  NotoSerifTelugu_600SemiBold,
-  NotoSerifTelugu_700Bold,
-} from '@expo-google-fonts/noto-serif-telugu';
+import { NTR_400Regular } from '@expo-google-fonts/ntr';
+import { Suranna_400Regular } from '@expo-google-fonts/suranna';
+import { Timmana_400Regular } from '@expo-google-fonts/timmana';
+import { Gurajada_400Regular } from '@expo-google-fonts/gurajada';
 import {
   SourceSerif4_400Regular,
   SourceSerif4_400Regular_Italic,
@@ -42,9 +41,10 @@ export default function RootLayout() {
     NotoSerif_400Regular_Italic,
     NotoSerif_600SemiBold,
     NotoSerif_700Bold,
-    NotoSerifTelugu_400Regular,
-    NotoSerifTelugu_600SemiBold,
-    NotoSerifTelugu_700Bold,
+    NTR_400Regular,
+    Suranna_400Regular,
+    Timmana_400Regular,
+    Gurajada_400Regular,
     SourceSerif4_400Regular,
     SourceSerif4_400Regular_Italic,
     SourceSerif4_600SemiBold,

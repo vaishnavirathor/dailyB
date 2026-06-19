@@ -14,9 +14,9 @@ export const fonts = {
   serifSemiBold: 'NotoSerif_600SemiBold',
   serifBold: 'NotoSerif_700Bold',
   serifItalic: 'NotoSerif_400Regular_Italic',
-  teluguRegular: 'NotoSerifTelugu_400Regular',
-  teluguSemiBold: 'NotoSerifTelugu_600SemiBold',
-  teluguBold: 'NotoSerifTelugu_700Bold',
+  teluguRegular: 'NTR_400Regular',
+  teluguSemiBold: 'Suranna_400Regular',
+  teluguBold: 'Suranna_400Regular',
   bodyRegular: 'SourceSerif4_400Regular',
   bodySemiBold: 'SourceSerif4_600SemiBold',
   bodyItalic: 'SourceSerif4_400Regular_Italic',
@@ -24,6 +24,15 @@ export const fonts = {
   labelMedium: 'Inter_500Medium',
   labelSemiBold: 'Inter_600SemiBold',
 } as const;
+
+export const teluguFontMap = {
+  suranna: { label: 'Suranna', family: 'Suranna_400Regular' },
+  ntr: { label: 'NTR', family: 'NTR_400Regular' },
+  timmana: { label: 'Timmana', family: 'Timmana_400Regular' },
+  gurajada: { label: 'Gurajada', family: 'Gurajada_400Regular' },
+} as const;
+
+export type TeluguFontKey = keyof typeof teluguFontMap;
 
 export type Lang = 'te' | 'en';
 
@@ -82,6 +91,24 @@ const telugu: Record<Variant, TextStyleSpec> = {
 export const typography = { latin, telugu } as const;
 export type TypographyVariant = Variant;
 
-export function textStyle(variant: Variant, lang: Lang): TextStyleSpec {
-  return lang === 'te' ? telugu[variant] : latin[variant];
+const headingVariants: Variant[] = ['displayLg', 'headlineMd', 'headlineSm'];
+
+export function textStyle(
+  variant: Variant,
+  lang: Lang,
+  teluguFonts?: { heading?: string; body?: string },
+): TextStyleSpec {
+  if (lang === 'te') {
+    const spec = telugu[variant];
+    if (teluguFonts) {
+      if (headingVariants.includes(variant) && teluguFonts.heading) {
+        return { ...spec, fontFamily: teluguFonts.heading };
+      }
+      if (!headingVariants.includes(variant) && teluguFonts.body) {
+        return { ...spec, fontFamily: teluguFonts.body };
+      }
+    }
+    return spec;
+  }
+  return latin[variant];
 }

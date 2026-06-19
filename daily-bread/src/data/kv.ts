@@ -36,6 +36,8 @@ export interface PersistedSettings {
   ttsVoiceEn: string | null;
   hdVoiceEnabled: boolean;
   hdProvider: 'azure' | 'sarvam' | 'elevenlabs';
+  teluguHeadingFont: string;
+  teluguBodyFont: string;
 }
 
 export async function loadSettings(): Promise<Partial<PersistedSettings>> {

@@ -19,7 +19,7 @@ import {
   type Tradition,
   type VoiceGender,
 } from '@/stores/settings';
-import { colors, radius, spacing, type Lang } from '@/theme';
+import { colors, radius, spacing, teluguFontMap, type Lang } from '@/theme';
 
 export default function SettingsScreen() {
   const lang = useLanguage();
@@ -144,6 +144,37 @@ export default function SettingsScreen() {
             onChange={(v) => settings.setTradition(v as Tradition)}
           />
         </Row>
+      </Card>
+
+      {/* Telugu fonts — pick heading + body face */}
+      <ThemedText
+        variant="labelMd"
+        color="onSurfaceVariant"
+        style={{ textTransform: 'uppercase', letterSpacing: 2.1 }}
+      >
+        Telugu Fonts
+      </ThemedText>
+      <Card padding={0}>
+        <FontRow
+          label="Heading"
+          options={Object.entries(teluguFontMap).map(([key, f]) => ({
+            key,
+            label: f.label,
+            family: f.family,
+          }))}
+          selected={settings.teluguHeadingFont}
+          onSelect={(family) => settings.setTeluguHeadingFont(family)}
+        />
+        <FontRow
+          label="Body"
+          options={Object.entries(teluguFontMap).map(([key, f]) => ({
+            key,
+            label: f.label,
+            family: f.family,
+          }))}
+          selected={settings.teluguBodyFont}
+          onSelect={(family) => settings.setTeluguBodyFont(family)}
+        />
       </Card>
 
       {/* Read-aloud voice — the pastor voice */}
@@ -356,4 +387,62 @@ function Segmented({
 function formatTime(hour: number, minute: number): string {
   const h12 = hour % 12 === 0 ? 12 : hour % 12;
   return `${h12}:${String(minute).padStart(2, '0')} ${hour < 12 ? 'AM' : 'PM'}`;
+}
+
+function FontRow({
+  label,
+  options,
+  selected,
+  onSelect,
+}: {
+  label: string;
+  options: { key: string; label: string; family: string }[];
+  selected: string;
+  onSelect: (family: string) => void;
+}) {
+  return (
+    <View
+      style={{
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        gap: spacing.gutter,
+        padding: spacing.gutter,
+        borderTopWidth: 1,
+        borderTopColor: colors.surfaceContainerHigh,
+      }}
+    >
+      <ThemedText variant="bodyMd" color="primary">
+        {label}
+      </ThemedText>
+      <View style={{ flexDirection: 'row', gap: 6, flexWrap: 'wrap' }}>
+        {options.map((opt) => {
+          const active = opt.family === selected;
+          return (
+            <Pressable
+              key={opt.key}
+              accessibilityRole="button"
+              onPress={() => onSelect(opt.family)}
+              style={{
+                paddingVertical: 5,
+                paddingHorizontal: 10,
+                borderRadius: radius.full,
+                backgroundColor: active ? colors.sage : colors.surfaceContainer,
+              }}
+            >
+              <ThemedText
+                variant="labelSm"
+                style={{
+                  color: active ? '#ffffff' : colors.onSurfaceVariant,
+                  fontWeight: active ? '600' : '400',
+                }}
+              >
+                {opt.label}
+              </ThemedText>
+            </Pressable>
+          );
+        })}
+      </View>
+    </View>
+  );
 }

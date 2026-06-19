@@ -27,6 +27,8 @@ export async function initSettingsPersistence(): Promise<void> {
       ttsVoiceEn: state.ttsVoiceEn,
       hdVoiceEnabled: state.hdVoiceEnabled,
       hdProvider: state.hdProvider,
+      teluguHeadingFont: state.teluguHeadingFont,
+      teluguBodyFont: state.teluguBodyFont,
     });
 
     const next = notifSlice(state);
