@@ -1,17 +1,10 @@
 import { useRouter } from 'expo-router';
 import { useMemo, useState } from 'react';
-import { Pressable, TextInput, View } from 'react-native';
-import Animated, {
-  Extrapolation,
-  interpolate,
-  useAnimatedScrollHandler,
-  useAnimatedStyle,
-  useSharedValue,
-} from 'react-native-reanimated';
+import { Pressable, ScrollView, TextInput, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { FavoriteButton } from '@/components/favorite-button';
-import { ChevronRightIcon, SearchIcon } from '@/components/icons';
+import { SearchIcon } from '@/components/icons';
 import { MenuButton } from '@/components/menu-button';
 import { TAB_BAR_CLEARANCE } from '@/components/screen';
 import { ThemedText } from '@/components/themed-text';
@@ -21,18 +14,12 @@ import { t } from '@/i18n';
 import { useLanguage, useSettings } from '@/stores/settings';
 import { colors, radius, spacing, textStyle } from '@/theme';
 
-const HEADER_HEIGHT = 92;
-
-/** Worship Lyrics — grouped by type, minimal rows, collapsible header. */
+/** Worship Lyrics — minimal grouped list. */
 export default function LyricsListScreen() {
   const router = useRouter();
   const lang = useLanguage();
-  const teluguHeadingFont = useSettings((s) => s.teluguHeadingFont);
-  const teluguBodyFont = useSettings((s) => s.teluguBodyFont);
-  const englishHeadingFont = useSettings((s) => s.englishHeadingFont);
-  const englishBodyFont = useSettings((s) => s.englishBodyFont);
+  const bodyFont = useSettings((s) => (lang === 'te' ? s.teluguBodyFont : s.englishBodyFont));
   const insets = useSafeAreaInsets();
-  const scrollY = useSharedValue(0);
   const [query, setQuery] = useState('');
   const allHymns = getContentRepository().hymns();
 
@@ -51,80 +38,33 @@ export default function LyricsListScreen() {
     const scripture = filtered.filter((h) => h.source === 'scripture');
     const original = filtered.filter((h) => h.source === 'original');
     const groups: { title: string; hymns: Hymn[] }[] = [];
-    if (scripture.length) groups.push({ title: 'Scripture', hymns: scripture });
-    if (original.length) groups.push({ title: 'Songs', hymns: original });
+    if (scripture.length) groups.push({ title: t('scriptureSong', lang), hymns: scripture });
+    if (original.length) groups.push({ title: t('originalSong', lang), hymns: original });
     return groups;
-  }, [filtered]);
+  }, [filtered, lang]);
 
-  const inputStyle = textStyle('bodyMd', lang, {
-    body: lang === 'te' ? teluguBodyFont : englishBodyFont,
-  });
-
-  const scrollHandler = useAnimatedScrollHandler({
-    onScroll: (event) => {
-      scrollY.value = event.contentOffset.y;
-    },
-  });
-
-  const titleStyle = useAnimatedStyle(() => {
-    const fontSize = interpolate(scrollY.value, [0, HEADER_HEIGHT], [28, 18], Extrapolation.CLAMP);
-    const lineHeight = interpolate(scrollY.value, [0, HEADER_HEIGHT], [36, 24], Extrapolation.CLAMP);
-    const opacity = interpolate(scrollY.value, [0, HEADER_HEIGHT * 0.5], [1, 0], Extrapolation.CLAMP);
-    return { fontSize, lineHeight, opacity };
-  });
-
-  const eyebrowStyle = useAnimatedStyle(() => {
-    const opacity = interpolate(scrollY.value, [0, 30], [1, 0], Extrapolation.CLAMP);
-    return { opacity };
-  });
-
-  const headerContainerStyle = useAnimatedStyle(() => {
-    const height = interpolate(
-      scrollY.value,
-      [0, HEADER_HEIGHT],
-      [HEADER_HEIGHT, 0],
-      Extrapolation.CLAMP,
-    );
-    return { height, overflow: 'hidden' };
-  });
+  const inputStyle = textStyle('bodyMd', lang, { body: bodyFont });
 
   return (
     <View style={{ flex: 1, backgroundColor: colors.surface }}>
       <View
         style={{
-          paddingTop: insets.top + 4,
+          paddingTop: insets.top + spacing.stackSm,
           paddingHorizontal: spacing.containerMargin,
           backgroundColor: colors.surface,
-          zIndex: 10,
         }}
       >
-        <Animated.View style={headerContainerStyle}>
-          <View style={{ paddingVertical: spacing.stackSm - 4 }}>
-            <MenuButton />
-            <Animated.View style={eyebrowStyle}>
-              <ThemedText
-                variant="labelMd"
-                color="secondary"
-                style={{ textTransform: 'uppercase', letterSpacing: 2.6 }}
-              >
-                {t('sectionLibrary', lang)}
-              </ThemedText>
-            </Animated.View>
-            <Animated.Text
-              style={[
-                {
-                  fontFamily: textStyle('headlineMd', lang, {
-                    heading: lang === 'te' ? teluguHeadingFont : englishHeadingFont,
-                  }).fontFamily,
-                  color: colors.primary,
-                },
-                titleStyle,
-              ]}
-            >
-              {t('lyrics', lang)}
-            </Animated.Text>
-          </View>
-        </Animated.View>
+        <MenuButton />
+        <ThemedText
+          variant="headlineMd"
+          color="primary"
+          style={{ marginTop: spacing.stackSm, marginBottom: 2 }}
+        >
+          {t('lyrics', lang)}
+        </ThemedText>
+        <ThemedText variant="labelSm" color="onSurfaceVariant" style={{ marginBottom: spacing.stackMd }}>
+          {allHymns.length} {lang === 'te' ? 'పాటలు' : 'songs'}
+        </ThemedText>
 
         <View
           style={{
@@ -135,7 +75,7 @@ export default function LyricsListScreen() {
             borderCurve: 'continuous',
             paddingHorizontal: spacing.gutter,
             gap: spacing.stackSm,
-            height: 48,
+            height: 44,
             marginBottom: spacing.stackMd,
           }}
         >
@@ -157,9 +97,7 @@ export default function LyricsListScreen() {
         </View>
       </View>
 
-      <Animated.ScrollView
-        onScroll={scrollHandler}
-        scrollEventThrottle={16}
+      <ScrollView
         contentContainerStyle={{
           paddingHorizontal: spacing.containerMargin,
           paddingBottom: TAB_BAR_CLEARANCE,
@@ -167,39 +105,32 @@ export default function LyricsListScreen() {
         showsVerticalScrollIndicator={false}
         keyboardShouldPersistTaps="handled"
       >
+        {grouped.length === 0 ? (
+          <View style={{ paddingVertical: 80, alignItems: 'center' }}>
+            <ThemedText variant="bodyMd" color="onSurfaceVariant">
+              {lang === 'te' ? 'ఏమీ కనబడలేదు' : 'No results'}
+            </ThemedText>
+          </View>
+        ) : null}
+
         {grouped.map((section) => (
           <View key={section.title} style={{ marginBottom: spacing.stackLg }}>
             <View
               style={{
                 flexDirection: 'row',
                 alignItems: 'center',
-                gap: spacing.stackSm,
-                marginBottom: spacing.stackSm,
-                paddingHorizontal: 4,
+                gap: spacing.gutter,
+                marginBottom: spacing.stackMd,
               }}
             >
-              <View
-                style={{
-                  width: 3,
-                  height: 16,
-                  borderRadius: 2,
-                  backgroundColor: section.title === 'Scripture' ? colors.gold : colors.sage,
-                }}
-              />
               <ThemedText
-                variant="labelMd"
+                variant="bodySm"
                 color="secondary"
-                style={{ textTransform: 'uppercase', letterSpacing: 1.8 }}
+                style={{ textTransform: 'uppercase', letterSpacing: 2, fontWeight: '700' }}
               >
                 {section.title}
               </ThemedText>
-              <View
-                style={{
-                  flex: 1,
-                  height: 1,
-                  backgroundColor: 'rgba(0,0,0,0.06)',
-                }}
-              />
+              <View style={{ flex: 1, height: 1, backgroundColor: colors.surfaceContainerHigh }} />
               <ThemedText variant="labelSm" color="onSurfaceVariant">
                 {section.hymns.length}
               </ThemedText>
@@ -210,76 +141,48 @@ export default function LyricsListScreen() {
                 key={hymn.id}
                 accessibilityRole="button"
                 onPress={() => router.push({ pathname: '/lyrics/[id]', params: { id: hymn.id } })}
-                style={({ pressed }) => ({ opacity: pressed ? 0.6 : 1 })}
+                style={({ pressed }) => ({
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                  paddingVertical: spacing.stackSm + 4,
+                  paddingHorizontal: 4,
+                  opacity: pressed ? 0.4 : 1,
+                })}
               >
-                <View
-                  style={{
-                    flexDirection: 'row',
-                    alignItems: 'center',
-                    gap: spacing.gutter,
-                    paddingVertical: spacing.stackSm + 2,
-                    paddingHorizontal: 4,
-                  }}
-                >
-                  <View style={{ flex: 1, gap: 3 }}>
-                    <View style={{ flexDirection: 'row', alignItems: 'center', gap: spacing.stackSm }}>
-                      <ThemedText
-                        variant="bodyMd"
-                        color="primary"
-                        lang="te"
-                        numberOfLines={1}
-                        style={{ fontWeight: '600', flex: 1 }}
-                      >
-                        {hymn.title.te}
-                      </ThemedText>
-                      <View
-                        style={{
-                          paddingHorizontal: 8,
-                          paddingVertical: 2,
-                          borderRadius: 20,
-                          backgroundColor:
-                            hymn.source === 'scripture'
-                              ? 'rgba(168,128,31,0.12)'
-                              : 'rgba(90,96,67,0.1)',
-                        }}
-                      >
-                        <ThemedText
-                          variant="labelSm"
-                          style={{
-                            color:
-                              hymn.source === 'scripture' ? colors.gold : colors.sage,
-                            letterSpacing: 0.5,
-                          }}
-                        >
-                          {hymn.source === 'scripture'
-                            ? t('scriptureSong', lang)
-                            : 'Song'}
-                        </ThemedText>
-                      </View>
-                    </View>
-                    <ThemedText variant="bodySm" color="onSurfaceVariant" numberOfLines={1}>
-                      {hymn.title.en}
-                      {hymn.reference ? ` · ${hymn.reference[lang]}` : ''}
-                    </ThemedText>
-                  </View>
-
-                  <FavoriteButton
-                    kind="hymn"
-                    refId={hymn.id}
-                    payload={{
-                      text: hymn.stanzas[0]?.te ?? hymn.title.te,
-                      reference: hymn.title[lang],
-                    }}
-                    size={18}
-                  />
-
-                  <ChevronRightIcon size={14} color={colors.outline} />
+                <View style={{ flex: 1, gap: 2 }}>
+                  <ThemedText
+                    variant="bodyMd"
+                    color="primary"
+                    lang="te"
+                    numberOfLines={1}
+                    style={{ fontWeight: '500' }}
+                  >
+                    {hymn.title.te}
+                  </ThemedText>
+                  <ThemedText
+                    variant="bodySm"
+                    color="onSurfaceVariant"
+                    numberOfLines={1}
+                    style={{ fontStyle: 'italic' }}
+                  >
+                    {hymn.title.en}
+                    {hymn.reference ? ` · ${hymn.reference[lang]}` : ''}
+                  </ThemedText>
                 </View>
+                <FavoriteButton
+                  kind="hymn"
+                  refId={hymn.id}
+                  payload={{
+                    text: hymn.stanzas[0]?.te ?? hymn.title.te,
+                    reference: hymn.title[lang],
+                  }}
+                  size={16}
+                />
               </Pressable>
             ))}
           </View>
         ))}
-      </Animated.ScrollView>
+      </ScrollView>
     </View>
   );
 }
