@@ -1,0 +1,5300 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - navigation "Primary Menu" [ref=e3]:
+      - generic [ref=e4]:
+        - generic [ref=e5]:
+          - list:
+            - listitem [ref=e6]:
+              - link "Telugu Songs" [ref=e7] [cursor=pointer]:
+                - /url: https://christianlyricz.com/
+            - listitem [ref=e8]:
+              - link "English Songs" [ref=e9] [cursor=pointer]:
+                - /url: https://christianlyricz.com/english-songs/
+            - listitem [ref=e10]:
+              - link "Hindi Songs" [ref=e11] [cursor=pointer]:
+                - /url: https://christianlyricz.com/hindi-songs/
+            - listitem [ref=e12]:
+              - link "Song Request" [ref=e13] [cursor=pointer]:
+                - /url: https://christianlyricz.com/song-request/
+            - listitem [ref=e14]:
+              - link "Post Lyrics" [ref=e15] [cursor=pointer]:
+                - /url: https://christianlyricz.com/post-lyrics/
+        - link "Search" [ref=e16] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e17]: 
+          - generic [ref=e18]: Search
+    - banner [ref=e19]:
+      - paragraph [ref=e22]:
+        - link "CHRISTIAN LYRICZ" [ref=e23] [cursor=pointer]:
+          - /url: https://christianlyricz.com/
+    - generic [ref=e25]:
+      - main [ref=e27]:
+        - article [ref=e28]:
+          - heading "Telugu Songs" [level=1] [ref=e31]
+          - generic [ref=e34]:
+            - tablist:
+              - tab "Home" [ref=e35] [cursor=pointer]
+              - tab "Telugu Index" [ref=e36] [cursor=pointer]
+              - tab "English Index" [ref=e37] [cursor=pointer]
+            - tabpanel "Home" [ref=e38]:
+              - paragraph:
+                - strong
+              - strong [ref=e40]:
+                - list [ref=e43]:
+                  - listitem [ref=e44]:
+                    - link "అ" [ref=e45] [cursor=pointer]:
+                      - /url: "#a-z-listing-letter-అ-1"
+                  - listitem [ref=e46]:
+                    - link "ఆ" [ref=e47] [cursor=pointer]:
+                      - /url: "#a-z-listing-letter-ఆ-1"
+                  - listitem [ref=e48]:
+                    - link "ఇ" [ref=e49] [cursor=pointer]:
+                      - /url: "#a-z-listing-letter-ఇ-1"
+                  - listitem [ref=e50]:
+                    - link "ఈ" [ref=e51] [cursor=pointer]:
+                      - /url: "#a-z-listing-letter-ఈ-1"
+                  - listitem [ref=e52]:
+                    - link "ఉ" [ref=e53] [cursor=pointer]:
+                      - /url: "#a-z-listing-letter-ఉ-1"
+                  - listitem [ref=e54]:
+                    - link "ఊ" [ref=e55] [cursor=pointer]:
+                      - /url: "#a-z-listing-letter-ఊ-1"
+                  - listitem [ref=e56]:
+                    - link "ఎ" [ref=e57] [cursor=pointer]:
+                      - /url: "#a-z-listing-letter-ఎ-1"
+                  - listitem [ref=e58]:
+                    - link "ఏ" [ref=e59] [cursor=pointer]:
+                      - /url: "#a-z-listing-letter-ఏ-1"
+                  - listitem [ref=e60]:
+                    - generic [ref=e61]: ఐ
+                  - listitem [ref=e62]:
+                    - link "ఒ" [ref=e63] [cursor=pointer]:
+                      - /url: "#a-z-listing-letter-ఒ-1"
+                  - listitem [ref=e64]:
+                    - link "ఓ" [ref=e65] [cursor=pointer]:
+                      - /url: "#a-z-listing-letter-ఓ-1"
+                  - listitem [ref=e66]:
+                    - generic [ref=e67]: ఔ
+                  - listitem [ref=e68]:
+                    - link "క" [ref=e69] [cursor=pointer]:
+                      - /url: "#a-z-listing-letter-క-1"
+                  - listitem [ref=e70]:
+                    - link "ఖ" [ref=e71] [cursor=pointer]:
+                      - /url: "#a-z-listing-letter-ఖ-1"
+                  - listitem [ref=e72]:
+                    - link "గ" [ref=e73] [cursor=pointer]:
+                      - /url: "#a-z-listing-letter-గ-1"
+                  - listitem [ref=e74]:
+                    - link "ఘ" [ref=e75] [cursor=pointer]:
+                      - /url: "#a-z-listing-letter-ఘ-1"
+                  - listitem [ref=e76]:
+                    - link "చ" [ref=e77] [cursor=pointer]:
+                      - /url: "#a-z-listing-letter-చ-1"
+                  - listitem [ref=e78]:
+                    - generic [ref=e79]: ఛ
+                  - listitem [ref=e80]:
+                    - link "జ" [ref=e81] [cursor=pointer]:
+                      - /url: "#a-z-listing-letter-జ-1"
+                  - listitem [ref=e82]:
+                    - generic [ref=e83]: ఝ
+                  - listitem [ref=e84]:
+                    - generic [ref=e85]: ట
+                  - listitem [ref=e86]:
+                    - generic [ref=e87]: ఠ
+                  - listitem [ref=e88]:
+                    - generic [ref=e89]: డ
+                  - listitem [ref=e90]:
+                    - generic [ref=e91]: ఢ
+                  - listitem [ref=e92]:
+                    - link "త" [ref=e93] [cursor=pointer]:
+                      - /url: "#a-z-listing-letter-త-1"
+                  - listitem [ref=e94]:
+                    - generic [ref=e95]: థ
+                  - listitem [ref=e96]:
+                    - link "ద" [ref=e97] [cursor=pointer]:
+                      - /url: "#a-z-listing-letter-ద-1"
+                  - listitem [ref=e98]:
+                    - link "ధ" [ref=e99] [cursor=pointer]:
+                      - /url: "#a-z-listing-letter-ధ-1"
+                  - listitem [ref=e100]:
+                    - link "న" [ref=e101] [cursor=pointer]:
+                      - /url: "#a-z-listing-letter-న-1"
+                  - listitem [ref=e102]:
+                    - link "ప" [ref=e103] [cursor=pointer]:
+                      - /url: "#a-z-listing-letter-ప-1"
+                  - listitem [ref=e104]:
+                    - link "ఫ" [ref=e105] [cursor=pointer]:
+                      - /url: "#a-z-listing-letter-ఫ-1"
+                  - listitem [ref=e106]:
+                    - link "బ" [ref=e107] [cursor=pointer]:
+                      - /url: "#a-z-listing-letter-బ-1"
+                  - listitem [ref=e108]:
+                    - link "భ" [ref=e109] [cursor=pointer]:
+                      - /url: "#a-z-listing-letter-భ-1"
+                  - listitem [ref=e110]:
+                    - link "మ" [ref=e111] [cursor=pointer]:
+                      - /url: "#a-z-listing-letter-మ-1"
+                  - listitem [ref=e112]:
+                    - link "య" [ref=e113] [cursor=pointer]:
+                      - /url: "#a-z-listing-letter-య-1"
+                  - listitem [ref=e114]:
+                    - link "ర" [ref=e115] [cursor=pointer]:
+                      - /url: "#a-z-listing-letter-ర-1"
+                  - listitem [ref=e116]:
+                    - link "ల" [ref=e117] [cursor=pointer]:
+                      - /url: "#a-z-listing-letter-ల-1"
+                  - listitem [ref=e118]:
+                    - link "వ" [ref=e119] [cursor=pointer]:
+                      - /url: "#a-z-listing-letter-వ-1"
+                  - listitem [ref=e120]:
+                    - link "శ" [ref=e121] [cursor=pointer]:
+                      - /url: "#a-z-listing-letter-శ-1"
+                  - listitem [ref=e122]:
+                    - link "స" [ref=e123] [cursor=pointer]:
+                      - /url: "#a-z-listing-letter-స-1"
+                  - listitem [ref=e124]:
+                    - link "హ" [ref=e125] [cursor=pointer]:
+                      - /url: "#a-z-listing-letter-హ-1"
+                  - listitem [ref=e126]:
+                    - generic [ref=e127]: ళ
+                  - listitem [ref=e128]:
+                    - generic [ref=e129]: ఱ
+                  - listitem [ref=e130]:
+                    - link "#" [ref=e131] [cursor=pointer]:
+                      - /url: "#a-z-listing-letter-_-1"
+                - generic [ref=e133]:
+                  - generic [ref=e134]:
+                    - heading "అ" [level=2] [ref=e135]
+                    - list [ref=e136]:
+                      - listitem [ref=e137]:
+                        - link "అగ్ని మండించు" [ref=e138] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/10/10/agni-mandinchu-naalo/
+                      - listitem [ref=e139]:
+                        - link "అడగక ముందే" [ref=e140] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/02/17/adagaka-mundhe/
+                      - listitem [ref=e141]:
+                        - link "అడవి చెట్ల నడుమ" [ref=e142] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/10/01/adavi-chetla-naduma/
+                      - listitem [ref=e143]:
+                        - link "అడిగినది కొంతే అయినా" [ref=e144] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/09/14/adiginadi-konthe-ainaa/
+                      - listitem [ref=e145]:
+                        - link "అడుగడుగున రక్త బింధువులే" [ref=e146] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/02/01/adugaduguna-raktha-bindhuvule/
+                      - listitem [ref=e147]:
+                        - link "అత్యున్నతమైనది యేసు నామం" [ref=e148] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/10/15/athyunnathamainadi-yesu-naamam/
+                      - listitem [ref=e149]:
+                        - link "అత్యున్నత సింహాసనముపై" [ref=e150] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/01/19/athyunnatha-simhaasanamupai/
+                      - listitem [ref=e151]:
+                        - link "అత్యున్నత సింహాసనముపై (యేసన్న)" [ref=e152] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/11/01/athyunnatha-simhaasanamupai-yesanna/
+                      - listitem [ref=e153]:
+                        - link "అతిపరిశుద్ధుడా స్తుతి నైవేద్యము" [ref=e154] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2025/07/19/athi-parishuddhudaa-sthuthi-naivedyamu/
+                      - listitem [ref=e155]:
+                        - link "అద్భుతకరుడా" [ref=e156] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2023/06/11/adbhuthakarudaa/
+                      - listitem [ref=e157]:
+                        - link "అద్వితీయ సత్య దేవా" [ref=e158] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/09/04/advitheeya-sathya-devaa/
+                      - listitem [ref=e159]:
+                        - link "అద్వితీయ సత్య దేవుడు" [ref=e160] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/09/04/advitheeya-sathya-devudu/
+                      - listitem [ref=e161]:
+                        - link "అదిగదిగో అల్లదిగో" [ref=e162] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/03/25/adhigadhigo-alladhigo/
+                      - listitem [ref=e163]:
+                        - link "అదిగదిగో ఒక యుద్ధం" [ref=e164] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2025/01/13/adigadigo-oka-yuddham/
+                      - listitem [ref=e165]:
+                        - link "అదిగో నా నావ" [ref=e166] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/01/19/adigo-naa-naava/
+                      - listitem [ref=e167]:
+                        - link "అదే అదే ఆ రోజు" [ref=e168] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/10/15/ade-ade-aa-roju/
+                      - listitem [ref=e169]:
+                        - link "అన్నిటి కన్నా ప్రార్థనే మిన్న" [ref=e170] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/01/20/annitikannaa-praarthana-minna/
+                      - listitem [ref=e171]:
+                        - link "అన్ని కాలంబుల" [ref=e172] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/01/26/anni-kaalambula/
+                      - listitem [ref=e173]:
+                        - link "అన్ని నామముల కన్న" [ref=e174] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/10/31/anni-naamamula-kanna/
+                      - listitem [ref=e175]:
+                        - link "అన్ని నామముల కన్న ఘనమైన" [ref=e176] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/10/31/anni-naamamulakanna-ghanamaina/
+                      - listitem [ref=e177]:
+                        - link "అన్ని వేళల ఆరాధన" [ref=e178] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/04/29/anni-velala-aaraadhana/
+                      - listitem [ref=e179]:
+                        - link "అన్ని వేళల వినువాడు" [ref=e180] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/08/08/anni-velala-vinuvaadu/
+                      - listitem [ref=e181]:
+                        - link "అన్ని సాధ్యమే యేసులో" [ref=e182] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/08/24/anni-saadhyame-yesulo/
+                      - listitem [ref=e183]:
+                        - link "అన్నీ సాధ్యమే యేసుకు" [ref=e184] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/08/12/anni-saadhyame/
+                      - listitem [ref=e185]:
+                        - link "అన్యజనులేల" [ref=e186] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/06/15/anya-janulela/
+                      - listitem [ref=e187]:
+                        - link "అనుదినము ప్రభుని" [ref=e188] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/10/24/anudinamu-prabhuni/
+                      - listitem [ref=e189]:
+                        - link "అనుదినం ఆ ప్రభుని వరమే" [ref=e190] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/08/26/anudinam/
+                      - listitem [ref=e191]:
+                        - link "అప్పగింపబడిన రాత్రి" [ref=e192] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/10/23/appagimpabadina-raathri/
+                      - listitem [ref=e193]:
+                        - link "అపరాధిని యేసయ్యా" [ref=e194] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/09/02/aparaadhini-yesayya/
+                      - listitem [ref=e195]:
+                        - link "అబ్రాహాము ఇస్సాకు యాకోబునకు" [ref=e196] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/01/04/abraahaamu-issaaku-yaakobulaku/
+                      - listitem [ref=e197]:
+                        - link "అమ్మల్లారా ఓ అక్కల్లారా" [ref=e198] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/10/30/ammallaara-o-akkallaara/
+                      - listitem [ref=e199]:
+                        - link "అమ్మ కన్న మిన్న" [ref=e200] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/04/27/amma-kanna-minna/
+                      - listitem [ref=e201]:
+                        - link "అమ్మ కోసం" [ref=e202] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/05/14/amma-kosam/
+                      - listitem [ref=e203]:
+                        - link "అమ్మా అని నిన్ను పిలువనా" [ref=e204] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/09/13/ammaa-ani-ninnu-piluvanaa/
+                      - listitem [ref=e205]:
+                        - link "అమూల్యమైన ఆణిముత్యమా" [ref=e206] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/06/26/amoolyamaina-aanimuthyamaa/
+                      - listitem [ref=e207]:
+                        - link "అమూల్య రక్తము ద్వారా" [ref=e208] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/07/06/amoolya-rakthamu-dwaaraa/
+                      - listitem [ref=e209]:
+                        - link "అమూల్య రక్తం" [ref=e210] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/10/17/amoolya-raktham/
+                      - listitem [ref=e211]:
+                        - link "అయ్యా నా కోసం కల్వరిలో" [ref=e212] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/03/14/ayyaa-naa-kosam-kalvarilo/
+                      - listitem [ref=e213]:
+                        - link "అయ్యా వందనాలు" [ref=e214] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2024/01/10/ayyaa-vandanaalu/
+                      - listitem [ref=e215]:
+                        - link "అర్పించుచుంటిని యేసయ్యా" [ref=e216] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/09/04/arpinchuchuntini-yesayyaa/
+                      - listitem [ref=e217]:
+                        - link "అరుణ కాంతి కిరణమై" [ref=e218] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/12/18/aruna-kaanthi-kiranamai/
+                      - listitem [ref=e219]:
+                        - link "అల్ఫా ఒమేగయైన" [ref=e220] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/02/11/alphaa-omegayaina/
+                      - listitem [ref=e221]:
+                        - link "అలంకరించును" [ref=e222] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2023/01/05/alankarinchunu/
+                      - listitem [ref=e223]:
+                        - link "అవధులే లేనిది" [ref=e224] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/03/23/avadhule-lenidi/
+                      - listitem [ref=e225]:
+                        - link "అసాధ్యమైనది లేనే లేదు" [ref=e226] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/08/28/asaadhyamainadi-lene-ledu/
+                      - listitem [ref=e227]:
+                        - link "అంకితం ప్రభూ నా జీవితం" [ref=e228] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/08/26/ankitham-prabhu-naa-jeevitham/
+                      - listitem [ref=e229]:
+                        - link "అంజలి ఘటియింతు" [ref=e230] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/09/01/anjali-ghatiyinthu/
+                      - listitem [ref=e231]:
+                        - link "అంటరాని వాడవంటు" [ref=e232] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2023/08/04/antaraani-vaadavantu/
+                      - listitem [ref=e233]:
+                        - link "అంత్య దినములయందు" [ref=e234] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/07/13/anthya-dinamula-yandu/
+                      - listitem [ref=e235]:
+                        - link "అంతా నా మేలుకే" [ref=e236] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/01/12/anthaa-naa-meluke/
+                      - listitem [ref=e237]:
+                        - link "అంతే లేని నీ ప్రేమ ధార" [ref=e238] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/03/11/anthe-leni-nee-prema-dhaara/
+                      - listitem [ref=e239]:
+                        - link "అందమైన క్షణము" [ref=e240] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/12/06/andamaina-kshanamu/
+                      - listitem [ref=e241]:
+                        - link "అందమైన మధురమైన" [ref=e242] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/08/31/andamaina-madhuramaina/
+                      - listitem [ref=e243]:
+                        - link "అందరికి కావాలి" [ref=e244] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/11/01/andariki-kaavaali/
+                      - listitem [ref=e245]:
+                        - link "అందరు నన్ను విడచినా" [ref=e246] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/11/25/andaru-nannu-vidachinaa/
+                      - listitem [ref=e247]:
+                        - link "అందరు మెచ్చిన అందాల తార" [ref=e248] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/12/13/andaru-mechchina-andaala/
+                      - listitem [ref=e249]:
+                        - link "అందాలతార" [ref=e250] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2014/11/08/andaala-thaara/
+                      - listitem [ref=e251]:
+                        - link "అందాల ఉద్యానవనమా" [ref=e252] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/10/15/andaala-udyaanavanamaa/
+                      - listitem [ref=e253]:
+                        - link "అందాల బాలుడు" [ref=e254] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/10/29/andaala-baaludu/
+                      - listitem [ref=e255]:
+                        - link "అందాలు చిందే" [ref=e256] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/06/29/andaalu-chinde/
+                      - listitem [ref=e257]:
+                        - link "అంధకార చెరసాలలో" [ref=e258] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/07/06/andhakaara-cherasaalalo/
+                      - listitem [ref=e259]:
+                        - link "అంబరాన్ని దాటే" [ref=e260] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2019/11/19/ambaraanni-daate/
+                      - listitem [ref=e261]:
+                        - link "అంబరానికి అంటేలా" [ref=e262] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/11/07/ambaraaniki-antelaa/
+                      - listitem [ref=e263]:
+                        - link "అంబరానికి అంటేలా (యేసయ్య పుట్టాడని)" [ref=e264] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/12/03/ambaraaniki-antelaa-yesayya-puttaadani/
+                    - link " Back to top " [ref=e266] [cursor=pointer]:
+                      - /url: "#a-z-listing-1"
+                  - generic [ref=e267]:
+                    - heading "ఆ" [level=2] [ref=e268]
+                    - list [ref=e269]:
+                      - listitem [ref=e270]:
+                        - link "ఆకర్షించే ప్రియుడా" [ref=e271] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/02/17/aakarshinche-priyudaa/
+                      - listitem [ref=e272]:
+                        - link "ఆకశాన తార ఒకటి" [ref=e273] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/10/10/aakashaana-thaara-okati/
+                      - listitem [ref=e274]:
+                        - link "ఆకాశమందున్న ఆసీనుడా" [ref=e275] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/01/19/aakaashamandunna-aaseenudaa/
+                      - listitem [ref=e276]:
+                        - link "ఆకాశమందు నీవుండగా" [ref=e277] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/06/15/aakaashamandu-neevundagaa/
+                      - listitem [ref=e278]:
+                        - link "ఆకాశమా ఆలకించుమా" [ref=e279] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/05/12/aakaashamaa-aalakinchumaa/
+                      - listitem [ref=e280]:
+                        - link "ఆకాశము నీ సింహాసనం" [ref=e281] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2023/03/09/aakaashamu-nee-simhaasanam/
+                      - listitem [ref=e282]:
+                        - link "ఆకాశమే పట్టనోడు" [ref=e283] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/12/15/aakaashame-pattanodu/
+                      - listitem [ref=e284]:
+                        - link "ఆకాశ పక్షులను చూడండి" [ref=e285] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2019/01/28/aakaasha-pakshulanu-choodandi/
+                      - listitem [ref=e286]:
+                        - link "ఆకాశ మహాకాశంబులు" [ref=e287] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/10/23/aakaasha-mahaakaashambulu/
+                      - listitem [ref=e288]:
+                        - link "ఆకాశ వాసులారా" [ref=e289] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/10/10/aakaasha-vaasulaaraa/
+                      - listitem [ref=e290]:
+                        - link "ఆకాశంబున్ దూతలు" [ref=e291] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/11/18/aakaashambun-doothalu/
+                      - listitem [ref=e292]:
+                        - link "ఆకాశం అమృత జల్లులు" [ref=e293] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/02/01/aakaasham-amrutha-jallulu/
+                      - listitem [ref=e294]:
+                        - link "ఆకాశం నీ సింహాసనం" [ref=e295] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2023/03/09/aakaasham-nee-simhaasanam/
+                      - listitem [ref=e296]:
+                        - link "ఆగక సాగుమా" [ref=e297] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/07/24/aagaka-saagumaa/
+                      - listitem [ref=e298]:
+                        - link "ఆగని పరుగులో" [ref=e299] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/02/02/aagani-parugulo/
+                      - listitem [ref=e300]:
+                        - link "ఆడెదన్ పాడెదన్" [ref=e301] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/10/28/aadedhan-paadedhan/
+                      - listitem [ref=e302]:
+                        - link "ఆత్మ దీపమును" [ref=e303] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/10/24/aathma-deepamunu/
+                      - listitem [ref=e304]:
+                        - link "ఆత్మ వర్షమును" [ref=e305] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/11/26/aathma-varshamunu/
+                      - listitem [ref=e306]:
+                        - link "ఆత్మ వర్షము మాపై" [ref=e307] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/04/25/aathma-varshamu-maapai/
+                      - listitem [ref=e308]:
+                        - link "ఆత్మ విషయమై" [ref=e309] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/09/13/aathma-vishayamai/
+                      - listitem [ref=e310]:
+                        - link "ఆత్మీయ గానాలతో" [ref=e311] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/08/25/aathmeeya-gaanaalatho/
+                      - listitem [ref=e312]:
+                        - link "ఆదాము హవ్వల కళ్యాణం" [ref=e313] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2026/02/20/aadaamu-havvala-kalyaanam/
+                      - listitem [ref=e314]:
+                        - link "ఆదియంతము లేనివాడా" [ref=e315] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/12/29/aadiyanthamu-lenivaadaa/
+                      - listitem [ref=e316]:
+                        - link "ఆధారం నాకు ఆధారం" [ref=e317] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/12/30/aadhaaram-naaku-aadhaaram/
+                      - listitem [ref=e318]:
+                        - link "ఆధారం నీవేనయ్యా" [ref=e319] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/10/10/aadhaaram-neevenayyaa/
+                      - listitem [ref=e320]:
+                        - link "ఆధారం నీవేనయ్యా (డి జి ఎస్)" [ref=e321] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/05/16/aadhaaram-neevenayya-dgs/
+                      - listitem [ref=e322]:
+                        - link "ఆధారం నీవేనయ్యా (మెడ్లి)" [ref=e323] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/06/01/aadhaaram-neevenayyaa-medley/
+                      - listitem [ref=e324]:
+                        - link "ఆనందమానందమే" [ref=e325] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/07/17/aanandamaanandame/
+                      - listitem [ref=e326]:
+                        - link "ఆనందముగా యెహోవా నీ" [ref=e327] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2014/11/30/aanandamugaa-yehovaa-nee/
+                      - listitem [ref=e328]:
+                        - link "ఆనందము ప్రభు నాకొసగెను" [ref=e329] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/10/09/aanandamu-prabhu-naakosagenu/
+                      - listitem [ref=e330]:
+                        - link "ఆనందమే పరమానందమే" [ref=e331] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/02/14/aanandame-paramaanandame/
+                      - listitem [ref=e332]:
+                        - link "ఆనంద తైలాభిషేకము" [ref=e333] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/05/22/aananda-thailaabhishekamu/
+                      - listitem [ref=e334]:
+                        - link "ఆనంద యాత్ర" [ref=e335] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2013/02/09/aananda-yaathra/
+                      - listitem [ref=e336]:
+                        - link "ఆనందం నీలోనే" [ref=e337] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/07/28/aanandam-neelone/
+                      - listitem [ref=e338]:
+                        - link "ఆనందింతుము" [ref=e339] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2019/08/31/aanandinthumu/
+                      - listitem [ref=e340]:
+                        - link "ఆనందింతు నీలో దేవా" [ref=e341] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/11/18/aanandinthu-neelo-devaa/
+                      - listitem [ref=e342]:
+                        - link "ఆపత్కాలమున" [ref=e343] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/08/21/aapathkaalamuna/
+                      - listitem [ref=e344]:
+                        - link "ఆయనే నా సంగీతము" [ref=e345] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2013/11/05/aayane-naa-sangeethamu/
+                      - listitem [ref=e346]:
+                        - link "ఆరని ప్రేమ ఇది" [ref=e347] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/01/24/aarani-prema-idi/
+                      - listitem [ref=e348]:
+                        - link "ఆరంభమయ్యింది రెస్టోరేషన్" [ref=e349] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/06/20/aarambhamayyindi-restoration/
+                      - listitem [ref=e350]:
+                        - link "ఆరాధనకు యోగ్యుడా" [ref=e351] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/08/19/aaraadhanaku-yogyudaa/
+                      - listitem [ref=e352]:
+                        - link "ఆరాధన అధిక స్తోత్రము" [ref=e353] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/11/10/aaraadhana-adhika-sthothramu/
+                      - listitem [ref=e354]:
+                        - link "ఆరాధన అందుకో" [ref=e355] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/01/23/aaraadhana-anduko/
+                      - listitem [ref=e356]:
+                        - link "ఆరాధన ఆరాధన" [ref=e357] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/07/22/aaraadhana-aaraadhana/
+                      - listitem [ref=e358]:
+                        - link "ఆరాధన నీకే" [ref=e359] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/10/09/aaraadhana-neeke/
+                      - listitem [ref=e360]:
+                        - link "ఆరాధన యేసు నీకే" [ref=e361] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/11/06/aaraadhana-yesu-neeke/
+                      - listitem [ref=e362]:
+                        - link "ఆరాధన స్తుతి ఆరాధన" [ref=e363] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/04/13/aaraadhana-sthuthi-aaraadhana/
+                      - listitem [ref=e364]:
+                        - link "ఆరాధన… ఆరాధన…" [ref=e365] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/06/11/aaraadhana-aaraadhana-2/
+                      - listitem [ref=e366]:
+                        - link "ఆరాధనా ఆరాధనా – ఆత్మతో" [ref=e367] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/01/11/aaraadhanaa-aaraadhanaa-aathmatho/
+                      - listitem [ref=e368]:
+                        - link "ఆరాధనా నీకే ఆరాధనా" [ref=e369] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/04/01/aaraadhanaa-neeke-aaraadhanaa/
+                      - listitem [ref=e370]:
+                        - link "ఆరాధించెద" [ref=e371] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/03/17/aaraadhincheda/
+                      - listitem [ref=e372]:
+                        - link "ఆరాధించెదను నిన్ను" [ref=e373] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/10/09/aaraadhinchedanu-ninnu/
+                      - listitem [ref=e374]:
+                        - link "ఆరాధించెదము ఆత్మతో" [ref=e375] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/05/23/aaraadhinchedamu-aathmatho/
+                      - listitem [ref=e376]:
+                        - link "ఆరాధించెదము యేసయ్య" [ref=e377] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/08/09/aaraadhinchedamu-yesayya/
+                      - listitem [ref=e378]:
+                        - link "ఆరాధించెదం" [ref=e379] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/06/22/aaraadhinchedam/
+                      - listitem [ref=e380]:
+                        - link "ఆరిపోయే దీపంలా" [ref=e381] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/10/25/aaripoye-deepamlaa/
+                      - listitem [ref=e382]:
+                        - link "ఆలకించుమో దేవా" [ref=e383] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/10/22/aalakinchumo-devaa/
+                      - listitem [ref=e384]:
+                        - link "ఆలకించు దేవా" [ref=e385] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/10/26/aalakinchu-devaa/
+                      - listitem [ref=e386]:
+                        - link "ఆలయంలో ప్రవేశించండి" [ref=e387] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/01/26/aalayamlo-praveshinchandi-2/
+                      - listitem [ref=e388]:
+                        - link "ఆలోచనలో గొప్పవాడా" [ref=e389] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/03/20/aalochanalo-goppavaadaa/
+                      - listitem [ref=e390]:
+                        - link "ఆవేదన నేనొందను" [ref=e391] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/01/07/aavedana-nenondanu/
+                      - listitem [ref=e392]:
+                        - link "ఆవో ఖుషీ సే" [ref=e393] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/12/11/aao-khushi-se/
+                      - listitem [ref=e394]:
+                        - link "ఆశ్చర్యకరుడా ఆలోచనకర్త" [ref=e395] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/12/18/aascharyakarudaa-aalochanakartha/
+                      - listitem [ref=e396]:
+                        - link "ఆశ్చర్యకరుడు" [ref=e397] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/03/27/aascharyakarudu/
+                      - listitem [ref=e398]:
+                        - link "ఆశ్చర్యకరుడు ఆలోచనకర్త" [ref=e399] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/10/27/aascharyakarudu-aalochanakartha/
+                      - listitem [ref=e400]:
+                        - link "ఆశ్చర్యమైన ప్రేమ" [ref=e401] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2014/11/30/aascharyamaina-prema/
+                      - listitem [ref=e402]:
+                        - link "ఆశ్చర్య కార్యముల్" [ref=e403] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/08/26/aascharya-kaaryamul-cheyunu-yesu/
+                      - listitem [ref=e404]:
+                        - link "ఆశ్చర్యాకరుడా (యేసన్న)" [ref=e405] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/01/22/aascharyakarudaa-yesanna/
+                      - listitem [ref=e406]:
+                        - link "ఆశ్రయదుర్గమా" [ref=e407] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/10/11/aashraya-durgamaa-naa-yesayyaa/
+                      - listitem [ref=e408]:
+                        - link "ఆశ్రయమా ఆధారమా" [ref=e409] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/05/30/aashrayamaa-aadhaaramaa/
+                      - listitem [ref=e410]:
+                        - link "ఆశ్రయుడా నా అభిషిక్తుడా" [ref=e411] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/09/21/aashrayudaa-naa-abhishikthudaa/
+                      - listitem [ref=e412]:
+                        - link "ఆశతో నీ కొరకు" [ref=e413] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2019/11/06/aashatho-nee-koraku/
+                      - listitem [ref=e414]:
+                        - link "ఆశపడకు ఈ లోకం కోసం" [ref=e415] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/08/30/aashapadaku-ee-lokam-kosam/
+                      - listitem [ref=e416]:
+                        - link "ఆశ తీర నా యేసు స్వామిని" [ref=e417] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/01/02/aasha-theera-naa-yesu-swaamini/
+                      - listitem [ref=e418]:
+                        - link "ఆశీర్వాదం" [ref=e419] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/11/03/aasheervaadam/
+                      - listitem [ref=e420]:
+                        - link "ఆశీర్వాదంబుల్ మా మీద" [ref=e421] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/10/09/aasheervaadambul-maa-meeda/
+                      - listitem [ref=e422]:
+                        - link "ఆహా ఆనందమే" [ref=e423] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/12/23/aahaa-aanandame/
+                      - listitem [ref=e424]:
+                        - link "ఆహా ఆనందమే పరమానందమే" [ref=e425] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/01/05/aahaa-aanandame-seeyonu/
+                      - listitem [ref=e426]:
+                        - link "ఆహా మహాత్మ" [ref=e427] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/03/14/aahaa-mahaathma/
+                      - listitem [ref=e428]:
+                        - link "ఆహా యేమానందం" [ref=e429] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/10/24/aahaa-yemaanandam/
+                      - listitem [ref=e430]:
+                        - link "ఆహా హల్లెలూయా" [ref=e431] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/10/31/thaara-joopina-maargamade/
+                      - listitem [ref=e432]:
+                        - link "ఆ దరి చేరే" [ref=e433] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/07/30/aa-dari-chere-daare-kanaraadu/
+                      - listitem [ref=e434]:
+                        - link "ఆ నింగిలో వెలిగింది" [ref=e435] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/12/04/aa-ningilo-veligindi-oka-thaara/
+                      - listitem [ref=e436]:
+                        - link "ఆ భోజన పంక్తిలో" [ref=e437] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/10/18/aa-bhojana-pankthilo/
+                      - listitem [ref=e438]:
+                        - link "ఆ రాజే నా రాజు" [ref=e439] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/11/12/aa-raaje-naa-raaju/
+                      - listitem [ref=e440]:
+                        - link "ఆ శ్రేష్టంబౌ గ్రంథములో" [ref=e441] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/11/14/aa-srehstambau-grandhamulo/
+                    - link " Back to top " [ref=e443] [cursor=pointer]:
+                      - /url: "#a-z-listing-1"
+                  - generic [ref=e444]:
+                    - heading "ఇ" [level=2] [ref=e445]
+                    - list [ref=e446]:
+                      - listitem [ref=e447]:
+                        - link "ఇకనైన కానీ" [ref=e448] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/02/19/ikanaina-kaani/
+                      - listitem [ref=e449]:
+                        - link "ఇద్దరొక్కటిగ మారేటి" [ref=e450] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2019/10/24/iddarokkatiga-maareti/
+                      - listitem [ref=e451]:
+                        - link "ఇదిగో దేవా ఈ హృదయం" [ref=e452] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/01/13/idigo-devaa-ee-hrudayam/
+                      - listitem [ref=e453]:
+                        - link "ఇదిగో దేవా నా జీవితం" [ref=e454] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2013/11/05/idigo-deva-naa-jeevitham/
+                      - listitem [ref=e455]:
+                        - link "ఇదిగో దేవుని గొర్రెపిల్లా" [ref=e456] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/10/11/idigo-devuni-gorrepilla/
+                      - listitem [ref=e457]:
+                        - link "ఇదిగో నేనొక నూతన క్రియను" [ref=e458] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2024/11/09/idigo-nenoka-noothana-kriyanu/
+                      - listitem [ref=e459]:
+                        - link "ఇదియేనయ్య మా ప్రార్థన" [ref=e460] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/10/23/idiyenayya-maa-praarthana/
+                      - listitem [ref=e461]:
+                        - link "ఇదియే సమయంబు రండి" [ref=e462] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/02/16/idiye-samayambu-randi/
+                      - listitem [ref=e463]:
+                        - link "ఇది కోతకు సమయం" [ref=e464] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/11/01/idi-kothaku-samayam/
+                      - listitem [ref=e465]:
+                        - link "ఇది దేవుని నిర్ణయము" [ref=e466] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/03/13/idhi-devuni-nirnayamu/
+                      - listitem [ref=e467]:
+                        - link "ఇది శుభోదయం" [ref=e468] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/09/01/idi-shubhodayam/
+                      - listitem [ref=e469]:
+                        - link "ఇదేనా న్యాయమిదియేనా" [ref=e470] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/08/31/idenaa-nyaayamidiyenaa/
+                      - listitem [ref=e471]:
+                        - link "ఇదే నా కోరిక" [ref=e472] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/01/19/ide-naa-korika/
+                      - listitem [ref=e473]:
+                        - link "ఇదే నా హృదయ వాంఛన" [ref=e474] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/02/17/idhe-naa-hrudhaya-vaanchana/
+                      - listitem [ref=e475]:
+                        - link "ఇన్నాళ్లు తోడుగా" [ref=e476] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/06/09/innaallu-thodugaa/
+                      - listitem [ref=e477]:
+                        - link "ఇన్నేళ్లు ఇలలో" [ref=e478] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/12/13/innellu-ilalo/
+                      - listitem [ref=e479]:
+                        - link "ఇబాదత్ కరో" [ref=e480] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/11/13/ibaadath-karo/
+                      - listitem [ref=e481]:
+                        - link "ఇమ్మానుయేలు దేవుడా" [ref=e482] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/12/13/immaanuyelu-devudaa/
+                      - listitem [ref=e483]:
+                        - link "ఇమ్మానుయేలు రక్తము" [ref=e484] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/05/10/immaanuyelu-rakthamu/
+                      - listitem [ref=e485]:
+                        - link "ఇయ్యాల ఇంట్ల రేపు మంట్ల" [ref=e486] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/11/01/iyyaala-intla-repu-mantla/
+                      - listitem [ref=e487]:
+                        - link "ఇరువది నలుగురు పెద్దలతో" [ref=e488] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/08/08/iruvadi-naluguru-peddalatho/
+                      - listitem [ref=e489]:
+                        - link "ఇశ్రాయేలు దేవా" [ref=e490] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/04/25/ishraayelu-devaa/
+                      - listitem [ref=e491]:
+                        - link "ఇశ్రాయేలు రాజువే" [ref=e492] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/06/12/ishraayelu-raajuve/
+                      - listitem [ref=e493]:
+                        - link "ఇశ్రాయేలు సైన్యములకు" [ref=e494] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/05/31/ishraayelu-sainyamulaku/
+                      - listitem [ref=e495]:
+                        - link "ఇసుక మీద ఇల్లు కట్టకు" [ref=e496] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/05/19/isuka-meeda-illu-kattaku/
+                      - listitem [ref=e497]:
+                        - link "ఇహమందున" [ref=e498] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/10/20/ihamanduna-aa-paramanduna/
+                      - listitem [ref=e499]:
+                        - link "ఇహలోక పాపి కొరకు" [ref=e500] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/04/26/ihaloka-paapi-koraku/
+                      - listitem [ref=e501]:
+                        - link "ఇళ్లలోన పండుగంట" [ref=e502] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2014/11/08/illalona-panduganta/
+                      - listitem [ref=e503]:
+                        - link "ఇంటి మీద నున్న" [ref=e504] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/07/30/inti-meeda-nunna/
+                      - listitem [ref=e505]:
+                        - link "ఇంతలోనే కనబడి" [ref=e506] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/10/27/inthalone-kanabadi/
+                      - listitem [ref=e507]:
+                        - link "ఇంతవరకు కాపాడినావు" [ref=e508] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2022/11/15/intha-varaku-kaapaadinaavu/
+                      - listitem [ref=e509]:
+                        - link "ఇంతవరకు నీవు" [ref=e510] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2023/03/12/inthavaraku-neevu/
+                      - listitem [ref=e511]:
+                        - link "ఇంత కాలం" [ref=e512] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/08/04/intha-kaalam/
+                    - link " Back to top " [ref=e514] [cursor=pointer]:
+                      - /url: "#a-z-listing-1"
+                  - generic [ref=e515]:
+                    - heading "ఈ" [level=2] [ref=e516]
+                    - list [ref=e517]:
+                      - listitem [ref=e518]:
+                        - link "ఈలాటిదా యేసు ప్రేమ" [ref=e519] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/03/14/eelaatidaa-yesu-prema/
+                      - listitem [ref=e520]:
+                        - link "ఈస్టర్ మెడ్లీ" [ref=e521] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2024/03/26/easter-medley/
+                      - listitem [ref=e522]:
+                        - link "ఈ ఉదయమున" [ref=e523] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2023/02/17/ee-udayamuna/
+                      - listitem [ref=e524]:
+                        - link "ఈ ఉదయం శుభ ఉదయం" [ref=e525] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/11/04/ee-udayam-shubha-udayam/
+                      - listitem [ref=e526]:
+                        - link "ఈ జీవితం విలువైనది" [ref=e527] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/09/01/ee-jeevitham-viluvainadi/
+                      - listitem [ref=e528]:
+                        - link "ఈ తరం యువతరం" [ref=e529] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/11/10/ee-tharam-yuvatharam/
+                      - listitem [ref=e530]:
+                        - link "ఈ దినమెంతో శుభ దినము" [ref=e531] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/12/31/ee-dinamentho/
+                      - listitem [ref=e532]:
+                        - link "ఈ దినం క్రీస్తు జన్మ దినం" [ref=e533] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/12/19/ee-dinam/
+                      - listitem [ref=e534]:
+                        - link "ఈ దినం సదా" [ref=e535] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/10/12/ee-dinam-sadaa/
+                      - listitem [ref=e536]:
+                        - link "ఈ మరణము కాదు" [ref=e537] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/05/31/ee-maranamu-kaadu/
+                      - listitem [ref=e538]:
+                        - link "ఈ లోక యాత్రాలో" [ref=e539] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/07/30/ee-loka-yaathraalo/
+                      - listitem [ref=e540]:
+                        - link "ఈ లోకంలో జీవించెదను" [ref=e541] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/10/02/ee-lokamlo-jeevinchedanu/
+                      - listitem [ref=e542]:
+                        - link "ఈ స్తుతి నీకే" [ref=e543] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/06/12/ee-sthuthi-neeke/
+                      - listitem [ref=e544]:
+                        - link "ఈ సాయంకాలమున" [ref=e545] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2022/06/07/ee-saayankaalamuna/
+                    - link " Back to top " [ref=e547] [cursor=pointer]:
+                      - /url: "#a-z-listing-1"
+                  - generic [ref=e548]:
+                    - heading "ఉ" [level=2] [ref=e549]
+                    - list [ref=e550]:
+                      - listitem [ref=e551]:
+                        - link "ఉత్సాహ గానము చేసెదము" [ref=e552] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/05/17/uthsaaha-gaanamu-chesedamu/
+                      - listitem [ref=e553]:
+                        - link "ఉతక మీద తలుపు" [ref=e554] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/08/09/uthaka-meeda-thalupu/
+                      - listitem [ref=e555]:
+                        - link "ఉదయకాలము మధ్యాహ్నము" [ref=e556] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/06/12/udayakaalamu-madhyahaanamu/
+                      - listitem [ref=e557]:
+                        - link "ఉదయమాయె హృదయమా" [ref=e558] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/06/27/udayamaaye-hrudayamaa/
+                      - listitem [ref=e559]:
+                        - link "ఉదయించినాడు" [ref=e560] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2022/12/07/udayinchinaadu/
+                      - listitem [ref=e561]:
+                        - link "ఉదయించె దివ్య రక్షకుడు" [ref=e562] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/12/18/udayinche-divya-rakshakudu/
+                      - listitem [ref=e563]:
+                        - link "ఉన్నత స్థలములలో" [ref=e564] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/11/18/unnatha-sthalamulalo/
+                      - listitem [ref=e565]:
+                        - link "ఉన్నపాటున వచ్చుచున్నాను" [ref=e566] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/11/19/4723/
+                      - listitem [ref=e567]:
+                        - link "ఉన్నాడు దేవుడు నాకు తోడు" [ref=e568] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/06/05/unnaadu-devudu-naaku-thodu/
+                      - listitem [ref=e569]:
+                        - link "ఉపవాసంతో ప్రార్ధనలో" [ref=e570] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/01/08/upavaasamtho-praardhanalo/
+                      - listitem [ref=e571]:
+                        - link "ఉల్లాస జీవితం" [ref=e572] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/03/20/ullaasa-jeevitham/
+                    - link " Back to top " [ref=e574] [cursor=pointer]:
+                      - /url: "#a-z-listing-1"
+                  - generic [ref=e575]:
+                    - heading "ఊ" [level=2] [ref=e576]
+                    - list [ref=e577]:
+                      - listitem [ref=e578]:
+                        - link "ఊరుకో నా ప్రాణమా" [ref=e579] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2022/12/07/ooruko-naa-praanamaa/
+                      - listitem [ref=e580]:
+                        - link "ఊహకు అందని కార్యముల్" [ref=e581] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/02/13/oohaku-andani-kaaryamul/
+                      - listitem [ref=e582]:
+                        - link "ఊహలు నాదు ఊటలు" [ref=e583] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/08/12/oohalu-naadu-ootalu/
+                      - listitem [ref=e584]:
+                        - link "ఊహించలేనయ్యా వివరించలేనయ్యా" [ref=e585] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/08/12/oohinchalenayyaa-vivarinchalenayyaa/
+                      - listitem [ref=e586]:
+                        - link "ఊహించలేని కార్యములు" [ref=e587] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/06/10/oohinchaleni-kaaryamulu/
+                      - listitem [ref=e588]:
+                        - link "ఊహించలేని మేలులతో నింపిన" [ref=e589] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2014/11/26/oohinchaleni-melulatho-nimpina/
+                    - link " Back to top " [ref=e591] [cursor=pointer]:
+                      - /url: "#a-z-listing-1"
+                  - generic [ref=e592]:
+                    - heading "ఎ" [level=2] [ref=e593]
+                    - list [ref=e594]:
+                      - listitem [ref=e595]:
+                        - link "ఎక్కడెక్కడో పుట్టి" [ref=e596] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/09/21/ekkadekkado-putti/
+                      - listitem [ref=e597]:
+                        - link "ఎక్కడో మనసు వెళ్ళిపోయింది" [ref=e598] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/05/10/ekkado-manasu-vellipoyindi/
+                      - listitem [ref=e599]:
+                        - link "ఎట్టి వాడో యేసు" [ref=e600] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/11/15/etti-vaado-yesu/
+                      - listitem [ref=e601]:
+                        - link "ఎటు చూచినా" [ref=e602] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/04/13/etu-choochinaa/
+                      - listitem [ref=e603]:
+                        - link "ఎడబాయని నీదు కృప" [ref=e604] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/07/19/edabaayani-needu-krupa/
+                      - listitem [ref=e605]:
+                        - link "ఎడబాయని నీ కృప" [ref=e606] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/05/04/edabaayani-nee-krupa/
+                      - listitem [ref=e607]:
+                        - link "ఎత్తైన కొండపైన" [ref=e608] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2025/01/08/etthaina-konda-paina/
+                      - listitem [ref=e609]:
+                        - link "ఎన్నిక లేని నాపై" [ref=e610] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2019/12/15/ennika-leni-naapai/
+                      - listitem [ref=e611]:
+                        - link "ఎన్ని తరములు స్తుతియించినా" [ref=e612] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/12/28/enni-tharamulu-sthuthiyinchinaa/
+                      - listitem [ref=e613]:
+                        - link "ఎన్ని తలచినా" [ref=e614] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2013/11/05/enni-thalachinaa-edi-adiginaa/
+                      - listitem [ref=e615]:
+                        - link "ఎన్ని మార్లు" [ref=e616] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/09/11/enni-maarlu/
+                      - listitem [ref=e617]:
+                        - link "ఎన్నో ఎన్నో మేలులు చేసావయ్యా" [ref=e618] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/02/01/enno-enno-melulu-chesaavayyaa/
+                      - listitem [ref=e619]:
+                        - link "ఎనలేని ప్రేమ" [ref=e620] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/06/01/enaleni-prema-2/
+                      - listitem [ref=e621]:
+                        - link "ఎనలేని ప్రేమ నాపైన చూపి" [ref=e622] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/01/24/enaleni-prema/
+                      - listitem [ref=e623]:
+                        - link "ఎబినేజరే" [ref=e624] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2023/04/16/ebinejare/
+                      - listitem [ref=e625]:
+                        - link "ఎరుగనయ్యా నిన్నెప్పుడు" [ref=e626] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/03/07/eruganayyaa-ninneppudu/
+                      - listitem [ref=e627]:
+                        - link "ఎల్లప్పుడును ప్రభువునందు" [ref=e628] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/07/09/ellappudunu-prabhuvunandu/
+                      - listitem [ref=e629]:
+                        - link "ఎల్లలు లేనిది" [ref=e630] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/01/18/ellalu-lenidi/
+                      - listitem [ref=e631]:
+                        - link "ఎల్లవేళలందు" [ref=e632] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/10/24/ella-velalandu/
+                      - listitem [ref=e633]:
+                        - link "ఎల్ షమా" [ref=e634] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2025/01/19/el-shamaa/
+                      - listitem [ref=e635]:
+                        - link "ఎలా మరువగలనయ్యా" [ref=e636] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/08/02/elaa-maruvagalanayyaa/
+                      - listitem [ref=e637]:
+                        - link "ఎలోహిం ఎలోహిం" [ref=e638] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/02/01/elohim-elohim/
+                      - listitem [ref=e639]:
+                        - link "ఎవరికి ఎవరు" [ref=e640] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/10/15/evariki-evaru-ee-lokamlo/
+                      - listitem [ref=e641]:
+                        - link "ఎవరితో నీ జీవితం" [ref=e642] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/07/22/evaritho-nee-jeevitham/
+                      - listitem [ref=e643]:
+                        - link "ఎవరి కోసమో" [ref=e644] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/10/13/evari-kosamo-ee-praana-thyaagamu/
+                      - listitem [ref=e645]:
+                        - link "ఎవరున్నారయ్యా" [ref=e646] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/08/26/evarunnaarayyaa/
+                      - listitem [ref=e647]:
+                        - link "ఎవరున్నారు నాకిలలో" [ref=e648] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/02/14/evarunnaaru-naakilalo/
+                      - listitem [ref=e649]:
+                        - link "ఎవరు ఉన్నా లేకున్నా" [ref=e650] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/05/22/evaru-unnaa-lekunnaa/
+                      - listitem [ref=e651]:
+                        - link "ఎవరు చూపించలేని" [ref=e652] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/09/17/evaru-choopinchaleni/
+                      - listitem [ref=e653]:
+                        - link "ఎవరు నన్ను చేయి విడచినన్‌" [ref=e654] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/10/12/evaru-nannu-cheyi-vidachinan/
+                      - listitem [ref=e655]:
+                        - link "ఎవరూ లేక ఒంటరినై" [ref=e656] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/11/01/evaru-leka-ontarinai/
+                      - listitem [ref=e657]:
+                        - link "ఎవరూ సమీపించలేని" [ref=e658] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/02/28/evaru-sameepinchaleni/
+                      - listitem [ref=e659]:
+                        - link "ఎవరో తెలుసా యేసయ్యా" [ref=e660] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/10/12/evaro-thelusaa-yesayyaa/
+                      - listitem [ref=e661]:
+                        - link "ఎండిన ఎడారి బ్రతుకులో" [ref=e662] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/06/08/endina-edaari-brathukulo/
+                      - listitem [ref=e663]:
+                        - link "ఎంతటి వాడను నేను" [ref=e664] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/05/04/enthati-vaadanu-nenu/
+                      - listitem [ref=e665]:
+                        - link "ఎంత అధ్బుతమైన కృప" [ref=e666] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/06/10/entha-adbhuthamaina-krupa/
+                      - listitem [ref=e667]:
+                        - link "ఎంత కృపామయుడవు" [ref=e668] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/03/17/entha-krupaamayudavu/
+                      - listitem [ref=e669]:
+                        - link "ఎంత చెప్పిన వాక్యమినక పోతివి" [ref=e670] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/02/02/entha-cheppina-vaakyaminaka/
+                      - listitem [ref=e671]:
+                        - link "ఎంత జాలి యేసువా" [ref=e672] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/08/08/entha-jaali-yesuvaa/
+                      - listitem [ref=e673]:
+                        - link "ఎంత దూరమైనా" [ref=e674] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/10/05/entha-dooramainaa/
+                      - listitem [ref=e675]:
+                        - link "ఎంత ప్రేమ యేసయ్యా" [ref=e676] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/03/13/entha-prema-yesayyaa/
+                      - listitem [ref=e677]:
+                        - link "ఎంత ప్రేమో నాపై" [ref=e678] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/03/15/entha-premo-naapai/
+                      - listitem [ref=e679]:
+                        - link "ఎంత పాపినైనను" [ref=e680] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/05/02/entha-paapinainanu/
+                      - listitem [ref=e681]:
+                        - link "ఎంత పెద్ద పోరాటమో" [ref=e682] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/09/20/entha-pedda-poraatamo/
+                      - listitem [ref=e683]:
+                        - link "ఎంత మధురము" [ref=e684] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/01/13/entha-madhuramu-yesuni-prema/
+                      - listitem [ref=e685]:
+                        - link "ఎంత మంచి కాపరి" [ref=e686] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/02/12/entha-manchi-kaapari/
+                      - listitem [ref=e687]:
+                        - link "ఎంత మంచి దేవుడవయ్యా" [ref=e688] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/02/03/entha-manchi-devudavayyaa/
+                      - listitem [ref=e689]:
+                        - link "ఎంత మంచి దేవుడవేసయ్యా" [ref=e690] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/10/13/entha-manchi-devudavesayyaa/
+                      - listitem [ref=e691]:
+                        - link "ఎంతెంత భారమాయె" [ref=e692] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/05/14/enthentha-bhaaramaaye-aa-siluva/
+                      - listitem [ref=e693]:
+                        - link "ఎంతో భాగ్యంబు" [ref=e694] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/02/21/entho-bhaagyambu/
+                      - listitem [ref=e695]:
+                        - link "ఎంతో మధురం" [ref=e696] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/08/30/entho-madhuram/
+                      - listitem [ref=e697]:
+                        - link "ఎంతో వింత" [ref=e698] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/03/22/entho-vintha-yentho-chintha/
+                      - listitem [ref=e699]:
+                        - link "ఎంతో సుందరుడమ్మ తాను" [ref=e700] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/08/26/entho-sundarudamma-thaanu/
+                      - listitem [ref=e701]:
+                        - link "ఎందరో ఎందరు ఎందరో" [ref=e702] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/10/13/endaro-endaru-endaro/
+                      - listitem [ref=e703]:
+                        - link "ఎందుకో ఈ ప్రేమ" [ref=e704] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/09/13/enduko-ee-prema/
+                      - listitem [ref=e705]:
+                        - link "ఎందుకో దేవా ఇంతటి ప్రేమా" [ref=e706] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/10/02/enduko-devaa-inthati-premaa/
+                      - listitem [ref=e707]:
+                        - link "ఎందుకో నన్నింతగా నీవు" [ref=e708] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2013/11/05/enduko-nanninthagaa-neevu/
+                      - listitem [ref=e709]:
+                        - link "ఎందుకో నన్ను నీవు" [ref=e710] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/07/23/enduko-nannu-neevu/
+                    - link " Back to top " [ref=e712] [cursor=pointer]:
+                      - /url: "#a-z-listing-1"
+                  - generic [ref=e713]:
+                    - heading "ఏ" [level=2] [ref=e714]
+                    - list [ref=e715]:
+                      - listitem [ref=e716]:
+                        - link "ఏగెదను నే చేరెదను" [ref=e717] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/06/06/egedanu-ne-cheredanu/
+                      - listitem [ref=e718]:
+                        - link "ఏడానుంటివిరా" [ref=e719] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/08/09/aedaa-nuntiviraa/
+                      - listitem [ref=e720]:
+                        - link "ఏడుస్తున్నాడేమో యేసయ్య" [ref=e721] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/02/17/edusthunnaademo-yesayya/
+                      - listitem [ref=e722]:
+                        - link "ఏపాటి దాననయా" [ref=e723] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2019/09/09/epaati-daananayaa/
+                      - listitem [ref=e724]:
+                        - link "ఏమని నే పాడెదన్" [ref=e725] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/10/19/emani-ne-paadedan/
+                      - listitem [ref=e726]:
+                        - link "ఏమని పాడను" [ref=e727] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/10/15/emani-paadanu/
+                      - listitem [ref=e728]:
+                        - link "ఏమివ్వగలనయ్య నా యేసయ్యా" [ref=e729] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/01/08/emivvagalanayya-naa-yesayyaa/
+                      - listitem [ref=e730]:
+                        - link "ఏమి ఉన్నా లేకున్నా" [ref=e731] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2019/07/30/emi-unnaa-lekunnaa/
+                      - listitem [ref=e732]:
+                        - link "ఏముంది నాలోనా" [ref=e733] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/06/06/emundi-naalonaa/
+                      - listitem [ref=e734]:
+                        - link "ఏమైనా చేయగలవు" [ref=e735] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2025/08/31/emainaa-cheyagalavu/
+                      - listitem [ref=e736]:
+                        - link "ఏలో ఏలో ఏలో అంటూ" [ref=e737] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2022/12/14/yelo-yelo-yelo-antu/
+                      - listitem [ref=e738]:
+                        - link "ఏ గుంపులో నున్నావో" [ref=e739] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/05/31/ae-gumpulo-nunnaavo/
+                      - listitem [ref=e740]:
+                        - link "ఏ తెగులు నీ గుడారము" [ref=e741] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/07/18/ae-thegulu-nee-gudaaramu/
+                      - listitem [ref=e742]:
+                        - link "ఏ నామములో" [ref=e743] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/12/18/ae-naamamulo/
+                      - listitem [ref=e744]:
+                        - link "ఏ పాపమెరుగని" [ref=e745] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/02/25/ae-paapamerugani/
+                      - listitem [ref=e746]:
+                        - link "ఏ బాధ లేదు" [ref=e747] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/06/26/ae-baadha-ledu-ae-kashtam-ledu/
+                      - listitem [ref=e748]:
+                        - link "ఏ యోగ్యతా లేని నన్ను" [ref=e749] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/03/14/ae-yogyathaa-leni-nannu/
+                      - listitem [ref=e750]:
+                        - link "ఏ రీతి నీ ఋణం" [ref=e751] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/04/06/ae-reethi-nee-runam/
+                      - listitem [ref=e752]:
+                        - link "ఏ రీతి స్తుతియింతును" [ref=e753] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/08/18/ae-reethi-sthuthiyinthunu/
+                      - listitem [ref=e754]:
+                        - link "ఏ రీతి స్తుతియింతునో" [ref=e755] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/10/13/ae-reethi-sthuthiyinthuno/
+                      - listitem [ref=e756]:
+                        - link "ఏ సమయమందైనా" [ref=e757] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/10/15/ae-samayamandainaa/
+                      - listitem [ref=e758]:
+                        - link "ఏం చేసానయ్యా నీకోసం" [ref=e759] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/11/02/em-chesaanayyaa-neekosam/
+                    - link " Back to top " [ref=e761] [cursor=pointer]:
+                      - /url: "#a-z-listing-1"
+                  - generic [ref=e762]:
+                    - heading "ఒ" [level=2] [ref=e763]
+                    - list [ref=e764]:
+                      - listitem [ref=e765]:
+                        - link "ఒక్కడే యేసు ఒక్కడే" [ref=e766] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/02/12/okkade-yesu-okkade/
+                      - listitem [ref=e767]:
+                        - link "ఒకని తల్లి ఆదరించునట్లు" [ref=e768] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/11/02/okani-thalli-aadarinchunatlu/
+                      - listitem [ref=e769]:
+                        - link "ఒకసారి నీ స్వరము" [ref=e770] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/08/10/okasaari-nee-swaramu/
+                      - listitem [ref=e771]:
+                        - link "ఒక క్షణమైన" [ref=e772] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/04/29/oka-kshanamaina/
+                      - listitem [ref=e773]:
+                        - link "ఒక క్షణమైనా నిన్ను" [ref=e774] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/11/03/oka-kshanamainaa-ninnu/
+                      - listitem [ref=e775]:
+                        - link "ఒక చేతిలో కర్ర" [ref=e776] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2023/03/04/oka-chethilo-karra/
+                      - listitem [ref=e777]:
+                        - link "ఒక దివ్యమైన సంగతితో" [ref=e778] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/05/25/oka-divyamaina-sangathitho/
+                      - listitem [ref=e779]:
+                        - link "ఒక వరమడిగితిని యేసయ్యా" [ref=e780] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/06/28/oka-varamadigithini-yesayyaa/
+                      - listitem [ref=e781]:
+                        - link "ఒకే ఒక మార్గము" [ref=e782] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/09/04/oke-oka-maargamu/
+                      - listitem [ref=e783]:
+                        - link "ఒంటరితనములో తోడువై" [ref=e784] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/06/01/ontarithanamulo-thoduvai/
+                      - listitem [ref=e785]:
+                        - link "ఒంటరివి కావు" [ref=e786] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/11/02/ontarivi-kaavu/
+                    - link " Back to top " [ref=e788] [cursor=pointer]:
+                      - /url: "#a-z-listing-1"
+                  - generic [ref=e789]:
+                    - heading "ఓ" [level=2] [ref=e790]
+                    - list [ref=e791]:
+                      - listitem [ref=e792]:
+                        - link "ఓడిపోనివ్వడు" [ref=e793] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2019/12/20/odiponivvadu/
+                      - listitem [ref=e794]:
+                        - link "ఓరన్న ఓరన్న" [ref=e795] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2014/11/12/oranna-oranna/
+                      - listitem [ref=e796]:
+                        - link "ఓ ఇశ్రాయేలు" [ref=e797] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/01/05/o-ishraayelu/
+                      - listitem [ref=e798]:
+                        - link "ఓ క్రీస్తు సంఘమా" [ref=e799] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/09/20/o-kreesthu-sanghamaa/
+                      - listitem [ref=e800]:
+                        - link "ఓ క్రైస్తవ యువకా" [ref=e801] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/10/13/o-kraisthava-yuvakaa/
+                      - listitem [ref=e802]:
+                        - link "ఓ దేవా దయ చూపుమయ్యా" [ref=e803] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/05/08/o-devaa-daya-choopumayyaa/
+                      - listitem [ref=e804]:
+                        - link "ఓ నాదు యేసు రాజా" [ref=e805] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/06/30/o-naadhu-yesu-raajaa/
+                      - listitem [ref=e806]:
+                        - link "ఓ నావికా" [ref=e807] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/02/14/o-naavikaa/
+                      - listitem [ref=e808]:
+                        - link "ఓ ప్రభువా ఓ ప్రభువా" [ref=e809] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/09/26/o-prabhuvaa-o-prabhuvaa/
+                      - listitem [ref=e810]:
+                        - link "ఓ ప్రార్ధనా సుప్రార్ధనా" [ref=e811] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/09/02/o-praardhanaa-supraardhanaa/
+                      - listitem [ref=e812]:
+                        - link "ఓ మానవా" [ref=e813] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/10/26/o-maanavaa/
+                      - listitem [ref=e814]:
+                        - link "ఓ మానవా నీ పాపం మానవా" [ref=e815] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/04/30/o-maanavaa-nee-paapam/
+                      - listitem [ref=e816]:
+                        - link "ఓ యాత్రికుడా" [ref=e817] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2019/02/06/o-yaathrikudaa/
+                      - listitem [ref=e818]:
+                        - link "ఓ యేసు నీ ప్రేమ" [ref=e819] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/06/29/o-yesu-nee-prema/
+                      - listitem [ref=e820]:
+                        - link "ఓ సద్భక్తులారా" [ref=e821] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2014/11/08/o-sadbhaktulaaraa/
+                      - listitem [ref=e822]:
+                        - link "ఓ సంఘమా సర్వాంగమా" [ref=e823] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/11/04/o-sanghamaa-sarvaangamaa/
+                    - link " Back to top " [ref=e825] [cursor=pointer]:
+                      - /url: "#a-z-listing-1"
+                  - generic [ref=e826]:
+                    - heading "క" [level=2] [ref=e827]
+                    - list [ref=e828]:
+                      - listitem [ref=e829]:
+                        - link "కష్ట నష్టాలైనా" [ref=e830] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/08/09/kashta-nashtaalainaa/
+                      - listitem [ref=e831]:
+                        - link "క్షమాపణ దొరికేనా" [ref=e832] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/06/06/kshamaapana-dorikenaa/
+                      - listitem [ref=e833]:
+                        - link "క్షణమైన గడవదు" [ref=e834] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/06/10/kshanamina-gaduvadu/
+                      - listitem [ref=e835]:
+                        - link "క్షణమైన నీవు" [ref=e836] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/08/12/kshanamaina-neevu/
+                      - listitem [ref=e837]:
+                        - link "క్షణికమైన బ్రతుకురా" [ref=e838] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/05/22/kshanikamaina-brathukuraa/
+                      - listitem [ref=e839]:
+                        - link "క్రిస్మస్ అంటేనే" [ref=e840] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/12/18/christmas-antene/
+                      - listitem [ref=e841]:
+                        - link "క్రిస్మస్ ఆనందం వచ్చెను" [ref=e842] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/12/05/christmas-aanandam-vachchenu/
+                      - listitem [ref=e843]:
+                        - link "క్రిస్మస్ ఆనందం సంతోషమే" [ref=e844] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2019/12/20/christmas-aanandam/
+                      - listitem [ref=e845]:
+                        - link "క్రిస్మస్ కాలం" [ref=e846] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2019/12/20/christmas-kaalam/
+                      - listitem [ref=e847]:
+                        - link "క్రిస్మస్ పండుగ" [ref=e848] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/11/06/christmas-panduga/
+                      - listitem [ref=e849]:
+                        - link "క్రిస్మస్ మెడ్లీ – 5" [ref=e850] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2024/12/13/christmas-medley-5/
+                      - listitem [ref=e851]:
+                        - link "క్రిస్మస్ మెడ్లీ 1" [ref=e852] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/12/18/christmas-medley-1/
+                      - listitem [ref=e853]:
+                        - link "క్రిస్మస్ మెడ్లీ 2" [ref=e854] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/12/10/christmas-medley-2/
+                      - listitem [ref=e855]:
+                        - link "క్రిస్మస్ మెడ్లీ 3" [ref=e856] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2022/12/12/christmas-medley-3/
+                      - listitem [ref=e857]:
+                        - link "క్రిస్మస్ వచ్చిందయ్యా" [ref=e858] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/12/27/christmas-vachchindayyaa/
+                      - listitem [ref=e859]:
+                        - link "క్రిస్మస్ శుభదినం" [ref=e860] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/12/31/christmas-shubha-dinam/
+                      - listitem [ref=e861]:
+                        - link "క్రీస్తుని స్వరము విందును" [ref=e862] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2024/10/30/kreesthuni-swaramu-vindunu/
+                      - listitem [ref=e863]:
+                        - link "క్రీస్తులో జీవించు నాకు" [ref=e864] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/08/02/kreesthulo-jeevinchu-naaku/
+                      - listitem [ref=e865]:
+                        - link "క్రీస్తు పుట్టెను" [ref=e866] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/11/06/kreesthu-puttenu/
+                      - listitem [ref=e867]:
+                        - link "క్రీస్తు పుట్టెను హల్లెలూయా" [ref=e868] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2023/11/29/kreesthu-puttenu-hallelooyaa/
+                      - listitem [ref=e869]:
+                        - link "క్రీస్తేసు ప్రభువు" [ref=e870] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/07/11/kreesthesu-prabhuvu/
+                      - listitem [ref=e871]:
+                        - link "క్రీస్తేసు పుట్టెను" [ref=e872] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/12/05/kreesthesu-puttenu/
+                      - listitem [ref=e873]:
+                        - link "క్రీస్తే సర్వాధికారి" [ref=e874] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/09/18/kreesthe-sarvaadhikaari/
+                      - listitem [ref=e875]:
+                        - link "క్రైస్తవమొక మతము కాదిది" [ref=e876] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2013/11/05/kraisthavamoka-mathamu-kaadidi/
+                      - listitem [ref=e877]:
+                        - link "క్రైస్తవ జీవితం" [ref=e878] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/01/10/kraisthava-jeevitham/
+                      - listitem [ref=e879]:
+                        - link "క్రైస్తవుడా సైనికుడా" [ref=e880] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/06/08/kraisthavudaa-sainikudaa/
+                      - listitem [ref=e881]:
+                        - link "క్రొత్త యేడు మొదలు బెట్టెను" [ref=e882] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2014/11/12/krotha-yedu-modalu-bettenu/
+                      - listitem [ref=e883]:
+                        - link "కట్టెలపై నీ శరీరం" [ref=e884] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/02/12/kattelapai-nee-shareeram/
+                      - listitem [ref=e885]:
+                        - link "కదలకుందువు" [ref=e886] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/08/09/kadalakunduvu/
+                      - listitem [ref=e887]:
+                        - link "కన్న తల్లి చేర్చునట్లు" [ref=e888] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/10/13/kanna-thalli-cherchunatlu/
+                      - listitem [ref=e889]:
+                        - link "కన్నీటి లోయలలో" [ref=e890] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/11/05/kanneeti-loyalalo/
+                      - listitem [ref=e891]:
+                        - link "కన్నీరేలమ్మా" [ref=e892] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/07/16/532/
+                      - listitem [ref=e893]:
+                        - link "కన్నీరే మనిషిని బాధిస్తుంది" [ref=e894] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/10/29/kanneere-manishini-baadhisthundi/
+                      - listitem [ref=e895]:
+                        - link "కన్నీళ్లతో పగిలిన గుండెతో" [ref=e896] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/07/13/kanneellatho-pagilina-gundetho/
+                      - listitem [ref=e897]:
+                        - link "కన్నులతో చూసే ఈ లోకం" [ref=e898] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/05/23/kannulatho-choose-ee-lokam/
+                      - listitem [ref=e899]:
+                        - link "కన్నులనెత్తి పైరుల చూడు" [ref=e900] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/11/21/kannulaneththi-pairula-choodu/
+                      - listitem [ref=e901]:
+                        - link "కన్నుల నిండుగ" [ref=e902] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/10/29/kannula-ninduga/
+                      - listitem [ref=e903]:
+                        - link "కన్నులుండి చూడలేవ" [ref=e904] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/11/05/kannulundi-choodaleva/
+                      - listitem [ref=e905]:
+                        - link "కనలేని కనులేలనయ్యా" [ref=e906] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/08/15/kanaleni-kanulelanayyaa/
+                      - listitem [ref=e907]:
+                        - link "కనలేను ప్రభుకేల" [ref=e908] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/04/02/kanalenu-prabhukela/
+                      - listitem [ref=e909]:
+                        - link "కని విని ఎరుగని కరుణకు" [ref=e910] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/07/19/kani-vini-erugani-karunaku/
+                      - listitem [ref=e911]:
+                        - link "కనుచూపు మేరలోన" [ref=e912] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/06/27/kanuchoopu-meralona/
+                      - listitem [ref=e913]:
+                        - link "కనురెప్ప పాటైన" [ref=e914] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/12/14/kanureppa-paataina/
+                      - listitem [ref=e915]:
+                        - link "కనులున్నా కానలేని" [ref=e916] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2014/11/26/kanulunnaa-kaanaleni/
+                      - listitem [ref=e917]:
+                        - link "కమ్మని బహుకమ్మని" [ref=e918] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/07/13/kammani-bahu-kammani/
+                      - listitem [ref=e919]:
+                        - link "కమనీయమైన" [ref=e920] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/09/29/kamaneeyamaina/
+                      - listitem [ref=e921]:
+                        - link "కర్తా మమ్మును" [ref=e922] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/11/03/karthaa-mammunu/
+                      - listitem [ref=e923]:
+                        - link "కరిగే కొడుకు" [ref=e924] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2024/01/29/karige-koduku/
+                      - listitem [ref=e925]:
+                        - link "కరుణ చూపించుమా" [ref=e926] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/04/24/karuna-choopinchumaa/
+                      - listitem [ref=e927]:
+                        - link "కరుణామయుడా పరలోక రాజా" [ref=e928] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/08/08/neeke-sthothramulu/
+                      - listitem [ref=e929]:
+                        - link "కరుణించవా నా యేసువా" [ref=e930] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/09/14/karuninchavaa/
+                      - listitem [ref=e931]:
+                        - link "కరుణించి తిరిగి సమకూర్చు" [ref=e932] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2022/02/23/karuninchi-thirigi-samakoorchu/
+                      - listitem [ref=e933]:
+                        - link "కరుణించుము మము పరమ పితా" [ref=e934] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/08/09/karuninchumu-mamu-parama-pithaa/
+                      - listitem [ref=e935]:
+                        - link "కల్వరిగిరిలోన సిల్వలో" [ref=e936] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/11/02/1288/
+                      - listitem [ref=e937]:
+                        - link "కల్వరిలోన చేసిన యాగం" [ref=e938] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/05/15/kalvarilona-chesina-yaagam/
+                      - listitem [ref=e939]:
+                        - link "కల్వరి గిరిపై సిలువ" [ref=e940] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/03/26/kalvari-giripai-siluva/
+                      - listitem [ref=e941]:
+                        - link "కల్వరి ప్రేమను" [ref=e942] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/03/23/kalvari-premanu/
+                      - listitem [ref=e943]:
+                        - link "కల్వరి సిలువలో" [ref=e944] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/12/31/kalvari-siluvalo-yesayya/
+                      - listitem [ref=e945]:
+                        - link "కలనైనా ఇలనైనా" [ref=e946] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/09/13/kalanainaa-ilanainaa/
+                      - listitem [ref=e947]:
+                        - link "కలములతో రాయగలమా" [ref=e948] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/02/01/kalamulatho-raayagalamaa/
+                      - listitem [ref=e949]:
+                        - link "కలలా ఉన్నది" [ref=e950] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/10/23/kalalaa-unnadi/
+                      - listitem [ref=e951]:
+                        - link "కలలాంటి బ్రతుకు నాది" [ref=e952] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/05/06/kalalaanti-brathuku-naadi/
+                      - listitem [ref=e953]:
+                        - link "కలవంటిది నీ జీవితము" [ref=e954] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/06/20/kalavantidi-nee-jeevitham/
+                      - listitem [ref=e955]:
+                        - link "కలుగును గాక" [ref=e956] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/05/23/kalugunu-gaaka-devuniki-mahima/
+                      - listitem [ref=e957]:
+                        - link "కలువరిగిరిలో సిలువధారియై" [ref=e958] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2013/11/05/kaluvarigirilo-siluvadhaariyai/
+                      - listitem [ref=e959]:
+                        - link "కలువరి గిరి నుండి" [ref=e960] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/03/25/kaluvari-giri-nundi/
+                      - listitem [ref=e961]:
+                        - link "కలువరి గిరి సిలువలో" [ref=e962] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/04/14/kaluvari-giri-siluvalo/
+                      - listitem [ref=e963]:
+                        - link "కలువరి సిలువ" [ref=e964] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/02/11/kaluvari-siluva/
+                      - listitem [ref=e965]:
+                        - link "కవులకైనా సాధ్యమా" [ref=e966] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/01/11/kavulakainaa-saadhyamaa/
+                      - listitem [ref=e967]:
+                        - link "కళ్యాణం కమనీయం" [ref=e968] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/10/27/kalyaanam-kamaneeyam/
+                      - listitem [ref=e969]:
+                        - link "కళ్లుండి చూడలేని" [ref=e970] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/10/15/kallundi-choodaleni/
+                      - listitem [ref=e971]:
+                        - link "కళ్ళల్లో కన్నీరెందుకు" [ref=e972] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/11/02/kallallo-kanneerenduku/
+                      - listitem [ref=e973]:
+                        - link "కంట నీరేల" [ref=e974] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/06/17/kanta-neerela/
+                      - listitem [ref=e975]:
+                        - link "కంటిపాపలా కాచినావయ్యా" [ref=e976] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2024/06/20/kantipaapalaa-kaachinaavayyaa/
+                      - listitem [ref=e977]:
+                        - link "కంటి పాపను" [ref=e978] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/04/25/kanti-paapanu/
+                      - listitem [ref=e979]:
+                        - link "కానరావే అలనాటి కన్నీటి" [ref=e980] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/10/22/kaanaraave-alanaati-kanneeti/
+                      - listitem [ref=e981]:
+                        - link "కానెన్నడు నేను అనాథను" [ref=e982] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/05/18/kaanennadu-nenu-anaathanu/
+                      - listitem [ref=e983]:
+                        - link "కాపాడే దేవుడు యేసయ్యా" [ref=e984] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2019/08/25/kaapaade-devudu-yesayyaa/
+                      - listitem [ref=e985]:
+                        - link "షారోను పొలములో" [ref=e986] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2022/07/07/shaaronu-polamulo/
+                      - listitem [ref=e987]:
+                        - link "షారోను రోజా యేసే" [ref=e988] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/10/03/shaaronu-rojaa-yese/
+                      - listitem [ref=e989]:
+                        - link "కాలం సమయం నాదేనంటూ" [ref=e990] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/10/11/kaalam-samayam-naadenantu/
+                      - listitem [ref=e991]:
+                        - link "కాలాలు మారిన గాని" [ref=e992] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/05/23/kaalaalu-maarina-gaani/
+                      - listitem [ref=e993]:
+                        - link "కావలివాడా ఓ కావలివాడా" [ref=e994] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/02/13/kaavalivaadaa-o-kaavalivaadaa/
+                      - listitem [ref=e995]:
+                        - link "కావలెనా యేసయ్య" [ref=e996] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/08/30/kaavalenaa-yesayya/
+                      - listitem [ref=e997]:
+                        - link "కీర్తి హల్లెలూయా" [ref=e998] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/02/02/keerthi-hallelooyaa/
+                      - listitem [ref=e999]:
+                        - link "కీర్తింతును నీ నామము" [ref=e1000] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2019/07/30/keerthinthunu-nee-naamamu/
+                      - listitem [ref=e1001]:
+                        - link "కీర్తింతు నీ నామమున్" [ref=e1002] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/07/23/keerthinthu-nee-naamamun/
+                      - listitem [ref=e1003]:
+                        - link "కుతూహలం ఆర్భాటమే" [ref=e1004] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2013/02/09/kuthoohalam-aarbhaatame/
+                      - listitem [ref=e1005]:
+                        - link "కుమ్మరి ఓ కుమ్మరి" [ref=e1006] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2013/11/05/kummari-o-kummari/
+                      - listitem [ref=e1007]:
+                        - link "కుమ్మరి చేతిలో" [ref=e1008] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/02/17/kummari-chethilo/
+                      - listitem [ref=e1009]:
+                        - link "కూర్చుందును నీ సన్నిధిలో" [ref=e1010] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/08/15/koorchundunu-nee-sannidhilo/
+                      - listitem [ref=e1011]:
+                        - link "కృతజ్ఞతతో స్తుతి పాడెద" [ref=e1012] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/11/26/kruthagnathatho-sthuthi-paadeda/
+                      - listitem [ref=e1013]:
+                        - link "కృతజ్ఞతన్ తలవంచి" [ref=e1014] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/01/01/kruthagnathan-thalavanchi/
+                      - listitem [ref=e1015]:
+                        - link "కృపగల దేవా" [ref=e1016] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/04/01/krupagala-devaa/
+                      - listitem [ref=e1017]:
+                        - link "కృపలను తలంచుచు" [ref=e1018] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/08/31/krupalanu-thalanchuchu/
+                      - listitem [ref=e1019]:
+                        - link "కృప కనికరముల" [ref=e1020] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/01/05/krupa-kanikaramula/
+                      - listitem [ref=e1021]:
+                        - link "కృప కృప నా యేసు కృపా" [ref=e1022] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/07/07/krupa-krupa-naa-yesu-krupaa/
+                      - listitem [ref=e1023]:
+                        - link "కృప కృప నీ కృప" [ref=e1024] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/10/18/krupa-krupa-nee-krupa/
+                      - listitem [ref=e1025]:
+                        - link "కృప వెంబడి కృపతో" [ref=e1026] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/02/01/krupa-vembadi-krupatho/
+                      - listitem [ref=e1027]:
+                        - link "కృపామయుడా" [ref=e1028] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/04/16/krupaamayudaa/
+                      - listitem [ref=e1029]:
+                        - link "కృపా క్షేమము" [ref=e1030] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/05/03/krupaa-kshemamu/
+                      - listitem [ref=e1031]:
+                        - link "కృపా సత్య సంపూర్ణుడా" [ref=e1032] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/01/05/krupaa-sathya-sampoornudaa/
+                      - listitem [ref=e1033]:
+                        - link "కృంగిన వేళలో" [ref=e1034] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/05/16/krungina-velalo/
+                      - listitem [ref=e1035]:
+                        - link "కొడవలిని చేత పట్టి" [ref=e1036] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/09/01/kodavalini-chetha-patti/
+                      - listitem [ref=e1037]:
+                        - link "కొనియాడ తరమే నిన్ను" [ref=e1038] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/09/16/koniyaada-tharame-ninnu/
+                      - listitem [ref=e1039]:
+                        - link "కొండలతో చెప్పుము" [ref=e1040] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/08/25/kondalatho-cheppumu/
+                      - listitem [ref=e1041]:
+                        - link "కొండలలో కోనలలో" [ref=e1042] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/01/18/kondalalo-konalalo/
+                      - listitem [ref=e1043]:
+                        - link "కొండల తట్టు" [ref=e1044] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/01/05/kondala-thattu/
+                      - listitem [ref=e1045]:
+                        - link "కొండల తట్టు నా కన్నులు" [ref=e1046] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/10/19/kondala-thattu-naa-kannulu/
+                      - listitem [ref=e1047]:
+                        - link "కొండల తట్టు నా కన్నులెత్తి" [ref=e1048] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2026/02/07/kondala-thattu-naa-kannuletthi/
+                      - listitem [ref=e1049]:
+                        - link "కొండ కోన లోయలోతుల్లో" [ref=e1050] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/01/05/konda-kona-loya-lothullo/
+                      - listitem [ref=e1051]:
+                        - link "కొంతసేపు కనబడి" [ref=e1052] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/02/28/konthasepu-kanabadi/
+                      - listitem [ref=e1053]:
+                        - link "కొంత యెడము నీవైనా" [ref=e1054] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/03/17/kontha-yedamu-neevainaa/
+                      - listitem [ref=e1055]:
+                        - link "కోటి కాంతుల వెలుగులతో" [ref=e1056] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/05/24/koti-kaanthula-velugulatho/
+                    - link " Back to top " [ref=e1058] [cursor=pointer]:
+                      - /url: "#a-z-listing-1"
+                  - generic [ref=e1059]:
+                    - heading "ఖ" [level=2] [ref=e1060]
+                    - list [ref=e1061]:
+                      - listitem [ref=e1062]:
+                        - link "ఖామోష్ రాతో కి" [ref=e1063] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/12/18/khaamosh-raatho-ki/
+                    - link " Back to top " [ref=e1065] [cursor=pointer]:
+                      - /url: "#a-z-listing-1"
+                  - generic [ref=e1066]:
+                    - heading "గ" [level=2] [ref=e1067]
+                    - list [ref=e1068]:
+                      - listitem [ref=e1069]:
+                        - link "గగనము చీల్చుకొని" [ref=e1070] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2023/06/30/gaganamu-cheelchukoni/
+                      - listitem [ref=e1071]:
+                        - link "గడచిన కాలము" [ref=e1072] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/08/16/gadachina-kaalam-krupalo-mammu/
+                      - listitem [ref=e1073]:
+                        - link "గడిచిన కాలమంతా" [ref=e1074] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/12/29/gadichina-kaalamanthaa/
+                      - listitem [ref=e1075]:
+                        - link "గతకాలమంత నీ నీడలోన" [ref=e1076] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2024/11/28/gathakaalamantha-nee-needalona/
+                      - listitem [ref=e1077]:
+                        - link "గత కాలమంత" [ref=e1078] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/02/06/gatha-kaalamantha/
+                      - listitem [ref=e1079]:
+                        - link "గమ్యం చేరాలని" [ref=e1080] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/10/09/gamyam-cheraalani/
+                      - listitem [ref=e1081]:
+                        - link "గలిలయ తీరాన" [ref=e1082] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/07/18/galilaya-theeraana/
+                      - listitem [ref=e1083]:
+                        - link "గాడాంధకారపు లోయలో" [ref=e1084] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/10/26/gaadaandhakaarapu-loyalo/
+                      - listitem [ref=e1085]:
+                        - link "గాఢాంధకారములో" [ref=e1086] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/05/15/gaadaandhakaaramulo-ne-nadachina/
+                      - listitem [ref=e1087]:
+                        - link "గాయపడిన నీ చేయి" [ref=e1088] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/06/24/gaayapadina-nee-cheyi/
+                      - listitem [ref=e1089]:
+                        - link "గాయాములన్" [ref=e1090] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/04/14/gaayaamulan-gaayamulan/
+                      - listitem [ref=e1091]:
+                        - link "గాలి సముద్రపు అలలకు" [ref=e1092] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/07/26/gaali-samudrapu-alalaku/
+                      - listitem [ref=e1093]:
+                        - link "గాలించి చూడరా" [ref=e1094] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/02/05/gaalinchi-choodaraa/
+                      - listitem [ref=e1095]:
+                        - link "గిర గిర తిరిగి" [ref=e1096] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/06/08/gira-gira-thirigi/
+                      - listitem [ref=e1097]:
+                        - link "గీతం గీతం" [ref=e1098] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/11/01/geetham-geetham/
+                      - listitem [ref=e1099]:
+                        - link "గుర్తుండిపోయే ఈ క్షణాలలో" [ref=e1100] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/04/27/gurthundipoye-ee-kshanaalalo/
+                      - listitem [ref=e1101]:
+                        - link "గుండె నిండా యేసు ఉంటే" [ref=e1102] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2023/06/30/gunde-nindaa/
+                      - listitem [ref=e1103]:
+                        - link "గుండె బరువెక్కిపోతున్నది" [ref=e1104] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/11/04/gunde-baruvekkipothunnadi/
+                      - listitem [ref=e1105]:
+                        - link "గుణవతి అయిన భార్య" [ref=e1106] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/10/22/gunavathi-aina-bhaarya/
+                      - listitem [ref=e1107]:
+                        - link "గూడు లేని గువ్వనై" [ref=e1108] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/07/19/goodu-leni-guvvanai/
+                      - listitem [ref=e1109]:
+                        - link "గూడు లేని గువ్వలా" [ref=e1110] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/09/14/goodu-leni-guvvalaa/
+                      - listitem [ref=e1111]:
+                        - link "గూడు విడచి వెళ్లిన నాడే" [ref=e1112] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/03/01/goodu-vidachi-vellina-naade/
+                      - listitem [ref=e1113]:
+                        - link "గొప్పవాడు" [ref=e1114] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/11/05/goppavaadu-kreesthu-yesu/
+                      - listitem [ref=e1115]:
+                        - link "గొప్ప దేవుడవని" [ref=e1116] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/05/08/goppa-devudavani/
+                      - listitem [ref=e1117]:
+                        - link "గొర్రెపిల్ల జీవ గ్రంథమందు" [ref=e1118] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/11/05/gorrepilla-jeeva-grandhamandu/
+                      - listitem [ref=e1119]:
+                        - link "గొర్రెపిల్ల రక్తములో" [ref=e1120] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2022/05/31/gorrepilla-rakthamulo/
+                      - listitem [ref=e1121]:
+                        - link "గొర్రెపిల్ల వివాహోత్సవ" [ref=e1122] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/11/01/gorrepilla-vivaahotsava/
+                      - listitem [ref=e1123]:
+                        - link "గొంతు ఎత్తి చాటెదాను" [ref=e1124] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/09/02/gonthu-etthi-chaatedaanu/
+                    - link " Back to top " [ref=e1126] [cursor=pointer]:
+                      - /url: "#a-z-listing-1"
+                  - generic [ref=e1127]:
+                    - heading "ఘ" [level=2] [ref=e1128]
+                    - list [ref=e1129]:
+                      - listitem [ref=e1130]:
+                        - link "ఘనమైనవి నీ కార్యములు" [ref=e1131] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/03/29/ghanamainavi-nee-kaaryamulu/
+                      - listitem [ref=e1132]:
+                        - link "ఘనమైన నా యేసయ్యా" [ref=e1133] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/09/02/ghanamaina-naa-yesayyaa/
+                      - listitem [ref=e1134]:
+                        - link "ఘనమైన వేడుక" [ref=e1135] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/01/03/ghanamaina-veduka/
+                    - link " Back to top " [ref=e1137] [cursor=pointer]:
+                      - /url: "#a-z-listing-1"
+                  - generic [ref=e1138]:
+                    - heading "చ" [level=2] [ref=e1139]
+                    - list [ref=e1140]:
+                      - listitem [ref=e1141]:
+                        - link "చక్కనైన దారి నీవే" [ref=e1142] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/07/11/chakkanaina-daari-neeve/
+                      - listitem [ref=e1143]:
+                        - link "చలి రాతిరి ఎదురు చూసే" [ref=e1144] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/10/30/chali-raathiri-eduru-choose/
+                      - listitem [ref=e1145]:
+                        - link "చాచిన చేతులు నీవే" [ref=e1146] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/10/27/chaachina-chethulu-neeve/
+                      - listitem [ref=e1147]:
+                        - link "చాటించుడి మనుష్యజాతి" [ref=e1148] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/05/23/chaatinchudi-manushya-jaathi/
+                      - listitem [ref=e1149]:
+                        - link "చాలా గొప్పోడు" [ref=e1150] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/10/02/chaalaa-goppodu/
+                      - listitem [ref=e1151]:
+                        - link "చాలునయ్య నీ కృప" [ref=e1152] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/11/02/chaalunayya-nee-krupa/
+                      - listitem [ref=e1153]:
+                        - link "చాలునయ్యా చాలునయ్యా" [ref=e1154] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/11/01/chaalunayyaa-chaalunayyaa/
+                      - listitem [ref=e1155]:
+                        - link "చాహే తుమ్ కో" [ref=e1156] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/05/10/chaahe-thum-ko/
+                      - listitem [ref=e1157]:
+                        - link "చిట్టి పొట్టి పాపను" [ref=e1158] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/11/11/chitti-potti-paapanu-nenu/
+                      - listitem [ref=e1159]:
+                        - link "చిత్ర చిత్రాల వాడే" [ref=e1160] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2014/11/17/chithra-chithraala-vaade/
+                      - listitem [ref=e1161]:
+                        - link "చిన్న గొర్రెపిల్లను నేను" [ref=e1162] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/11/09/chinna-gorrepillanu-nenu/
+                      - listitem [ref=e1163]:
+                        - link "చిన్న చిన్న గొఱ్ఱె పిల్లను" [ref=e1164] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/04/27/chinna-chinna-gorrepillanu/
+                      - listitem [ref=e1165]:
+                        - link "చిన్నారి బాలగా" [ref=e1166] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/08/09/chinnaari-baalagaa/
+                      - listitem [ref=e1167]:
+                        - link "చిన్ని చిన్ని చేతులతో" [ref=e1168] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/12/24/chinni-chinni-chethulatho/
+                      - listitem [ref=e1169]:
+                        - link "చిన్ని మనసుతో నిన్ను" [ref=e1170] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/09/26/chinni-manasutho-ninnu/
+                      - listitem [ref=e1171]:
+                        - link "చిరకాల స్నేహితుడా" [ref=e1172] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/10/01/chirakaala-snehithudaa/
+                      - listitem [ref=e1173]:
+                        - link "చిరుగాలి వీచినా" [ref=e1174] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/10/25/chirugaali-veechinaa/
+                      - listitem [ref=e1175]:
+                        - link "చిరు దివ్వెల వెలుగులతో" [ref=e1176] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/01/08/chiru-divvela-velugulatho/
+                      - listitem [ref=e1177]:
+                        - link "చింత లేదిక" [ref=e1178] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/12/13/chintha-ledika/
+                      - listitem [ref=e1179]:
+                        - link "చింతెందుకు" [ref=e1180] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/01/23/chinthenduku-meeku-digulenduku/
+                      - listitem [ref=e1181]:
+                        - link "చిందింది రక్తం" [ref=e1182] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/12/14/chindindi-raktham/
+                      - listitem [ref=e1183]:
+                        - link "చీకటినే తొలగించినది" [ref=e1184] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/08/01/cheekatine-tholaginchinadi/
+                      - listitem [ref=e1185]:
+                        - link "చీకటిలో కాంతివి" [ref=e1186] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/05/28/cheekatilo-kaanthivi/
+                      - listitem [ref=e1187]:
+                        - link "చీకటి లోయలో" [ref=e1188] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/01/15/cheekati-loyalo-nenu-padiyundagaa/
+                      - listitem [ref=e1189]:
+                        - link "చీకటులే నన్ను" [ref=e1190] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/04/25/cheekatule-nannu/
+                      - listitem [ref=e1191]:
+                        - link "చుక్క పుట్టింది" [ref=e1192] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2019/11/23/chukka-puttindi/
+                      - listitem [ref=e1193]:
+                        - link "చుక్క పుట్టింది – 2" [ref=e1194] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2022/11/30/chukka-puttindi-2/
+                      - listitem [ref=e1195]:
+                        - link "చూచితివే నా కన్నీటిని" [ref=e1196] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/08/04/choochithive-naa-kanneetini/
+                      - listitem [ref=e1197]:
+                        - link "చూచితి నీ మోముపై" [ref=e1198] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/03/30/choochithi-nee-momupai/
+                      - listitem [ref=e1199]:
+                        - link "చూచుచున్న దేవుడవయ్యా" [ref=e1200] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/10/06/choochuchunna-devudavayyaa/
+                      - listitem [ref=e1201]:
+                        - link "చూచుచున్న దేవుడవు" [ref=e1202] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/05/24/choochuchunna-devudavu/
+                      - listitem [ref=e1203]:
+                        - link "చూచుచున్నాము నీ వైపు" [ref=e1204] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/01/26/choochuchunnaamu-nee-vaipu/
+                      - listitem [ref=e1205]:
+                        - link "చూడరే సిలువను" [ref=e1206] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/09/18/choodare-siluvanu/
+                      - listitem [ref=e1207]:
+                        - link "చూడాలని ఉన్నది" [ref=e1208] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/05/22/choodaalani-unnadi/
+                      - listitem [ref=e1209]:
+                        - link "చూపుల వలన కలిగేది" [ref=e1210] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/03/20/choopula-valana-kaligedi/
+                      - listitem [ref=e1211]:
+                        - link "చెట్టు చూస్తే పచ్చగుంది" [ref=e1212] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/10/30/chettu-choosthe-pachchagundi/
+                      - listitem [ref=e1213]:
+                        - link "చెప్పనా చెప్పనా" [ref=e1214] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/12/03/cheppanaa-cheppanaa/
+                      - listitem [ref=e1215]:
+                        - link "చెప్పలేను బాబోయ్" [ref=e1216] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/11/11/cheppalenu-baaboi/
+                      - listitem [ref=e1217]:
+                        - link "చెవులు ఉన్నాయా" [ref=e1218] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/04/27/chevulu-unnaayaa/
+                      - listitem [ref=e1219]:
+                        - link "చేయి పట్టుకో" [ref=e1220] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/07/11/cheyi-pattuko/
+                    - link " Back to top " [ref=e1222] [cursor=pointer]:
+                      - /url: "#a-z-listing-1"
+                  - generic [ref=e1223]:
+                    - heading "జ" [level=2] [ref=e1224]
+                    - list [ref=e1225]:
+                      - listitem [ref=e1226]:
+                        - link "జ్యోతిర్మయుడా" [ref=e1227] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/01/19/jyothirmayudaa/
+                      - listitem [ref=e1228]:
+                        - link "జగతికి వెలుగును తెచ్చెనులే" [ref=e1229] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/01/02/jagathiki-velugunu-thechchenule/
+                      - listitem [ref=e1230]:
+                        - link "జగములనేలే శ్రీ యేసా" [ref=e1231] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2019/07/30/jagamulanele-shree-yesaa/
+                      - listitem [ref=e1232]:
+                        - link "జన్మించినాడురా" [ref=e1233] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/12/19/janminchinaaduraa-raaju/
+                      - listitem [ref=e1234]:
+                        - link "జన్మించెను ఒక తార" [ref=e1235] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2014/11/08/janminchenu-oka-thaara/
+                      - listitem [ref=e1236]:
+                        - link "జన్మించె జన్మించె" [ref=e1237] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/07/10/janminche-janminche/
+                      - listitem [ref=e1238]:
+                        - link "జన్మించె జన్మించె యేసయ్యా" [ref=e1239] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/12/03/janminche-janminche-yesayyaa/
+                      - listitem [ref=e1240]:
+                        - link "జన్మించె జనంబులకు" [ref=e1241] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2024/12/22/janminche-janambulaku/
+                      - listitem [ref=e1242]:
+                        - link "జయమిచ్చిన దేవునికి" [ref=e1243] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/09/21/jayamichchina-devuniki/
+                      - listitem [ref=e1244]:
+                        - link "జయ జయ యేసు" [ref=e1245] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/10/27/jaya-jaya-yesu/
+                      - listitem [ref=e1246]:
+                        - link "జయం జయం" [ref=e1247] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/10/12/jayam-jayam/
+                      - listitem [ref=e1248]:
+                        - link "జయం జయం మన యేసుకే" [ref=e1249] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/04/03/jayam-jayam-mana-yesuke/
+                      - listitem [ref=e1250]:
+                        - link "జయం జయం (మనకూ)" [ref=e1251] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/08/31/jayam-jayam-manaku/
+                      - listitem [ref=e1252]:
+                        - link "జయించువారిని" [ref=e1253] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/01/05/jayinchuvaarini/
+                      - listitem [ref=e1254]:
+                        - link "జాగ్రత్త భక్తులారా" [ref=e1255] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/11/10/jaagraththa-bhakthulaaraa/
+                      - listitem [ref=e1256]:
+                        - link "జాగోరే జాగోరే" [ref=e1257] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/08/21/jaagore-jaagore/
+                      - listitem [ref=e1258]:
+                        - link "జాలిగల దైవమా" [ref=e1259] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/10/02/jaaligala-daivamaa-yesayyaa/
+                      - listitem [ref=e1260]:
+                        - link "జీవనదిని నా హృదయములో" [ref=e1261] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/10/31/jeevanadini-naa-hrudayamulo/
+                      - listitem [ref=e1262]:
+                        - link "జీవన తొలి సంధ్య" [ref=e1263] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/10/18/jeevana-tholi-sandhya/
+                      - listitem [ref=e1264]:
+                        - link "జీవమా యేసయ్యా" [ref=e1265] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/09/13/jeevamaa-yesayyaa/
+                      - listitem [ref=e1266]:
+                        - link "జీవము గల దేవుని సంఘం" [ref=e1267] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/05/23/jeevamugala-devuni-sangham/
+                      - listitem [ref=e1268]:
+                        - link "జీవ నాథ" [ref=e1269] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/02/12/jeeva-naadha-mukthi-daatha/
+                      - listitem [ref=e1270]:
+                        - link "జీవాధిపతివి నీవే" [ref=e1271] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2019/08/01/jeevaadhipathivi-neeve/
+                      - listitem [ref=e1272]:
+                        - link "జీవితమంటే మాటలు కాదు" [ref=e1273] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/09/13/jeevithamante-maatalu-kaadu/
+                      - listitem [ref=e1274]:
+                        - link "జీవితమంతా నీ ప్రేమ" [ref=e1275] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/04/06/jeevithamanthaa-nee-prema/
+                      - listitem [ref=e1276]:
+                        - link "జీవితంలో నీలా ఉండాలని" [ref=e1277] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/04/14/jeevithamlo-neelaa-undaalani/
+                      - listitem [ref=e1278]:
+                        - link "జీవితంలో నేర్చుకున్నాను" [ref=e1279] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/08/30/jeevithamlo-nerchukunnaanu/
+                      - listitem [ref=e1280]:
+                        - link "జీవితాంతము నే నీతో" [ref=e1281] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/05/12/jeevithaanthamu-ne-neetho/
+                      - listitem [ref=e1282]:
+                        - link "జీవితాంతము వరకు నీకే" [ref=e1283] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2019/08/01/jeevithaanthamu-varaku-neeke/
+                      - listitem [ref=e1284]:
+                        - link "జీవించుచున్నవాడా" [ref=e1285] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2023/03/30/jeevinchuchunnavaadaa/
+                      - listitem [ref=e1286]:
+                        - link "జీవించుచున్నావన్న" [ref=e1287] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/12/31/jeevinchuchunnaavanna/
+                      - listitem [ref=e1288]:
+                        - link "జీవింతు నేను" [ref=e1289] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/07/28/jeevinthu-nenu/
+                      - listitem [ref=e1290]:
+                        - link "జుంటె తేనె కన్నా" [ref=e1291] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/11/28/junte-thene-kannaa/
+                      - listitem [ref=e1292]:
+                        - link "జుంటె తేనె ధారల కన్నా" [ref=e1293] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2013/11/05/junti-thene-dhaarala-kannaa/
+                      - listitem [ref=e1294]:
+                        - link "జై జై జై యేసయ్యా" [ref=e1295] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/12/23/jai-jai-jai-yesayyaa/
+                      - listitem [ref=e1296]:
+                        - link "జై జై యేసు" [ref=e1297] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2024/11/10/jai-jai-yesu/
+                    - link " Back to top " [ref=e1299] [cursor=pointer]:
+                      - /url: "#a-z-listing-1"
+                  - generic [ref=e1300]:
+                    - heading "త" [level=2] [ref=e1301]
+                    - list [ref=e1302]:
+                      - listitem [ref=e1303]:
+                        - link "త్యాగమెంత చేసావు దేవా" [ref=e1304] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/01/02/thyaagamentha-chesaavu-devaa/
+                      - listitem [ref=e1305]:
+                        - link "త్రాహిమాం క్రీస్తు నాథ" [ref=e1306] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/05/17/thraahimaam-kreesthu-naatha/
+                      - listitem [ref=e1307]:
+                        - link "త్రిత్వైకమా" [ref=e1308] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/10/08/thrithvaikamaa/
+                      - listitem [ref=e1309]:
+                        - link "తన రక్తంతో కడిగి" [ref=e1310] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/06/01/thana-rakthamtho-kadigi/
+                      - listitem [ref=e1311]:
+                        - link "తనువు నా దిదిగో" [ref=e1312] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/07/23/thanuvu-naa-didigo/
+                      - listitem [ref=e1313]:
+                        - link "తప్పిపోయిన కుమారుడనయ్యా" [ref=e1314] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/11/02/thappipoyina-kumaarudanayyaa/
+                      - listitem [ref=e1315]:
+                        - link "తప్పిపోయిన గొర్రె" [ref=e1316] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/10/19/thappipoyinagorre/
+                      - listitem [ref=e1317]:
+                        - link "తమ దేవునెరుగువారు" [ref=e1318] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2025/07/25/thama-devuneruguvaaru/
+                      - listitem [ref=e1319]:
+                        - link "తరచి తరచి" [ref=e1320] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/07/26/tharachi-tharachi/
+                      - listitem [ref=e1321]:
+                        - link "తరతరాలలో" [ref=e1322] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2013/11/05/tharatharaalalo-yugayugaalalo-jagajagaalalo/
+                      - listitem [ref=e1323]:
+                        - link "తరములు మారుచున్నవి" [ref=e1324] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/12/04/tharamulu-maaruchunnavi/
+                      - listitem [ref=e1325]:
+                        - link "తరాలు మారినా యుగాలు మారినా" [ref=e1326] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/02/11/tharaalu-maarinaa-yugaalu-maarinaa/
+                      - listitem [ref=e1327]:
+                        - link "తల్లిలా లాలించును" [ref=e1328] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/02/01/thallilaa-laalinchunu/
+                      - listitem [ref=e1329]:
+                        - link "తలవంచకు నేస్తమా" [ref=e1330] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/01/12/thalavanchaku-nesthamaa/
+                      - listitem [ref=e1331]:
+                        - link "తండ్రి ఇంట్లో ఎల్లప్పుడూ" [ref=e1332] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/12/01/thandri-intlo-ellappudu/
+                      - listitem [ref=e1333]:
+                        - link "తండ్రి నా యేసయ్యా" [ref=e1334] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/11/06/thandri-naa-yesayyaa/
+                      - listitem [ref=e1335]:
+                        - link "తండ్రీ దేవా" [ref=e1336] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/06/18/thandri-devaa/
+                      - listitem [ref=e1337]:
+                        - link "తంబుర సితార నాదముతో" [ref=e1338] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/07/19/thambura-sithaara-naadamutho/
+                      - listitem [ref=e1339]:
+                        - link "తార వెలిసింది" [ref=e1340] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/10/31/thaara-velisindi/
+                      - listitem [ref=e1341]:
+                        - link "తారా వెలిసెను ఈ వేళ" [ref=e1342] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/04/29/thaaraa-velisenu-ee-vela/
+                      - listitem [ref=e1343]:
+                        - link "తీయని స్వరాలతో" [ref=e1344] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/06/06/theeyani-swaraalatho/
+                      - listitem [ref=e1345]:
+                        - link "తుప్పు పట్టి పోవుటకంటే" [ref=e1346] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/10/29/thuppu-patti-povutakante/
+                      - listitem [ref=e1347]:
+                        - link "తూర్పు దిక్కు చుక్క బుట్టె" [ref=e1348] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2014/11/08/thoorpu-diku-chukka-butte/
+                      - listitem [ref=e1349]:
+                        - link "తూరుపు దిక్కున" [ref=e1350] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/12/17/thoorupu-dikkuna-chukka-butte/
+                      - listitem [ref=e1351]:
+                        - link "తెల్లారింది వేళ" [ref=e1352] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/08/04/thellaarindi-vela/
+                      - listitem [ref=e1353]:
+                        - link "తెలియదా? నీకు తెలియదా?" [ref=e1354] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/01/03/theliyadaa-neeku-theliyadaa/
+                      - listitem [ref=e1355]:
+                        - link "తేనెకన్న తీయనైనది" [ref=e1356] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/01/25/thenekanna-theeyanainadi/
+                      - listitem [ref=e1357]:
+                        - link "తొలకరి వాన" [ref=e1358] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/11/14/tholakari-vaana/
+                      - listitem [ref=e1359]:
+                        - link "తోడు లేరని కుమిలిపోకు" [ref=e1360] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/11/03/thodu-lerani-kumilipoku/
+                    - link " Back to top " [ref=e1362] [cursor=pointer]:
+                      - /url: "#a-z-listing-1"
+                  - generic [ref=e1363]:
+                    - heading "ద" [level=2] [ref=e1364]
+                    - list [ref=e1365]:
+                      - listitem [ref=e1366]:
+                        - link "ద్రాక్షావల్లివి నీవైతే" [ref=e1367] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/10/18/draakshaa-vallivi-neevaithe/
+                      - listitem [ref=e1368]:
+                        - link "దయాళుడా నీ కృప" [ref=e1369] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/07/11/dhayaaludaa-nee-krupa/
+                      - listitem [ref=e1370]:
+                        - link "దవలవర్ణుడా" [ref=e1371] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/11/29/davalavarnudaa/
+                      - listitem [ref=e1372]:
+                        - link "దారి తప్పి పోతున్నావా" [ref=e1373] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/10/13/daari-thappi-pothunnaavaa/
+                      - listitem [ref=e1374]:
+                        - link "దావీదు తనయా హోసన్నా" [ref=e1375] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/03/21/daaveedu-thanayaa-hosannaa/
+                      - listitem [ref=e1376]:
+                        - link "దావీదు వలె నాట్యమాడి" [ref=e1377] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/09/26/daaveedu-vale-naatyamaadi/
+                      - listitem [ref=e1378]:
+                        - link "దావీదు వంశంలో" [ref=e1379] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/12/14/daaveedu-vamshamlo/
+                      - listitem [ref=e1380]:
+                        - link "దిక్కులన్ని నీవేలే" [ref=e1381] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/02/06/dikkulanni-neevele/
+                      - listitem [ref=e1382]:
+                        - link "దిక్కులెన్ని తిరిగినా" [ref=e1383] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/02/06/dikkulenni-thiriginaa/
+                      - listitem [ref=e1384]:
+                        - link "దినదినము విజయము" [ref=e1385] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/02/02/dinadinamu-vijayamu/
+                      - listitem [ref=e1386]:
+                        - link "దినదినంబు యేసుకు" [ref=e1387] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/02/06/dinadinambu-yesuku/
+                      - listitem [ref=e1388]:
+                        - link "దినమెల్ల నే పాడినా" [ref=e1389] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/02/01/dinamella-ne-paadinaa/
+                      - listitem [ref=e1390]:
+                        - link "దివ్య తార" [ref=e1391] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2019/01/02/divya-thaara/
+                      - listitem [ref=e1392]:
+                        - link "దివిటీలు మండాలి" [ref=e1393] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/09/08/diviteelu-mandaali/
+                      - listitem [ref=e1394]:
+                        - link "దివినేలు స్తోత్రార్హుడా" [ref=e1395] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/03/27/divinelu-sthothraarhudaa/
+                      - listitem [ref=e1396]:
+                        - link "దివి నుండి భువికి" [ref=e1397] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/12/15/divi-nundi-bhuviki/
+                      - listitem [ref=e1398]:
+                        - link "దీవించావే" [ref=e1399] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2024/02/20/deevinchaave/
+                      - listitem [ref=e1400]:
+                        - link "దుష్టుల ఆలోచన చొప్పున" [ref=e1401] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/06/15/dushtula-aalochana/
+                      - listitem [ref=e1402]:
+                        - link "దుర్దినములు రాకముందే" [ref=e1403] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/08/30/durdinamulu-raakamunde/
+                      - listitem [ref=e1404]:
+                        - link "దూత పాట పాడుడి" [ref=e1405] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2014/11/08/dootha-paata-paadudi/
+                      - listitem [ref=e1406]:
+                        - link "దూరపు కొండపై" [ref=e1407] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2025/03/13/doorapu-kondapai/
+                      - listitem [ref=e1408]:
+                        - link "దేవర నీ దీవెనలు" [ref=e1409] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2014/11/17/devara-nee-deevenalu/
+                      - listitem [ref=e1410]:
+                        - link "దేవ దాసపాలక" [ref=e1411] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/09/02/deva-daasapaalaka/
+                      - listitem [ref=e1412]:
+                        - link "దేవ సంస్తుతి" [ref=e1413] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/07/23/deva-samsthuthi-cheyave/
+                      - listitem [ref=e1414]:
+                        - link "దేవాది దేవా" [ref=e1415] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2024/11/09/devaadhi-devaa/
+                      - listitem [ref=e1416]:
+                        - link "దేవాది దేవుడు" [ref=e1417] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/02/17/devaadhi-devudu/
+                      - listitem [ref=e1418]:
+                        - link "దేవా ఇలలోన నీవు" [ref=e1419] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/10/22/devaa-ilalona-neevu/
+                      - listitem [ref=e1420]:
+                        - link "దేవా ఈ జీవితం" [ref=e1421] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/07/02/devaa-ee-jeevitham/
+                      - listitem [ref=e1422]:
+                        - link "దేవా నా జీవితమిదిగో" [ref=e1423] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/05/15/devaa-naa-jeevithamidigo/
+                      - listitem [ref=e1424]:
+                        - link "దేవా నా దేవా" [ref=e1425] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/01/04/devaa-naa-devaa-2/
+                      - listitem [ref=e1426]:
+                        - link "దేవా నా దేవా నిన్ను కీర్తించెదన్" [ref=e1427] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/12/23/devaa-naa-devaa/
+                      - listitem [ref=e1428]:
+                        - link "దేవా నా మొర ఆలకించుమా" [ref=e1429] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/08/03/devaa-naa-mora-aalakinchumaa/
+                      - listitem [ref=e1430]:
+                        - link "దేవా నా మొరాలకించితివి" [ref=e1431] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/06/12/devaa-naa-moraalakinchithivi/
+                      - listitem [ref=e1432]:
+                        - link "దేవా నా హృదయముతో" [ref=e1433] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/02/17/devaa-naa-hrudayamutho/
+                      - listitem [ref=e1434]:
+                        - link "దేవా నీ ఆత్మను" [ref=e1435] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/06/01/devaa-nee-aathmanu/
+                      - listitem [ref=e1436]:
+                        - link "దేవా నీ ఆవరణం" [ref=e1437] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2025/10/23/devaa-nee-aavaranam/
+                      - listitem [ref=e1438]:
+                        - link "దేవా నీ గొప్పకార్యములన్" [ref=e1439] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/09/17/devaa-nee-goppa-kaaryamulan/
+                      - listitem [ref=e1440]:
+                        - link "దేవా నీ తలంపులు" [ref=e1441] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/08/26/devaa-nee-thalampulu/
+                      - listitem [ref=e1442]:
+                        - link "దేవా నీ నామం" [ref=e1443] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/06/30/devaa-nee-naamam-kripal-mohan/
+                      - listitem [ref=e1444]:
+                        - link "దేవా నీ నామం" [ref=e1445] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/01/14/devaa-nee-naamam/
+                      - listitem [ref=e1446]:
+                        - link "దేవా నీ సన్నిధిలో" [ref=e1447] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2023/03/02/devaa-nee-sannidhilo/
+                      - listitem [ref=e1448]:
+                        - link "దేవా నీ సాక్షిగా" [ref=e1449] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/09/14/devaa-nee-saakshigaa/
+                      - listitem [ref=e1450]:
+                        - link "దేవా పరలోక దుతాలి" [ref=e1451] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/08/17/devaa-paraloka-doothaali/
+                      - listitem [ref=e1452]:
+                        - link "దేవా పాపిని" [ref=e1453] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/08/31/devaa-paapini/
+                      - listitem [ref=e1454]:
+                        - link "దేవా మహోన్నతుడా" [ref=e1455] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/07/23/devaa-mahonnathudaa/
+                      - listitem [ref=e1456]:
+                        - link "దేవా మా కుటుంబము" [ref=e1457] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/10/08/devaa-maa-kutumbamu/
+                      - listitem [ref=e1458]:
+                        - link "దేవా యెహోవా" [ref=e1459] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/07/09/devaa-yehovaa/
+                      - listitem [ref=e1460]:
+                        - link "దేవా యెహోవా సీయోనులో" [ref=e1461] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/07/18/devaa-yehovaa-seeyonulo/
+                      - listitem [ref=e1462]:
+                        - link "దేవుడు చూస్తున్నాడు" [ref=e1463] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2025/07/19/devudu-choosthunnaadu/
+                      - listitem [ref=e1464]:
+                        - link "దేవుడు దేహమును" [ref=e1465] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/12/18/devudu-dehamunu/
+                      - listitem [ref=e1466]:
+                        - link "దేవుడు నీకు తెలుసు" [ref=e1467] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/11/07/devudu-neeku-thelusu/
+                      - listitem [ref=e1468]:
+                        - link "దేవుడు మనకు ఎల్లప్పుడు" [ref=e1469] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/04/16/devudu-manaku-ellappudu/
+                      - listitem [ref=e1470]:
+                        - link "దేవుడు లోకమును" [ref=e1471] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2019/07/14/devudu-lokamunu/
+                      - listitem [ref=e1472]:
+                        - link "దేవుడే ఇల చేరేటందుకు" [ref=e1473] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/05/03/devude-ila-cheretanduku/
+                      - listitem [ref=e1474]:
+                        - link "దేవుడే నాకాశ్రయంబు" [ref=e1475] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/04/16/devude-naakaashrayambu/
+                      - listitem [ref=e1476]:
+                        - link "దేవుడొక నగరము" [ref=e1477] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/12/29/devudoka-nagaramu/
+                      - listitem [ref=e1478]:
+                        - link "దేవునికి భయపడవా" [ref=e1479] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/11/05/devuniki-bhayapadavaa/
+                      - listitem [ref=e1480]:
+                        - link "దేవునికి స్తోత్రము గానము" [ref=e1481] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2013/02/09/devuniki-sthothramu-gaanamu/
+                      - listitem [ref=e1482]:
+                        - link "దేవునికే మహిమ" [ref=e1483] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2019/07/18/devunike-mahima/
+                      - listitem [ref=e1484]:
+                        - link "దేవునియందు నిరీక్షణ నుంచి" [ref=e1485] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/09/27/devuniyandu-nireekshana-nunchi/
+                      - listitem [ref=e1486]:
+                        - link "దేవుని గొప్ప మహిమను" [ref=e1487] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/10/29/devuni-goppa-mahimanu/
+                      - listitem [ref=e1488]:
+                        - link "దేవుని ప్రేమ ఇదిగో" [ref=e1489] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/08/31/devuni-prema-idigo/
+                      - listitem [ref=e1490]:
+                        - link "దేవుని యందు భక్తి గల స్త్రీ" [ref=e1491] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/09/06/devuni-yandu-bhakthi/
+                      - listitem [ref=e1492]:
+                        - link "దేవుని వారసులం" [ref=e1493] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/07/21/devuni-vaarasulam/
+                      - listitem [ref=e1494]:
+                        - link "దేవుని స్తుతియించి ఆరాధింతుము" [ref=e1495] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/05/12/devuni-sthuthiyinchi-aaraadhinthumu/
+                      - listitem [ref=e1496]:
+                        - link "దేవుని స్తుతియించుడి" [ref=e1497] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2013/11/05/devuni-sthuthiyinchudi/
+                      - listitem [ref=e1498]:
+                        - link "దేవుని స్తుతించ రండి" [ref=e1499] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/01/01/devuni-sthuthincha-randi/
+                      - listitem [ref=e1500]:
+                        - link "దేవుని సముఖ జీవ కవిలెలో" [ref=e1501] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/09/27/devuni-samukha-jeeva-kavilelo/
+                      - listitem [ref=e1502]:
+                        - link "దేహం పాతది" [ref=e1503] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/01/07/deham-paathadi/
+                      - listitem [ref=e1504]:
+                        - link "దైవ కుటుంబం" [ref=e1505] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/09/02/daiva-kutumbam/
+                      - listitem [ref=e1506]:
+                        - link "దైవ తనయా క్రీస్తు నాథుండా" [ref=e1507] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2026/03/29/daiva-thanayaa-kreesthu-naathundaa/
+                      - listitem [ref=e1508]:
+                        - link "దొరకును సమస్తము" [ref=e1509] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/10/27/dorakunu-samasthamu/
+                      - listitem [ref=e1510]:
+                        - link "దోషివా ప్రభూ" [ref=e1511] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/04/16/doshivaa-prabhu/
+                    - link " Back to top " [ref=e1513] [cursor=pointer]:
+                      - /url: "#a-z-listing-1"
+                  - generic [ref=e1514]:
+                    - heading "ధ" [level=2] [ref=e1515]
+                    - list [ref=e1516]:
+                      - listitem [ref=e1517]:
+                        - link "ధ్యానించుచుంటిమి" [ref=e1518] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/04/01/dhyaaninchuchunitimi/
+                      - listitem [ref=e1519]:
+                        - link "ధన్యము ఎంతో ధన్యము" [ref=e1520] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/09/26/dhanyamu-entho-dhanyamu/
+                    - link " Back to top " [ref=e1522] [cursor=pointer]:
+                      - /url: "#a-z-listing-1"
+                  - generic [ref=e1523]:
+                    - heading "న" [level=2] [ref=e1524]
+                    - list [ref=e1525]:
+                      - listitem [ref=e1526]:
+                        - link "న్యాయాధిపతి" [ref=e1527] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2023/06/16/nyaayaadhipathi/
+                      - listitem [ref=e1528]:
+                        - link "న్యాయాధిపతి అయిన దేవుడు" [ref=e1529] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/07/07/nyaayaadhipathi-aina-devudu/
+                      - listitem [ref=e1530]:
+                        - link "నజరేయుడా నా యేసయ్య" [ref=e1531] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/02/01/najareyudaa-naa-yesayya/
+                      - listitem [ref=e1532]:
+                        - link "నడవాలని యేసు" [ref=e1533] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/06/19/nadavaalani-yesu/
+                      - listitem [ref=e1534]:
+                        - link "నడిపిస్తాడు నా దేవుడు" [ref=e1535] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/09/27/nadipisthaadu-naa-devudu/
+                      - listitem [ref=e1536]:
+                        - link "నడిపించు నా నావా" [ref=e1537] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/01/18/nadipinchu-naa-naavaa/
+                      - listitem [ref=e1538]:
+                        - link "నన్నాకర్షించిన నీ స్నేహ బంధం" [ref=e1539] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/08/30/nannaakarshinchina-nee-sneha-bandham/
+                      - listitem [ref=e1540]:
+                        - link "నన్ను కాదనవని" [ref=e1541] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/05/05/nannu-kaadanavani/
+                      - listitem [ref=e1542]:
+                        - link "నన్ను కావగ వచ్చిన" [ref=e1543] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/03/12/nannu-kaavaga-vachchina/
+                      - listitem [ref=e1544]:
+                        - link "నన్ను గన్నయ్య రావె" [ref=e1545] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/09/22/nannu-gannayya-raave/
+                      - listitem [ref=e1546]:
+                        - link "నన్ను చూచువాడా" [ref=e1547] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2026/03/01/nannu-choochuvaadaa/
+                      - listitem [ref=e1548]:
+                        - link "నన్ను దిద్దుము" [ref=e1549] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/10/27/nannu-diddumu-chinna-praayamu/
+                      - listitem [ref=e1550]:
+                        - link "నన్ను నీవలె నిర్మించినను" [ref=e1551] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2019/06/18/nannu-neevale-nirminchinanu/
+                      - listitem [ref=e1552]:
+                        - link "నన్ను పిలచిన దేవా" [ref=e1553] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/05/24/nannu-pilachina-devaa/
+                      - listitem [ref=e1554]:
+                        - link "నన్ను బ్రతికించుటకు" [ref=e1555] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/06/06/nannu-brathikinchutaku/
+                      - listitem [ref=e1556]:
+                        - link "నన్నెంతగానో ప్రేమించిన" [ref=e1557] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/09/11/nannenthagaano-preminchina/
+                      - listitem [ref=e1558]:
+                        - link "నన్నెంతగానో ప్రేమించెను" [ref=e1559] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/01/19/nannenthagaano-preminchenu/
+                      - listitem [ref=e1560]:
+                        - link "నన్నెంతగా ప్రేమించితివో" [ref=e1561] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/09/06/nannenthagaa-preminchithivo/
+                      - listitem [ref=e1562]:
+                        - link "నను చేరిన నీ ప్రేమ" [ref=e1563] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/11/13/nanu-cherina-nee-prema/
+                      - listitem [ref=e1564]:
+                        - link "నను విడువక ఎడబాయక" [ref=e1565] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/05/10/nanu-viduvaka-edabaayaka/
+                      - listitem [ref=e1566]:
+                        - link "నమ్మకమైన దేవుడవైన" [ref=e1567] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/08/02/nammakamaina-devudavaina/
+                      - listitem [ref=e1568]:
+                        - link "నమ్మకమైన నా ప్రభు" [ref=e1569] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/01/03/nammakamaina-naa-prabhu/
+                      - listitem [ref=e1570]:
+                        - link "నమ్మకమైన నా స్నేహితుడు" [ref=e1571] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/02/04/nammakamaina/
+                      - listitem [ref=e1572]:
+                        - link "నమ్మకురా నమ్మకురా" [ref=e1573] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/02/12/nammakuraa-nammakuraa/
+                      - listitem [ref=e1574]:
+                        - link "నమ్మకు ఇలలో" [ref=e1575] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/06/09/nammaku-ilalo/
+                      - listitem [ref=e1576]:
+                        - link "నమ్మదగిన దేవుడవు" [ref=e1577] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2022/02/23/nammadagina-devudavu/
+                      - listitem [ref=e1578]:
+                        - link "నమ్మదగిన దేవుడా" [ref=e1579] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/01/11/nammadagina-devudaa/
+                      - listitem [ref=e1580]:
+                        - link "నమ్ముకో యేసయ్యను" [ref=e1581] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/10/19/nammuko-yesayyanu/
+                      - listitem [ref=e1582]:
+                        - link "నల్లా నల్లాని చీకటి" [ref=e1583] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2024/12/19/nallaa-nallaani-cheekati/
+                      - listitem [ref=e1584]:
+                        - link "నలుగకుండ గోధుమలు" [ref=e1585] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/08/03/nalugakunda-godhumalu/
+                      - listitem [ref=e1586]:
+                        - link "నశియించు ఆత్మలెన్నియో" [ref=e1587] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/01/19/nashiyinchu-aathmalenniyo/
+                      - listitem [ref=e1588]:
+                        - link "నశియించెడి లోకంలో" [ref=e1589] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/03/01/nashiyinchedi-lokamlo/
+                      - listitem [ref=e1590]:
+                        - link "నాకున్నది నీవేనని" [ref=e1591] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/06/01/naakunnadi-neevenani/
+                      - listitem [ref=e1592]:
+                        - link "నాకున్న చిన్ని ఆశ" [ref=e1593] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/03/21/naakunna-chinni-aasha/
+                      - listitem [ref=e1594]:
+                        - link "నాకున్న బలము సరిపోదయ్యా" [ref=e1595] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2019/07/30/naakunna-balamu-saripodayyaa/
+                      - listitem [ref=e1596]:
+                        - link "నాకు చాలిన దేవుడ నీవు" [ref=e1597] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/08/26/naaku-chaalina-devuda-neevu/
+                      - listitem [ref=e1598]:
+                        - link "నాకు జీవమై ఉన్న" [ref=e1599] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/05/18/naaku-jeevamai-unna/
+                      - listitem [ref=e1600]:
+                        - link "నాకు నీ కృప చాలును" [ref=e1601] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/10/13/naaku-nee-krupa-chaalunu/
+                      - listitem [ref=e1602]:
+                        - link "నాకు బలము ఉన్నంత వరకు" [ref=e1603] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/04/14/naaku-balamu-unnantha-varaku/
+                      - listitem [ref=e1604]:
+                        - link "నాకెన్నో మేలులు చేసితివే" [ref=e1605] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/11/22/naakenno-melulu-chesithive/
+                      - listitem [ref=e1606]:
+                        - link "నాకెంతో ఆనందం" [ref=e1607] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2023/03/30/naakentho-aanandam/
+                      - listitem [ref=e1608]:
+                        - link "నాకై చీల్చబడ్డ" [ref=e1609] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/03/13/naakai-cheelchabadda/
+                      - listitem [ref=e1610]:
+                        - link "నాకై నా యేసు కట్టెను" [ref=e1611] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/12/01/naakai-naa-yesu-kattenu/
+                      - listitem [ref=e1612]:
+                        - link "నాతో నీవు మాట్లాడినచో నేను బ్రతికెదన్" [ref=e1613] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/09/21/naatho-neevu-maatlaadinacho/
+                      - listitem [ref=e1614]:
+                        - link "నాతో నీవు మాటాడినచో" [ref=e1615] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/09/21/naatho-neevu-maataadinacho/
+                      - listitem [ref=e1616]:
+                        - link "నాతో మాట్లాడు ప్రభువా" [ref=e1617] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/06/03/naatho-maatlaadu-prabhuvaa/
+                      - listitem [ref=e1618]:
+                        - link "నాదంటూ లోకాన" [ref=e1619] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2014/11/26/naadantoo-lokaana-edi-ledayya/
+                      - listitem [ref=e1620]:
+                        - link "నాదు జీవమాయనే" [ref=e1621] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/06/03/naadu-jeevamaayene/
+                      - listitem [ref=e1622]:
+                        - link "నాదు జీవితము" [ref=e1623] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/01/19/naadu-jeevithamu/
+                      - listitem [ref=e1624]:
+                        - link "నాలాంటి చిన్నలంటే" [ref=e1625] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/02/08/naalaanti-chinnalante/
+                      - listitem [ref=e1626]:
+                        - link "నాలోని ఆశ" [ref=e1627] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/10/15/naaloni-aasha-naaloni-korika/
+                      - listitem [ref=e1628]:
+                        - link "నాలో ఉన్న ఆనందం" [ref=e1629] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/09/15/naalo-unna-aanandam/
+                      - listitem [ref=e1630]:
+                        - link "నాలో ఉన్న ఆశలన్నియు" [ref=e1631] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/06/07/naalo-unna-aashalanniyu/
+                      - listitem [ref=e1632]:
+                        - link "నాలో ఉండి నను నడిపించేటి" [ref=e1633] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/04/13/naalo-undi-nanu-nadipincheti/
+                      - listitem [ref=e1634]:
+                        - link "నావన్ని యంగీకరించుమీ" [ref=e1635] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/09/27/naavanni-yangeekarinchumee-devaa/
+                      - listitem [ref=e1636]:
+                        - link "నా ఆశల పల్లకి" [ref=e1637] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2019/09/10/naa-aashala-pallaki/
+                      - listitem [ref=e1638]:
+                        - link "నా ఊహకందని ప్రేమతో" [ref=e1639] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/08/25/naa-oohakandani-prematho/
+                      - listitem [ref=e1640]:
+                        - link "నా కన్నుల కన్నీరు" [ref=e1641] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/11/01/naa-kannula-kanneeru/
+                      - listitem [ref=e1642]:
+                        - link "నా కన్నులెత్తి వేచియుందును" [ref=e1643] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/01/27/naa-kannuleththi-vechiyundunu/
+                      - listitem [ref=e1644]:
+                        - link "నా కనుచూపు మేర" [ref=e1645] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/04/29/naa-kanuchoopu-mera/
+                      - listitem [ref=e1646]:
+                        - link "నా కనుల వెంబడి" [ref=e1647] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/09/04/naa-kanula-vembadi/
+                      - listitem [ref=e1648]:
+                        - link "నా కలవరములన్ని" [ref=e1649] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/07/15/naa-kalavaramulanni/
+                      - listitem [ref=e1650]:
+                        - link "నా కృప నీకు చాలని" [ref=e1651] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/01/04/naa-krupa-neeku-chaalani/
+                      - listitem [ref=e1652]:
+                        - link "నా కొరకు బలియైన" [ref=e1653] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/03/19/naa-koraku-baliyaina/
+                      - listitem [ref=e1654]:
+                        - link "నా కొరకై అన్నియు చేసెను" [ref=e1655] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/12/31/naa-korakai-anniyu/
+                      - listitem [ref=e1656]:
+                        - link "నా కోసమా" [ref=e1657] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/06/29/naa-kosamaa-ee-siluva-yaagamu/
+                      - listitem [ref=e1658]:
+                        - link "నా గీతారాధనలో" [ref=e1659] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/12/30/naa-geethaaraadhanalo/
+                      - listitem [ref=e1660]:
+                        - link "నా గుడారము క్షేమమని" [ref=e1661] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2019/07/18/naa-gudaaramu-kshemamani/
+                      - listitem [ref=e1662]:
+                        - link "నా గుండె చప్పుడు చేస్తుంది" [ref=e1663] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/10/07/naa-gunde-chappudu-chesthundi/
+                      - listitem [ref=e1664]:
+                        - link "నా చిన్ని దోనెలో" [ref=e1665] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/10/17/naa-chinni-donelo/
+                      - listitem [ref=e1666]:
+                        - link "నా చిన్ని హృదయమందు" [ref=e1667] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/11/11/naa-chinni-hrudayamandu/
+                      - listitem [ref=e1668]:
+                        - link "నా చిన్ని హృదయము" [ref=e1669] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/08/12/naa-chinni-hrudayamu/
+                      - listitem [ref=e1670]:
+                        - link "నా చిన్ని హృదయంలో" [ref=e1671] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/06/08/naa-chinni-hrudayamlo/
+                      - listitem [ref=e1672]:
+                        - link "నా జీవం నా సర్వం" [ref=e1673] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2013/11/05/naa-jeevam-naa-sarvam/
+                      - listitem [ref=e1674]:
+                        - link "నా జీవం నీ కృపలో" [ref=e1675] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/06/12/naa-jeevam-nee-krupalo/
+                      - listitem [ref=e1676]:
+                        - link "నా జీవితకాలమంత" [ref=e1677] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/06/07/naa-jeevitha-kaalamanthaa/
+                      - listitem [ref=e1678]:
+                        - link "నా జీవిత భాగస్వామి" [ref=e1679] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/09/13/naa-jeevitha-bhaagasvaami/
+                      - listitem [ref=e1680]:
+                        - link "నా జీవిత భాగస్వామివి" [ref=e1681] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/08/11/naa-jeevitha-bhaagaswaamivi/
+                      - listitem [ref=e1682]:
+                        - link "నా జీవిత యాత్రలో" [ref=e1683] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/02/14/naa-jeevitha-yaathralo/
+                      - listitem [ref=e1684]:
+                        - link "నా జీవిత వ్యధలందు" [ref=e1685] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/01/10/naa-jeevitha-vyadhalandu/
+                      - listitem [ref=e1686]:
+                        - link "నా జీవితం ప్రభు నీకంకితం" [ref=e1687] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/08/03/naa-jeevitham-prabhu-neekankitham/
+                      - listitem [ref=e1688]:
+                        - link "నా జీవితాంతము" [ref=e1689] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/01/04/naa-jeevithaanthamu/
+                      - listitem [ref=e1690]:
+                        - link "నా తనువు నా మనసు" [ref=e1691] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/01/13/naa-thanuvu-naa-manasu/
+                      - listitem [ref=e1692]:
+                        - link "నా తల్లి నను మరచినా" [ref=e1693] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/09/26/naa-thalli-nanu-marachinaa/
+                      - listitem [ref=e1694]:
+                        - link "నా తండ్రి" [ref=e1695] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/01/25/naa-thandri/
+                      - listitem [ref=e1696]:
+                        - link "నా తండ్రి నీవే" [ref=e1697] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2023/06/12/naa-thandri-neeve/
+                      - listitem [ref=e1698]:
+                        - link "నా తోడు నీవే దేవా" [ref=e1699] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2025/11/13/naa-thodu-neeve-devaa/
+                      - listitem [ref=e1700]:
+                        - link "నా దీపము యేసయ్యా" [ref=e1701] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/06/26/naa-deepamu-yesayyaa/
+                      - listitem [ref=e1702]:
+                        - link "నా దేవ ప్రభువా" [ref=e1703] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/05/02/naa-deva-prabhuvaa/
+                      - listitem [ref=e1704]:
+                        - link "నా దేవా నీకే వందనం" [ref=e1705] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/09/19/naa-devaa-neeke-vandanam/
+                      - listitem [ref=e1706]:
+                        - link "నా దేవుని కృపవలన" [ref=e1707] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/08/02/naa-devuni-krupavalana/
+                      - listitem [ref=e1708]:
+                        - link "నా దేవుని గుడారములో" [ref=e1709] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/02/01/naa-devuni-gudaaramulo/
+                      - listitem [ref=e1710]:
+                        - link "నా దేవుణ్ణి నేను ప్రేమిస్తున్నా" [ref=e1711] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/01/22/naa-devunni-nenu-premisthunna/
+                      - listitem [ref=e1712]:
+                        - link "నా దేహమును" [ref=e1713] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/02/02/naa-dehamunu/
+                      - listitem [ref=e1714]:
+                        - link "నా నాథుడా" [ref=e1715] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/10/24/naa-naathudaa/
+                      - listitem [ref=e1716]:
+                        - link "నా నాన్న యింటికి" [ref=e1717] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/09/03/naa-naanna-intiki/
+                      - listitem [ref=e1718]:
+                        - link "నా నీతి నీవే" [ref=e1719] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/10/27/naa-neethi-neeve/
+                      - listitem [ref=e1720]:
+                        - link "నా నోటన్ క్రొత్త పాట" [ref=e1721] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/06/20/naa-notan-krottha-paata/
+                      - listitem [ref=e1722]:
+                        - link "నా ప్రాణప్రియుడా" [ref=e1723] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2013/11/05/naa-praana-priyudaa-yesu-raajaa/
+                      - listitem [ref=e1724]:
+                        - link "నా ప్రాణప్రియుడా నా యేసురాజా" [ref=e1725] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/07/14/naa-praanapriyudaa-naa-yesuraajaa/
+                      - listitem [ref=e1726]:
+                        - link "నా ప్రాణమా ఏలనే" [ref=e1727] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/05/12/naa-praanamaa-aelane/
+                      - listitem [ref=e1728]:
+                        - link "నా ప్రాణమా దిగులెందుకు" [ref=e1729] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/10/22/naa-praanamaa-digulenduku/
+                      - listitem [ref=e1730]:
+                        - link "నా ప్రాణమా నాలో నీవు" [ref=e1731] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/10/13/naa-praanamaa-naalo-neevu/
+                      - listitem [ref=e1732]:
+                        - link "నా ప్రాణమా నా సమస్తమా" [ref=e1733] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2023/07/02/naa-praanamaa-naa-samasthamaa/
+                      - listitem [ref=e1734]:
+                        - link "నా ప్రాణమా నా సర్వమా" [ref=e1735] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/05/23/naa-praanamaa-naa-sarvamaa/
+                      - listitem [ref=e1736]:
+                        - link "నా ప్రాణమా నీకే వందనం" [ref=e1737] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/10/09/naa-praanamaa-neeke-vandanam/
+                      - listitem [ref=e1738]:
+                        - link "నా ప్రాణమా సన్నుతించుమా" [ref=e1739] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/10/15/naa-praanamaa-sannuthinchumaa-2/
+                      - listitem [ref=e1740]:
+                        - link "నా ప్రాణమా సన్నుతించుమా" [ref=e1741] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/02/06/naa-praanamaa-sannuthinchumaa/
+                      - listitem [ref=e1742]:
+                        - link "నా ప్రాణమైన యేసు" [ref=e1743] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/09/06/naa-praanamaina-yesu/
+                      - listitem [ref=e1744]:
+                        - link "నా ప్రాణమైన యేసు (ఆరాధన)" [ref=e1745] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/07/02/naa-praanamaina-yesu-aaraadhana/
+                      - listitem [ref=e1746]:
+                        - link "నా ప్రాణ నాథా" [ref=e1747] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/08/11/naa-praana-naathaa/
+                      - listitem [ref=e1748]:
+                        - link "నా ప్రాణ ప్రియుడా నా యేసయ్యా" [ref=e1749] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/05/02/naa-praana-priyudaa-naa-yesayyaa/
+                      - listitem [ref=e1750]:
+                        - link "నా ప్రాణానికి ప్రాణం" [ref=e1751] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/04/08/naa-praanaaniki-praanam/
+                      - listitem [ref=e1752]:
+                        - link "నా ప్రియమైన యేసు ప్రభు" [ref=e1753] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/07/23/naa-priyamaina-yesu-prabhu/
+                      - listitem [ref=e1754]:
+                        - link "నా ప్రియ దేశం" [ref=e1755] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/08/02/naa-priya-desham/
+                      - listitem [ref=e1756]:
+                        - link "నా ప్రియ యేసు రా" [ref=e1757] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/11/01/naa-priya-yesu-raa/
+                      - listitem [ref=e1758]:
+                        - link "నా ప్రియుడు యేసు" [ref=e1759] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/06/01/naa-priyudu-yesu/
+                      - listitem [ref=e1760]:
+                        - link "నా పేరే తెలియని ప్రజలు" [ref=e1761] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/11/02/naa-pere-theliyani-prajalu/
+                      - listitem [ref=e1762]:
+                        - link "నా బ్రతుకు దినములు" [ref=e1763] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/02/05/naa-brathuku-dinamulu/
+                      - listitem [ref=e1764]:
+                        - link "నా బలమంతా నీవేనయ్యా" [ref=e1765] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/01/20/naa-balamanthaa-neevenayyaa/
+                      - listitem [ref=e1766]:
+                        - link "నా మట్టుకైతే" [ref=e1767] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/09/01/naa-mattukaithe/
+                      - listitem [ref=e1768]:
+                        - link "నా మనో నేత్రము" [ref=e1769] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/10/05/naa-mano-nethramu/
+                      - listitem [ref=e1770]:
+                        - link "నా మార్గమందు" [ref=e1771] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2023/01/01/naa-maargamandu/
+                      - listitem [ref=e1772]:
+                        - link "నా యెడల నీకున్న" [ref=e1773] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/01/03/naa-yedala-neekunna/
+                      - listitem [ref=e1774]:
+                        - link "నా యేసయ్య ప్రేమ" [ref=e1775] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/09/03/naa-yesayya-prema/
+                      - listitem [ref=e1776]:
+                        - link "నా యేసయ్యా నా రక్షకా" [ref=e1777] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/10/27/naa-yesayyaa-naa-rakshakaa/
+                      - listitem [ref=e1778]:
+                        - link "నా యేసయ్యా నా స్తుతియాగము" [ref=e1779] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/08/02/naa-yesayyaa-naa-sthuthi-yaagam/
+                      - listitem [ref=e1780]:
+                        - link "నా యేసు ప్రభువా" [ref=e1781] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/01/05/naa-yesu-prabhuvaa/
+                      - listitem [ref=e1782]:
+                        - link "నా యేసు రాజ్యము" [ref=e1783] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/07/07/naa-yesu-raajyamu/
+                      - listitem [ref=e1784]:
+                        - link "నా యేసు రాజా" [ref=e1785] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/10/21/naa-yesu-raajaa/
+                      - listitem [ref=e1786]:
+                        - link "నా యేసు రాజు" [ref=e1787] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/03/26/naa-yesu-raaju/
+                      - listitem [ref=e1788]:
+                        - link "నా వేదనలో నా బాధలో" [ref=e1789] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/05/24/naa-vedhanalo-naa-baadhalo/
+                      - listitem [ref=e1790]:
+                        - link "నా స్తుతి పాత్రుడా" [ref=e1791] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/07/26/naa-sthuthi-paathrudaa/
+                      - listitem [ref=e1792]:
+                        - link "నా స్తుతుల పైన" [ref=e1793] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/01/02/naa-sthuthula-paina/
+                      - listitem [ref=e1794]:
+                        - link "నా స్నేహితుడా" [ref=e1795] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/10/15/naa-snehithudaa/
+                      - listitem [ref=e1796]:
+                        - link "నా సమస్తము" [ref=e1797] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/11/29/naa-samasthamu/
+                      - listitem [ref=e1798]:
+                        - link "నా సర్వం నా కోట" [ref=e1799] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/04/20/naa-sarvam-naa-kota/
+                      - listitem [ref=e1800]:
+                        - link "నా సంకట దుఃఖములెల్ల" [ref=e1801] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/05/08/naa-sankata-dukhamulella/
+                      - listitem [ref=e1802]:
+                        - link "నా హృదయములో" [ref=e1803] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/11/14/naa-hrudayamulo-nee-maatale/
+                      - listitem [ref=e1804]:
+                        - link "నా హృదయాన కొలువైన" [ref=e1805] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/04/01/naa-hrudayaana-koluvaina/
+                      - listitem [ref=e1806]:
+                        - link "నిజముగా మొర పెట్టిన" [ref=e1807] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/01/06/nijamugaa-mora-pettina/
+                      - listitem [ref=e1808]:
+                        - link "నిజమైన ద్రాక్షావ" [ref=e1809] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/03/06/nijamaina-draakshaavalli/
+                      - listitem [ref=e1810]:
+                        - link "నిజ స్నేహితుడా" [ref=e1811] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2023/03/19/nija-snehithudaa/
+                      - listitem [ref=e1812]:
+                        - link "నిత్యము స్తుతించినా" [ref=e1813] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2014/11/15/nithyamu-sthuthinchinaa/
+                      - listitem [ref=e1814]:
+                        - link "నిత్య జీవపు రాజ్యములో" [ref=e1815] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/08/21/nithya-jeevapu-raajyamulo/
+                      - listitem [ref=e1816]:
+                        - link "నిత్య ప్రేమతో" [ref=e1817] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/06/28/nithya-prematho/
+                      - listitem [ref=e1818]:
+                        - link "నిత్యం నిలిచేది" [ref=e1819] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/05/17/nithyam-nilichedi-nee-preme/
+                      - listitem [ref=e1820]:
+                        - link "నిన్న నేడు నిరంతరం" [ref=e1821] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/01/25/ninna-nedu-nirantharam/
+                      - listitem [ref=e1822]:
+                        - link "నిన్నంత దేవరు" [ref=e1823] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/02/14/ninnantha-devaru/
+                      - listitem [ref=e1824]:
+                        - link "నిన్ను కాపాడువాడు కునుకడు" [ref=e1825] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2019/01/28/ninnu-kaapaaduvaadu-kunukadu/
+                      - listitem [ref=e1826]:
+                        - link "నిన్ను కాపాడు దేవుడు" [ref=e1827] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/10/23/ninnu-kaapaadu-devudu/
+                      - listitem [ref=e1828]:
+                        - link "నిన్ను చూడగ వచ్చినాడురా" [ref=e1829] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/12/24/ninnu-choodaga-vachchinaaduraa/
+                      - listitem [ref=e1830]:
+                        - link "నిన్ను తలచి" [ref=e1831] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/01/09/ninnu-thalachi/
+                      - listitem [ref=e1832]:
+                        - link "నిన్ను వెంబడించెద" [ref=e1833] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/08/15/ninnu-vembadincheda/
+                      - listitem [ref=e1834]:
+                        - link "నిన్నే నిన్నే నమ్ముకున్నానయ్య" [ref=e1835] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/02/01/ninne-ninne-nammukunnaanayya/
+                      - listitem [ref=e1836]:
+                        - link "నిన్నే నిన్నే నే కొలుతునయ్యా" [ref=e1837] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/04/06/ninne-ninne-ne-koluthunayyaa/
+                      - listitem [ref=e1838]:
+                        - link "నిన్నే ప్రేమింతును" [ref=e1839] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2013/11/05/ninne-preminthunu/
+                      - listitem [ref=e1840]:
+                        - link "నిను గాక మరి దేనిని" [ref=e1841] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/07/28/ninu-gaaka-mari-denini/
+                      - listitem [ref=e1842]:
+                        - link "నిను చూసే కన్నులు" [ref=e1843] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/01/25/ninu-choose-kannulu/
+                      - listitem [ref=e1844]:
+                        - link "నిను చేరగ నా మది" [ref=e1845] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/09/01/ninu-cheraga-naa-madi/
+                      - listitem [ref=e1846]:
+                        - link "నిను పాడాలని" [ref=e1847] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/11/15/ninnu-paadaalani/
+                      - listitem [ref=e1848]:
+                        - link "నిను పోలిన వారెవరూ" [ref=e1849] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/09/13/ninu-polina-vaarevaru/
+                      - listitem [ref=e1850]:
+                        - link "నిను పోలి నేను" [ref=e1851] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2023/10/17/ninu-poli-nenu/
+                      - listitem [ref=e1852]:
+                        - link "నిను స్తుతియించే కారణం" [ref=e1853] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/03/15/ninu-sthuthiyinche-kaaranam/
+                      - listitem [ref=e1854]:
+                        - link "నిను స్తుతించినా చాలు" [ref=e1855] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/08/29/ninu-sthuthinchinaa-chaalu/
+                      - listitem [ref=e1856]:
+                        - link "నిబ్బరముతో నా యేసుకే" [ref=e1857] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/04/06/nibbaramutho-naa-yesuke/
+                      - listitem [ref=e1858]:
+                        - link "నిబ్బరం కలిగి" [ref=e1859] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/11/05/nibbaram-kaligi/
+                      - listitem [ref=e1860]:
+                        - link "నిబంధనా జనులం" [ref=e1861] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2019/01/27/nibandhanaa-janulam/
+                      - listitem [ref=e1862]:
+                        - link "నిరతము స్తుతియించుము" [ref=e1863] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/12/10/nirathamu-sthuthiyinchumu/
+                      - listitem [ref=e1864]:
+                        - link "నిరంతరమైన నీ కృపలో" [ref=e1865] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/06/06/nirantharamaina-nee-krupalo/
+                      - listitem [ref=e1866]:
+                        - link "నిరంతరం నీతోనే" [ref=e1867] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/12/28/nirantharam-neethone/
+                      - listitem [ref=e1868]:
+                        - link "నిశిరాత్రి" [ref=e1869] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2023/05/10/nishi-raathri/
+                      - listitem [ref=e1870]:
+                        - link "నింగిలో దేవుడు" [ref=e1871] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/10/14/ningilo-devudu/
+                      - listitem [ref=e1872]:
+                        - link "నీకసాధ్యమైనది ఏదియు లేదు" [ref=e1873] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/06/20/neekasaadhyamainadi-ediyu-ledu/
+                      - listitem [ref=e1874]:
+                        - link "నీకంటె నమ్మదగిన" [ref=e1875] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/09/11/neekante-nammadagina/
+                      - listitem [ref=e1876]:
+                        - link "నీకు ఎంత చేసినా" [ref=e1877] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/02/05/neeku-entha-chesinaa/
+                      - listitem [ref=e1878]:
+                        - link "నీకు సాటి ఎవరు లేరు" [ref=e1879] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/03/12/neeku-saati-evaru-leru/
+                      - listitem [ref=e1880]:
+                        - link "నీకే నా ఆరాధన" [ref=e1881] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/06/27/neeke-naa-aaraadhana/
+                      - listitem [ref=e1882]:
+                        - link "నీకే నా ఆరాధనా" [ref=e1883] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/01/28/neeke-naa-aaraadhanaa/
+                      - listitem [ref=e1884]:
+                        - link "నీతిగల యెహోవా స్తుతి" [ref=e1885] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/07/14/neethigala-yehovaa-sthuthi/
+                      - listitem [ref=e1886]:
+                        - link "నీతి న్యాయములు" [ref=e1887] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/02/28/neethi-nyaayamulu/
+                      - listitem [ref=e1888]:
+                        - link "నీతి సూర్యుడవై" [ref=e1889] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2019/08/31/neethi-sooryudavai/
+                      - listitem [ref=e1890]:
+                        - link "నీతి సూర్యుడా యేసు" [ref=e1891] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/01/18/neethi-sooryudaa-yesu/
+                      - listitem [ref=e1892]:
+                        - link "నీతోనే ఉండుటయే" [ref=e1893] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/06/23/neethone-undutaye/
+                      - listitem [ref=e1894]:
+                        - link "నీతోనే గడిపేయాలని" [ref=e1895] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/05/15/neethone-gadipeyaalani/
+                      - listitem [ref=e1896]:
+                        - link "నీతోనే నే నడవాలని" [ref=e1897] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/10/28/neethone-ne-nadavaalani/
+                      - listitem [ref=e1898]:
+                        - link "నీతో గడిపే ప్రతి క్షణము" [ref=e1899] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/10/15/neetho-gadipe-prathi-kshanamu/
+                      - listitem [ref=e1900]:
+                        - link "నీతో నడుతుము" [ref=e1901] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2025/10/27/neetho-naduthumu/
+                      - listitem [ref=e1902]:
+                        - link "నీతో నా జీవితం" [ref=e1903] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/06/26/neetho-naa-jeevitham/
+                      - listitem [ref=e1904]:
+                        - link "నీతో నుండని బ్రతుకు" [ref=e1905] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/03/12/neetho-nundani-brathuku/
+                      - listitem [ref=e1906]:
+                        - link "నీతో నేను నడువాలని" [ref=e1907] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/05/10/neetho-nenu-naduvaalani/
+                      - listitem [ref=e1908]:
+                        - link "నీతో స్నేహం చేయాలని" [ref=e1909] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/09/01/neetho-sneham-cheyaalani/
+                      - listitem [ref=e1910]:
+                        - link "నీతో సమమెవరు" [ref=e1911] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/12/05/neetho-samamevaru/
+                      - listitem [ref=e1912]:
+                        - link "నీదు ప్రేమకు హద్దు లేదయా" [ref=e1913] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/09/09/needu-premaku-haddu-ledayaa/
+                      - listitem [ref=e1914]:
+                        - link "నీదు ప్రేమ నాలో" [ref=e1915] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/07/07/needhu-prema-naalo/
+                      - listitem [ref=e1916]:
+                        - link "నీదు విశ్వాస్యత" [ref=e1917] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/07/16/needu-vishwaasyatha/
+                      - listitem [ref=e1918]:
+                        - link "నీదెంతో కరుణా" [ref=e1919] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/06/05/needentho-karunaa/
+                      - listitem [ref=e1920]:
+                        - link "నీలాంటి ప్రేమ" [ref=e1921] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2023/03/09/neelaanti-prema/
+                      - listitem [ref=e1922]:
+                        - link "నీలి ఆకాశంలో" [ref=e1923] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/04/29/neeli-aakaashamlo/
+                      - listitem [ref=e1924]:
+                        - link "నీలో జీవించాలని" [ref=e1925] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/08/21/neelo-jeevinchaalani/
+                      - listitem [ref=e1926]:
+                        - link "నీలో సమస్తము సాధ్యమే" [ref=e1927] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/05/24/neelo-samasthamu-saadhyame/
+                      - listitem [ref=e1928]:
+                        - link "నీవు చేసిన ఉపకారములకు" [ref=e1929] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2013/11/05/neevu-chesina-upakaaramulaku/
+                      - listitem [ref=e1930]:
+                        - link "నీవు చేసిన త్యాగాన్ని" [ref=e1931] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/02/17/neevu-chesina-thyaagaanni/
+                      - listitem [ref=e1932]:
+                        - link "నీవు చేసిన మేళ్లకు" [ref=e1933] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/10/25/neevu-chesina-mellaku/
+                      - listitem [ref=e1934]:
+                        - link "నీవు తడితే తలుపు తీయనా" [ref=e1935] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/10/15/neevu-thadithe-thalupu-theeyanaa/
+                      - listitem [ref=e1936]:
+                        - link "నీవు తప్ప నాకీ లోకంలో" [ref=e1937] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/08/12/neevu-thappa-naakee-lokamlo/
+                      - listitem [ref=e1938]:
+                        - link "నీవు తప్ప నాకు ఇలలో" [ref=e1939] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2024/12/12/neevu-thappa-naaku-ilalo/
+                      - listitem [ref=e1940]:
+                        - link "నీవు తోడుండగా" [ref=e1941] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/11/21/neevu-thodundagaa/
+                      - listitem [ref=e1942]:
+                        - link "నీవు తోడైయుండగా" [ref=e1943] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2025/05/07/neevu-thodaiyundagaa/
+                      - listitem [ref=e1944]:
+                        - link "నీవు నా తోడు ఉన్నావయ్యా" [ref=e1945] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/12/10/neeve-naa-thodu-unnaavayyaa/
+                      - listitem [ref=e1946]:
+                        - link "నీవు ప్రార్థన చేయునప్పుడు" [ref=e1947] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/01/04/neevu-praardhana-cheyunappudu/
+                      - listitem [ref=e1948]:
+                        - link "నీవు లేక క్షణమైనా" [ref=e1949] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/08/04/neevu-leka-kshanamainaa/
+                      - listitem [ref=e1950]:
+                        - link "నీవు లేనిదే నేను లేను" [ref=e1951] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/11/16/neevu-lenide-nenu-lenu-prabhuvaa/
+                      - listitem [ref=e1952]:
+                        - link "నీవు లేని క్షణమైనా" [ref=e1953] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/10/19/neevu-leni-kshanamainaa/
+                      - listitem [ref=e1954]:
+                        - link "నీవు లేని చోటేది" [ref=e1955] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2019/01/02/neevu-leni-chotedi/
+                      - listitem [ref=e1956]:
+                        - link "నీవు లేని రోజు" [ref=e1957] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/07/17/neevu-leni-roju/
+                      - listitem [ref=e1958]:
+                        - link "నీవుంటే నాకు చాలు యేసయ్యా" [ref=e1959] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2013/11/05/neevunte-naaku-chaalu-yesayyaa/
+                      - listitem [ref=e1960]:
+                        - link "నీవెన్నాళ్ళు రెండు తలంపులతో" [ref=e1961] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/01/13/neevennaallu-rendu-thalampulatho/
+                      - listitem [ref=e1962]:
+                        - link "నీవేగా యేసు నీవేగా" [ref=e1963] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/01/22/neevegaa-yesu-neevegaa/
+                      - listitem [ref=e1964]:
+                        - link "నీవేయని నమ్మిక" [ref=e1965] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/07/11/neeveyani-nammika/
+                      - listitem [ref=e1966]:
+                        - link "నీవే ఆశ్రయదుర్గం" [ref=e1967] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/05/31/neeve-aashrayadurgam/
+                      - listitem [ref=e1968]:
+                        - link "నీవే ఆశ నీవే శ్వాస" [ref=e1969] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/06/13/neeve-aasha-neeve-shwaasa/
+                      - listitem [ref=e1970]:
+                        - link "నీవే నన్ను కోరుకున్నావు" [ref=e1971] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/09/06/neeve-nannu-korukunnaavu/
+                      - listitem [ref=e1972]:
+                        - link "నీవే నా ఆశ" [ref=e1973] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2024/03/26/neeve-naa-aasha/
+                      - listitem [ref=e1974]:
+                        - link "నీవే నా దేవుడవు" [ref=e1975] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/10/27/neeve-naa-devudavu/
+                      - listitem [ref=e1976]:
+                        - link "నీవే నా ప్రాణము" [ref=e1977] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/09/11/neeve-naa-praanamu/
+                      - listitem [ref=e1978]:
+                        - link "నీవే నా ప్రాణం సర్వం" [ref=e1979] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/11/14/neeve-naa-praanam-sarvam/
+                      - listitem [ref=e1980]:
+                        - link "నీవే నా రక్షణ" [ref=e1981] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/02/14/neeve-naa-rakshana/
+                      - listitem [ref=e1982]:
+                        - link "నీవే నా స్నేహము" [ref=e1983] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2023/03/09/neeve-naa-snehamu/
+                      - listitem [ref=e1984]:
+                        - link "నీవే నా సర్వము" [ref=e1985] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/08/30/neeve-naa-sarvamu/
+                      - listitem [ref=e1986]:
+                        - link "నీవే నా సంతోషగానము" [ref=e1987] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/03/23/neeve-naa-santhosha-gaanamu/
+                      - listitem [ref=e1988]:
+                        - link "నీవే నీవే కావాలి" [ref=e1989] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/03/06/neeve-neeve-kaavaali/
+                      - listitem [ref=e1990]:
+                        - link "నీవే నీవే నన్ను పిలిచిన" [ref=e1991] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/06/23/neeve-neeve-nannu-pilichina/
+                      - listitem [ref=e1992]:
+                        - link "నీవే నీవే నా తోడున్న" [ref=e1993] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/10/28/neeve-neeve-naa-thodunna/
+                      - listitem [ref=e1994]:
+                        - link "నీ అరచేతిలో చెక్కుకుంటివి" [ref=e1995] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/01/05/nee-arachethilo-chekkukuntivi/
+                      - listitem [ref=e1996]:
+                        - link "నీ ఆనంద తైలముతో" [ref=e1997] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2023/02/27/nee-aananda-thailamutho/
+                      - listitem [ref=e1998]:
+                        - link "నీ కంటిపాపను" [ref=e1999] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/06/29/nee-kantipaapanu/
+                      - listitem [ref=e2000]:
+                        - link "నీ కార్యములు" [ref=e2001] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/05/28/nee-kaaryamulu/
+                      - listitem [ref=e2002]:
+                        - link "నీ కృపను గూర్చి" [ref=e2003] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2019/08/31/nee-krupanu-goorchi/
+                      - listitem [ref=e2004]:
+                        - link "నీ కృపయే" [ref=e2005] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2022/10/16/nee-krupaye/
+                      - listitem [ref=e2006]:
+                        - link "నీ కృప ఆకాశము కన్నా" [ref=e2007] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/06/25/nee-krupa-aakaashamu-kannaa/
+                      - listitem [ref=e2008]:
+                        - link "నీ కృప చాలునయా" [ref=e2009] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2019/01/28/nee-krupa-chaalunayaa/
+                      - listitem [ref=e2010]:
+                        - link "నీ కృప చాలును" [ref=e2011] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/05/21/nee-krupa-chaalunu/
+                      - listitem [ref=e2012]:
+                        - link "నీ కృప నాకు చాలును" [ref=e2013] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/10/27/nee-krupa-naaku-chaalunu/
+                      - listitem [ref=e2014]:
+                        - link "నీ కృప నిత్యముండును" [ref=e2015] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/03/27/nee-krupa-nithyamundunu/
+                      - listitem [ref=e2016]:
+                        - link "నీ కృప లేనిచో" [ref=e2017] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/01/13/nee-krupa-lenicho/
+                      - listitem [ref=e2018]:
+                        - link "నీ కృప లేని క్షణము" [ref=e2019] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/07/22/nee-krupa-leni-kshanamu/
+                      - listitem [ref=e2020]:
+                        - link "నీ కొరకు నా ప్రాణం" [ref=e2021] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/08/31/nee-koraku-naa-praanam/
+                      - listitem [ref=e2022]:
+                        - link "నీ చరణములే నమ్మితి" [ref=e2023] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/09/18/nee-charanamule-nammithi/
+                      - listitem [ref=e2024]:
+                        - link "నీ చల్లని నీడలో" [ref=e2025] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/11/05/nee-challani-needalo/
+                      - listitem [ref=e2026]:
+                        - link "నీ చల్లనైన నీడలో" [ref=e2027] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/01/03/nee-challanaina-needalo/
+                      - listitem [ref=e2028]:
+                        - link "నీ చిత్తమునే" [ref=e2029] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/05/28/nee-chitthamune/
+                      - listitem [ref=e2030]:
+                        - link "నీ చేతితో నన్ను పట్టుకో" [ref=e2031] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2013/11/05/nee-chethitho-nannu-pattuko/
+                      - listitem [ref=e2032]:
+                        - link "నీ చేతిలో రొట్టెను" [ref=e2033] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2014/11/26/nee-chethilo-rottenu-nenayya/
+                      - listitem [ref=e2034]:
+                        - link "నీ చేతి కార్యములు" [ref=e2035] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/11/06/nee-chethi-kaaryamulu/
+                      - listitem [ref=e2036]:
+                        - link "నీ జ్ఞాపకం అనేకులను" [ref=e2037] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/03/26/nee-gnaapakam-anekulanu/
+                      - listitem [ref=e2038]:
+                        - link "నీ జల్దరు వృక్షపు" [ref=e2039] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/12/29/nee-jaldaru-vrukshapu/
+                      - listitem [ref=e2040]:
+                        - link "నీ జీవితములో" [ref=e2041] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/02/12/nee-jeevithamulo/
+                      - listitem [ref=e2042]:
+                        - link "నీ జీవితం క్షణ భంగురం" [ref=e2043] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/11/05/nee-jeevitham-kshana-bhanguram-2/
+                      - listitem [ref=e2044]:
+                        - link "నీ జీవితం క్షణ భంగురం (నీ యవ్వనం)" [ref=e2045] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/01/14/nee-jeevitham-kshana-bhanguram/
+                      - listitem [ref=e2046]:
+                        - link "నీ జీవితం నీటీ బుడగా" [ref=e2047] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/01/12/nee-jeevitham-neeti-budaga/
+                      - listitem [ref=e2048]:
+                        - link "నీ జీవితం విలువైనది" [ref=e2049] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/09/15/nee-jeevitham-viluvainadi/
+                      - listitem [ref=e2050]:
+                        - link "నీ దయలో నీ కృపలో" [ref=e2051] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/09/02/nee-dayalo-nee-krupalo/
+                      - listitem [ref=e2052]:
+                        - link "నీ దయలో నేనున్న" [ref=e2053] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/01/02/nee-dayalo-nenunna/
+                      - listitem [ref=e2054]:
+                        - link "నీ దీర్ఘశాంతమే" [ref=e2055] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/09/21/nee-deergha-shaanthame/
+                      - listitem [ref=e2056]:
+                        - link "నీ ధనము నీ ఘనము" [ref=e2057] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/09/27/nee-dhanamu-nee-ghanamu/
+                      - listitem [ref=e2058]:
+                        - link "నీ నామమే ఎద కొలిచెదను" [ref=e2059] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/10/21/nee-naamame-eda/
+                      - listitem [ref=e2060]:
+                        - link "నీ నామం అతి మధురం" [ref=e2061] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2019/01/29/nee-naamam-athi-madhuram/
+                      - listitem [ref=e2062]:
+                        - link "నీ నామం నా గానం" [ref=e2063] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/02/28/nee-naamam-naa-gaanam/
+                      - listitem [ref=e2064]:
+                        - link "నీ నిర్ణయం" [ref=e2065] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/08/31/nee-nirnayam/
+                      - listitem [ref=e2066]:
+                        - link "నీ నీడలోన" [ref=e2067] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/07/22/nee-needalona/
+                      - listitem [ref=e2068]:
+                        - link "నీ ప్రియ ప్రభుని సేవకై" [ref=e2069] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/05/13/nee-priya-prabhuni-sevakai/
+                      - listitem [ref=e2070]:
+                        - link "నీ ప్రేమకు సాటి" [ref=e2071] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/10/01/nee-premaku-saati/
+                      - listitem [ref=e2072]:
+                        - link "నీ ప్రేమకు సాటి లేదయా" [ref=e2073] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/08/19/nee-premaku-saati-ledayaa/
+                      - listitem [ref=e2074]:
+                        - link "నీ ప్రేమలో నుండి నన్ను" [ref=e2075] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/10/29/nee-premalo-nundi-nannu/
+                      - listitem [ref=e2076]:
+                        - link "నీ ప్రేమ ఎంతో" [ref=e2077] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/11/25/nee-prema-entho/
+                      - listitem [ref=e2078]:
+                        - link "నీ ప్రేమ ఎంతో మధురం" [ref=e2079] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/08/12/nee-prema-entho-madhuram/
+                      - listitem [ref=e2080]:
+                        - link "నీ ప్రేమ నాలో మధురమైనది" [ref=e2081] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/05/24/nee-prema-naalo-madhuramainadi/
+                      - listitem [ref=e2082]:
+                        - link "నీ ప్రేమ నా జీవితాన్ని" [ref=e2083] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/04/27/nee-prema-naa-jeevithaanni/
+                      - listitem [ref=e2084]:
+                        - link "నీ ప్రేమ మాధుర్యము" [ref=e2085] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/02/19/nee-prema-maadhuryamu/
+                      - listitem [ref=e2086]:
+                        - link "నీ ప్రేమా నీ కరుణా" [ref=e2087] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/03/24/nee-premaa-nee-karunaa/
+                      - listitem [ref=e2088]:
+                        - link "నీ ప్రేమే నాకు చాలయ్యా" [ref=e2089] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/02/12/nee-preme-naaku-chaalayyaa/
+                      - listitem [ref=e2090]:
+                        - link "నీ పద సేవయే చాలు" [ref=e2091] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/01/19/nee-pada-sevaye-chaalu/
+                      - listitem [ref=e2092]:
+                        - link "నీ పాదముల్ నే చేరగా" [ref=e2093] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2022/07/26/nee-paadamul-ne-cheragaa/
+                      - listitem [ref=e2094]:
+                        - link "నీ పాద సన్నిధికి" [ref=e2095] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/08/13/nee-paadha-sannidhiki/
+                      - listitem [ref=e2096]:
+                        - link "నీ పాదం మ్రొక్కెదన్" [ref=e2097] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/01/15/nee-paadam-mrokkedan/
+                      - listitem [ref=e2098]:
+                        - link "నీ పాదాలు తడపకుండా" [ref=e2099] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2023/06/30/nee-paadaalu-thadapakundaa/
+                      - listitem [ref=e2100]:
+                        - link "నీ పాదాలే నాకు శరణం" [ref=e2101] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/08/09/nee-paadaale-naaku-sharanam/
+                      - listitem [ref=e2102]:
+                        - link "నీ పిలుపు" [ref=e2103] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2022/12/05/nee-pilupu/
+                      - listitem [ref=e2104]:
+                        - link "నీ రక్తమే నీ రక్తమే" [ref=e2105] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2013/02/09/nee-rakthame-nee-rakthame/
+                      - listitem [ref=e2106]:
+                        - link "నీ రక్త ధారలే" [ref=e2107] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/04/03/nee-raktha-dhaarale/
+                      - listitem [ref=e2108]:
+                        - link "నీ రూపం నాలోన" [ref=e2109] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/02/02/nee-roopam-naalona/
+                      - listitem [ref=e2110]:
+                        - link "నీ రూపు చూడ" [ref=e2111] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/02/04/nee-roopu-chooda/
+                      - listitem [ref=e2112]:
+                        - link "నీ వాక్యమే నన్ను బ్రతికించెను" [ref=e2113] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/06/07/nee-vaakyame-nannu-brathikinchenu/
+                      - listitem [ref=e2114]:
+                        - link "నీ వాక్యమే నా పాదాలకు" [ref=e2115] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/10/21/nee-vaakyame-naa-paadaalaku/
+                      - listitem [ref=e2116]:
+                        - link "నీ వాక్యమే శ్రమ కొలిమిలో" [ref=e2117] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/04/01/nee-vaakyame-shrama-kolimilo/
+                      - listitem [ref=e2118]:
+                        - link "నీ స్నేహము" [ref=e2119] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/01/05/nee-snehamu/
+                      - listitem [ref=e2120]:
+                        - link "నీ స్వరము" [ref=e2121] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/10/01/nee-swaramu/
+                      - listitem [ref=e2122]:
+                        - link "నీ సన్నిధియే నా" [ref=e2123] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/09/04/nee-sannidhiye-naa/
+                      - listitem [ref=e2124]:
+                        - link "నీ సన్నిధిలో ఈ ఆరాధనను" [ref=e2125] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/07/07/nee-sannidhilo-ee-aaraadhananu/
+                      - listitem [ref=e2126]:
+                        - link "నీ సన్నిధిలో నేనున్న" [ref=e2127] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/05/10/nee-sannidhilo-nenunna/
+                      - listitem [ref=e2128]:
+                        - link "నీ సన్నిధిలో సంతోషము" [ref=e2129] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/09/19/nee-sannidhilo-santhoshamu/
+                      - listitem [ref=e2130]:
+                        - link "నీ సాక్ష్యము ఏది" [ref=e2131] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/01/12/nee-saakshyamu-edi/
+                      - listitem [ref=e2132]:
+                        - link "నువ్వంటే ఇష్టము నా యేసయ్యా" [ref=e2133] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/09/11/nuvvante-ishtamu-naa-yesayyaa/
+                      - listitem [ref=e2134]:
+                        - link "నువ్వెవరో యేసు" [ref=e2135] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/01/13/nuvvevaro-yesu/
+                      - listitem [ref=e2136]:
+                        - link "నూతనమైనది" [ref=e2137] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/02/02/noothanamainadi/
+                      - listitem [ref=e2138]:
+                        - link "నూతన పరచుము దేవా" [ref=e2139] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/11/13/noothana-parachumu-devaa/
+                      - listitem [ref=e2140]:
+                        - link "నూతన సంవత్సరములో" [ref=e2141] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/01/03/noothana-samvathsaramulo/
+                      - listitem [ref=e2142]:
+                        - link "నూతన సంవత్సరం" [ref=e2143] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/03/12/noothana-samvathsaram/
+                      - listitem [ref=e2144]:
+                        - link "నూతన హృదయము" [ref=e2145] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2022/10/27/noothana-hrudayamu/
+                      - listitem [ref=e2146]:
+                        - link "నెమ్మది లేదా" [ref=e2147] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/10/15/nemmadi-ledaa/
+                      - listitem [ref=e2148]:
+                        - link "నేడు ఇక్కడ రేపు ఎక్కడో" [ref=e2149] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/11/03/1322/
+                      - listitem [ref=e2150]:
+                        - link "నేడు యేసు లేచినాడు" [ref=e2151] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/03/23/nedu-yesi-lechinaadu/
+                      - listitem [ref=e2152]:
+                        - link "నేడే ప్రియరాగం" [ref=e2153] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/12/24/nede-priyaraagam/
+                      - listitem [ref=e2154]:
+                        - link "నేడో రేపో నా ప్రియుడేసు" [ref=e2155] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2013/11/05/nedo-repo-naa-priyudesu/
+                      - listitem [ref=e2156]:
+                        - link "నేనంటే నీకు ఎంతిష్టమో" [ref=e2157] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/05/22/nenante-neeku-enthishtamo/
+                      - listitem [ref=e2158]:
+                        - link "నేనంటే నీకెందుకో" [ref=e2159] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/01/08/nenante-neekenduko/
+                      - listitem [ref=e2160]:
+                        - link "నేనునూ నా ఇంటి వారును" [ref=e2161] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/02/01/nenunu-naa-inti-vaarunu/
+                      - listitem [ref=e2162]:
+                        - link "నేను ఓడిపోనయా" [ref=e2163] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2022/11/12/nenu-odiponayaa/
+                      - listitem [ref=e2164]:
+                        - link "నేను కూడా ఉన్నానయ్యా" [ref=e2165] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2019/08/27/nenu-kooda-unnaanayyaa/
+                      - listitem [ref=e2166]:
+                        - link "నేను తగ్గాలి యేసు" [ref=e2167] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/06/11/nenu-thaggaali-yesu/
+                      - listitem [ref=e2168]:
+                        - link "నేను పిలిస్తే పరుగున" [ref=e2169] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/11/22/nenu-pilisthe-paruguna/
+                      - listitem [ref=e2170]:
+                        - link "నేను వెళ్ళే మార్గము" [ref=e2171] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/09/27/nenu-velle-maargamu/
+                      - listitem [ref=e2172]:
+                        - link "నేనెరుగుదును ఒక స్నేహితుని" [ref=e2173] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/03/14/nenerugudunu-oka-snehithuni/
+                      - listitem [ref=e2174]:
+                        - link "నేనెల్లప్పుడు యెహోవా నిను" [ref=e2175] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/06/27/nenellappudu-yehovaa-ninu/
+                      - listitem [ref=e2176]:
+                        - link "నేనేమైనా ప్రభువా" [ref=e2177] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/02/05/nenemainaa-prabhuvaa/
+                      - listitem [ref=e2178]:
+                        - link "నేస్తమా ప్రియ నేస్తమా" [ref=e2179] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/07/26/nesthamaa-priyanesthamaa/
+                      - listitem [ref=e2180]:
+                        - link "నే బ్రతికి ఉన్నానంటే" [ref=e2181] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/01/03/ne-brathiki-unnaanante/
+                      - listitem [ref=e2182]:
+                        - link "నే యేసుని వెలుగులో" [ref=e2183] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/11/21/ne-yesuni-velgulo/
+                      - listitem [ref=e2184]:
+                        - link "నే యేసుని వెంబడింతునని" [ref=e2185] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/02/17/ne-yesuni-vembadinthunani/
+                      - listitem [ref=e2186]:
+                        - link "నే స్తుతించెదను" [ref=e2187] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/12/29/ne-sthuthinchedanu/
+                      - listitem [ref=e2188]:
+                        - link "నే సాగెద యేసునితో" [ref=e2189] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2013/11/05/ne-saageda-yesunitho/
+                      - listitem [ref=e2190]:
+                        - link "నోరారగా చేతును" [ref=e2191] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/12/20/noraaragaa-chethunu/
+                      - listitem [ref=e2192]:
+                        - link "నోవహు ఓడనే సంఘములో" [ref=e2193] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2024/10/27/novahu-odane-sanghamulo/
+                    - link " Back to top " [ref=e2195] [cursor=pointer]:
+                      - /url: "#a-z-listing-1"
+                  - generic [ref=e2196]:
+                    - heading "ప" [level=2] [ref=e2197]
+                    - list [ref=e2198]:
+                      - listitem [ref=e2199]:
+                        - link "ప్రకటింతును నీ సువార్తను" [ref=e2200] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2026/03/07/prakatinthunu-nee-suvaarthanu/
+                      - listitem [ref=e2201]:
+                        - link "ప్రకాశించే ఆ దివ్య సీయోనులో" [ref=e2202] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/12/20/prakaashinche-aa-divya/
+                      - listitem [ref=e2203]:
+                        - link "ప్రతిగా (యేసు యేసూ)" [ref=e2204] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/06/15/prathigaa-yesu-yesu/
+                      - listitem [ref=e2205]:
+                        - link "ప్రతి రోజు చూడాలని" [ref=e2206] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2019/01/02/prathi-roju-choodaalani/
+                      - listitem [ref=e2207]:
+                        - link "ప్రభుకే స్తోత్రము" [ref=e2208] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2022/04/15/prabhuke-sthothramu/
+                      - listitem [ref=e2209]:
+                        - link "ప్రభుని గృహము" [ref=e2210] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/05/31/prabhuni-gruhamu/
+                      - listitem [ref=e2211]:
+                        - link "ప్రభుని రాకడ" [ref=e2212] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/08/28/prabhuni-raakada/
+                      - listitem [ref=e2213]:
+                        - link "ప్రభుని స్మరించు" [ref=e2214] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2023/06/30/prabhuni-smarinchu/
+                      - listitem [ref=e2215]:
+                        - link "ప్రభువా ఈ ఆనందం" [ref=e2216] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/10/30/prabhuvaa-ee-aanandam/
+                      - listitem [ref=e2217]:
+                        - link "ప్రభువా కాచితివి" [ref=e2218] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/09/28/prabhuvaa-kaachithivi/
+                      - listitem [ref=e2219]:
+                        - link "ప్రభువా నిను కీర్తించుటకు" [ref=e2220] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/08/03/prabhuvaa-ninu-keerthinchutaku/
+                      - listitem [ref=e2221]:
+                        - link "ప్రభువా నీలో జీవించుట" [ref=e2222] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/06/13/prabhuvaa-neelo-jeevinchuta/
+                      - listitem [ref=e2223]:
+                        - link "ప్రభువా నీవే నాదు శరణం" [ref=e2224] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/09/29/prabhuvaa-neeve-naadu-sharanam/
+                      - listitem [ref=e2225]:
+                        - link "ప్రభువా నీ పరిపూర్ణత నుండి" [ref=e2226] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/08/12/prabhuvaa-nee-paripoornatha-nundi/
+                      - listitem [ref=e2227]:
+                        - link "ప్రభువా నే నిన్ను నమ్మి" [ref=e2228] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/05/10/prabhuvaa-ne-ninnu-nammi/
+                      - listitem [ref=e2229]:
+                        - link "ప్రభువా ప్రభువా" [ref=e2230] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/02/14/prabhuvaa-prabhuvaa/
+                      - listitem [ref=e2231]:
+                        - link "ప్రభు మొర వినవా" [ref=e2232] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2022/02/23/prabhu-mora-vinavaa/
+                      - listitem [ref=e2233]:
+                        - link "ప్రభు యేసుని పూజించెదం" [ref=e2234] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/08/29/prabhu-yesuni-poojinchedam/
+                      - listitem [ref=e2235]:
+                        - link "ప్రభు యేసుని వదనములో" [ref=e2236] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/10/01/prabhu-yesuni-vadanamulo/
+                      - listitem [ref=e2237]:
+                        - link "ప్రభు యేసు నా రక్షకా" [ref=e2238] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/10/05/prabhu-yesu-naa-rakshakaa/
+                      - listitem [ref=e2239]:
+                        - link "ప్రభు యేసు ప్రభు యేసు" [ref=e2240] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2024/11/10/prabhu-yesu-prabhu-yesu/
+                      - listitem [ref=e2241]:
+                        - link "ప్రభు సన్నిధిలో ఆనందమే" [ref=e2242] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/10/16/prabhu-sannidhilo-aanandame/
+                      - listitem [ref=e2243]:
+                        - link "ప్రభు హస్తం నాపై నుంది" [ref=e2244] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/03/20/prabhu-hastham-naapai-nundi/
+                      - listitem [ref=e2245]:
+                        - link "ప్రార్థన వినెడి పావనుడా" [ref=e2246] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2013/11/05/praarthana-vinedi-paavanudaa/
+                      - listitem [ref=e2247]:
+                        - link "ప్రార్థన శక్తి నాకు" [ref=e2248] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/02/14/praarthana-shakthi-naaku/
+                      - listitem [ref=e2249]:
+                        - link "ప్రార్థించుము" [ref=e2250] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2023/06/30/praardhinchumu/
+                      - listitem [ref=e2251]:
+                        - link "ప్రార్ధన కలిగిన జీవితం" [ref=e2252] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/10/29/praardhana-kaligina-jeevitham/
+                      - listitem [ref=e2253]:
+                        - link "ప్రార్ధన ప్రార్ధన" [ref=e2254] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/09/01/praardhana-praardhana/
+                      - listitem [ref=e2255]:
+                        - link "ప్రార్ధన యేసుని సందర్శన" [ref=e2256] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/07/18/praardhana-yesuni-sandarshana/
+                      - listitem [ref=e2257]:
+                        - link "ప్రార్ధన విన్నావయ్యా" [ref=e2258] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/06/08/praarthana-vinnaavayyaa/
+                      - listitem [ref=e2259]:
+                        - link "ప్రాణమా నా ప్రాణమా" [ref=e2260] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/04/01/praanamaa-naa-praanamaa/
+                      - listitem [ref=e2261]:
+                        - link "ప్రాణేశ్వర" [ref=e2262] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/05/24/praaneshwara/
+                      - listitem [ref=e2263]:
+                        - link "ప్రియతమ బంధమా" [ref=e2264] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/12/30/priyathama-bandhamaa/
+                      - listitem [ref=e2265]:
+                        - link "ప్రియమైన యేసయ్యా" [ref=e2266] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/08/17/priyamaina-yesayyaa-premake-roopamaa/
+                      - listitem [ref=e2267]:
+                        - link "ప్రియ యేసు దేహములో" [ref=e2268] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/04/21/priya-yesu-dehamulo/
+                      - listitem [ref=e2269]:
+                        - link "ప్రియ యేసు నాథ" [ref=e2270] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/01/12/priya-yesu-naatha/
+                      - listitem [ref=e2271]:
+                        - link "ప్రియ యేసు నిర్మించితివి" [ref=e2272] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2013/11/05/priya-yesu-nirminchithivi/
+                      - listitem [ref=e2273]:
+                        - link "ప్రియ యేసు మన కొరకు" [ref=e2274] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/03/26/priya-yesu-mana-koraku/
+                      - listitem [ref=e2275]:
+                        - link "ప్రియ యేసు రాజును" [ref=e2276] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2013/11/05/priya-yesu-raajunu-ne-choochina-chaalu/
+                      - listitem [ref=e2277]:
+                        - link "ప్రియ సంఘస్థులారా" [ref=e2278] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/02/05/priya-sanghasthulaaraa/
+                      - listitem [ref=e2279]:
+                        - link "ప్రీతిగల మన యేసు" [ref=e2280] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/02/14/preethigala-mana-yesu/
+                      - listitem [ref=e2281]:
+                        - link "ప్రేమగల మా ప్రభువా" [ref=e2282] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/07/31/premagala-maa-prabhuvaa/
+                      - listitem [ref=e2283]:
+                        - link "ప్రేమగల యేసయ్యా" [ref=e2284] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/05/02/premagala-yesayyaa/
+                      - listitem [ref=e2285]:
+                        - link "ప్రేమతో యేసు" [ref=e2286] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2024/11/10/prematho-yesu/
+                      - listitem [ref=e2287]:
+                        - link "ప్రేమలో పడ్డాను" [ref=e2288] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/06/20/premalo-paddaanu/
+                      - listitem [ref=e2289]:
+                        - link "ప్రేమ యేసయ్య ప్రేమా" [ref=e2290] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/07/17/prema-yesayya-premaa/
+                      - listitem [ref=e2291]:
+                        - link "ప్రేమ యేసుని ప్రేమ" [ref=e2292] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2013/11/05/prema-yesuni-prema/
+                      - listitem [ref=e2293]:
+                        - link "ప్రేమ లేనివాడు" [ref=e2294] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/08/19/prema-lenivaadu-paralokaaniki/
+                      - listitem [ref=e2295]:
+                        - link "ప్రేమ శాశ్వత కాలముండును" [ref=e2296] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/05/23/prema-shaashwatha-kaalamundunu/
+                      - listitem [ref=e2297]:
+                        - link "ప్రేమా అనే మాయలో" [ref=e2298] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/03/20/premaa-ane-maayalo/
+                      - listitem [ref=e2299]:
+                        - link "ప్రేమా పూర్ణుడు" [ref=e2300] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/02/11/premaa-poornudu/
+                      - listitem [ref=e2301]:
+                        - link "ప్రేమిస్తా నిన్నే" [ref=e2302] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/08/18/premisthaa-ninne/
+                      - listitem [ref=e2303]:
+                        - link "ప్రేమించు దేవుడు" [ref=e2304] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/06/28/preminchu-devudu-rakshinchu-devudu/
+                      - listitem [ref=e2305]:
+                        - link "ప్రేమించెదన్" [ref=e2306] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/06/29/preminchedan-adhikamugaa/
+                      - listitem [ref=e2307]:
+                        - link "ప్రేమించెద యేసు రాజా" [ref=e2308] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/05/18/premincheda-yesu-raajaa/
+                      - listitem [ref=e2309]:
+                        - link "ప్రేమింతును నిన్నే" [ref=e2310] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/02/01/preminthunu-ninne/
+                      - listitem [ref=e2311]:
+                        - link "పదములు చాలని ప్రేమ" [ref=e2312] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/10/01/padamulu-chaalani-prema/
+                      - listitem [ref=e2313]:
+                        - link "పదివేలలో అతిప్రియుడు" [ref=e2314] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2014/11/26/padivelalo/
+                      - listitem [ref=e2315]:
+                        - link "పదివేలలో అతిసుందరుడా" [ref=e2316] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/12/01/padivelalo-athi-sundarudaa/
+                      - listitem [ref=e2317]:
+                        - link "పదివేలలో అతిసుందరుడా (మనోహరుడా)" [ref=e2318] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/10/01/padivelalo-athisundarudaa/
+                      - listitem [ref=e2319]:
+                        - link "పదే పాడనా" [ref=e2320] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/05/20/padhe-paadanaa/
+                      - listitem [ref=e2321]:
+                        - link "పరదేశులమో ప్రియులారా" [ref=e2322] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/09/02/paradeshulamo-priyulaaraa/
+                      - listitem [ref=e2323]:
+                        - link "పరమ జీవము నాకు నివ్వ" [ref=e2324] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/11/25/parama-jeevamu-naaku-nivva/
+                      - listitem [ref=e2325]:
+                        - link "పరమ తండ్రి" [ref=e2326] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/01/04/parama-thandri/
+                      - listitem [ref=e2327]:
+                        - link "పరమ తండ్రి నీకే స్తోత్రం" [ref=e2328] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/11/03/parama-thandri-neekee-sthothram/
+                      - listitem [ref=e2329]:
+                        - link "పరమ దైవమే" [ref=e2330] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/12/09/parama-daivame/
+                      - listitem [ref=e2331]:
+                        - link "పరలోకమందున్నమా తండ్రీ" [ref=e2332] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/05/12/paralokamandunna-maa-thandree/
+                      - listitem [ref=e2333]:
+                        - link "పరలోకము నా దేశము" [ref=e2334] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/08/12/paralokamu-naa-deshamu/
+                      - listitem [ref=e2335]:
+                        - link "పరలోకమే నా అంతఃపురం" [ref=e2336] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/05/25/paralokame-naa-anthapuram/
+                      - listitem [ref=e2337]:
+                        - link "పరలోకమే నా స్వాస్థ్యము" [ref=e2338] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2026/03/31/paralokame-naa-swaasthyamu/
+                      - listitem [ref=e2339]:
+                        - link "పరలోకంలో ఉన్న మా యేసు" [ref=e2340] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/02/06/paralokamlo-unna-maa-yesu/
+                      - listitem [ref=e2341]:
+                        - link "పరవశించెద" [ref=e2342] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2022/08/25/paravashincheda/
+                      - listitem [ref=e2343]:
+                        - link "పరవాసిని నే జగమున" [ref=e2344] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/01/15/paravaasini-ne-jagamuna/
+                      - listitem [ref=e2345]:
+                        - link "పరిశుద్ధ గ్రంథము" [ref=e2346] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2024/10/18/parishuddha-grandhamu/
+                      - listitem [ref=e2347]:
+                        - link "పరిశుద్ధ పరిశుద్ధ" [ref=e2348] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/06/29/parishudhdha-parishudhdha/
+                      - listitem [ref=e2349]:
+                        - link "పరిశుద్ధాత్ముడా నీకే వందనం" [ref=e2350] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/10/31/parishuddhaathmudaa-neeke-vandanam/
+                      - listitem [ref=e2351]:
+                        - link "పరిశుద్ధుడవై" [ref=e2352] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/01/03/parishuddhudavai/
+                      - listitem [ref=e2353]:
+                        - link "పరిశుద్ధుడా నా యేసయ్యా" [ref=e2354] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/12/31/parishuddhudaa-naa-yesayyaa/
+                      - listitem [ref=e2355]:
+                        - link "పరిశుద్ధుడా పరిశుద్ధుడా" [ref=e2356] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/03/26/parishuddhudaa-parishuddhudaa/
+                      - listitem [ref=e2357]:
+                        - link "పరిశుద్ధుడా పావనుడా" [ref=e2358] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/03/05/parishuddhudaa-paavanudaa/
+                      - listitem [ref=e2359]:
+                        - link "పరిశుద్ధుడు పరిశుద్ధుడు" [ref=e2360] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/08/29/parishuddhudu-parishuddhudu/
+                      - listitem [ref=e2361]:
+                        - link "పరుగెత్తెదా పరుగెత్తెదా" [ref=e2362] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/02/14/parugetthedaa-parugetthedaa/
+                      - listitem [ref=e2363]:
+                        - link "పలుకలేని నాకు" [ref=e2364] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/07/08/palukaleni-naaku/
+                      - listitem [ref=e2365]:
+                        - link "పసి బాలుడై" [ref=e2366] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/11/08/pasi-baaludai/
+                      - listitem [ref=e2367]:
+                        - link "పంపుము దేవా" [ref=e2368] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/11/03/pampumu-devaa/
+                      - listitem [ref=e2369]:
+                        - link "పాడనా మౌనముగానే" [ref=e2370] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/06/01/paadanaa-mounamugaane/
+                      - listitem [ref=e2371]:
+                        - link "పాడెద దేవా నీ కృపలన్" [ref=e2372] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/12/29/paadeda-devaa-nee-krupalan/
+                      - listitem [ref=e2373]:
+                        - link "పాతాళంలో ఆత్మల ఆర్తనాదం" [ref=e2374] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/11/07/paathaalamlo-aathmala-aartha-naadam/
+                      - listitem [ref=e2375]:
+                        - link "పాపమెరుగని పావనాత్ముని" [ref=e2376] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/03/23/paapamerugani-paavanaathmuni/
+                      - listitem [ref=e2377]:
+                        - link "పాపానికి నాకు" [ref=e2378] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/06/21/nenunnaa-nenunnaa/
+                      - listitem [ref=e2379]:
+                        - link "పాపానికి నాకు ఏ సంబంధం లేదు" [ref=e2380] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/11/16/paapaaniki-naaku-ae-sambandham-ledu/
+                      - listitem [ref=e2381]:
+                        - link "పాపిగ నను చూడలేక" [ref=e2382] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2024/03/25/paapiga-nanu-choodaleka/
+                      - listitem [ref=e2383]:
+                        - link "పావురమా నీ ప్రేమ" [ref=e2384] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/02/17/paavuramaa-nee-prema/
+                      - listitem [ref=e2385]:
+                        - link "పావురమా సంఘముపై" [ref=e2386] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/09/28/paavuramaa-sanghamupai/
+                      - listitem [ref=e2387]:
+                        - link "పిరందారే పిరందారే" [ref=e2388] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/12/13/pirandaare-pirandaare/
+                      - listitem [ref=e2389]:
+                        - link "పిల్లలారా" [ref=e2390] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2023/06/30/pillalaaraa/
+                      - listitem [ref=e2391]:
+                        - link "పుట్టినాడంట యేసునాథుడు" [ref=e2392] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/12/16/puttinaadanta-yesu-naathudu/
+                      - listitem [ref=e2393]:
+                        - link "పుట్టె యేసుడు నేడు" [ref=e2394] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/12/13/putte-yesudu-nedu/
+                      - listitem [ref=e2395]:
+                        - link "పునరుత్థానుడా" [ref=e2396] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/02/12/punarutthaanudaa/
+                      - listitem [ref=e2397]:
+                        - link "పువ్వులాంటిది జీవితం" [ref=e2398] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/12/02/puvvu-laantidi-jeevitham/
+                      - listitem [ref=e2399]:
+                        - link "పువ్వు విరిసి రాలినా" [ref=e2400] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/01/09/puvvu-virisi-raalinaa/
+                      - listitem [ref=e2401]:
+                        - link "పూజనీయుడేసు ప్రభు" [ref=e2402] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/12/29/poojaneeyudesu-prabhu/
+                      - listitem [ref=e2403]:
+                        - link "పూరబ్ దిశా మే" [ref=e2404] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2019/11/23/purab-dishaa-mein/
+                      - listitem [ref=e2405]:
+                        - link "పేతురు వలె నేను" [ref=e2406] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2024/01/29/pethuru-vale-nenu/
+                      - listitem [ref=e2407]:
+                        - link "పేద నరుని రూపము" [ref=e2408] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/07/30/pedha-naruni-roopamu/
+                      - listitem [ref=e2409]:
+                        - link "పైనున్న ఆకాశమందునా" [ref=e2410] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/06/12/painunna-aakaashamandunaa/
+                      - listitem [ref=e2411]:
+                        - link "పైలం కొడుకా" [ref=e2412] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/06/08/pailam-kodukaa/
+                      - listitem [ref=e2413]:
+                        - link "పొర్లి పొర్లి పారుతుంది" [ref=e2414] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/01/21/porli-porli-paaruthundi/
+                      - listitem [ref=e2415]:
+                        - link "పొందితిని నేను" [ref=e2416] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2013/11/05/pondithini-nenu-prabhuvaa-nee-nundi/
+                      - listitem [ref=e2417]:
+                        - link "పోరాటం ఆత్మీయ పోరాటం" [ref=e2418] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/01/19/poraatam-aathmeeya-poraatam/
+                    - link " Back to top " [ref=e2420] [cursor=pointer]:
+                      - /url: "#a-z-listing-1"
+                  - generic [ref=e2421]:
+                    - heading "ఫ" [level=2] [ref=e2422]
+                    - list [ref=e2423]:
+                      - listitem [ref=e2424]:
+                        - link "ఫలములనాశించిన" [ref=e2425] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/12/13/phalamulanaashinchina-paraloka-thandri/
+                      - listitem [ref=e2426]:
+                        - link "ఫేస్బుక్ యూట్యూబ్" [ref=e2427] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2019/06/13/facebook-youtube/
+                    - link " Back to top " [ref=e2429] [cursor=pointer]:
+                      - /url: "#a-z-listing-1"
+                  - generic [ref=e2430]:
+                    - heading "బ" [level=2] [ref=e2431]
+                    - list [ref=e2432]:
+                      - listitem [ref=e2433]:
+                        - link "బ్యూలా దేశము నాది" [ref=e2434] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/09/19/beulah-deshamu-naadi/
+                      - listitem [ref=e2435]:
+                        - link "బ్రతకాలని ఉన్నా" [ref=e2436] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/01/25/brathakaalani-unnaa/
+                      - listitem [ref=e2437]:
+                        - link "బ్రతికియున్నానంటే నీ కృప" [ref=e2438] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/05/12/brathikiyunnaanante-nee-krupa/
+                      - listitem [ref=e2439]:
+                        - link "బ్రతికెద నీ కోసమే" [ref=e2440] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/12/30/brathikeda-nee-kosame/
+                      - listitem [ref=e2441]:
+                        - link "బ్రతుకుట నీ కోసమే" [ref=e2442] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/11/07/brathukuta-nee-kosame/
+                      - listitem [ref=e2443]:
+                        - link "బలపరచుము" [ref=e2444] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/05/21/balaparachumu/
+                      - listitem [ref=e2445]:
+                        - link "బలమైనవాడా" [ref=e2446] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/09/13/balamainavaadaa/
+                      - listitem [ref=e2447]:
+                        - link "బంగారం అడుగలేదు" [ref=e2448] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2014/11/15/bangaram-adagaledu/
+                      - listitem [ref=e2449]:
+                        - link "బంతియనగ ఆడరే" [ref=e2450] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/12/30/banthiyanaga-aadare/
+                      - listitem [ref=e2451]:
+                        - link "బంధము నీవే" [ref=e2452] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2024/08/01/bandhamu-neeve/
+                      - listitem [ref=e2453]:
+                        - link "బాల యేసుని జన్మ దినం" [ref=e2454] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/02/05/baala-yesuni-janma-dinam/
+                      - listitem [ref=e2455]:
+                        - link "బాలుడు కాదమ్మో" [ref=e2456] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/10/31/baaludu-kaadammo/
+                      - listitem [ref=e2457]:
+                        - link "బెత్లహేములోనంటా సందడి" [ref=e2458] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/12/07/bethlahemulonantaa-sandadi/
+                      - listitem [ref=e2459]:
+                        - link "బెత్లెహేములో సందడి" [ref=e2460] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/02/17/bethlehemulo-sandadi/
+                      - listitem [ref=e2461]:
+                        - link "బేత్లెహేము పురములో" [ref=e2462] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/12/01/bethlehemu-puramulo/
+                      - listitem [ref=e2463]:
+                        - link "బేత్లేహేం పురమున" [ref=e2464] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/10/27/bethlehem-puramuna/
+                    - link " Back to top " [ref=e2466] [cursor=pointer]:
+                      - /url: "#a-z-listing-1"
+                  - generic [ref=e2467]:
+                    - heading "భ" [level=2] [ref=e2468]
+                    - list [ref=e2469]:
+                      - listitem [ref=e2470]:
+                        - link "భక్తులారా స్మరియించెదము" [ref=e2471] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/12/27/bhakthulaaraa-smariyinchedamu/
+                      - listitem [ref=e2472]:
+                        - link "భజన చేయుచు భక్తపాలక" [ref=e2473] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/10/01/bhajana-cheyuchu-bhakthapaalaka/
+                      - listitem [ref=e2474]:
+                        - link "భజియింతుము నిను జగదీశా" [ref=e2475] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/08/17/bhajiyinthumu-ninu-jagadeeshaa/
+                      - listitem [ref=e2476]:
+                        - link "భజియింతుము రారే యేసుని" [ref=e2477] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/08/29/bhajiyinthumu-raare-yesuni/
+                      - listitem [ref=e2478]:
+                        - link "భయము చెందకు భక్తుడా" [ref=e2479] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/02/05/bhayamu-chendaku/
+                      - listitem [ref=e2480]:
+                        - link "భయము లేదు మనకు" [ref=e2481] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/08/19/bhayamu-ledu-manaku/
+                      - listitem [ref=e2482]:
+                        - link "భారత దేశమా యేసుకే" [ref=e2483] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/08/16/bhaaratha-deshamaa-yesuke/
+                      - listitem [ref=e2484]:
+                        - link "భారత దేశ సువార్త సంఘమా" [ref=e2485] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/09/28/bhaaratha-desha-suvaartha/
+                      - listitem [ref=e2486]:
+                        - link "భాసిల్లెను సిలువలో" [ref=e2487] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/10/31/bhaasillenu-siluvalo/
+                      - listitem [ref=e2488]:
+                        - link "భీకరుండౌ మా యెహోవా" [ref=e2489] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/01/25/bheekarundau-maa-yehovaa/
+                      - listitem [ref=e2490]:
+                        - link "భూపునాది మునుపే" [ref=e2491] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/07/02/bhoopunaadhi-munupe/
+                      - listitem [ref=e2492]:
+                        - link "భూమ్యాకాశములు సృజించిన" [ref=e2493] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/07/28/bhoomyaakaashamulu-srujinchina/
+                      - listitem [ref=e2494]:
+                        - link "భూమియు దాని సంపూర్ణత" [ref=e2495] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/08/18/bhoomiyu-daani-sampoornatha/
+                      - listitem [ref=e2496]:
+                        - link "భేదం ఏమి లేదు" [ref=e2497] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/08/30/bhedam-emi-ledu/
+                    - link " Back to top " [ref=e2499] [cursor=pointer]:
+                      - /url: "#a-z-listing-1"
+                  - generic [ref=e2500]:
+                    - heading "మ" [level=2] [ref=e2501]
+                    - list [ref=e2502]:
+                      - listitem [ref=e2503]:
+                        - link "మట్టినైన నన్ను" [ref=e2504] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/05/23/mattinaina-nannu/
+                      - listitem [ref=e2505]:
+                        - link "మధురమైనది" [ref=e2506] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/02/20/madhuramainadi/
+                      - listitem [ref=e2507]:
+                        - link "మధురం ఈ శుభ సమయం" [ref=e2508] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/06/12/madhuram-ee-shubha-samayam/
+                      - listitem [ref=e2509]:
+                        - link "మధురం మధురం" [ref=e2510] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/08/05/madhuram-madhuram/
+                      - listitem [ref=e2511]:
+                        - link "మధురం మధురం నా ప్రియ యేసు" [ref=e2512] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2023/03/08/madhuram-madhuram-naa-priya-yesu/
+                      - listitem [ref=e2513]:
+                        - link "మధురం మధురం నీ ప్రేమే" [ref=e2514] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/08/21/madhuram-madhuram-nee-preme/
+                      - listitem [ref=e2515]:
+                        - link "మన్నేగదయ్యా" [ref=e2516] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/02/19/mannegadayyaa-mannegadayyaa/
+                      - listitem [ref=e2517]:
+                        - link "మనలో ప్రతి ఒక్కరి" [ref=e2518] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/09/11/manalo-prathi-okkari/
+                      - listitem [ref=e2519]:
+                        - link "మనస యేసు మరణ బాధ" [ref=e2520] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/08/31/manasa-yesu-marana-baadha/
+                      - listitem [ref=e2521]:
+                        - link "మనసారా పూజించి" [ref=e2522] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/09/24/manasaaraa-poojinchi/
+                      - listitem [ref=e2523]:
+                        - link "మనసులొకటాయే భువిలో" [ref=e2524] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/04/27/manasulokataaye-bhuvilo/
+                      - listitem [ref=e2525]:
+                        - link "మనసెరిగిన యేసయ్యా" [ref=e2526] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/09/23/manaserigina-yesayyaa/
+                      - listitem [ref=e2527]:
+                        - link "మన దేశం" [ref=e2528] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/08/15/mana-desham/
+                      - listitem [ref=e2529]:
+                        - link "మన మధ్యనే ఉన్నది" [ref=e2530] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/05/02/mana-madhyane-unnadi/
+                      - listitem [ref=e2531]:
+                        - link "మన యేసు బెత్లహేములో" [ref=e2532] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/10/31/mana-yesu-bethlahemulo/
+                      - listitem [ref=e2533]:
+                        - link "మనిషిగా పుట్టినోడు" [ref=e2534] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/04/13/manishigaa-puttinodu/
+                      - listitem [ref=e2535]:
+                        - link "మనిషి బ్రతుకు రంగుల వలయం" [ref=e2536] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/10/13/manishi-brathuku-rangula-valayam/
+                      - listitem [ref=e2537]:
+                        - link "మమ్మెంతో ప్రేమించావు" [ref=e2538] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/05/12/mammentho-preminchaavu/
+                      - listitem [ref=e2539]:
+                        - link "మరణము గెలిచెను" [ref=e2540] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/03/31/maranamu-gelichenu/
+                      - listitem [ref=e2541]:
+                        - link "మరణము నన్నేమి చేయలేదు" [ref=e2542] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/09/02/maranamu-nannemi-cheyaledu/
+                      - listitem [ref=e2543]:
+                        - link "మరువగలనా మరలా" [ref=e2544] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/10/14/maruvagalanaa-maralaa/
+                      - listitem [ref=e2545]:
+                        - link "మరువద్దు మరువద్దు" [ref=e2546] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/02/11/maruvaddu-maruvaddu/
+                      - listitem [ref=e2547]:
+                        - link "మరువని నీదు ప్రేమతో" [ref=e2548] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/07/06/maruvani-needu-prematho/
+                      - listitem [ref=e2549]:
+                        - link "మరువలేనయ్యా" [ref=e2550] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/11/19/maruvalenayyaa/
+                      - listitem [ref=e2551]:
+                        - link "మరువలేను మరువలేను" [ref=e2552] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2026/03/29/maruvalenu-maruvalenu/
+                      - listitem [ref=e2553]:
+                        - link "మల్లెలమ్మా మల్లెలు" [ref=e2554] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/01/31/mallelammaa-mallelu/
+                      - listitem [ref=e2555]:
+                        - link "మహాఘనుడవు మహోన్నతుడవు" [ref=e2556] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/12/31/mahaa-ghanudavu-mahonnathudavu/
+                      - listitem [ref=e2557]:
+                        - link "మహాత్ముడైన నా ప్రభు" [ref=e2558] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/05/02/mahaathmudaina-naa-prabhu/
+                      - listitem [ref=e2559]:
+                        - link "మహిమకు పాత్రుడా" [ref=e2560] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/10/23/mahimaku-paathrudaa/
+                      - listitem [ref=e2561]:
+                        - link "మహిమగల తండ్రి" [ref=e2562] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/09/29/mahimagala-thandri/
+                      - listitem [ref=e2563]:
+                        - link "మహిమ ఘనతకు అర్హుడవు" [ref=e2564] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/02/01/mahima-ghanathaku-arhudavu/
+                      - listitem [ref=e2565]:
+                        - link "మహిమ నీకే ఘనత నీకే" [ref=e2566] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/02/19/mahima-neeke-ghanatha-neeke/
+                      - listitem [ref=e2567]:
+                        - link "మహిమ నీకే ప్రభూ" [ref=e2568] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/09/29/mahima-neeke-prabhu/
+                      - listitem [ref=e2569]:
+                        - link "మహిమాన్వితము" [ref=e2570] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/01/04/mahimaanvithamu/
+                      - listitem [ref=e2571]:
+                        - link "మహోన్నతమైన సీయోనులోన" [ref=e2572] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/02/02/mahonnathamaina-seeyonulona/
+                      - listitem [ref=e2573]:
+                        - link "మహోన్నతుడా" [ref=e2574] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2013/11/05/mahonnathudaa-nee-krupalo-nenu/
+                      - listitem [ref=e2575]:
+                        - link "మహోన్నతుడా మా దేవా" [ref=e2576] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/10/08/mahonnathudaa-maa-devaa/
+                      - listitem [ref=e2577]:
+                        - link "మంగళమే యేసునకు" [ref=e2578] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2019/08/10/mangalame-yesunaku/
+                      - listitem [ref=e2579]:
+                        - link "మంచిని పంచే దారొకటి" [ref=e2580] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/07/07/manchini-panche-daarokati/
+                      - listitem [ref=e2581]:
+                        - link "మంచివాడు గొప్పవాడు" [ref=e2582] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/08/08/manchivaadu-goppavaadu/
+                      - listitem [ref=e2583]:
+                        - link "మంచి దేవుడు నా యేసయ్యా" [ref=e2584] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/08/08/manchi-devudu-naa-yesayyaa/
+                      - listitem [ref=e2585]:
+                        - link "మంచి స్నేహితుడా" [ref=e2586] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/11/08/manchi-snehithudaa/
+                      - listitem [ref=e2587]:
+                        - link "మంచి స్నేహితుడు" [ref=e2588] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2024/03/08/manchi-snehithudu/
+                      - listitem [ref=e2589]:
+                        - link "మంచే లేని నా పైన" [ref=e2590] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/01/31/manche-leni-naa-paina/
+                      - listitem [ref=e2591]:
+                        - link "మందిరములోనికి రారండి" [ref=e2592] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/01/07/mandiramuloniki-raarandi/
+                      - listitem [ref=e2593]:
+                        - link "మాకు తోడుగ నీవుంటివి" [ref=e2594] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/10/22/maaku-thoduga-neevuntivi/
+                      - listitem [ref=e2595]:
+                        - link "మాట్లాడే దేవుడవు నీవు" [ref=e2596] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/04/14/maatlaade-devudavu-neevu/
+                      - listitem [ref=e2597]:
+                        - link "మాట్లాడే యేసయ్యా" [ref=e2598] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/08/21/maatlaade-yesayyaa/
+                      - listitem [ref=e2599]:
+                        - link "మాటే చాలయ్యా" [ref=e2600] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/12/31/maate-chaalayyaa/
+                      - listitem [ref=e2601]:
+                        - link "మాధుర్యమే నా ప్రభుతో" [ref=e2602] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/06/13/maadhuryame-naa-prabhutho/
+                      - listitem [ref=e2603]:
+                        - link "మానను మానను" [ref=e2604] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2025/01/19/maananu-maananu/
+                      - listitem [ref=e2605]:
+                        - link "మానవుడవై సకల" [ref=e2606] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/01/05/maanavudavai-sakala/
+                      - listitem [ref=e2607]:
+                        - link "మానవులందరు ఒక్కటేనని" [ref=e2608] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/05/23/maanavulandaru-okkatenani/
+                      - listitem [ref=e2609]:
+                        - link "మాయాలోక ఛాయల్లోన" [ref=e2610] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2022/01/04/maayaa-loka-chaayallona/
+                      - listitem [ref=e2611]:
+                        - link "మార్గములను సృజించువాడు" [ref=e2612] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/10/06/maargamulanu-srujinchuvaadu/
+                      - listitem [ref=e2613]:
+                        - link "మార్గము చూపుము ఇంటికి" [ref=e2614] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2013/11/05/maargamu-choopumu-intiki/
+                      - listitem [ref=e2615]:
+                        - link "మార్గము నీవని" [ref=e2616] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/01/25/maargamu-neevani/
+                      - listitem [ref=e2617]:
+                        - link "మార్గం సత్యం జీవం" [ref=e2618] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/10/17/maargam-sathyam-jeevam/
+                      - listitem [ref=e2619]:
+                        - link "మార్పుచెందవా" [ref=e2620] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/11/08/maarpuchendavaa/
+                      - listitem [ref=e2621]:
+                        - link "మార్పులేని తండ్రివి" [ref=e2622] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/01/04/maarpuleni-thandrivi/
+                      - listitem [ref=e2623]:
+                        - link "మారదయా నీ ప్రేమ" [ref=e2624] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2019/06/18/maaradayaa-nee-prema/
+                      - listitem [ref=e2625]:
+                        - link "మారని దేవుడవు నీవేనయ్యా" [ref=e2626] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/09/28/maarani-devudavu-neevenayyaa/
+                      - listitem [ref=e2627]:
+                        - link "మారా గయా సులీ పర్" [ref=e2628] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/03/25/maaraa-gayaa-sulee-par/
+                      - listitem [ref=e2629]:
+                        - link "మారిన మనసులు" [ref=e2630] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/01/25/maarina-manasulu/
+                      - listitem [ref=e2631]:
+                        - link "మారిపోయెనే" [ref=e2632] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2025/04/18/maaripoyene/
+                      - listitem [ref=e2633]:
+                        - link "మారిపోవాలి ఈ లోకమంతా" [ref=e2634] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/02/03/maaripovaali-ee-lokamanthaa/
+                      - listitem [ref=e2635]:
+                        - link "మా ఇంటి పేరు" [ref=e2636] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/01/03/maa-inti-peru/
+                      - listitem [ref=e2637]:
+                        - link "మా ఊహలు పుట్టక మునుపే" [ref=e2638] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/10/05/maa-oohalu-puttaka-munupe/
+                      - listitem [ref=e2639]:
+                        - link "మా గొప్ప దేవా" [ref=e2640] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/01/09/maa-goppa-devaa/
+                      - listitem [ref=e2641]:
+                        - link "మా సర్వానిధి నీవయ్యా" [ref=e2642] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/08/02/maa-sarvaanidhi-yesayyaa/
+                      - listitem [ref=e2643]:
+                        - link "మా హృదయములలో" [ref=e2644] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2023/03/12/maa-hrudayamulalo/
+                      - listitem [ref=e2645]:
+                        - link "మీరు బహుగా ఫలించినచో" [ref=e2646] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/04/01/meeru-bahugaa-phalinchinacho/
+                      - listitem [ref=e2647]:
+                        - link "మీ జ్ఞాపకార్థముగా" [ref=e2648] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/01/25/mee-gnaapakaardhamugaa/
+                      - listitem [ref=e2649]:
+                        - link "ముక్తి దిలాయే యీషు నామ్" [ref=e2650] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/03/25/mukthi-dhilaaye-yeeshu-naam/
+                      - listitem [ref=e2651]:
+                        - link "ముఖ దర్శనం చాలయ్యా" [ref=e2652] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/01/08/mukha-darshanam-chaalayyaa/
+                      - listitem [ref=e2653]:
+                        - link "ముళ్ళ కిరీటము" [ref=e2654] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/05/28/mulla-kireetamu/
+                      - listitem [ref=e2655]:
+                        - link "మూడునాళ్ళ ముచ్చట కోసం" [ref=e2656] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2013/11/05/moodunaalla-muchchata-kosam/
+                      - listitem [ref=e2657]:
+                        - link "మూడు దశాబ్దాల" [ref=e2658] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/10/26/moodu-dashaabdaala/
+                      - listitem [ref=e2659]:
+                        - link "మెడ్లీ" [ref=e2660] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2022/09/04/medley/
+                      - listitem [ref=e2661]:
+                        - link "మెల్లని చల్లని" [ref=e2662] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/09/01/mellani-challani/
+                      - listitem [ref=e2663]:
+                        - link "మెల్లని స్వరమే" [ref=e2664] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/10/26/mellani-swarame/
+                      - listitem [ref=e2665]:
+                        - link "మేఘాల పైన మన యేసు" [ref=e2666] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/01/29/meghaala-paina-mana-yesu/
+                      - listitem [ref=e2667]:
+                        - link "మేడి చెట్టు పైకి ఎవ్వరెక్కారు" [ref=e2668] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/05/18/medi-chettu-paiki-evvarekkaaru/
+                      - listitem [ref=e2669]:
+                        - link "మేము భయపడము" [ref=e2670] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/04/23/memu-bhayapadamu/
+                      - listitem [ref=e2671]:
+                        - link "మేలుకో మహిమ రాజు" [ref=e2672] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2023/06/30/meluko-mahima-raaju/
+                      - listitem [ref=e2673]:
+                        - link "మేలుకో విశ్వాసి మేలుకో" [ref=e2674] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/01/13/meluko-vishwaasi-meluko/
+                      - listitem [ref=e2675]:
+                        - link "మేలులు నీ మేలులు" [ref=e2676] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/09/13/melulu-nee-melulu/
+                      - listitem [ref=e2677]:
+                        - link "మేలు చేయక" [ref=e2678] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2023/06/30/melu-cheyaka/
+                      - listitem [ref=e2679]:
+                        - link "మేలైనా కీడైనా" [ref=e2680] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/01/08/melainaa-keedainaa/
+                      - listitem [ref=e2681]:
+                        - link "మేం క్రైస్తవులం" [ref=e2682] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/03/07/mem-kraisthavulam/
+                      - listitem [ref=e2683]:
+                        - link "మైటీ జీసస్ తోడుంటే" [ref=e2684] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/09/23/mighty-jesus-thodunte/
+                      - listitem [ref=e2685]:
+                        - link "మోకాళ్ళ అనుభవము" [ref=e2686] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2022/02/25/mokaalla-anubhavamu/
+                      - listitem [ref=e2687]:
+                        - link "మోయలేని భారమంత" [ref=e2688] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/03/14/moyaleni-bhaaramantha/
+                      - listitem [ref=e2689]:
+                        - link "మోసితివా నా కొరకై" [ref=e2690] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/04/14/mosithivaa-naa-korakai/
+                    - link " Back to top " [ref=e2692] [cursor=pointer]:
+                      - /url: "#a-z-listing-1"
+                  - generic [ref=e2693]:
+                    - heading "య" [level=2] [ref=e2694]
+                    - list [ref=e2695]:
+                      - listitem [ref=e2696]:
+                        - link "యవ్వనా జనమా" [ref=e2697] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/06/07/yavvanaa-janamaa/
+                      - listitem [ref=e2698]:
+                        - link "యవ్వనుడా" [ref=e2699] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/09/11/yavvanudaa/
+                      - listitem [ref=e2700]:
+                        - link "యవ్వనులారా మీరు" [ref=e2701] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/07/18/yavvanulaaraa-meeru/
+                      - listitem [ref=e2702]:
+                        - link "యాకోబు బావి కాడ" [ref=e2703] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/10/02/yaakobu-baavi-kaada/
+                      - listitem [ref=e2704]:
+                        - link "యావే" [ref=e2705] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2023/03/12/yaave/
+                      - listitem [ref=e2706]:
+                        - link "యుగయుగాలు మారిపోనిది" [ref=e2707] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/05/21/yugayugaalu-maariponidhi/
+                      - listitem [ref=e2708]:
+                        - link "యుద్ధము యెహోవాదే" [ref=e2709] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2013/11/05/yudhdhamu-yehovaade/
+                      - listitem [ref=e2710]:
+                        - link "యుద్ధ వీరులం" [ref=e2711] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2024/01/05/yuddha-veerulam/
+                      - listitem [ref=e2712]:
+                        - link "యూదా స్తుతి గోత్రపు" [ref=e2713] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/10/02/yoodaa-sthuthi-gothrapu/
+                      - listitem [ref=e2714]:
+                        - link "యెహెూవాయే నా బలము" [ref=e2715] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/09/21/yehovaaye-naa-balamu/
+                      - listitem [ref=e2716]:
+                        - link "యెహోవ నా ఆశ్రయం" [ref=e2717] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/04/26/2635/
+                      - listitem [ref=e2718]:
+                        - link "యెహోవ నా మొర లాలించెను" [ref=e2719] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2013/11/05/yehova-naa-mora-laalinchenu/
+                      - listitem [ref=e2720]:
+                        - link "యెహోవాకు స్తుతులు పాడండి" [ref=e2721] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/10/27/yehovaaku-sthuthulu-paadandi/
+                      - listitem [ref=e2722]:
+                        - link "యెహోవాను స్తుతియించు" [ref=e2723] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/02/01/427/
+                      - listitem [ref=e2724]:
+                        - link "యెహోవాను సన్నుతించెదన్" [ref=e2725] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/01/28/yehovaanu-sannuthinchedan/
+                      - listitem [ref=e2726]:
+                        - link "యెహోవాయే నా కాపరిగా" [ref=e2727] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/07/29/yehovaaye-naa-kaaparigaa/
+                      - listitem [ref=e2728]:
+                        - link "యెహోవా దయాళుడు" [ref=e2729] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/08/15/yehovaa-dayaaludu-sarva-shakthumanthudu/
+                      - listitem [ref=e2730]:
+                        - link "యెహోవా దయాళుడు (ఆయనకే కృతజ్ఞత)" [ref=e2731] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/12/01/yehovaa-dayaaludu-aayanake-kruthagnatha/
+                      - listitem [ref=e2732]:
+                        - link "యెహోవా నను కరుణించుమా" [ref=e2733] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/05/06/yehovaa-nanu-karuninchumaa/
+                      - listitem [ref=e2734]:
+                        - link "యెహోవా నాకు వెలుగాయె" [ref=e2735] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/02/17/yehovaa-naaku-velugaaye/
+                      - listitem [ref=e2736]:
+                        - link "యెహోవా నా కాపరి" [ref=e2737] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/07/10/yehovaa-naa-kaapari/
+                      - listitem [ref=e2738]:
+                        - link "యెహోవా నా కాపరి (లోయలలో)" [ref=e2739] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2022/02/23/yehovaa-naa-kaapari-loyalalo/
+                      - listitem [ref=e2740]:
+                        - link "యెహోవా నా బలమా" [ref=e2741] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2013/11/05/yehovaa-naa-balamaa/
+                      - listitem [ref=e2742]:
+                        - link "యెహోవా నిస్సీ" [ref=e2743] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2019/01/02/yehovaa-nissy/
+                      - listitem [ref=e2744]:
+                        - link "యెహోవా నీదు మేలులను" [ref=e2745] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/12/30/yehovaa-needu-melulanu/
+                      - listitem [ref=e2746]:
+                        - link "యెహోవా మహిమ నీ మీద" [ref=e2747] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/11/07/yehovaa-mahima-nee-meeda/
+                      - listitem [ref=e2748]:
+                        - link "యెహోవా మా కాపరి" [ref=e2749] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/07/21/yehovaa-maa-kaapari/
+                      - listitem [ref=e2750]:
+                        - link "యెహోవా యీరే" [ref=e2751] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/07/28/yehovaa-yire/
+                      - listitem [ref=e2752]:
+                        - link "యెహోవా నీ నామము" [ref=e2753] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2013/11/05/yehovaa-nee-naamamu-entho-balamainadi/
+                      - listitem [ref=e2754]:
+                        - link "యేషు మసీహ్" [ref=e2755] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2019/09/01/yeshu-masih/
+                      - listitem [ref=e2756]:
+                        - link "యేసన్న స్వరమన్నా" [ref=e2757] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/01/05/yesanna-swaramannaa/
+                      - listitem [ref=e2758]:
+                        - link "యేసయ్య నామము" [ref=e2759] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/03/28/yesayya-naamamu/
+                      - listitem [ref=e2760]:
+                        - link "యేసయ్య నామంలో" [ref=e2761] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/07/30/yesayya-naamamlo/
+                      - listitem [ref=e2762]:
+                        - link "యేసయ్య నీ ప్రేమ" [ref=e2763] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/09/24/yesayya-nee-prema/
+                      - listitem [ref=e2764]:
+                        - link "యేసయ్య పాదాలు" [ref=e2765] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2019/07/30/yesayya-paadaalu/
+                      - listitem [ref=e2766]:
+                        - link "యేసయ్య మాట జీవింపజేయు" [ref=e2767] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/01/25/yesayya-maata-jeevimpajeyu/
+                      - listitem [ref=e2768]:
+                        - link "యేసయ్య మాట బంగారు మూట" [ref=e2769] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/10/15/yesayya-maata-bangaaru-moota/
+                      - listitem [ref=e2770]:
+                        - link "యేసయ్య మాట విలువైన మాట" [ref=e2771] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/05/12/yesayya-maata-viluvaina/
+                      - listitem [ref=e2772]:
+                        - link "యేసయ్య రక్తము" [ref=e2773] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/08/29/yesayya-rakthamu/
+                      - listitem [ref=e2774]:
+                        - link "యేసయ్యా కనికరపూర్ణుడా" [ref=e2775] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/02/28/yesayyaa-kanikarapoornudaa/
+                      - listitem [ref=e2776]:
+                        - link "యేసయ్యా నన్నెందుకు" [ref=e2777] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/05/14/yesayyaa-nannenduku/
+                      - listitem [ref=e2778]:
+                        - link "యేసయ్యా నాకంటూ" [ref=e2779] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2023/01/05/yesayyaa-naakantu/
+                      - listitem [ref=e2780]:
+                        - link "యేసయ్యా నా దొరా" [ref=e2781] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/01/27/yesayyaa-naa-doraa/
+                      - listitem [ref=e2782]:
+                        - link "యేసయ్యా నా ప్రాణనాథా నిను" [ref=e2783] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/08/01/yesayyaa-naa-praana-naathaa-ninu/
+                      - listitem [ref=e2784]:
+                        - link "యేసయ్యా నా ప్రాణ నాథా" [ref=e2785] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/02/09/yesayyaa-naa-praana-naathaa/
+                      - listitem [ref=e2786]:
+                        - link "యేసయ్యా నా యేసయ్యా" [ref=e2787] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/02/01/yesayyaa-naa-yesayyaa-2/
+                      - listitem [ref=e2788]:
+                        - link "యేసయ్యా నా యేసయ్యా" [ref=e2789] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/10/06/yesayyaa-naa-yesayyaa/
+                      - listitem [ref=e2790]:
+                        - link "యేసయ్యా నా హృదయ స్పందన" [ref=e2791] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/08/04/yesayyaa-naa-hrudaya-spandana/
+                      - listitem [ref=e2792]:
+                        - link "యేసయ్యా నా హృదయాభిలాష" [ref=e2793] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/08/04/yesayyaa-naa-hrudayaabhilaasha/
+                      - listitem [ref=e2794]:
+                        - link "యేసయ్యా నిన్ను చూడాలని" [ref=e2795] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/11/02/yesayyaa-ninnu-choodaalani/
+                      - listitem [ref=e2796]:
+                        - link "యేసయ్యా నిన్ను ప్రేమించువారు" [ref=e2797] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/01/04/yesayyaa-ninnu-preminchuvaaru/
+                      - listitem [ref=e2798]:
+                        - link "యేసయ్యా నీకే వందనం" [ref=e2799] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/10/04/yesayyaa-neeke-vandanam/
+                      - listitem [ref=e2800]:
+                        - link "యేసయ్యా నీ నామమునే" [ref=e2801] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/08/29/yesayyaa-nee-naamamune-keerthinchedan/
+                      - listitem [ref=e2802]:
+                        - link "యేసయ్యా నీ ప్రేమ" [ref=e2803] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/05/17/yesayyaa-nee-prema/
+                      - listitem [ref=e2804]:
+                        - link "యేసయ్యా నీ పూల తోట" [ref=e2805] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/08/02/yesayyaa-nee-poola-thota/
+                      - listitem [ref=e2806]:
+                        - link "యేసయ్యా నీ మాటలు" [ref=e2807] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/04/25/yesayyaa-nee-maatalu/
+                      - listitem [ref=e2808]:
+                        - link "యేసయ్యా ప్రాణ నాథా" [ref=e2809] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/02/02/yesayyaa-praana-naatha/
+                      - listitem [ref=e2810]:
+                        - link "యేసయ్యా యేసయ్యా" [ref=e2811] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/03/15/yesayyaa-yesayyaa/
+                      - listitem [ref=e2812]:
+                        - link "యేసుకు యేసే ఇల సాటి" [ref=e2813] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/12/28/yesuku-yese-ila-saati/
+                      - listitem [ref=e2814]:
+                        - link "యేసుతో ఠీవిగాను పోదమా" [ref=e2815] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2013/11/05/yesutho-teevigaanu-podamaa/
+                      - listitem [ref=e2816]:
+                        - link "యేసుని తిరు హృదయమా" [ref=e2817] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/07/25/yesuni-thiru-hrudayamaa/
+                      - listitem [ref=e2818]:
+                        - link "యేసుని నామములో" [ref=e2819] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/09/18/yesuni-naamamulo/
+                      - listitem [ref=e2820]:
+                        - link "యేసుని నామంలో శక్తి" [ref=e2821] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/11/13/yesuni-naamamlo-shakthi/
+                      - listitem [ref=e2822]:
+                        - link "యేసుని నా మదిలో" [ref=e2823] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/09/11/yesuni-naa-madilo/
+                      - listitem [ref=e2824]:
+                        - link "యేసుని ప్రేమ యేసు వార్త" [ref=e2825] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/01/13/yesuni-prema-yesu-vaartha/
+                      - listitem [ref=e2826]:
+                        - link "యేసు ఉంటే చాలు" [ref=e2827] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/09/11/yesu-unte-chaalu/
+                      - listitem [ref=e2828]:
+                        - link "యేసు ఒక్కడే" [ref=e2829] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/09/03/yesu-okkade/
+                      - listitem [ref=e2830]:
+                        - link "యేసు క్రీస్తుని మంచి శిష్యులముగా" [ref=e2831] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2026/01/29/yesu-kreesthuni-manchi-shishyulamugaa/
+                      - listitem [ref=e2832]:
+                        - link "యేసు క్రీస్తు పుట్టెను నేడు" [ref=e2833] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/01/02/yesu-kreesthu-puttenu-nedu/
+                      - listitem [ref=e2834]:
+                        - link "యేసు కోసమే జీవిద్దాం" [ref=e2835] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2022/09/23/yesu-kosame-jeeviddaam/
+                      - listitem [ref=e2836]:
+                        - link "యేసు గొరియ పిల్లను నేను" [ref=e2837] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/11/09/yesu-goriya-pillanu-nenu/
+                      - listitem [ref=e2838]:
+                        - link "యేసు జననము" [ref=e2839] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/02/04/yesu-jananamu/
+                      - listitem [ref=e2840]:
+                        - link "యేసు దేవా నను కొనిపోవా" [ref=e2841] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/12/31/yesu-devaa-nanu-konipovaa/
+                      - listitem [ref=e2842]:
+                        - link "యేసు దేవుని ఆశ్రయించుమా" [ref=e2843] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/07/06/yesu-devuni-aashrayinchumaa/
+                      - listitem [ref=e2844]:
+                        - link "యేసు నాథా దేవా" [ref=e2845] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/03/18/yesu-naathaa-devaa/
+                      - listitem [ref=e2846]:
+                        - link "యేసు నామం" [ref=e2847] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/02/02/yesu-naamam/
+                      - listitem [ref=e2848]:
+                        - link "యేసు నిన్ను నేను" [ref=e2849] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/10/01/yesu-ninnu-nenu/
+                      - listitem [ref=e2850]:
+                        - link "యేసు నీకే జయం జయము" [ref=e2851] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/12/29/yesu-neeke-jayam-jayamu/
+                      - listitem [ref=e2852]:
+                        - link "యేసు నీవే చాలు నాకు" [ref=e2853] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/07/26/yesu-neeve-chaalu-naaku/
+                      - listitem [ref=e2854]:
+                        - link "యేసు నీ నామామృతము" [ref=e2855] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/07/17/yesu-nee-naamaamruthamu/
+                      - listitem [ref=e2856]:
+                        - link "యేసు నీ వారము" [ref=e2857] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/04/10/yesu-nee-vaaramu/
+                      - listitem [ref=e2858]:
+                        - link "యేసు నీ స్వరూపమును" [ref=e2859] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/01/12/yesu-nee-swaroopamunu/
+                      - listitem [ref=e2860]:
+                        - link "యేసు ప్రభువా నీవే" [ref=e2861] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/01/05/yesu-prabhuvaa-neeve/
+                      - listitem [ref=e2862]:
+                        - link "యేసు ప్రభువే" [ref=e2863] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/01/12/yesu-prabhuve/
+                      - listitem [ref=e2864]:
+                        - link "యేసు పరిశుద్ధ నామమునకు" [ref=e2865] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/09/29/yesu-parishuddha-naamamunaku/
+                      - listitem [ref=e2866]:
+                        - link "యేసు మంచి దేవుడు" [ref=e2867] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/11/05/yesu-manchi-devudu/
+                      - listitem [ref=e2868]:
+                        - link "యేసు మాతో నీవుండగా" [ref=e2869] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/10/23/yesu-maatho-neevundagaa/
+                      - listitem [ref=e2870]:
+                        - link "యేసు యేసు యేసు" [ref=e2871] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/08/02/yesu-yesu-yesu/
+                      - listitem [ref=e2872]:
+                        - link "యేసు రక్షకా" [ref=e2873] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/09/11/yesu-rakshakaa/
+                      - listitem [ref=e2874]:
+                        - link "యేసు రక్తములో" [ref=e2875] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/10/21/yesu-rakthamulo/
+                      - listitem [ref=e2876]:
+                        - link "యేసు రక్తము రక్తము" [ref=e2877] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/05/10/yesu-rakthamu-rakthamu/
+                      - listitem [ref=e2878]:
+                        - link "యేసు రక్తమే జయము" [ref=e2879] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/11/03/yesu-rakthame-jayamu/
+                      - listitem [ref=e2880]:
+                        - link "యేసు రక్తమే జయం" [ref=e2881] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/01/09/yesu-rakthame-jayam/
+                      - listitem [ref=e2882]:
+                        - link "యేసు రాజ్యమునకు సైనికులం" [ref=e2883] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/05/15/yesu-raajyamunaku-sainikulam/
+                      - listitem [ref=e2884]:
+                        - link "యేసు రాజ నాలో నిన్ను" [ref=e2885] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/02/19/yesu-raaja-naalo-ninnu/
+                      - listitem [ref=e2886]:
+                        - link "యేసు రాజా అర్పించెదనయ్యా" [ref=e2887] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/03/25/yesu-raajaa-arpinchedhanayyaa/
+                      - listitem [ref=e2888]:
+                        - link "యేసు రాజా నీకే" [ref=e2889] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/06/08/yesu-raajaa-neeke/
+                      - listitem [ref=e2890]:
+                        - link "యేసు రాజుగా వచ్చుచున్నాడు" [ref=e2891] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/09/29/yesu-raajugaa-vachchuchunnaadu/
+                      - listitem [ref=e2892]:
+                        - link "యేసు రాజు రాజుల రాజై" [ref=e2893] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/01/19/yesu-raaju-raajula-raajai/
+                      - listitem [ref=e2894]:
+                        - link "యేసు వలె" [ref=e2895] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/08/18/yesu-vale/
+                      - listitem [ref=e2896]:
+                        - link "యేసు వంటి సుందరుడు" [ref=e2897] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/10/05/yesu-vanti-sundarudu/
+                      - listitem [ref=e2898]:
+                        - link "యేసు సర్వోన్నతుడా" [ref=e2899] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/02/02/yesu-sarvonnathudaa/
+                      - listitem [ref=e2900]:
+                        - link "యేసూ ఎంతో వరాల మనస్సూ" [ref=e2901] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/01/12/yesu-entho-varaala/
+                      - listitem [ref=e2902]:
+                        - link "యేసూ నన్ను ప్రేమించినావు" [ref=e2903] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/07/10/yesu-nannu-preminchinaavu/
+                      - listitem [ref=e2904]:
+                        - link "యేసూ నన్ ప్రేమించితివి" [ref=e2905] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/03/13/yesu-nan-preminchithivi/
+                      - listitem [ref=e2906]:
+                        - link "యేసూ నీకు కావాలని" [ref=e2907] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/10/29/yesu-neeku-kaavaalani/
+                      - listitem [ref=e2908]:
+                        - link "యేసూ ప్రభుని స్తుతించుట" [ref=e2909] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/07/30/yesu-prabhuni-sthuthinchuta/
+                      - listitem [ref=e2910]:
+                        - link "యేసే గొప్ప దేవుడు" [ref=e2911] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/08/29/yese-goppa-devudu/
+                      - listitem [ref=e2912]:
+                        - link "యేసే జన్మించెరా" [ref=e2913] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/10/31/yese-janmincheraa/
+                      - listitem [ref=e2914]:
+                        - link "యేసే దైవము" [ref=e2915] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/01/27/yese-daivamu/
+                      - listitem [ref=e2916]:
+                        - link "యేసే నా ఆశ్రయము" [ref=e2917] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/03/24/yese-naa-aashrayamu/
+                      - listitem [ref=e2918]:
+                        - link "యేసే నా ఊపిరి" [ref=e2919] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/01/04/yese-naa-oopiri/
+                      - listitem [ref=e2920]:
+                        - link "యేసే నా పరిహారి" [ref=e2921] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/03/24/yese-naa-parihaari/
+                      - listitem [ref=e2922]:
+                        - link "యేసే నా మార్గము" [ref=e2923] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/10/09/yese-naa-maargamu/
+                      - listitem [ref=e2924]:
+                        - link "యేసే నీ మదిలో ఉండగా" [ref=e2925] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/07/09/yese-nee-madhilo-undagaa/
+                      - listitem [ref=e2926]:
+                        - link "యేసే సత్యం" [ref=e2927] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/10/23/yese-sathyam/
+                      - listitem [ref=e2928]:
+                        - link "యేసే సర్వం" [ref=e2929] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/04/02/yese-sarvam/
+                    - link " Back to top " [ref=e2931] [cursor=pointer]:
+                      - /url: "#a-z-listing-1"
+                  - generic [ref=e2932]:
+                    - heading "ర" [level=2] [ref=e2933]
+                    - list [ref=e2934]:
+                      - listitem [ref=e2935]:
+                        - link "రక్షకుడా యేసు ప్రభో" [ref=e2936] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/01/03/rakshakudaa-yesu-prabhu/
+                      - listitem [ref=e2937]:
+                        - link "రక్షకుడు వచ్చినాడు" [ref=e2938] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2022/11/29/rakshakudu-vachchinaadu/
+                      - listitem [ref=e2939]:
+                        - link "రక్షకుండుదయించినాడట" [ref=e2940] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/12/20/rakshakundudayinchinaadata/
+                      - listitem [ref=e2941]:
+                        - link "రక్షింపబడిన నీవు" [ref=e2942] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/12/28/rakshimpabadina-neevu/
+                      - listitem [ref=e2943]:
+                        - link "రమ్మనుచున్నాడు" [ref=e2944] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2013/11/05/rammanuchunnaadu-ninnu-prabhu-yesu/
+                      - listitem [ref=e2945]:
+                        - link "రవికోటి తేజుడు" [ref=e2946] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2022/09/30/ravikoti-thejudu/
+                      - listitem [ref=e2947]:
+                        - link "రండి ఉత్సాహించి పాడుదము" [ref=e2948] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2013/11/05/randi-utsaahinchi-paadudamu/
+                      - listitem [ref=e2949]:
+                        - link "రండి యెహోవాను గూర్చి" [ref=e2950] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2026/05/21/randi-yehovaanu-goorchi/
+                      - listitem [ref=e2951]:
+                        - link "రండి రండి యేసుని యొద్దకు" [ref=e2952] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/09/13/randi-randi-yesuni-yoddaku/
+                      - listitem [ref=e2953]:
+                        - link "రండి రండి రండయో" [ref=e2954] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/10/31/randi-randi-randayo/
+                      - listitem [ref=e2955]:
+                        - link "రండి సువార్త సునాదముతో" [ref=e2956] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/07/16/randi-suvaartha-sunaadamutho/
+                      - listitem [ref=e2957]:
+                        - link "రాకడనే రైలు బండి" [ref=e2958] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/10/05/raakadane-railu-bandi/
+                      - listitem [ref=e2959]:
+                        - link "రాకడ ప్రభుని రాకడ" [ref=e2960] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/11/05/raakada-prabhuni-raakada/
+                      - listitem [ref=e2961]:
+                        - link "రాకడ సమయంలో" [ref=e2962] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/01/20/raakada-samayamlo/
+                      - listitem [ref=e2963]:
+                        - link "రాజ్యాలనేలే మహారాజు" [ref=e2964] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/12/17/raajyaalanele-maharaaju/
+                      - listitem [ref=e2965]:
+                        - link "రాజాధి రాజ" [ref=e2966] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/08/12/raajaadhi-raaja/
+                      - listitem [ref=e2967]:
+                        - link "రాజాధి రాజా రారా" [ref=e2968] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2022/01/25/raajaadhi-raajaa-raaraa/
+                      - listitem [ref=e2969]:
+                        - link "రాజా నీ భవనములో" [ref=e2970] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/09/04/raajaa-nee-bhavanamulo/
+                      - listitem [ref=e2971]:
+                        - link "రాజా నీ సన్నిధిలోనే" [ref=e2972] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/10/15/raajaa-nee-sannidhilone/
+                      - listitem [ref=e2973]:
+                        - link "రాజా నీ సన్నిధిలోనే ఉంటానయ్యా" [ref=e2974] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2022/06/14/raajaa-nee-sannidhilone-untaanayyaa/
+                      - listitem [ref=e2975]:
+                        - link "రాజులకు రాజు పుట్టెనన్నయ్య" [ref=e2976] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2014/11/12/raajulaku-raaju-puttenannayya/
+                      - listitem [ref=e2977]:
+                        - link "రాజులకు రాజైన ఈ" [ref=e2978] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/10/26/raajulaku-raajaina-ee/
+                      - listitem [ref=e2979]:
+                        - link "రాజుల రాజా" [ref=e2980] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/07/22/raajula-raajaa/
+                      - listitem [ref=e2981]:
+                        - link "రాజుల రాజు" [ref=e2982] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/12/17/raajula-raaju/
+                      - listitem [ref=e2983]:
+                        - link "రాజుల రాజుల రాజు" [ref=e2984] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/09/15/raajula-raajula-raaju/
+                      - listitem [ref=e2985]:
+                        - link "రాజుల రాజైన యేసు రాజు" [ref=e2986] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2026/03/23/raajula-raajaina-yesu-raaju/
+                      - listitem [ref=e2987]:
+                        - link "రాజు పుట్టెను" [ref=e2988] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2023/11/29/raaju-puttenu/
+                      - listitem [ref=e2989]:
+                        - link "రాత్రి నేడు రక్షకుండు" [ref=e2990] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/12/31/raathri-nedu-rakshakundu/
+                      - listitem [ref=e2991]:
+                        - link "రాత్ అంధేరి" [ref=e2992] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/12/19/raath-andheri/
+                      - listitem [ref=e2993]:
+                        - link "రాతి సమాధిలో" [ref=e2994] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2023/04/08/raathi-samaadhilo/
+                      - listitem [ref=e2995]:
+                        - link "రారాజు జన్మించే ఇలలోన" [ref=e2996] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/05/15/raaraaju-janminche-ilalona/
+                      - listitem [ref=e2997]:
+                        - link "రారాజు పుట్టాడోయ్" [ref=e2998] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/12/11/raaraaju-puttaadoi/
+                      - listitem [ref=e2999]:
+                        - link "రారాజు వస్తున్నాడో" [ref=e3000] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/01/08/raaraaju-vasthunnaado/
+                      - listitem [ref=e3001]:
+                        - link "రారే చూతము" [ref=e3002] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2019/11/19/raare-choothamu/
+                      - listitem [ref=e3003]:
+                        - link "రారే మన యేసు స్వామిని" [ref=e3004] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/09/13/raare-mana-yesu-swaamini/
+                      - listitem [ref=e3005]:
+                        - link "రారే రారే ఓ జనులారా" [ref=e3006] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/10/31/raare-raare-o-janulaaraa/
+                      - listitem [ref=e3007]:
+                        - link "రావయ్య యేసునాథా" [ref=e3008] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/10/05/raavayya-yesu-naathaa/
+                      - listitem [ref=e3009]:
+                        - link "రావయ్యా యేసయ్యా" [ref=e3010] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/08/21/raavayyaa-yesayyaa/
+                      - listitem [ref=e3011]:
+                        - link "రుచి చూచి ఎరిగితిని" [ref=e3012] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/06/29/ruchi-choochi-erigithini/
+                      - listitem [ref=e3013]:
+                        - link "రెండే రెండే దారులు" [ref=e3014] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/10/12/rende-rende-daarulu/
+                      - listitem [ref=e3015]:
+                        - link "రోజంతా ద్వేషం" [ref=e3016] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/01/05/rojanthaa-dvesham/
+                    - link " Back to top " [ref=e3018] [cursor=pointer]:
+                      - /url: "#a-z-listing-1"
+                  - generic [ref=e3019]:
+                    - heading "ల" [level=2] [ref=e3020]
+                    - list [ref=e3021]:
+                      - listitem [ref=e3022]:
+                        - link "లాలి లాలి జోలాలి" [ref=e3023] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2019/11/23/laali-laali-jolaali/
+                      - listitem [ref=e3024]:
+                        - link "లివింగ్ హోప్ (తెలుగు)" [ref=e3025] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2024/03/29/living-hope-telugu/
+                      - listitem [ref=e3026]:
+                        - link "లెక్కించలేని స్తోత్రముల్" [ref=e3027] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2013/11/05/lekkinchaleni-sthothramul/
+                      - listitem [ref=e3028]:
+                        - link "లెక్కింపగ తరమా" [ref=e3029] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/04/24/lekkimpaga-tharamaa/
+                      - listitem [ref=e3030]:
+                        - link "లెమ్ము తేజరిల్లుము అని" [ref=e3031] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/11/06/lemmu-thejarillumu-ani/
+                      - listitem [ref=e3032]:
+                        - link "లెమ్ము తేజరిల్లుము నీకు" [ref=e3033] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/09/19/lemmu-thejarillumu-neeku/
+                      - listitem [ref=e3034]:
+                        - link "లేచినాడయ్యా" [ref=e3035] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/03/14/lechinaadayyaa/
+                      - listitem [ref=e3036]:
+                        - link "లేచినాడురా" [ref=e3037] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/03/14/lechinaaduraa/
+                      - listitem [ref=e3038]:
+                        - link "లే నిలబడు" [ref=e3039] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2023/05/10/le-nilabadu/
+                      - listitem [ref=e3040]:
+                        - link "లోకమంతట వెలుగు" [ref=e3041] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/12/11/lokamanthata-velugu/
+                      - listitem [ref=e3042]:
+                        - link "లోకమును విడచి" [ref=e3043] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/01/05/lokamunu-vidachi/
+                      - listitem [ref=e3044]:
+                        - link "లోకములో వెఱ్ఱివారిని" [ref=e3045] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/09/08/lokamulo-verrivaarini/
+                      - listitem [ref=e3046]:
+                        - link "లోకాన ఎదురు చూపులు" [ref=e3047] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/02/01/lokaana-eduru-choopulu/
+                    - link " Back to top " [ref=e3049] [cursor=pointer]:
+                      - /url: "#a-z-listing-1"
+                  - generic [ref=e3050]:
+                    - heading "వ" [level=2] [ref=e3051]
+                    - list [ref=e3052]:
+                      - listitem [ref=e3053]:
+                        - link "వచ్చింది క్రిస్మస్ వచ్చింది" [ref=e3054] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/12/04/vachchindi-christmas-vachchindi/
+                      - listitem [ref=e3055]:
+                        - link "వచ్చింది వచ్చింది వచ్చింది" [ref=e3056] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/12/15/vachchindi-vachchindi-vachchindi/
+                      - listitem [ref=e3057]:
+                        - link "వధియింపబడిన గొర్రెపిల్లా" [ref=e3058] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/11/26/vadhiyimpabadina-gorrepillaa/
+                      - listitem [ref=e3059]:
+                        - link "వన్ నెస్" [ref=e3060] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2023/01/08/%e0%b0%b5%e0%b0%a8%e0%b1%8d-%e0%b0%a8%e0%b1%86%e0%b0%b8%e0%b1%8d/
+                      - listitem [ref=e3061]:
+                        - link "వర్ష ధారగా రావా" [ref=e3062] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/10/18/varsha-dhaaragaa-raavaa/
+                      - listitem [ref=e3063]:
+                        - link "వర్షింపనీ వర్షింపనీ" [ref=e3064] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/07/13/varshimpanee-varshimpanee/
+                      - listitem [ref=e3065]:
+                        - link "వర్ణించలేను" [ref=e3066] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/11/15/varninchalenu/
+                      - listitem [ref=e3067]:
+                        - link "వర్ణించలేను వివరించలేను" [ref=e3068] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/12/30/varninchalenu-vivarinchalenu/
+                      - listitem [ref=e3069]:
+                        - link "వందనము నీకే నా" [ref=e3070] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/06/12/vandanamu-neeke-naa/
+                      - listitem [ref=e3071]:
+                        - link "వందనం" [ref=e3072] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/12/05/vandanam/
+                      - listitem [ref=e3073]:
+                        - link "వందనంబొనర్తుమో" [ref=e3074] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2014/11/12/vandanambonarthumo-prabho/
+                      - listitem [ref=e3075]:
+                        - link "వందనాలు యేసు" [ref=e3076] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/02/11/vandanaalu-yesu/
+                      - listitem [ref=e3077]:
+                        - link "వాక్యమే శరీర ధారియై" [ref=e3078] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/12/16/vaakyame-shareera-dhaariyai/
+                      - listitem [ref=e3079]:
+                        - link "వాగ్ధానము" [ref=e3080] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2019/01/03/vaagdhaanamu/
+                      - listitem [ref=e3081]:
+                        - link "వాగ్ధానములన్ని" [ref=e3082] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2022/01/12/vaagdhaanamulanni-neraverchuchunnaadu/
+                      - listitem [ref=e3083]:
+                        - link "వాటి వాటి కాలమున" [ref=e3084] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2023/01/05/vaati-vaati-kaalamuna/
+                      - listitem [ref=e3085]:
+                        - link "వాడబారని విశ్వాసముతో" [ref=e3086] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/08/26/vaadabaarani-vishwaasamutho/
+                      - listitem [ref=e3087]:
+                        - link "వాడిపోకముందే" [ref=e3088] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2019/01/04/vaadipoka-munde/
+                      - listitem [ref=e3089]:
+                        - link "వాడుకో నా యేసయ్యా" [ref=e3090] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/10/21/vaadabaarani-vishwaasam/
+                      - listitem [ref=e3091]:
+                        - link "వికసించు పుష్పమా" [ref=e3092] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/09/14/vikasinchu-pushpamaa/
+                      - listitem [ref=e3093]:
+                        - link "విజయశీలుడా" [ref=e3094] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/06/21/vijayaseeludaa/
+                      - listitem [ref=e3095]:
+                        - link "విజయ గీతముల్ పాడరే" [ref=e3096] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/01/27/vijaya-geethamul-paadare/
+                      - listitem [ref=e3097]:
+                        - link "విజయ గీతము మనసార" [ref=e3098] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/10/21/vijaya-geethamu-manasaara/
+                      - listitem [ref=e3099]:
+                        - link "విడిపిస్తాడు నా యేసుడు" [ref=e3100] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/09/11/vidipisthaadu-naa-yesudu/
+                      - listitem [ref=e3101]:
+                        - link "విడువదు మరువదు" [ref=e3102] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/08/30/viduvadhu-maruvadhu/
+                      - listitem [ref=e3103]:
+                        - link "విడువను నిను ఎడబాయనని" [ref=e3104] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/10/05/viduvanu-ninu-edabaayanani/
+                      - listitem [ref=e3105]:
+                        - link "విడువవు నన్నిక" [ref=e3106] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/01/05/viduvavu-nannika/
+                      - listitem [ref=e3107]:
+                        - link "విధేయతకే అర్ధము చెప్పిన" [ref=e3108] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/12/31/vidheyathake-ardhamu-cheppina/
+                      - listitem [ref=e3109]:
+                        - link "విధేయత కలిగి జీవించుటకు" [ref=e3110] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/08/08/vidheyatha-kaligi-jeevinchutaku/
+                      - listitem [ref=e3111]:
+                        - link "విన్నారా విన్నారా" [ref=e3112] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/12/14/vinnaaraa-vinnaaraa/
+                      - listitem [ref=e3113]:
+                        - link "వినరండి నా ప్రియుని విశేషము" [ref=e3114] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/05/27/vinarandi-naa-priyuni-visheshamu/
+                      - listitem [ref=e3115]:
+                        - link "వినరే యో నరులారా" [ref=e3116] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2019/12/07/vinare-yo-narulaaraa/
+                      - listitem [ref=e3117]:
+                        - link "వినవా మనవి" [ref=e3118] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/01/22/vinavaa-manavi/
+                      - listitem [ref=e3119]:
+                        - link "వినుమా యేసుని జననము" [ref=e3120] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/11/13/vinumaa-yesuni-jananamu/
+                      - listitem [ref=e3121]:
+                        - link "విరిసిన హృదయాలకు" [ref=e3122] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/10/27/virisina-hrudayaalaku/
+                      - listitem [ref=e3123]:
+                        - link "విలువేలేని నా జీవితం" [ref=e3124] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/12/14/viluve-leni-naa-jeevitham/
+                      - listitem [ref=e3125]:
+                        - link "విలువైనది నీ ఆయుష్కాలం" [ref=e3126] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/10/30/viluvainadi-nee-aayushkaalam/
+                      - listitem [ref=e3127]:
+                        - link "విలువైనది నీ జీవితం" [ref=e3128] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/01/08/viluvainadi-nee-jeevitham/
+                      - listitem [ref=e3129]:
+                        - link "విలువైనది సమయము" [ref=e3130] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/03/07/viluvainadhi-samayamu/
+                      - listitem [ref=e3131]:
+                        - link "విలువైన నీ కృప" [ref=e3132] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/12/30/viluvaina-nee-krupa/
+                      - listitem [ref=e3133]:
+                        - link "వివాహమన్నది" [ref=e3134] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/03/27/vivaahamannadi/
+                      - listitem [ref=e3135]:
+                        - link "విశేషమైన కృప" [ref=e3136] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2025/06/04/visheshamaina-krupa/
+                      - listitem [ref=e3137]:
+                        - link "వింతైన తారక" [ref=e3138] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/12/23/vinthaina-thaaraka/
+                      - listitem [ref=e3139]:
+                        - link "వీచే గాలుల్లో" [ref=e3140] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/11/29/veeche-gaalullo/
+                      - listitem [ref=e3141]:
+                        - link "వీనులకు విందులు చేసే" [ref=e3142] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/08/09/veenulaku-vindulu-chese/
+                      - listitem [ref=e3143]:
+                        - link "వెండి బంగారాల కన్న" [ref=e3144] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/01/31/vendi-bangaarala-kanna/
+                      - listitem [ref=e3145]:
+                        - link "వేటగాని ఉరిలో నుండి" [ref=e3146] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2014/11/12/vetagaani-urilo-nundi/
+                      - listitem [ref=e3147]:
+                        - link "వేయి నోళ్లతో స్తుతియించినా" [ref=e3148] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/09/15/veyi-nollatho-sthuthiyinchinaa/
+                      - listitem [ref=e3149]:
+                        - link "వేవేల దూతలతో" [ref=e3150] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/10/02/vevela-doothalatho/
+                      - listitem [ref=e3151]:
+                        - link "వేసారిన మనసే" [ref=e3152] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2019/09/09/vesaarina-manase/
+                    - link " Back to top " [ref=e3154] [cursor=pointer]:
+                      - /url: "#a-z-listing-1"
+                  - generic [ref=e3155]:
+                    - heading "శ" [level=2] [ref=e3156]
+                    - list [ref=e3157]:
+                      - listitem [ref=e3158]:
+                        - link "శక్తి చేత కాదనెను" [ref=e3159] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/08/13/shakthi-chetha-kaadanenu/
+                      - listitem [ref=e3160]:
+                        - link "శక్తి చేత కాదు" [ref=e3161] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/08/13/shakthi-chetha-kaadu/
+                      - listitem [ref=e3162]:
+                        - link "శ్రమయైనా బాధైనా" [ref=e3163] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/08/11/shramayainaa-baadhainaa/
+                      - listitem [ref=e3164]:
+                        - link "శ్రమలందు నీవు" [ref=e3165] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2022/12/15/shramalandu-neevu/
+                      - listitem [ref=e3166]:
+                        - link "శ్రీ యేసుండు జన్మించె" [ref=e3167] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2014/11/08/sri-yesundu-janminche/
+                      - listitem [ref=e3168]:
+                        - link "శ్రేష్టమైన నామం" [ref=e3169] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/06/07/shreshtamaina-naamam/
+                      - listitem [ref=e3170]:
+                        - link "శత కోటి రాగాలు వల్లించిన" [ref=e3171] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/01/01/shatha-koti-raagaalu-vallinchina/
+                      - listitem [ref=e3172]:
+                        - link "శరణం శరణం శరణం దేవా" [ref=e3173] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/12/29/sharanam-sharanam-sharanam-devaa/
+                      - listitem [ref=e3174]:
+                        - link "శాశ్వతమా ఈ దేహం" [ref=e3175] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/10/06/shaashwathamaa-ee-deham/
+                      - listitem [ref=e3176]:
+                        - link "శాశ్వతమైనది" [ref=e3177] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/10/05/shaashwathamainadi/
+                      - listitem [ref=e3178]:
+                        - link "శాశ్వతమైన ప్రేమతో" [ref=e3179] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/06/21/shaashwathamaina-prematho/
+                      - listitem [ref=e3180]:
+                        - link "శాశ్వత కృపను" [ref=e3181] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/01/19/shaashwatha-krupanu/
+                      - listitem [ref=e3182]:
+                        - link "శాశ్వత ప్రేమతో" [ref=e3183] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/02/12/shaashwatha-prematho/
+                      - listitem [ref=e3184]:
+                        - link "శిరము మీద ముళ్ల సాక్షిగా" [ref=e3185] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/06/20/shiramu-meeda-mulla-saakshigaa/
+                      - listitem [ref=e3186]:
+                        - link "శిలనైన నన్ను" [ref=e3187] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/03/15/shilanaina-nannu/
+                      - listitem [ref=e3188]:
+                        - link "శుద్దుడా ఘనుడా రక్షకుడా" [ref=e3189] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/12/01/shuddhudaa-ghanudaa-rakshakudaa/
+                      - listitem [ref=e3190]:
+                        - link "శుద్ధ రాత్రి" [ref=e3191] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/01/06/shudhdha-raathri/
+                      - listitem [ref=e3192]:
+                        - link "శుద్ధ హృదయం" [ref=e3193] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2014/11/26/shudhdhaa-hrudayam/
+                      - listitem [ref=e3194]:
+                        - link "శుద్ధుడవయ్యా" [ref=e3195] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/04/13/shuddhudavayyaa/
+                      - listitem [ref=e3196]:
+                        - link "శుభవేళ స్తోత్రబలి" [ref=e3197] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/02/01/shubha-vela-sthothra-bali/
+                      - listitem [ref=e3198]:
+                        - link "శృతిచేసి నే పాడనా" [ref=e3199] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/10/05/shruthi-chesi-ne-paadanaa/
+                      - listitem [ref=e3200]:
+                        - link "శోధనా బాధలు" [ref=e3201] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/02/01/shodhanaa-baadhalu/
+                    - link " Back to top " [ref=e3203] [cursor=pointer]:
+                      - /url: "#a-z-listing-1"
+                  - generic [ref=e3204]:
+                    - heading "స" [level=2] [ref=e3205]
+                    - list [ref=e3206]:
+                      - listitem [ref=e3207]:
+                        - link "స్తుతికి పాత్రుడ యేసయ్యా" [ref=e3208] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/12/28/sthuthiki-paathruda-yesayyaa/
+                      - listitem [ref=e3209]:
+                        - link "స్తుతికి పాత్రుడా" [ref=e3210] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/04/25/sthuthiki-paathrudaa/
+                      - listitem [ref=e3211]:
+                        - link "స్తుతిపాత్రుడా స్తోత్రార్హుడా" [ref=e3212] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/10/04/sthuthi-paathrudaa-sthothraarhudaa/
+                      - listitem [ref=e3213]:
+                        - link "స్తుతియించి కీర్తించి" [ref=e3214] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/02/02/sthuthiyinchi-keerthinchi/
+                      - listitem [ref=e3215]:
+                        - link "స్తుతియించెదా నీ నామం" [ref=e3216] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/09/23/sthuthiyinchedaa-nee-naamam/
+                      - listitem [ref=e3217]:
+                        - link "స్తుతియింతుము" [ref=e3218] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/01/12/sthuthiyinthumu/
+                      - listitem [ref=e3219]:
+                        - link "స్తుతియు మహిమ ఘనత నీకే" [ref=e3220] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2013/11/05/sthuthiyu-mahima-ghantha-neeke/
+                      - listitem [ref=e3221]:
+                        - link "స్తుతియు మహిమ (ఆరాధన)" [ref=e3222] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/01/06/sthuthiyu-mahima-aaraadhana/
+                      - listitem [ref=e3223]:
+                        - link "స్తుతి గానమే పాడనా" [ref=e3224] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/02/17/sthuthi-gaaname-paadanaa/
+                      - listitem [ref=e3225]:
+                        - link "స్తుతి నీకే యేసు రాజా" [ref=e3226] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/06/08/sthuthi-neeke-yesu-raajaa/
+                      - listitem [ref=e3227]:
+                        - link "స్తుతి ప్రశంస పాడుచు" [ref=e3228] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2024/02/20/sthuthi-prashamsa-paaduchu/
+                      - listitem [ref=e3229]:
+                        - link "స్తుతి పాడనా నేను" [ref=e3230] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/03/06/sthuthi-paadanaa-nenu/
+                      - listitem [ref=e3231]:
+                        - link "స్తుతి పాడి కీర్తింతుము" [ref=e3232] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/10/26/sthuthi-paadi-keerthinthumu/
+                      - listitem [ref=e3233]:
+                        - link "స్తుతి పాడుటకే" [ref=e3234] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2022/12/05/sthuthi-paadutake/
+                      - listitem [ref=e3235]:
+                        - link "స్తుతి పాడెద నే ప్రతి దినము" [ref=e3236] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/03/27/sthuthi-paadeda-ne-prathi-dinamu/
+                      - listitem [ref=e3237]:
+                        - link "స్తుతి మధుర గీతము" [ref=e3238] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/04/27/sthuthi-madhura-geethamu/
+                      - listitem [ref=e3239]:
+                        - link "స్తుతి మహిమ యేసు నీకే" [ref=e3240] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/01/31/sthuthi-mahima-yesu-neeke/
+                      - listitem [ref=e3241]:
+                        - link "స్తుతి సింహాసనాసీనుడా" [ref=e3242] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/12/20/sthuthi-simhaasanaaseenudaa-2/
+                      - listitem [ref=e3243]:
+                        - link "స్తుతి సింహాసనాసీనుడా" [ref=e3244] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/07/16/sthuthi-simhaasanaaseenudaa/
+                      - listitem [ref=e3245]:
+                        - link "స్తుతించి పాడెదం" [ref=e3246] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/09/08/sthuthinchi-paadedam/
+                      - listitem [ref=e3247]:
+                        - link "స్తుతించుడి" [ref=e3248] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2023/06/30/sthuthinchudi-yehovaa-devuni/
+                      - listitem [ref=e3249]:
+                        - link "స్తుతించెదను నిన్ను నేను" [ref=e3250] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/05/23/sthuthinchedanu-ninnu-nenu/
+                      - listitem [ref=e3251]:
+                        - link "స్తుతించెదను స్తుతించెదను" [ref=e3252] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/02/06/sthuthinchedanu-sthuthinchedanu/
+                      - listitem [ref=e3253]:
+                        - link "స్తుతులకు పాత్రుడా (అన్ని వేళలో)" [ref=e3254] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/11/24/sthuthulaku-paathrudaa-anni-velalo/
+                      - listitem [ref=e3255]:
+                        - link "స్తుతులకు పాత్రుడా (ఆరాధన)" [ref=e3256] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/09/11/sthuthulaku-paathrudaa-aaraadhana/
+                      - listitem [ref=e3257]:
+                        - link "స్తుతులకు పాత్రుడు యేసయ్యా" [ref=e3258] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/11/05/sthuthulaku-paathrudu-yesayyaa/
+                      - listitem [ref=e3259]:
+                        - link "స్తుతులపై ఆసీనుడా" [ref=e3260] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/02/12/sthuthulapai-aaseenudaa/
+                      - listitem [ref=e3261]:
+                        - link "స్తుతుల మీద ఆసీనుడా" [ref=e3262] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/09/17/sthuthula-meeda-aaseenudaa/
+                      - listitem [ref=e3263]:
+                        - link "స్తోత్రబలి అర్పించెదము" [ref=e3264] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/07/10/sthothrabali-arpinchedhamu/
+                      - listitem [ref=e3265]:
+                        - link "స్తోత్రబలి స్తోత్రబలి" [ref=e3266] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/02/07/sthothrabali-sthothrabali/
+                      - listitem [ref=e3267]:
+                        - link "స్తోత్రము స్తుతి చెల్లింతుము" [ref=e3268] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/08/29/sthothramu-sthuthi-chellinthumu/
+                      - listitem [ref=e3269]:
+                        - link "స్తోత్రము స్తుతి స్తోత్రము" [ref=e3270] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2014/11/12/sthothramu-sthuthi-sthothramu/
+                      - listitem [ref=e3271]:
+                        - link "స్తోత్ర గానం చేసింది ప్రాణం" [ref=e3272] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/11/21/sthothra-gaanam-chesindi-praanam/
+                      - listitem [ref=e3273]:
+                        - link "స్తోత్రం చెల్లింతుము" [ref=e3274] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2014/11/12/sthothram-chellinthumu/
+                      - listitem [ref=e3275]:
+                        - link "స్తోత్రించెదము" [ref=e3276] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2023/06/30/sthothrinchedamu-daivakumaaruni/
+                      - listitem [ref=e3277]:
+                        - link "స్తోత్రింతుము నిను" [ref=e3278] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/08/29/sthothrinthumu-ninu/
+                      - listitem [ref=e3279]:
+                        - link "స్నేహితుడా నా స్నేహితుడా" [ref=e3280] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/04/29/snehithudaa-naa-snehithudaa/
+                      - listitem [ref=e3281]:
+                        - link "స్నేహితుడా నా హితుడా" [ref=e3282] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/08/08/snehithudaa-naa-hithudaa/
+                      - listitem [ref=e3283]:
+                        - link "సకలము చేయు" [ref=e3284] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/10/25/sakalamu-cheyu/
+                      - listitem [ref=e3285]:
+                        - link "స్వఛ్చంద సీయోను వాసి" [ref=e3286] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/03/14/swachchandha-seeyonu-vaasi/
+                      - listitem [ref=e3287]:
+                        - link "స్వస్థపరచు దేవుడు" [ref=e3288] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2025/09/19/swasthaparachu-devudu/
+                      - listitem [ref=e3289]:
+                        - link "స్వీకరించుమయా నాథా" [ref=e3290] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/10/04/sweekarinchumayaa-naathaa/
+                      - listitem [ref=e3291]:
+                        - link "సజీవ సాక్షులుగా" [ref=e3292] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/10/02/sajeeva-saakshulugaa/
+                      - listitem [ref=e3293]:
+                        - link "సజీవుడవైన యేసయ్యా" [ref=e3294] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/01/05/sajeevudavaina-yesayyaa/
+                      - listitem [ref=e3295]:
+                        - link "సదాకాలము నీతో నేను" [ref=e3296] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2013/11/05/sadaakaalamu-neetho-nenu/
+                      - listitem [ref=e3297]:
+                        - link "సదాకాలము నీ యందే" [ref=e3298] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/04/27/sadaakaalamu-nee-yande/
+                      - listitem [ref=e3299]:
+                        - link "సన్నుతింతుమో ప్రభో" [ref=e3300] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/09/05/sannuthinthumo-prabho/
+                      - listitem [ref=e3301]:
+                        - link "సన్నుతింతు యేసు స్వామి" [ref=e3302] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/10/27/sannuthinthu-yesu-swaami/
+                      - listitem [ref=e3303]:
+                        - link "సమయమిదే సమయమిదే" [ref=e3304] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/12/03/samayamide-samayamide/
+                      - listitem [ref=e3305]:
+                        - link "సమయము పోనీయక" [ref=e3306] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/10/14/samayamu-poneeyaka/
+                      - listitem [ref=e3307]:
+                        - link "సమర్ధవంతుడవైన" [ref=e3308] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/11/20/samardhavanthudavaina/
+                      - listitem [ref=e3309]:
+                        - link "సమర్పణ చేయుము ప్రభువునకు" [ref=e3310] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/10/15/samarpana-cheyumu-prabhuvunaku/
+                      - listitem [ref=e3311]:
+                        - link "సమస్త జనులారా" [ref=e3312] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2023/06/30/samastha-janulaaraa/
+                      - listitem [ref=e3313]:
+                        - link "సమాధాన గృహంబులోను" [ref=e3314] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2019/07/18/samaadhaana-gruhambulonu/
+                      - listitem [ref=e3315]:
+                        - link "సమానులెవరు ప్రభో" [ref=e3316] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/09/05/samaanulevaru-prabho/
+                      - listitem [ref=e3317]:
+                        - link "సమీపించరాని తేజస్సులో నీవు" [ref=e3318] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/06/18/sameepincharaani-thejassulo/
+                      - listitem [ref=e3319]:
+                        - link "సమీపింపరాని తేజస్సులో" [ref=e3320] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/02/05/sameepimparaani-thejassulo/
+                      - listitem [ref=e3321]:
+                        - link "సర్వకృపానిధియగు ప్రభువా" [ref=e3322] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2013/11/05/sarvakrupaanidhiyagu-prabhuvaa/
+                      - listitem [ref=e3323]:
+                        - link "సర్వశక్తుని స్తోత్రగానము" [ref=e3324] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/06/08/sarvashakthuni-sthothra-gaanamu/
+                      - listitem [ref=e3325]:
+                        - link "సర్వ చిత్తంబు నీదేనయ్యా" [ref=e3326] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/06/19/sarva-chitthambu-needenayyaa/
+                      - listitem [ref=e3327]:
+                        - link "సర్వ యుగములలో సజీవుడవు" [ref=e3328] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/11/01/sarva-yugamulalo-sajeevudavu/
+                      - listitem [ref=e3329]:
+                        - link "సర్వ లోకమా" [ref=e3330] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/01/04/sarva-lokamaa/
+                      - listitem [ref=e3331]:
+                        - link "సర్వ శరీరుల దేవుడా" [ref=e3332] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/08/12/sarva-shareerula-devudaa/
+                      - listitem [ref=e3333]:
+                        - link "సర్వ సృష్టిలోని" [ref=e3334] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/11/08/4631/
+                      - listitem [ref=e3335]:
+                        - link "సర్వాంగ కవచము నీవే" [ref=e3336] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/02/05/sarvaanga-kavachamu-neeve/
+                      - listitem [ref=e3337]:
+                        - link "సర్వాంగ సుందరా" [ref=e3338] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/05/08/sarvaanga-sundaraa/
+                      - listitem [ref=e3339]:
+                        - link "సర్వోన్నత" [ref=e3340] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2022/11/29/sarvonnatha/
+                      - listitem [ref=e3341]:
+                        - link "సర్వోన్నతుడా" [ref=e3342] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2023/01/21/sarvonnathudaa/
+                      - listitem [ref=e3343]:
+                        - link "సరిచేయుమో దేవా" [ref=e3344] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/03/11/sari-cheyumo-devaa/
+                      - listitem [ref=e3345]:
+                        - link "సరిపోదు ఆరాధన" [ref=e3346] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2023/06/30/saripodu-aaraadhana/
+                      - listitem [ref=e3347]:
+                        - link "సరి రారెవ్వరు" [ref=e3348] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/02/06/sari-raarevvaru/
+                      - listitem [ref=e3349]:
+                        - link "సహోదరులారా" [ref=e3350] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/04/11/sahodarulaaraa/
+                      - listitem [ref=e3351]:
+                        - link "సహోదరులు ఐక్యత కలిగి" [ref=e3352] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/12/19/sahodarulu-aikyatha-kaligi/
+                      - listitem [ref=e3353]:
+                        - link "సంగీత నాదముతో" [ref=e3354] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/03/20/sangeetha-naadamutho/
+                      - listitem [ref=e3355]:
+                        - link "సంతోషముతో నిచ్చెడు వారిని" [ref=e3356] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/11/03/santhoshamutho-nichchedu-vaarini/
+                      - listitem [ref=e3357]:
+                        - link "సంతోషమే సమాధానమే" [ref=e3358] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/05/08/santhoshame-samaadhaaname/
+                      - listitem [ref=e3359]:
+                        - link "సంతోష గీతం పాడెదను" [ref=e3360] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/12/31/santhosha-geetham-paadedanu/
+                      - listitem [ref=e3361]:
+                        - link "సంతోష వస్త్రం" [ref=e3362] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/08/08/santhosha-vasthram/
+                      - listitem [ref=e3363]:
+                        - link "సంతోషించుడి యందరు" [ref=e3364] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2019/12/07/santhoshinchudi-yandaru/
+                      - listitem [ref=e3365]:
+                        - link "సందడి – 3" [ref=e3366] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/12/19/sandadi-3/
+                      - listitem [ref=e3367]:
+                        - link "సందేహమేల" [ref=e3368] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/10/16/sandehamela/
+                      - listitem [ref=e3369]:
+                        - link "సంపూర్ణుడా నా యేసయ్యా" [ref=e3370] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/12/02/sampoornudaa-naa-yesayyaa/
+                      - listitem [ref=e3371]:
+                        - link "సంబరాలు చేసేద్దామా" [ref=e3372] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2022/12/01/sambaraalu-cheseddaamaa/
+                      - listitem [ref=e3373]:
+                        - link "సంవత్సరములు వెలుచుండగా" [ref=e3374] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/12/22/samvathsarumulu-veluchundagaa/
+                      - listitem [ref=e3375]:
+                        - link "సాక్ష్యమిచ్చెద" [ref=e3376] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2013/11/05/saakshyamichcheda/
+                      - listitem [ref=e3377]:
+                        - link "సాగిపోదును ఆగిపోను నేను" [ref=e3378] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/12/01/saagipodunu-aagiponu-nenu/
+                      - listitem [ref=e3379]:
+                        - link "సాగిలపడి మ్రొక్కెదము" [ref=e3380] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2013/02/09/saagilapadi-mrokkedamu-2/
+                      - listitem [ref=e3381]:
+                        - link "సాగి సాగి పొమ్ము" [ref=e3382] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/10/30/saagi-saagi-pommu/
+                      - listitem [ref=e3383]:
+                        - link "సాగేటి ఈ జీవ యాత్రలో" [ref=e3384] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/07/30/saageti-ee-jeeva-yaathralo/
+                      - listitem [ref=e3385]:
+                        - link "సాగేను నా జీవ నావ" [ref=e3386] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/05/23/saagenu-naa-jeeva-naava/
+                      - listitem [ref=e3387]:
+                        - link "సాటి ఎవ్వరూ" [ref=e3388] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2022/07/08/saati-evvaru/
+                      - listitem [ref=e3389]:
+                        - link "సాధ్యము అన్ని సాధ్యము" [ref=e3390] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/08/02/saadhyamu-anni-saadhyamu/
+                      - listitem [ref=e3391]:
+                        - link "సామాన్యుడవు కావు" [ref=e3392] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/12/15/saamaanyudavu-kaavu/
+                      - listitem [ref=e3393]:
+                        - link "సిల్వలో నాకై కార్చెను" [ref=e3394] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2014/11/26/silvalo-naakai-kaarchenu/
+                      - listitem [ref=e3395]:
+                        - link "సిలువను గెలిచిన" [ref=e3396] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/10/23/siluvanu-gelichina/
+                      - listitem [ref=e3397]:
+                        - link "సిలువలో ఆ సిలువలో" [ref=e3398] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/08/12/siluvalo-aa-siluvalo/
+                      - listitem [ref=e3399]:
+                        - link "సిలువలో నీ ప్రేమ" [ref=e3400] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/03/25/siluvalo-nee-prema/
+                      - listitem [ref=e3401]:
+                        - link "సిలువలో బలి అయిన" [ref=e3402] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2013/11/05/siluvalo-bali-aina-devuni-gorrepilla/
+                      - listitem [ref=e3403]:
+                        - link "సిలువలో సాగింది యాత్ర" [ref=e3404] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2013/11/05/siluvalo-saagindi-yaathra/
+                      - listitem [ref=e3405]:
+                        - link "సిలువ చెంత" [ref=e3406] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2013/11/05/siluva-chentha-cherina-naadu/
+                      - listitem [ref=e3407]:
+                        - link "సిలువ చెంతకు రా" [ref=e3408] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/01/05/siluva-chenthaku-raa/
+                      - listitem [ref=e3409]:
+                        - link "సిలువ ధ్యానం" [ref=e3410] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/03/14/siluva-dhyaanam/
+                      - listitem [ref=e3411]:
+                        - link "సిలువ సాక్షిగా" [ref=e3412] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/02/06/siluva-saakshigaa/
+                      - listitem [ref=e3413]:
+                        - link "సిలువే నా శరణాయెను రా" [ref=e3414] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/04/15/siluve-naa-sharanaayenu-raa/
+                      - listitem [ref=e3415]:
+                        - link "సీయోనులో నుండి నీవు" [ref=e3416] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/05/24/seeyonulo-nundi-neevu/
+                      - listitem [ref=e3417]:
+                        - link "సీయోనులో స్థిరమైన" [ref=e3418] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/08/21/seeyonulo-sthiramaina/
+                      - listitem [ref=e3419]:
+                        - link "సీయోను నీ దేవుని" [ref=e3420] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/04/06/seeyonu-nee-devuni/
+                      - listitem [ref=e3421]:
+                        - link "సీయోను పాటలు సంతోషముగా" [ref=e3422] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2013/02/09/seeyonu-paatalu-santhoshamugaa/
+                      - listitem [ref=e3423]:
+                        - link "సుగుణాల సంపన్నుడా" [ref=e3424] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/02/01/sugunaala-sampannudaa/
+                      - listitem [ref=e3425]:
+                        - link "సుడిగాలైననూ" [ref=e3426] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/12/31/sudigaalainanu/
+                      - listitem [ref=e3427]:
+                        - link "సుదూరము ఈ పయనము" [ref=e3428] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2022/01/10/sudhooramu-ee-payanamu/
+                      - listitem [ref=e3429]:
+                        - link "సుధా మధుర కిరణాల" [ref=e3430] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/11/09/sudhaa-madhura-kiranaala/
+                      - listitem [ref=e3431]:
+                        - link "సుమధుర స్వరముల గానాలతో" [ref=e3432] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2019/08/01/sumadhura-swaramula-gaanaalatho/
+                      - listitem [ref=e3433]:
+                        - link "సువార్తను ప్రకటింపవా" [ref=e3434] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/10/15/suvaarthanu-prakatimpavaa/
+                      - listitem [ref=e3435]:
+                        - link "సువార్తే పరిష్కారం" [ref=e3436] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2024/08/01/suvaarthe-parishkaaram/
+                      - listitem [ref=e3437]:
+                        - link "సుందరములు" [ref=e3438] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/08/14/sundaramulu/
+                      - listitem [ref=e3439]:
+                        - link "సుందరమైన దేహాలెన్నో" [ref=e3440] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/02/17/sundharamaina-dhehaalenno/
+                      - listitem [ref=e3441]:
+                        - link "సుందరుడా" [ref=e3442] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2020/05/24/sundarudaa-athishayudaa/
+                      - listitem [ref=e3443]:
+                        - link "సుందరుడా అతి కాంక్షనీయుడా" [ref=e3444] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/03/15/sundarudaa/
+                      - listitem [ref=e3445]:
+                        - link "సూడ సక్కని బాలుడమ్మో" [ref=e3446] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/12/01/sooda-sakkani-baaludammo/
+                      - listitem [ref=e3447]:
+                        - link "సృష్టికర్తవైన యెహోవా" [ref=e3448] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/08/18/srushtikarthavaina-yehovaa/
+                      - listitem [ref=e3449]:
+                        - link "సృష్టి కర్తా యేసు దేవా" [ref=e3450] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/02/12/srushti-kartha-yesu-devaa/
+                      - listitem [ref=e3451]:
+                        - link "సేవకులారా" [ref=e3452] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/02/14/sevakulaaraa/
+                      - listitem [ref=e3453]:
+                        - link "సొంతమైపోవాలి నా యేసుతో" [ref=e3454] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/10/15/sonthamai-povaali-naa-yesutho/
+                      - listitem [ref=e3455]:
+                        - link "సోలిపోయిన మనసా" [ref=e3456] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/08/12/solipoyina-manasaa/
+                      - listitem [ref=e3457]:
+                        - link "సోలిపోవలదు మనస్సా" [ref=e3458] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2013/11/05/solipovaladu-manassaa-solipovaladu/
+                      - listitem [ref=e3459]:
+                        - link "సోలిపోవలదు – మెడ్లి" [ref=e3460] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2024/03/09/solipovaladu-medley/
+                    - link " Back to top " [ref=e3462] [cursor=pointer]:
+                      - /url: "#a-z-listing-1"
+                  - generic [ref=e3463]:
+                    - heading "హ" [level=2] [ref=e3464]
+                    - list [ref=e3465]:
+                      - listitem [ref=e3466]:
+                        - link "హల్లెలుయా పాడెదా" [ref=e3467] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2013/02/09/hallelujah-paadedaa/
+                      - listitem [ref=e3468]:
+                        - link "హల్లెలూయ పాట" [ref=e3469] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/10/03/hallelooyaa-paata/
+                      - listitem [ref=e3470]:
+                        - link "హల్లెలూయ పాటలతో" [ref=e3471] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/07/16/hallelooya-paatalatho/
+                      - listitem [ref=e3472]:
+                        - link "హల్లెలూయ స్తుతి మహిమ" [ref=e3473] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2015/08/04/hallelujah-sthuthi-mahima/
+                      - listitem [ref=e3474]:
+                        - link "హల్లెలూయ హల్లెలూయ స్తోత్రములు" [ref=e3475] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2014/11/12/hallelujah-hallelujah-sthothramulu/
+                      - listitem [ref=e3476]:
+                        - link "హల్లెలూయా ఆనందమే" [ref=e3477] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2021/04/03/hallelooyaa-aanandame/
+                      - listitem [ref=e3478]:
+                        - link "హల్లెలూయా ఆరాధన" [ref=e3479] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/12/28/haallelooyaa-aaraadhana/
+                      - listitem [ref=e3480]:
+                        - link "హల్లెలూయా నా పాట" [ref=e3481] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/09/19/hallelooyaa-naa-paata/
+                      - listitem [ref=e3482]:
+                        - link "హల్లెలూయా యేసు ప్రభున్" [ref=e3483] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/12/03/hallelooya-yesu-prabhun/
+                      - listitem [ref=e3484]:
+                        - link "హల్లెలూయా స్తోత్రం" [ref=e3485] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/02/02/hallelooyaa-sthothram/
+                      - listitem [ref=e3486]:
+                        - link "హల్లేలూయని పాడరండి" [ref=e3487] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/03/31/hallelooyani-paadarandi/
+                      - listitem [ref=e3488]:
+                        - link "హల్లేలూయా యని పాడి" [ref=e3489] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/11/06/hallelooyaa-ani-paadi/
+                      - listitem [ref=e3490]:
+                        - link "హల్లే హల్లే హల్లే హల్లేలూయా" [ref=e3491] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/01/12/halle-halle-halle-hallelooyaa/
+                      - listitem [ref=e3492]:
+                        - link "హీనమైన బ్రతుకు నాది" [ref=e3493] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2017/10/25/heenamaina-brathuku-naadi/
+                      - listitem [ref=e3494]:
+                        - link "హృదయపూర్వక ఆరాధన" [ref=e3495] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2018/07/09/hrudayapoorvaka-aaraadhana/
+                      - listitem [ref=e3496]:
+                        - link "హృదయమనెడు తలుపు నొద్ద" [ref=e3497] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/06/28/hrudayamanedu-thalupu-nodda/
+                      - listitem [ref=e3498]:
+                        - link "హృదయాలనేలే రారాజు" [ref=e3499] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/01/17/hrudayaalanele-raaraaju/
+                      - listitem [ref=e3500]:
+                        - link "హే ప్రభుయేసు" [ref=e3501] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/10/01/hey-prabhu-yesu/
+                      - listitem [ref=e3502]:
+                        - link "హోసన్ననుచూ స్తుతి పాడుచూ" [ref=e3503] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/10/05/hosannanuchu-sthuthi-paaduchu/
+                      - listitem [ref=e3504]:
+                        - link "హోసన్న హోసన్నా" [ref=e3505] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2019/08/31/hosanna-hosannaa/
+                      - listitem [ref=e3506]:
+                        - link "హోసన్నా హల్లెలూయా" [ref=e3507] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2016/07/27/hosannaa-hallelooyaa/
+                    - link " Back to top " [ref=e3509] [cursor=pointer]:
+                      - /url: "#a-z-listing-1"
+                  - generic [ref=e3510]:
+                    - heading "#" [level=2] [ref=e3511]
+                    - list [ref=e3512]:
+                      - listitem [ref=e3513]:
+                        - link "Christmas Medley" [ref=e3514] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2024/11/30/christmas-medley/
+                      - listitem [ref=e3515]:
+                        - link "ISCF Medley – 2" [ref=e3516] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2024/11/17/iscf-medley-2/
+                      - listitem [ref=e3517]:
+                        - link "ISCF Worship – Medley" [ref=e3518] [cursor=pointer]:
+                          - /url: https://christianlyricz.com/2023/09/11/iscf-worship-medley/
+                    - link " Back to top " [ref=e3520] [cursor=pointer]:
+                      - /url: "#a-z-listing-1"
+              - strong
+              - paragraph
+      - complementary [ref=e3521]:
+        - generic [ref=e3522]:
+          - heading "— Search" [level=2] [ref=e3523]
+          - search [ref=e3524]:
+            - generic [ref=e3525]:
+              - generic [ref=e3526]: "Search for:"
+              - searchbox "Search for:" [ref=e3527]
+            - button "Search" [ref=e3528] [cursor=pointer]
+        - figure [ref=e3530]:
+          - iframe [ref=e3532]:
+            - generic [active] [ref=f15e1]:
+              - generic "YouTube Video Player" [ref=f15e3]
+              - generic [ref=f15e5]:
+                - generic:
+                  - generic:
+                    - button "Play video" [ref=f15e10] [cursor=pointer]:
+                      - generic [ref=f15e13]:
+                        - img
+                    - button "Hide player controls" [ref=f15e14] [cursor=pointer]
+                    - generic [ref=f15e21]:
+                      - generic [ref=f15e22]:
+                        - link "శాశ్వతమైనది నీవు నా యెడ చూపిన కృప / Saswathamainadi neevu naa yeda/ Jesus songs telugu / jesus songs" [ref=f15e23] [cursor=pointer]:
+                          - /url: https://www.youtube.com/watch?v=PgdrSxJf0Hw
+                        - link "Telugu Christian Songs" [ref=f15e24] [cursor=pointer]:
+                          - /url: /channel/UCgBkKp4Y22zsImK6tJ2Yf-A
+                          - generic [ref=f15e25]: Telugu Christian Songs
+                      - generic [ref=f15e26]:
+                        - button "thumbnail-image" [ref=f15e27] [cursor=pointer]:
+                          - img "thumbnail-image" [ref=f15e28]
+                        - generic [ref=f15e30]:
+                          - generic: Telugu Christian Songs
+                          - generic: 27K subscribers
+        - generic [ref=e3533]:
+          - heading "— Recent Posts" [level=2] [ref=e3534]
+          - list [ref=e3535]:
+            - listitem [ref=e3536]:
+              - link "రండి యెహోవాను గూర్చి" [ref=e3537] [cursor=pointer]:
+                - /url: https://christianlyricz.com/2026/05/21/randi-yehovaanu-goorchi/
+            - listitem [ref=e3538]:
+              - link "పరలోకమే నా స్వాస్థ్యము" [ref=e3539] [cursor=pointer]:
+                - /url: https://christianlyricz.com/2026/03/31/paralokame-naa-swaasthyamu/
+            - listitem [ref=e3540]:
+              - link "మరువలేను మరువలేను" [ref=e3541] [cursor=pointer]:
+                - /url: https://christianlyricz.com/2026/03/29/maruvalenu-maruvalenu/
+            - listitem [ref=e3542]:
+              - link "దైవ తనయా క్రీస్తు నాథుండా" [ref=e3543] [cursor=pointer]:
+                - /url: https://christianlyricz.com/2026/03/29/daiva-thanayaa-kreesthu-naathundaa/
+            - listitem [ref=e3544]:
+              - link "రాజుల రాజైన యేసు రాజు" [ref=e3545] [cursor=pointer]:
+                - /url: https://christianlyricz.com/2026/03/23/raajula-raajaina-yesu-raaju/
+        - list [ref=e3547]:
+          - listitem [ref=e3548]:
+            - link "Christmas Songs" [ref=e3549] [cursor=pointer]:
+              - /url: https://christianlyricz.com/category/christmas-songs/
+          - listitem [ref=e3550]:
+            - link "Comfort Songs" [ref=e3551] [cursor=pointer]:
+              - /url: https://christianlyricz.com/category/comfort-songs/
+          - listitem [ref=e3552]:
+            - link "Commitment Songs" [ref=e3553] [cursor=pointer]:
+              - /url: https://christianlyricz.com/category/commitment-songs/
+          - listitem [ref=e3554]:
+            - link "Correction Songs" [ref=e3555] [cursor=pointer]:
+              - /url: https://christianlyricz.com/category/correction-songs/
+          - listitem [ref=e3556]:
+            - link "Easter Songs" [ref=e3557] [cursor=pointer]:
+              - /url: https://christianlyricz.com/category/easter-songs/
+          - listitem [ref=e3558]:
+            - link "Encouraging Songs" [ref=e3559] [cursor=pointer]:
+              - /url: https://christianlyricz.com/category/encouraging-songs/
+          - listitem [ref=e3560]:
+            - link "English" [ref=e3561] [cursor=pointer]:
+              - /url: https://christianlyricz.com/category/english/
+          - listitem [ref=e3562]:
+            - link "Good Friday Songs" [ref=e3563] [cursor=pointer]:
+              - /url: https://christianlyricz.com/category/good-friday-songs/
+          - listitem [ref=e3564]:
+            - link "Gospel Songs" [ref=e3565] [cursor=pointer]:
+              - /url: https://christianlyricz.com/category/gospel-songs/
+          - listitem [ref=e3566]:
+            - link "Hindi" [ref=e3567] [cursor=pointer]:
+              - /url: https://christianlyricz.com/category/hindi/
+          - listitem [ref=e3568]:
+            - link "Hope Songs" [ref=e3569] [cursor=pointer]:
+              - /url: https://christianlyricz.com/category/hope-songs/
+          - listitem [ref=e3570]:
+            - link "Kids Songs" [ref=e3571] [cursor=pointer]:
+              - /url: https://christianlyricz.com/category/kids-songs/
+          - listitem [ref=e3572]:
+            - link "Marriage Songs" [ref=e3573] [cursor=pointer]:
+              - /url: https://christianlyricz.com/category/marriage-songs/
+          - listitem [ref=e3574]:
+            - link "Offering Songs" [ref=e3575] [cursor=pointer]:
+              - /url: https://christianlyricz.com/category/offering-songs/
+          - listitem [ref=e3576]:
+            - link "Praise Songs" [ref=e3577] [cursor=pointer]:
+              - /url: https://christianlyricz.com/category/praise-songs/
+          - listitem [ref=e3578]:
+            - link "Prayer Songs" [ref=e3579] [cursor=pointer]:
+              - /url: https://christianlyricz.com/category/prayer-songs/
+          - listitem [ref=e3580]:
+            - link "Repentance Songs" [ref=e3581] [cursor=pointer]:
+              - /url: https://christianlyricz.com/category/repentance-songs/
+          - listitem [ref=e3582]:
+            - link "Second Coming Songs" [ref=e3583] [cursor=pointer]:
+              - /url: https://christianlyricz.com/category/second-coming-songs/
+          - listitem [ref=e3584]:
+            - link "Telugu" [ref=e3585] [cursor=pointer]:
+              - /url: https://christianlyricz.com/category/telugu/
+          - listitem [ref=e3586]:
+            - link "Thanksgiving Songs" [ref=e3587] [cursor=pointer]:
+              - /url: https://christianlyricz.com/category/thanksgiving-songs/
+          - listitem [ref=e3588]:
+            - link "Worship Songs" [ref=e3589] [cursor=pointer]:
+              - /url: https://christianlyricz.com/category/worship-songs/
+    - contentinfo [ref=e3590]:
+      - generic [ref=e3592]:
+        - text: © 2026
+        - link "CHRISTIAN LYRICZ" [ref=e3593] [cursor=pointer]:
+          - /url: https://christianlyricz.com/
+        - text: Bloggo theme by
+        - link "justgoodthemes.com" [ref=e3594] [cursor=pointer]:
+          - /url: https://justgoodthemes.com/
+        - link "Back to the top" [ref=e3595] [cursor=pointer]:
+          - /url: "#page"
+          - generic [ref=e3596]: 
+          - generic [ref=e3597]: Back to the top
+  - search [ref=e3600]:
+    - text: 
+    - generic [ref=e3601]:
+      - generic [ref=e3602]: "Search for:"
+      - searchbox "Search for:" [ref=e3603]
+    - button "Search" [ref=e3604] [cursor=pointer]
+  - button "Dark Mode Toggle" [ref=e3606] [cursor=pointer]:
+    - img [ref=e3610]
+  - status [ref=e3612]

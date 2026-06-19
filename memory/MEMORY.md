@@ -1,0 +1,1 @@
+- [Daily Bread project](daily-bread-project.md) — Telugu devotional Expo app: Phase 1 scope, ContentRepository seam, Telugu line-height + TTS gate rules, launch caveats
