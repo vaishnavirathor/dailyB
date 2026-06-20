@@ -11,6 +11,7 @@ import { authRateLimit } from './middleware/rate-limit.js';
 import { analyticRoutes } from './routes/analytics.js';
 import { authRoutes } from './routes/auth.js';
 import { bookmarkRoutes } from './routes/bookmarks.js';
+import { contentRoutes } from './routes/content.js';
 import { favoriteRoutes } from './routes/favorites.js';
 import { preferenceRoutes } from './routes/preferences.js';
 import { progressRoutes } from './routes/progress.js';
@@ -33,6 +34,7 @@ app.get('/health', (c) => c.json({ status: 'ok' }));
 app.use('/api/v1/auth/*', authRateLimit);
 app.route('/api/v1/auth', authRoutes);
 app.route('/api/v1/analytics', analyticRoutes);
+app.route('/api/v1/content', contentRoutes);
 
 // Protected routes (requireAuth applied inside each route group)
 app.route('/api/v1/progress', progressRoutes);

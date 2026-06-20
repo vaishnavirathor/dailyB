@@ -12,6 +12,7 @@ import { addCelebratedMilestone, celebratedMilestones } from '@/data/kv';
 import { toDateKey, type DateKey } from '@/domain/dates';
 import { reachedMilestone, type Milestone } from '@/domain/milestones';
 import { computeStreak, type StreakResult } from '@/domain/streaks';
+import { cancelStreakCheckNotification } from '@/services/notification-scheduler';
 
 export interface ProgressState {
   todayKey: DateKey;
@@ -62,6 +63,7 @@ export const useProgress = create<ProgressState>((set, get) => ({
   recordVerseSeen: async () => {
     try {
       await markVerseSeen(toDateKey(new Date()));
+      cancelStreakCheckNotification();
       set(await snapshot());
     } catch (error) {
       console.warn('[progress] recordVerseSeen failed', error);

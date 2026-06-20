@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "base_slot_label": "Morning Verse",
+  "cascade_hours": [3, 6, 10],
+  "cascade": [
+    {
+      "id": "prayer-1",
+      "type": "prayer_reminder",
+      "label": "Prayer Reminder",
+      "title": "Take a Moment to Pray",
+      "body": "Cast all your anxiety on Him because He cares for you. \u2014 1 Peter 5:7"
+    },
+    {
+      "id": "prayer-2",
+      "type": "prayer_reminder",
+      "label": "Midday Prayer",
+      "title": "Keep the Conversation Going",
+      "body": "Pray without ceasing. How can we lift you up today?"
+    },
+    {
+      "id": "evening-streak",
+      "type": "streak_check",
+      "label": "Evening Read",
+      "title": "Complete Your Daily Bread",
+      "body": "You haven\u2019t read today\u2019s verse yet. Open the app to keep your streak alive."
+    }
+  ]
+}

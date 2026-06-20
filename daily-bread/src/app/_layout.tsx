@@ -45,6 +45,12 @@ import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { getDb } from '@/data/db';
 import { configureNotificationHandling, syncNotifications } from '@/services/notifications';
 import { startTracker } from '@/services/app-tracking';
+import {
+  ensurePromiseBuffer,
+  fetchAndCacheNotificationConfig,
+} from '@/services/content';
+import { scheduleCascadeNotifications } from '@/services/notification-scheduler';
+import { registerBackgroundFetch } from '@/services/background-fetch';
 import { initSettingsPersistence } from '@/stores/persistence';
 import { useAuth } from '@/stores/auth';
 import { useProgress } from '@/stores/progress';
@@ -99,6 +105,14 @@ export default function RootLayout() {
           lang: s.language,
           tradition: s.tradition,
         });
+
+        // Content cache + background fetch
+        await ensurePromiseBuffer().catch(() => {});
+        const nc = await fetchAndCacheNotificationConfig().catch(() => null);
+        if (nc && s.notificationsEnabled) {
+          await scheduleCascadeNotifications(s.reminderTime, s.language).catch(() => {});
+        }
+        registerBackgroundFetch().catch(() => {});
       } catch (error) {
         console.warn('[init] startup failed', error);
       }
@@ -117,6 +131,13 @@ export default function RootLayout() {
     const subscription = AppState.addEventListener('change', (state) => {
       if (state === 'active') {
         useProgress.getState().refresh();
+        const s = useSettings.getState();
+        void syncNotifications({
+          enabled: s.notificationsEnabled,
+          time: s.reminderTime,
+          lang: s.language,
+          tradition: s.tradition,
+        });
       }
     });
     return () => subscription.remove();

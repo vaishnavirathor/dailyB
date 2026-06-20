@@ -6,6 +6,7 @@ import { addDays, fromDateKey, toDateKey } from '@/domain/dates';
 import { t } from '@/i18n';
 import type { ReminderTime } from '@/stores/settings';
 import type { Lang } from '@/theme';
+import { scheduleCascadeNotifications } from '@/services/notification-scheduler';
 
 /**
  * Local notifications, fully offline and deliberately gentle:
@@ -158,10 +159,12 @@ export async function syncNotifications(options: NotificationSyncOptions): Promi
     // Legacy single repeating reminder from earlier versions.
     await Notifications.cancelScheduledNotificationAsync('daily-reminder').catch(() => {});
     if (!options.enabled) {
+      await cancelByPrefix('cascade-');
       return;
     }
     await scheduleDailyWindow(options.time, options.lang);
     await scheduleFeasts(options.tradition, options.lang);
+    await scheduleCascadeNotifications(options.time, options.lang);
   } catch (error) {
     console.warn('[notifications] sync failed', error);
   }
