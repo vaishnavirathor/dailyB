@@ -1,6 +1,5 @@
 import type { ComponentType, ReactNode } from 'react';
-import { Pressable, ScrollView, View } from 'react-native';
-import Animated, { useAnimatedStyle, useSharedValue, withSpring } from 'react-native-reanimated';
+import { Pressable, ScrollView, View, StyleSheet } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import type { IconProps } from '@/components/icons';
@@ -22,7 +21,7 @@ import { ThemedText } from '@/components/themed-text';
 import { t, type StringKey } from '@/i18n';
 import { useAuth } from '@/stores/auth';
 import { useLanguage } from '@/stores/settings';
-import { colors, radius, spacing, tints } from '@/theme';
+import { colors, radius, spacing } from '@/theme';
 
 interface Item {
   label: StringKey;
@@ -94,8 +93,8 @@ export function DrawerContent(props: DrawerContentProps) {
           paddingTop: insets.top + spacing.stackMd,
           paddingHorizontal: spacing.gutter,
           paddingBottom: spacing.stackMd,
-          borderBottomWidth: 1,
-          borderBottomColor: 'rgba(0,0,0,0.04)',
+          borderBottomWidth: StyleSheet.hairlineWidth,
+          borderBottomColor: colors.outlineVariant,
         }}
       >
         <View style={{ flexDirection: 'row', alignItems: 'center', gap: spacing.gutter }}>
@@ -104,7 +103,7 @@ export function DrawerContent(props: DrawerContentProps) {
               width: 44,
               height: 44,
               borderRadius: radius.md,
-              backgroundColor: tints.promise,
+              backgroundColor: 'rgba(168,128,31,0.15)',
               alignItems: 'center',
               justifyContent: 'center',
             }}
@@ -121,12 +120,12 @@ export function DrawerContent(props: DrawerContentProps) {
           </View>
         </View>
         {isAuthenticated ? (
-          <View style={{ flexDirection: 'row', alignItems: 'center', gap: 4, marginTop: spacing.stackSm }}>
+          <View style={{ flexDirection: 'row', alignItems: 'center', gap: 6, marginTop: spacing.stackSm }}>
             <View style={{
-              width: 24, height: 24, borderRadius: 12,
+              width: 22, height: 22, borderRadius: 11,
               backgroundColor: colors.sage, alignItems: 'center', justifyContent: 'center',
             }}>
-              <ThemedText variant="labelSm" color="onPrimary" style={{ fontSize: 11, fontWeight: '700' }}>
+              <ThemedText variant="labelSm" color="onPrimary" style={{ fontSize: 10, fontWeight: '600' }}>
                 {(profile?.display_name || 'U')[0]?.toUpperCase()}
               </ThemedText>
             </View>
@@ -134,7 +133,7 @@ export function DrawerContent(props: DrawerContentProps) {
               {profile?.display_name || 'Signed in'}
             </ThemedText>
             {verified ? (
-              <CheckIcon size={12} color={colors.sage} />
+              <CheckIcon size={10} color={colors.sage} />
             ) : null}
           </View>
         ) : null}
@@ -149,18 +148,16 @@ export function DrawerContent(props: DrawerContentProps) {
         showsVerticalScrollIndicator={false}
       >
         {sections.map((section, i) => (
-          <View key={i} style={{ marginTop: i === 0 ? 0 : spacing.stackSm }}>
+          <View key={i} style={{ marginTop: i === 0 ? 0 : spacing.stackMd }}>
             {section.title ? (
               <ThemedText
                 variant="labelSm"
                 color="onSurfaceVariant"
                 style={{
-                  textTransform: 'uppercase',
-                  letterSpacing: 1.8,
+                  letterSpacing: 0.8,
                   paddingHorizontal: spacing.stackSm,
-                  paddingTop: spacing.stackSm,
                   paddingBottom: 6,
-                  opacity: 0.6,
+                  opacity: 0.45,
                 }}
               >
                 {t(section.title, lang)}
@@ -173,7 +170,7 @@ export function DrawerContent(props: DrawerContentProps) {
                 <DrawerRow
                   key={item.route}
                   active={isActive}
-                  icon={<item.icon size={20} color={isActive ? colors.secondary : colors.navyMuted} />}
+                  icon={<item.icon size={18} color={isActive ? colors.secondary : colors.onSurfaceVariant} />}
                   label={t(item.label, lang)}
                   onPress={() => go(item.route)}
                 />
@@ -183,10 +180,11 @@ export function DrawerContent(props: DrawerContentProps) {
             {i < sections.length - 1 ? (
               <View
                 style={{
-                  height: 1,
-                  backgroundColor: colors.surfaceContainerHigh,
+                  height: StyleSheet.hairlineWidth,
+                  backgroundColor: colors.outlineVariant,
                   marginHorizontal: spacing.stackSm,
-                  marginTop: spacing.stackSm,
+                  marginTop: spacing.stackMd,
+                  opacity: 0.6,
                 }}
               />
             ) : null}
@@ -197,7 +195,7 @@ export function DrawerContent(props: DrawerContentProps) {
           variant="labelSm"
           color="onSurfaceVariant"
           align="center"
-          style={{ paddingTop: spacing.stackMd, letterSpacing: 1.4, opacity: 0.5 }}
+          style={{ paddingTop: spacing.stackLg, opacity: 0.35 }}
         >
           v1.0.0
         </ThemedText>
@@ -217,51 +215,33 @@ function DrawerRow({
   active: boolean;
   onPress: () => void;
 }) {
-  const scale = useSharedValue(1);
-
-  const animatedStyle = useAnimatedStyle(() => ({
-    transform: [{ scale: scale.value }],
-  }));
-
   return (
     <Pressable
       accessibilityRole="button"
       onPress={onPress}
-      onPressIn={() => { scale.value = withSpring(0.96, { stiffness: 300, damping: 20 }); }}
-      onPressOut={() => { scale.value = withSpring(1, { stiffness: 300, damping: 20 }); }}
+      style={({ pressed }) => ({
+        flexDirection: 'row',
+        alignItems: 'center',
+        gap: spacing.gutter,
+        paddingVertical: 10,
+        paddingHorizontal: spacing.stackSm,
+        borderRadius: radius.base,
+        backgroundColor: active
+          ? 'rgba(168,128,31,0.08)'
+          : pressed
+            ? 'rgba(0,0,0,0.03)'
+            : 'transparent',
+        opacity: pressed ? 0.85 : 1,
+      })}
     >
-      <Animated.View style={animatedStyle}>
-        <View
-          style={{
-            flexDirection: 'row',
-            alignItems: 'center',
-            gap: spacing.gutter,
-            paddingVertical: spacing.stackSm - 2,
-            paddingHorizontal: spacing.stackSm,
-            borderRadius: radius.md,
-            borderCurve: 'continuous',
-            borderLeftWidth: 3,
-            borderLeftColor: active ? colors.gold : 'transparent',
-            backgroundColor: active ? tints.promise : 'transparent',
-          }}
-        >
-          <View
-            style={{
-              width: 36,
-              height: 36,
-              borderRadius: radius.base,
-              backgroundColor: active ? 'rgba(168,128,31,0.12)' : colors.surfaceContainerLow,
-              alignItems: 'center',
-              justifyContent: 'center',
-            }}
-          >
-            {icon}
-          </View>
-          <ThemedText variant="bodyMd" color={active ? 'secondary' : 'primary'} style={{ fontWeight: active ? '600' : '400' }}>
-            {label}
-          </ThemedText>
-        </View>
-      </Animated.View>
+      {icon}
+      <ThemedText
+        variant="bodyMd"
+        color={active ? 'secondary' : 'onSurfaceVariant'}
+        style={{ fontWeight: active ? '500' : '400' }}
+      >
+        {label}
+      </ThemedText>
     </Pressable>
   );
 }
