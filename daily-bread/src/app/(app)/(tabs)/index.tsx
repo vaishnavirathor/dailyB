@@ -3,11 +3,12 @@ import { useFocusEffect, useRouter } from 'expo-router';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { AppState, ActivityIndicator, Pressable, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import * as Notifications from 'expo-notifications';
 
 import { Button } from '@/components/button';
 import { FavoriteButton } from '@/components/favorite-button';
 import { MenuButton } from '@/components/menu-button';
-import { PlayIcon, SproutIcon, StopIcon, TypeIcon } from '@/components/icons';
+import { BellIcon, PlayIcon, SproutIcon, StopIcon, TypeIcon, CloseIcon } from '@/components/icons';
 import { Screen } from '@/components/screen';
 import { ThemedText } from '@/components/themed-text';
 import { VerseCard } from '@/components/verse-card';
@@ -16,6 +17,8 @@ import { addDays, dayOfWeek, fromDateKey } from '@/domain/dates';
 import { t, weekdays, months } from '@/i18n';
 import { isTtsAvailable } from '@/services/tts';
 import { onStopAllVoice, smartSpeak, stopAllVoice } from '@/services/voice';
+import { trackButtonTap, track, EventName } from '@/services/app-tracking';
+import { useAuth } from '@/stores/auth';
 import { useProgress } from '@/stores/progress';
 import { useLanguage } from '@/stores/settings';
 import { colors, fonts, radius, shadows, spacing, tints } from '@/theme';
@@ -66,6 +69,32 @@ export default function TodayScreen() {
   const graceYesterday = streak.graceDays[0] === addDays(todayKey, -1);
   const insets = useSafeAreaInsets();
 
+  const { isAuthenticated } = useAuth();
+  const [showNudge, setShowNudge] = useState(!isAuthenticated);
+
+  const enableNotifications = async () => {
+    trackButtonTap('notification_nudge_enable', 'home');
+    try {
+      const { status } = await Notifications.requestPermissionsAsync();
+      if (status !== 'granted') return;
+      await Notifications.scheduleNotificationAsync({
+        content: {
+          title: t('notificationTitle', lang),
+          body: t('notificationBody', lang),
+        },
+        trigger: { type: Notifications.SchedulableTriggerInputTypes.TIME_INTERVAL, seconds: 86400, repeats: true },
+      });
+      track(EventName.NOTIFICATION_NUDGE_TAP, {});
+    } catch {}
+    setShowNudge(false);
+  };
+
+  const dismissNudge = () => {
+    trackButtonTap('notification_nudge_dismiss', 'home');
+    track(EventName.NOTIFICATION_NUDGE_DISMISS, {});
+    setShowNudge(false);
+  };
+
   useFocusEffect(
     useCallback(() => {
       return () => {
@@ -102,6 +131,42 @@ export default function TodayScreen() {
             {streak.length > 0 ? <StreakPill length={streak.length} /> : null}
           </View>
 
+          {showNudge ? (
+            <View style={{
+              flexDirection: 'row', alignItems: 'center',
+              marginTop: spacing.stackSm,
+              backgroundColor: tints.promise,
+              borderRadius: radius.base,
+              padding: spacing.gutter,
+              gap: spacing.stackSm,
+            }}>
+              <BellIcon size={20} color={colors.gold} />
+              <View style={{ flex: 1, gap: 2 }}>
+                <ThemedText variant="labelSm" color="primary" style={{ fontWeight: '600' }}>
+                  {t('notificationsNudgeTitle', lang)}
+                </ThemedText>
+                <ThemedText variant="bodySm" color="onSurfaceVariant">
+                  {t('notificationsNudgeBody', lang)}
+                </ThemedText>
+              </View>
+              <Pressable
+                onPress={enableNotifications}
+                style={{
+                  paddingVertical: 6, paddingHorizontal: 12,
+                  borderRadius: radius.full,
+                  backgroundColor: colors.sage,
+                }}
+              >
+                <ThemedText variant="labelSm" color="onPrimary" style={{ fontWeight: '600' }}>
+                  {t('notificationsEnable', lang)}
+                </ThemedText>
+              </Pressable>
+              <Pressable onPress={dismissNudge} hitSlop={8}>
+                <CloseIcon size={16} color={colors.navyMuted} />
+              </Pressable>
+            </View>
+          ) : null}
+
           <View style={{ flex: 1, gap: 2, marginTop: 8 }}>
             <ThemedText
               variant="labelMd"
@@ -125,7 +190,7 @@ export default function TodayScreen() {
 
           <Pressable
             accessibilityRole="button"
-            onPress={() => router.push('/ritual')}
+            onPress={() => { trackButtonTap('morning_ritual', 'home'); router.push('/ritual'); }}
             style={({ pressed }) => ({
               flexDirection: 'row',
               alignItems: 'center',
@@ -183,7 +248,7 @@ export default function TodayScreen() {
         <ListenControl text={`${verse.text[lang]}. ${verse.reference[lang]}`} />
         <Pressable
           accessibilityRole="button"
-          onPress={() => router.push('/reader')}
+          onPress={() => { trackButtonTap('large_text', 'home'); router.push('/reader'); }}
           style={{ flexDirection: 'row', alignItems: 'center', gap: 6 }}
         >
           <TypeIcon size={18} color={colors.secondary} />
@@ -254,8 +319,8 @@ export default function TodayScreen() {
       <PlanChips />
 
       <Button
-        label={activity.prayed ? `🙏 ${t('amen', lang)}` : t('prayNow', lang)}
-        onPress={() => router.push('/prayer')}
+        label={activity.prayed ? `${t('amen', lang)}` : t('prayNow', lang)}
+        onPress={() => { trackButtonTap('prayer', 'home'); router.push('/prayer'); }}
         style={{ marginTop: spacing.stackSm }}
       />
     </Screen>

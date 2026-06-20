@@ -1,0 +1,9 @@
+{
+  "name": "daily-bread-pulumi",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@pulumi/gcp": "^8.0.0",
+    "@pulumi/pulumi": "^3.136.0"
+  }
+}

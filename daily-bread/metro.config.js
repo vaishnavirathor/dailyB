@@ -1,10 +1,13 @@
 // https://docs.expo.dev/guides/customizing-metro/
 const { getDefaultConfig } = require('expo/metro-config');
 
+const path = require('path');
+
 const config = getDefaultConfig(__dirname);
 
-// expo-sqlite on web ships a wasm build (wa-sqlite). Without these, web
-// bundling fails with "Unable to resolve module ./wa-sqlite/wa-sqlite.wasm".
+config.watchFolders = [path.resolve(__dirname, '..', 'shared')];
+config.resolver.nodeModulesPaths = [path.resolve(__dirname, 'node_modules')];
+
 config.resolver.assetExts.push('wasm');
 
 // wa-sqlite needs SharedArrayBuffer → cross-origin isolation headers.

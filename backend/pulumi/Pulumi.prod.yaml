@@ -1,0 +1,18 @@
+config:
+  gcp:project: project-9d30c65c-aa31-4030-aa7
+  gcp:region: us-central1
+  daily-bread-api:imageName: us-central1-docker.pkg.dev/project-9d30c65c-aa31-4030-aa7/gcr-repo/daily-bread-api:1781992696
+  # Set these with `pulumi config set`:
+  #   pulumi config set daily-bread-api:supabaseUrl <value> --secret
+  #   pulumi config set daily-bread-api:supabaseServiceKey <value> --secret
+  #   pulumi config set daily-bread-api:appJwtSecret <value> --secret
+
+  daily-bread-api:supabaseUrl:
+    secure: v1:znETDyFWvZWVBz7M:p9BWhvdc82rtMAp/LfUaxm9aPGWcdx8ZT8L6zorRPEOGFbdAotaaNuO1RWxiEbPK7KzzHfHycEQ=
+  daily-bread-api:supabaseServiceKey:
+    secure: v1:l+J9FzKjXRHhYXMS:jkKRXywatyAX59lm/dCcqSzyVOI3YG2P0FbPaRgrkJZP9C5HGC3YHUkEcHIogK3dEVvnKIYvv9CF
+  daily-bread-api:appJwtSecret:
+    secure: v1:RCsXpLqEoYJ4DIdm:Vho0ok5J2xXriLVwtiDwLOSklc9/x1Y99hJET+ZcYQEWS0P3fZh0k5J25ibhr3ZwzVZ3/mnkKoYoc8eV4FN8pBKpqwV2bt4ipJsnBqoKE/4=
+  daily-bread-api:supabaseAnonKey:
+    secure: v1:53Lh2VZi7i/6uls9:SY25FSyCKc0N3bU+QPHd3ZAmtUOrdSH8LMHI9M549BnZ28apdyV0Asya7N2bpg7jjTEJ/vyCzD5t0Uwls4LMNKRB1fPmoOjFGnGJXltQfFlJWCQdBwWWXdGrlqvc1O/8xFEx+JzYPblWTqxpE1GcAOfcEY3U6WpeOrxxQ7LoXsu8m7RZkq/ZW3YHRvP5ezwRvSvPGb5n4MBcZ5DazrxgJVmDc/Pau9UYDe1uvX3HPmT0SE+xqmADWdgN/n1/7XXHboWf5W7NRHAInigMEzgH4K5xd9eCKNgejvS+p4jBvr0=
+encryptionsalt: v1:PuVPyWxQC4g=:v1:FPEd7ib1RRzR+PV4:swoJyoLwWbb+n3OSBn4yQCX3jvIsQA==

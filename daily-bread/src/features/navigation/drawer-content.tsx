@@ -15,9 +15,12 @@ import {
   PrayIcon,
   SunriseIcon,
   MusicNoteIcon,
+  UserIcon,
+  CheckIcon,
 } from '@/components/icons';
 import { ThemedText } from '@/components/themed-text';
 import { t, type StringKey } from '@/i18n';
+import { useAuth } from '@/stores/auth';
 import { useLanguage } from '@/stores/settings';
 import { colors, radius, spacing, tints } from '@/theme';
 
@@ -57,6 +60,7 @@ const sections: Section[] = [
   {
     title: 'sectionApp',
     items: [
+      { label: 'account', icon: UserIcon, route: 'auth' },
       { label: 'settings', icon: GearIcon, route: 'settings' },
       { label: 'about', icon: CrossIcon, route: 'about' },
     ],
@@ -75,6 +79,7 @@ export function DrawerContent(props: DrawerContentProps) {
   const lang = useLanguage();
   const insets = useSafeAreaInsets();
   const activeRoute = props.state.routes[props.state.index]?.name;
+  const { isAuthenticated, profile, verified } = useAuth();
 
   const go = (route: string) => {
     props.navigation.dispatch({ type: 'CLOSE_DRAWER' });
@@ -115,6 +120,24 @@ export function DrawerContent(props: DrawerContentProps) {
             </ThemedText>
           </View>
         </View>
+        {isAuthenticated ? (
+          <View style={{ flexDirection: 'row', alignItems: 'center', gap: 4, marginTop: spacing.stackSm }}>
+            <View style={{
+              width: 24, height: 24, borderRadius: 12,
+              backgroundColor: colors.sage, alignItems: 'center', justifyContent: 'center',
+            }}>
+              <ThemedText variant="labelSm" color="onPrimary" style={{ fontSize: 11, fontWeight: '700' }}>
+                {(profile?.display_name || 'U')[0]?.toUpperCase()}
+              </ThemedText>
+            </View>
+            <ThemedText variant="bodySm" color="onSurfaceVariant" style={{ flex: 1 }} numberOfLines={1}>
+              {profile?.display_name || 'Signed in'}
+            </ThemedText>
+            {verified ? (
+              <CheckIcon size={12} color={colors.sage} />
+            ) : null}
+          </View>
+        ) : null}
       </View>
 
       <ScrollView

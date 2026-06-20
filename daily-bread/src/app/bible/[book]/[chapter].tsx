@@ -28,6 +28,7 @@ import { toggleFavorite } from '@/data/favorites';
 import { setLastRead } from '@/data/kv';
 import { isTtsAvailable } from '@/services/tts';
 import { smartSequence } from '@/services/voice';
+import { trackChapterOpen } from '@/services/app-tracking';
 import { t } from '@/i18n';
 import { useBibleNav } from '@/stores/bible-navigation';
 import { fontScaleFactor, useLanguage, useSettings } from '@/stores/settings';
@@ -108,6 +109,7 @@ export default function ChapterScreen() {
   useFocusEffect(
     useCallback(() => {
       let active = true;
+      trackChapterOpen(version, bookId, chapter, 'en');
       void setLastRead({ bookId, chapter, version });
       void Promise.all([
         highlightsFor(version, bookId, chapter),

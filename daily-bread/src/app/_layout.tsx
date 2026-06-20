@@ -44,7 +44,9 @@ import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 import { getDb } from '@/data/db';
 import { configureNotificationHandling, syncNotifications } from '@/services/notifications';
+import { startTracker } from '@/services/app-tracking';
 import { initSettingsPersistence } from '@/stores/persistence';
+import { useAuth } from '@/stores/auth';
 import { useProgress } from '@/stores/progress';
 import { useSettings } from '@/stores/settings';
 import { colors } from '@/theme';
@@ -84,7 +86,9 @@ export default function RootLayout() {
     (async () => {
       try {
         await getDb(); // run migrations before anything reads
+        await useAuth.getState().hydrate();
         await initSettingsPersistence();
+        startTracker();
         configureNotificationHandling();
         await useProgress.getState().refresh();
         // Re-reconcile on every launch so feast reminders roll forward.

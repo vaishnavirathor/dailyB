@@ -313,6 +313,56 @@ const strings = {
   },
   restart: { en: 'Restart', te: 'మళ్లీ ప్రారంభించండి' },
 
+  account: { en: 'Account', te: 'ఖాతా' },
+  signIn: { en: 'Sign In', te: 'సైన్ ఇన్' },
+  signUp: { en: 'Sign Up', te: 'సైన్ అప్' },
+  signOut: { en: 'Sign Out', te: 'సైన్ అవుట్' },
+  signedIn: {
+    en: 'You are signed in. Your progress syncs across devices.',
+    te: 'మీరు సైన్ ఇన్ చేసారు. మీ పురోగతి అన్ని పరికరాలలో సమకాలీకరించబడుతుంది.',
+  },
+  authOptional: {
+    en: 'Sign-in is optional. Everything works offline.',
+    te: 'సైన్ ఇన్ ఐచ్ఛికం. అన్నీ ఆఫ్‌లైన్‌లో పని చేస్తాయి.',
+  },
+  continueWithEmail: { en: 'Continue with Email', te: 'ఇమెయిల్ తో కొనసాగించండి' },
+  yourEmail: { en: 'Your email', te: 'మీ ఇమెయిల్' },
+  continue: { en: 'Continue', te: 'కొనసాగించండి' },
+  yourPassword: { en: 'Your password', te: 'మీ పాస్‌వర్డ్' },
+  yourDetails: { en: 'Your details', te: 'మీ వివరాలు' },
+  yourName: { en: 'Your name', te: 'మీ పేరు' },
+  gender: { en: 'Gender', te: 'లింగం' },
+  passwordPlaceholder: { en: 'Password (6+ characters)', te: 'పాస్‌వర్డ్ (6+ అక్షరాలు)' },
+  passwordHint: { en: 'At least 6 characters', te: 'కనీసం 6 అక్షరాలు' },
+  createAccount: { en: 'Create Account', te: 'ఖాతా సృష్టించండి' },
+  checkEmail: { en: 'Check your email', te: 'మీ ఇమెయిల్ తనిఖీ చేయండి' },
+  verificationSent: {
+    en: "We sent a verification link to",
+    te: 'మేము ధృవీకరణ లింక్ పంపాము',
+  },
+  iVerified: { en: "I've verified", te: 'నేను ధృవీకరించాను' },
+  resendEmail: { en: 'Resend email', te: 'మళ్లీ పంపండి' },
+  noAccount: { en: "Don't have an account? Sign Up", te: 'ఖాతా లేదా? సైన్ అప్' },
+  hasAccount: { en: 'Already have an account? Sign In', te: 'ఖాతా ఉందా? సైన్ ఇన్' },
+  skipAuth: { en: 'Skip for now', te: 'ఇప్పుడు దాటవేయండి' },
+
+  signOut: { en: 'Sign Out', te: 'సైన్ అవుట్' },
+  signedIn: {
+    en: 'You are signed in. Your progress syncs across devices.',
+    te: 'మీరు సైన్ ఇన్ చేసారు. మీ పురోగతి అన్ని పరికరాలలో సమకాలీకరించబడుతుంది.',
+  },
+
+  notificationsNudgeTitle: {
+    en: 'Start each day with a verse',
+    te: 'ప్రతి రోజు వచనంతో ప్రారంభించండి',
+  },
+  notificationsNudgeBody: {
+    en: 'Get a gentle reminder every morning with your daily promise verse.',
+    te: 'ప్రతి ఉదయం మీ నిత్య వాగ్దాన వచనంతో సున్నితమైన గుర్తింపు పొందండి.',
+  },
+  notificationsEnable: { en: 'Enable', te: 'ప్రారంభించు' },
+  notificationsLater: { en: 'Later', te: 'తరువాత' },
+
   endOfBook: {
     en: "You've reached the end of this book ✦",
     te: 'మీరు ఈ గ్రంథం చివరికి చేరుకున్నారు ✦',
