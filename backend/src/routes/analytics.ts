@@ -22,6 +22,9 @@ const traditionChangeProps = z.object({ from: z.string(), to: z.string() });
 const searchProps = z.object({ query: z.string(), result_count: z.number().optional() });
 const appOpenProps = z.object({ cold_start: z.boolean() });
 const noPropsProps = z.object({}).strict();
+const profileUpdateProps = z.object({ display_name: z.string().optional(), gender: z.string().optional() });
+const buttonTapProps = z.object({ button: z.string(), screen: z.string().optional() });
+const appBackgroundProps = z.object({ foreground_duration_ms: z.number().optional() });
 
 const payloadSchemas: Record<string, z.ZodTypeAny> = {
   [EN.SCREEN_VIEW]: screenViewProps,
@@ -39,11 +42,20 @@ const payloadSchemas: Record<string, z.ZodTypeAny> = {
   [EN.TRADITION_CHANGE]: traditionChangeProps,
   [EN.SEARCH]: searchProps,
   [EN.APP_OPEN]: appOpenProps,
-  [EN.APP_BACKGROUND]: z.object({ foreground_duration_ms: z.number().optional() }),
+  [EN.APP_BACKGROUND]: appBackgroundProps,
   [EN.SIGN_UP]: noPropsProps,
   [EN.SIGN_IN]: noPropsProps,
+  [EN.SIGN_IN_GOOGLE]: noPropsProps,
+  [EN.SIGN_OUT]: noPropsProps,
   [EN.ANONYMOUS_START]: noPropsProps,
   [EN.ANONYMOUS_MERGE]: noPropsProps,
+  [EN.PROFILE_UPDATE]: profileUpdateProps,
+  [EN.BUTTON_TAP]: buttonTapProps,
+  [EN.NOTIFICATION_NUDGE_TAP]: noPropsProps,
+  [EN.NOTIFICATION_NUDGE_DISMISS]: noPropsProps,
+  [EN.PRAYER_PRESS]: noPropsProps,
+  [EN.RITUAL_PRESS]: noPropsProps,
+  [EN.LARGE_TEXT_PRESS]: noPropsProps,
 };
 
 // ── Event envelope schema ──────────────────────────────────────

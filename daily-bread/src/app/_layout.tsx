@@ -44,7 +44,7 @@ import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 import { getDb } from '@/data/db';
 import { configureNotificationHandling, syncNotifications } from '@/services/notifications';
-import { startTracker } from '@/services/app-tracking';
+import { startTracker, track, EventName } from '@/services/app-tracking';
 import {
   ensurePromiseBuffer,
   fetchAndCacheNotificationConfig,
@@ -95,6 +95,7 @@ export default function RootLayout() {
         await useAuth.getState().hydrate();
         await initSettingsPersistence();
         startTracker();
+        track(EventName.APP_OPEN, { cold_start: true });
         configureNotificationHandling();
         await useProgress.getState().refresh();
         // Re-reconcile on every launch so feast reminders roll forward.
