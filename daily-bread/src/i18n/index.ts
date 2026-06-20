@@ -312,6 +312,15 @@ const strings = {
     te: 'శాంతించండి — యాప్‌ను మళ్లీ ప్రారంభించండి, సరి అవుతుంది.',
   },
   restart: { en: 'Restart', te: 'మళ్లీ ప్రారంభించండి' },
+
+  endOfBook: {
+    en: "You've reached the end of this book ✦",
+    te: 'మీరు ఈ గ్రంథం చివరికి చేరుకున్నారు ✦',
+  },
+  beginningOfBook: {
+    en: 'Beginning of the book',
+    te: 'గ్రంథం ప్రారంభం',
+  },
 } as const;
 
 export type StringKey = keyof typeof strings;

@@ -1,4 +1,5 @@
 import { Stack, useFocusEffect, useLocalSearchParams, usePathname, useRouter } from 'expo-router';
+import * as Haptics from 'expo-haptics';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { ActivityIndicator, Pressable, ScrollView, View, useWindowDimensions } from 'react-native';
 import { Gesture, GestureDetector } from 'react-native-gesture-handler';
@@ -38,19 +39,24 @@ const HIGHLIGHT_FILL: Record<HighlightColor, string> = {
 };
 
 const PAGE_BG = '#fdfbf4';
+const SIDE_INSET = 10;
 
 interface PendingTurn {
-  dir: 1 | -1; // 1 = forward (next chapter), -1 = back
+  dir: 1 | -1;
   chapter: number;
 }
 
 /**
- * The chapter reader as a real book leaf. Swipe horizontally and the
- * page rotates around the spine in 3D (perspective + transformOrigin at
- * the binding), darkening as it lifts, with the incoming chapter waiting
- * beneath; release past the threshold and it completes with your
- * momentum, or settles back like paper. Vertical verse scrolling always
- * wins (activeOffsetX/failOffsetY).
+ * The chapter reader as a horizontally-swipeable pager with a simple
+ * slide animation. Each chapter is a scrollable list of verses, and
+ * swiping left/right slides between chapters. The vertical ScrollView
+ * is inside an Animated.View that translates horizontally during a
+ * page turn, keeping the chrome fixed.
+ *
+ * Because the pan gesture only activates on horizontal offset (≥16px)
+ * and fails on vertical offset (≥12px), the ScrollView's own vertical
+ * scrolling wins on up/down drags, making the page feel like a real
+ * scrollable document.
  */
 export default function ChapterScreen() {
   const { book: bookId, chapter: chapterParam, v } = useLocalSearchParams<{
@@ -70,13 +76,12 @@ export default function ChapterScreen() {
   const book = bibleBook(bookId);
   const pathname = usePathname();
 
-  // The committed chapter lives in state; page turns never navigate.
   const [chapter, setChapter] = useState(() => Number(chapterParam) || 0);
   const [pending, setPending] = useState<PendingTurn | null>(null);
   const [marks, setMarks] = useState<Map<number, HighlightColor>>(new Map());
   const [bookmarked, setBookmarked] = useState(false);
+  const [hintDismissed, setHintDismissed] = useState(false);
 
-  // Read-aloud: which verse the voice is on, and how to stop it.
   const [readingIndex, setReadingIndex] = useState<number | null>(null);
   const [playFromIndex, setPlayFromIndex] = useState<number | null>(null);
   const [audioLoading, setAudioLoading] = useState(false);
@@ -91,12 +96,14 @@ export default function ChapterScreen() {
     setAudioLoading(false);
   }, []);
 
-  // Gesture-driven turn progress (0 flat → 1 fully turned).
-  const turn = useSharedValue(0);
+  // Slide position: 0 = current chapter centered, ±1 = off-screen.
+  const translateX = useSharedValue(0);
   const dirSV = useSharedValue<1 | -1>(1);
-  const turning = useSharedValue(0); // leaf angle applies only mid-turn
-  const began = useSharedValue(0); // direction locked for this gesture
-  const edge = useSharedValue(0); // rubber-band at first/last chapter
+  const began = useSharedValue(0);
+  const edge = useSharedValue(0);
+
+  const chapterCount = book?.chapters ?? 0;
+  const canTurn = (dir: 1 | -1) => (dir === 1 ? chapter < chapterCount - 1 : chapter > 0);
 
   useFocusEffect(
     useCallback(() => {
@@ -129,8 +136,6 @@ export default function ChapterScreen() {
     }, [pathname]),
   );
 
-  // A turn starting (gesture or button) silences the voice. The ref is
-  // touched here — not in the gesture builder — to satisfy the compiler.
   useEffect(() => {
     if (pending !== null) {
       stopReadingRef.current?.();
@@ -138,11 +143,18 @@ export default function ChapterScreen() {
     }
   }, [pending]);
 
+  // After chapter state commits from a page turn, reset the slide
+  // position so the new chapter appears at center without a flash.
+  useEffect(() => {
+    translateX.set(0);
+  }, [chapter, translateX]);
+
   const beginTurn = useCallback((dir: 1 | -1, target: number) => {
     setReadingIndex(null);
     setPlayFromIndex(null);
     setPending({ dir, chapter: target });
-  }, []);
+    if (!hintDismissed) setHintDismissed(true);
+  }, [hintDismissed]);
 
   const commitTurn = useCallback(() => {
     setPending((current) => {
@@ -151,25 +163,17 @@ export default function ChapterScreen() {
       }
       return null;
     });
-    turning.set(0);
-    turn.set(0);
-  }, [turn, turning]);
+    void Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light).catch(() => undefined);
+  }, []);
 
   const cancelTurn = useCallback(() => {
     setPending(null);
-    turning.set(0);
-    turn.set(0);
-  }, [turn, turning]);
-
-  // Hooks below must run unconditionally; the !book early-return comes
-  // after them (react-hooks/rules-of-hooks).
-  const chapterCount = book?.chapters ?? 0;
-
-  const canTurn = (dir: 1 | -1) => (dir === 1 ? chapter < chapterCount - 1 : chapter > 0);
+    translateX.set(0);
+  }, [translateX]);
 
   const pan = Gesture.Pan()
-    .activeOffsetX([-18, 18])
-    .failOffsetY([-14, 14])
+    .activeOffsetX([-16, 16])
+    .failOffsetY([-12, 12])
     .onUpdate((event) => {
       'worklet';
       if (began.get() === 0) {
@@ -180,47 +184,33 @@ export default function ChapterScreen() {
         if (target < 0 || target >= chapterCount) {
           edge.set(1);
         } else {
-          turning.set(1);
           scheduleOnRN(beginTurn, dir, target);
         }
       }
-      const raw = Math.abs(event.translationX) / (screenWidth * 0.9);
-      turn.set(Math.min(1, raw * (edge.get() === 1 ? 0.12 : 1)));
+      const raw = event.translationX * (edge.get() === 1 ? 0.12 : 1);
+      translateX.set(raw);
     })
     .onEnd((event) => {
       'worklet';
       began.set(0);
       if (edge.get() === 1) {
         edge.set(0);
-        turn.set(withSpring(0, { damping: 16, stiffness: 200 }));
+        translateX.set(withSpring(0, { damping: 16, stiffness: 200 }));
         return;
       }
-      const flick =
-        dirSV.get() === 1 ? event.velocityX < -800 : event.velocityX > 800;
-      if (turn.get() > 0.38 || flick) {
-        turn.set(
-          withSpring(
-            1,
-            {
-              damping: 18,
-              stiffness: 95,
-              mass: 0.65,
-              velocity: Math.abs(event.velocityX) / (screenWidth * 0.9),
-              overshootClamping: true,
-            },
-            (done) => {
-              if (done) {
-                scheduleOnRN(commitTurn);
-              }
-            },
-          ),
+      const threshold = screenWidth * 0.25;
+      const flick = dirSV.get() === 1 ? event.velocityX < -500 : event.velocityX > 500;
+      if (Math.abs(event.translationX) > threshold || flick) {
+        const dest = dirSV.get() === 1 ? -screenWidth : screenWidth;
+        translateX.set(
+          withSpring(dest, { damping: 18, stiffness: 120, mass: 0.6, overshootClamping: true }, (done) => {
+            if (done) scheduleOnRN(commitTurn);
+          }),
         );
       } else {
-        turn.set(
-          withSpring(0, { damping: 20, stiffness: 200 }, (done) => {
-            if (done) {
-              scheduleOnRN(cancelTurn);
-            }
+        translateX.set(
+          withSpring(0, { damping: 20, stiffness: 180 }, (done) => {
+            if (done) scheduleOnRN(cancelTurn);
           }),
         );
       }
@@ -231,56 +221,16 @@ export default function ChapterScreen() {
       edge.set(0);
     });
 
-  /** The turning leaf: rotates around the spine with perspective. */
-  const leafStyle = useAnimatedStyle(() => {
-    const p = turn.get();
-    if (turning.get() === 0) {
-      // Idle (or edge rubber-band): a gentle horizontal nudge only.
-      return {
-        transform: [{ translateX: -p * 26 * dirSV.get() }],
-        opacity: 1,
-      };
-    }
-    if (reducedMotion) {
-      const fade = dirSV.get() === 1 ? 1 - p : p;
-      return { transform: [], opacity: fade };
-    }
-    const angle = dirSV.get() === 1 ? -p * 88 : -(1 - p) * 88;
-    return {
-      transform: [{ perspective: 1600 }, { rotateY: `${angle}deg` }],
-      opacity: 1,
-    };
-  });
-
-  /** Lighting on the leaf as it lifts off the spread. */
-  const leafShadeStyle = useAnimatedStyle(() => {
-    const p = turn.get();
-    if (turning.get() === 0) {
-      return { opacity: 0 };
-    }
-    const lift = dirSV.get() === 1 ? p : 1 - p;
-    return { opacity: lift * 0.42 };
-  });
-
-  /** The page beneath brightens as the leaf reveals it. */
-  const baseShadeStyle = useAnimatedStyle(() => {
-    const p = turn.get();
-    if (turning.get() === 0) {
-      return { opacity: 0 };
-    }
-    const covered = dirSV.get() === 1 ? 1 - p : p;
-    return { opacity: 0.18 + covered * 0.3 };
-  });
+  /** Slide the current chapter panel horizontally. */
+  const panelStyle = useAnimatedStyle(() => ({
+    transform: [{ translateX: translateX.get() }],
+  }));
 
   if (!book) {
     return <View style={{ flex: 1, backgroundColor: colors.surface }} />;
   }
 
-  // What each layer shows: the leaf is the page being turned; the base
-  // is the page that ends up on top once the turn completes (or the
-  // current page while turning back).
-  const leafChapter = pending ? (pending.dir === 1 ? chapter : pending.chapter) : chapter;
-  const baseChapter = pending ? (pending.dir === 1 ? pending.chapter : chapter) : chapter;
+  const destChapter = pending ? pending.chapter : chapter;
 
   const playChapter = () => {
     if (readingIndex !== null || audioLoading) {
@@ -303,19 +253,16 @@ export default function ChapterScreen() {
   };
 
   const turnByButton = (dir: 1 | -1) => {
-    if (!canTurn(dir) || pending) {
-      return;
-    }
+    if (!canTurn(dir) || pending) return;
     setReadingIndex(null);
     setPlayFromIndex(null);
     dirSV.set(dir);
-    turning.set(1);
     setPending({ dir, chapter: chapter + dir });
-    turn.set(
-      withSpring(1, { damping: 18, stiffness: 80, mass: 0.7, overshootClamping: true }, (done) => {
-        if (done) {
-          scheduleOnRN(commitTurn);
-        }
+    if (!hintDismissed) setHintDismissed(true);
+    const dest = dir === 1 ? -screenWidth : screenWidth;
+    translateX.set(
+      withSpring(dest, { damping: 18, stiffness: 120, mass: 0.6, overshootClamping: true }, (done) => {
+        if (done) scheduleOnRN(commitTurn);
       }),
     );
   };
@@ -334,11 +281,15 @@ export default function ChapterScreen() {
     });
   };
 
+  const showHint = !hintDismissed;
+  const isFirstChapter = chapter === 0;
+  const isLastChapter = chapter >= chapterCount - 1;
+
   return (
     <>
       <Stack.Screen options={{ headerShown: false, gestureEnabled: true }} />
       <View style={{ flex: 1, backgroundColor: '#efeadd' }}>
-        {/* Fixed chrome above the turning page — back · title · bookmark */}
+        {/* Header */}
         <View
           style={{
             paddingTop: insets.top + spacing.stackSm,
@@ -378,155 +329,196 @@ export default function ChapterScreen() {
           </Pressable>
         </View>
 
-        {/* The book spread */}
+        {/* Content area — a horizontal track holding current + incoming
+            chapters. The GestureDetector is scoped to the inner track so
+            vertical ScrollView gets priority via failOffsetY. */}
         <GestureDetector gesture={pan}>
-          <View style={{ flex: 1 }}>
-            {/* Page beneath (the destination of the turn) */}
-            <View style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 }}>
+          <View style={{ flex: 1, overflow: 'hidden' }}>
+            {/* Incoming chapter sits behind the current one, fading in. */}
+            <View
+              pointerEvents="none"
+              style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 }}
+            >
               <ChapterPage
-                key={`base-${version}-${book.id}-${baseChapter}`}
+                key={`dest-${version}-${book.id}-${destChapter}`}
                 book={book}
                 version={version}
-                chapter={baseChapter}
+                chapter={destChapter}
                 scale={scale}
-                marks={baseChapter === chapter ? marks : undefined}
-              />
-              <Animated.View
-                pointerEvents="none"
-                style={[
-                  { position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, backgroundColor: '#2a2417' },
-                  baseShadeStyle,
-                ]}
+                marks={destChapter === chapter ? marks : undefined}
               />
             </View>
 
-            {/* The leaf being turned (interactive when at rest) */}
-            <Animated.View
-              style={[
-                { position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, transformOrigin: 'left center' },
-                leafStyle,
-              ]}
-            >
-              <ChapterPage
-                key={`leaf-${version}-${book.id}-${leafChapter}`}
-                book={book}
-                version={version}
-                chapter={leafChapter}
-                scale={scale}
-                marks={leafChapter === chapter ? marks : undefined}
-                readingIndex={leafChapter === chapter ? readingIndex : null}
-                playFromIndex={leafChapter === chapter ? playFromIndex : null}
-                hint={`${t('pageTurnHint', lang)} · ${t('tapVerseHint', lang)}`}
-                onTapVerse={pending ? undefined : tapVerse}
-                onLongPressVerse={
-                  pending
-                    ? undefined
-                    : (index, verse) => {
-                        void toggleFavorite('bible', `bible:${version}:${book.id}:${chapter}:${index}`, {
-                          text: verse,
-                          reference: `${book.name[lang]} ${chapter + 1}:${index + 1}`,
-                        });
-                      }
-                }
-              />
-              {/* Page lighting + fore-edge shadow while lifting */}
-              <Animated.View
-                pointerEvents="none"
-                style={[
-                  { position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 },
-                  leafShadeStyle,
-                ]}
-              >
-                <LinearGradient
-                  colors={['rgba(20,16,8,0.05)', 'rgba(20,16,8,0.45)']}
-                  start={{ x: 0, y: 0.5 }}
-                  end={{ x: 1, y: 0.5 }}
-                  style={{ flex: 1 }}
+            {/* Current chapter — slides away on gesture. Wrapped in a
+                plain View to avoid Reanimated layout animation warnings
+                on the transform-bearing Animated.View inside. */}
+            <View style={{ flex: 1 }}>
+              <Animated.View style={[{ flex: 1 }, panelStyle]}>
+                <ChapterPage
+                  key={`cur-${version}-${book.id}-${chapter}`}
+                  book={book}
+                  version={version}
+                  chapter={chapter}
+                  scale={scale}
+                  marks={marks}
+                  readingIndex={readingIndex}
+                  playFromIndex={playFromIndex}
+                  hint={
+                    showHint && chapter === Number(chapterParam)
+                      ? `${t('pageTurnHint', lang)} · ${t('tapVerseHint', lang)}`
+                      : undefined
+                  }
+                  onTapVerse={pending ? undefined : tapVerse}
+                  onLongPressVerse={
+                    pending
+                      ? undefined
+                      : (index, verse) => {
+                          void toggleFavorite('bible', `bible:${version}:${book.id}:${chapter}:${index}`, {
+                            text: verse,
+                            reference: `${book.name[lang]} ${chapter + 1}:${index + 1}`,
+                          });
+                        }
+                  }
                 />
               </Animated.View>
-            </Animated.View>
+            </View>
           </View>
         </GestureDetector>
 
-        {/* Fixed footer: quiet chapter navigation */}
+        {/* Footer */}
         <View
           style={{
             paddingHorizontal: spacing.containerMargin,
-            paddingTop: spacing.stackSm - 2,
-            paddingBottom: insets.bottom + spacing.stackSm - 2,
+            paddingTop: spacing.stackSm - 8,
+            paddingBottom: insets.bottom + 4,
             backgroundColor: '#efeadd',
             borderTopWidth: 1,
             borderTopColor: 'rgba(60,42,20,0.10)',
-            flexDirection: 'row',
-            alignItems: 'center',
-            justifyContent: 'space-between',
           }}
         >
-          <Pressable
-            accessibilityRole="button"
-            disabled={!canTurn(-1)}
-            onPress={() => turnByButton(-1)}
-            hitSlop={10}
-            style={{ opacity: canTurn(-1) ? 1 : 0.25, padding: 4 }}
-          >
-            <ChevronLeftIcon size={20} color={colors.navyMuted} />
-          </Pressable>
-          <View style={{ flexDirection: 'row', alignItems: 'center', gap: spacing.gutter }}>
-            {ttsOk ? (
-              <Pressable
-                accessibilityRole="button"
-                accessibilityLabel={readingIndex !== null ? t('stop', lang) : t('readChapter', lang)}
-                onPress={playChapter}
-                style={{
-                  flexDirection: 'row',
-                  alignItems: 'center',
-                  gap: 6,
-                  paddingHorizontal: 12,
-                  height: 34,
-                  borderRadius: radius.full,
-                  backgroundColor: readingIndex !== null ? colors.sage : audioLoading ? 'rgba(168,128,31,0.20)' : 'rgba(168,128,31,0.12)',
-                }}
-              >
-                {audioLoading ? (
-                  <ActivityIndicator size={14} color={colors.secondary} />
-                ) : readingIndex !== null ? (
-                  <StopIcon size={14} color={colors.onPrimary} />
-                ) : (
-                  <PlayIcon size={14} color={colors.secondary} />
-                )}
-                <ThemedText
-                  variant="labelSm"
-                  color={readingIndex !== null ? 'onPrimary' : 'secondary'}
-                  style={{ letterSpacing: 1 }}
-                >
-                  {audioLoading ? t('listen', lang) : readingIndex !== null ? t('stop', lang) : t('listen', lang)}
-                </ThemedText>
-              </Pressable>
-            ) : null}
-            <ThemedText
-              variant="labelMd"
-              color="onSurfaceVariant"
-              style={{ fontVariant: ['tabular-nums'], letterSpacing: 1.6 }}
-            >
-              {chapter + 1} / {book.chapters}
-            </ThemedText>
+          {/* Chapter progress strip */}
+          <View pointerEvents="none" style={{ height: 2, justifyContent: 'center' }}>
+            <View
+              style={{
+                position: 'absolute',
+                left: 0,
+                right: 0,
+                height: 1,
+                backgroundColor: 'rgba(60,42,20,0.10)',
+                borderRadius: 1,
+              }}
+            />
           </View>
-          <Pressable
-            accessibilityRole="button"
-            disabled={!canTurn(1)}
-            onPress={() => turnByButton(1)}
-            hitSlop={10}
-            style={{ opacity: canTurn(1) ? 1 : 0.25, padding: 4 }}
+
+          <View
+            style={{
+              flexDirection: 'row',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              marginTop: spacing.stackSm - 6,
+            }}
           >
-            <ChevronRightIcon size={20} color={colors.navyMuted} />
-          </Pressable>
+            <Pressable
+              accessibilityRole="button"
+              disabled={!canTurn(-1)}
+              hitSlop={14}
+              onPress={() => turnByButton(-1)}
+              style={{
+                width: 40,
+                height: 34,
+                alignItems: 'center',
+                justifyContent: 'center',
+                borderRadius: radius.full,
+                backgroundColor: canTurn(-1) ? 'rgba(168,128,31,0.10)' : 'transparent',
+                opacity: canTurn(-1) ? 1 : 0.3,
+              }}
+            >
+              <ChevronLeftIcon size={18} color={colors.navyMuted} />
+            </Pressable>
+
+            <View style={{ flexDirection: 'row', alignItems: 'center', gap: spacing.gutter }}>
+              {ttsOk ? (
+                <Pressable
+                  accessibilityRole="button"
+                  accessibilityLabel={readingIndex !== null ? t('stop', lang) : t('readChapter', lang)}
+                  onPress={playChapter}
+                  style={{
+                    flexDirection: 'row',
+                    alignItems: 'center',
+                    gap: 6,
+                    paddingHorizontal: 14,
+                    height: 34,
+                    borderRadius: radius.full,
+                    backgroundColor:
+                      readingIndex !== null
+                        ? colors.sage
+                        : audioLoading
+                          ? 'rgba(168,128,31,0.20)'
+                          : 'rgba(168,128,31,0.12)',
+                  }}
+                >
+                  {audioLoading ? (
+                    <ActivityIndicator size={13} color={colors.secondary} />
+                  ) : readingIndex !== null ? (
+                    <StopIcon size={13} color={colors.onPrimary} />
+                  ) : (
+                    <PlayIcon size={13} color={colors.secondary} />
+                  )}
+                  <ThemedText
+                    variant="labelSm"
+                    color={readingIndex !== null ? 'onPrimary' : 'secondary'}
+                    style={{ letterSpacing: 1 }}
+                  >
+                    {audioLoading ? t('listen', lang) : readingIndex !== null ? t('stop', lang) : t('listen', lang)}
+                  </ThemedText>
+                </Pressable>
+              ) : null}
+              <ThemedText
+                variant="labelMd"
+                color="onSurfaceVariant"
+                style={{ fontVariant: ['tabular-nums'], letterSpacing: 1.6, minWidth: 64, textAlign: 'center' }}
+              >
+                {chapter + 1} / {book.chapters}
+              </ThemedText>
+            </View>
+
+            <Pressable
+              accessibilityRole="button"
+              disabled={!canTurn(1)}
+              hitSlop={14}
+              onPress={() => turnByButton(1)}
+              style={{
+                width: 40,
+                height: 34,
+                alignItems: 'center',
+                justifyContent: 'center',
+                borderRadius: radius.full,
+                backgroundColor: canTurn(1) ? 'rgba(168,128,31,0.10)' : 'transparent',
+                opacity: canTurn(1) ? 1 : 0.3,
+              }}
+            >
+              <ChevronRightIcon size={18} color={colors.navyMuted} />
+            </Pressable>
+          </View>
+
+          <View style={{ alignItems: 'center', minHeight: 14, marginTop: 4 }}>
+            {isFirstChapter ? (
+              <ThemedText variant="labelSm" color="onSurfaceVariant" style={{ letterSpacing: 1.2, opacity: 0.7 }}>
+                {t('beginningOfBook', lang)}
+              </ThemedText>
+            ) : isLastChapter ? (
+              <ThemedText variant="labelSm" color="onSurfaceVariant" style={{ letterSpacing: 1.2, opacity: 0.7 }}>
+                {t('endOfBook', lang)}
+              </ThemedText>
+            ) : null}
+          </View>
         </View>
       </View>
     </>
   );
 }
 
-/** One paper page: spine shading, heading, verses. */
+/** One paper-styled page with scrollable verses. */
 function ChapterPage({
   book,
   version,
@@ -544,19 +536,14 @@ function ChapterPage({
   chapter: number;
   scale: number;
   marks?: Map<number, HighlightColor>;
-  /** Verse currently being read aloud — softly lit, auto-scrolled to. */
   readingIndex?: number | null;
-  /** Verse tapped as the start point for read-aloud. */
   playFromIndex?: number | null;
-  /** Faint helper line under the chapter rule (scrolls with the page). */
   hint?: string;
   onTapVerse?: (index: number) => Promise<void>;
   onLongPressVerse?: (index: number, verse: string) => void;
 }) {
   const verses = bookText(version, book.id)[chapter] ?? [];
   const textLang = version === 'en-kjv' ? 'en' : 'te';
-
-  // Follow the voice: remember each verse's y, scroll as it advances.
   const scrollRef = useRef<ScrollView>(null);
   const versePositions = useRef<Map<number, number>>(new Map());
 
@@ -564,7 +551,7 @@ function ChapterPage({
     if (readingIndex !== null) {
       const y = versePositions.current.get(readingIndex);
       if (y !== undefined) {
-        scrollRef.current?.scrollTo({ y: Math.max(0, y - 120), animated: true });
+        scrollRef.current?.scrollTo({ y: Math.max(0, y - 96), animated: true });
       }
     }
   }, [readingIndex]);
@@ -579,23 +566,22 @@ function ChapterPage({
         borderTopRightRadius: radius.md,
         borderBottomRightRadius: radius.md,
         overflow: 'hidden',
-        marginHorizontal: 6,
-        boxShadow: '0 3px 14px rgba(40,30,10,0.18)',
+        marginHorizontal: SIDE_INSET,
+        marginVertical: 2,
+        boxShadow: '0 4px 18px rgba(40,30,10,0.20)',
       }}
     >
-      {/* Spine gutter shading — the page curves into the binding. */}
       <LinearGradient
         colors={['rgba(40,30,10,0.10)', 'rgba(40,30,10,0)']}
         start={{ x: 0, y: 0.5 }}
         end={{ x: 1, y: 0.5 }}
-        style={{ position: 'absolute', top: 0, bottom: 0, left: 0, width: 18, zIndex: 1 }}
+        style={{ position: 'absolute', top: 0, bottom: 0, left: 0, width: 16, zIndex: 1 }}
       />
       <ScrollView
         ref={scrollRef}
         contentContainerStyle={{
           paddingVertical: spacing.stackMd,
-          paddingLeft: spacing.containerMargin,
-          paddingRight: spacing.containerMargin - 6,
+          paddingHorizontal: spacing.containerMargin + 4,
           gap: spacing.stackSm,
         }}
         showsVerticalScrollIndicator={false}
@@ -612,7 +598,6 @@ function ChapterPage({
             {chapter + 1}
           </ThemedText>
           <View style={{ height: 1, alignSelf: 'stretch', backgroundColor: 'rgba(3,22,50,0.08)' }} />
-          {/* Gentle hints live in the page flow and scroll away. */}
           {hint ? (
             <ThemedText
               variant="labelSm"
